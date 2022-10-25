@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+Turning on \PYGZlt{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}.Television object at 0x7fc718217470\PYGZgt{}
+Showing channel \PYG{l+m}{3}
+\end{Verbatim}

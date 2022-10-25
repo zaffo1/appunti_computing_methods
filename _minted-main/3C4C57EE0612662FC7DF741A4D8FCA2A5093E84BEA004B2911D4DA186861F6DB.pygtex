@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+.. toctree::
+   :maxdepth: \PYG{l+m}{2}
+   :caption: Contents:
+
+   modules
+\end{Verbatim}

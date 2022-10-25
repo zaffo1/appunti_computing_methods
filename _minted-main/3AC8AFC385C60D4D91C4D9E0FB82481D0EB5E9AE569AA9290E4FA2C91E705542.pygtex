@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{vector2d\PYGZus{}comparable} \PYG{k+kn}{import} \PYG{n}{Vector2d}
+
+\PYG{n}{v}\PYG{p}{,} \PYG{n}{z} \PYG{o}{=} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{),} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{v} \PYG{o}{\PYGZgt{}=} \PYG{n}{z}\PYG{p}{,} \PYG{n}{v} \PYG{o}{==} \PYG{n}{z}\PYG{p}{,} \PYG{n}{v} \PYG{o}{\PYGZlt{}} \PYG{n}{z}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} This works even if we don\PYGZsq{}t define the \PYGZus{}\PYGZus{}gt\PYGZus{}\PYGZus{} method explicitly}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{v} \PYG{o}{\PYGZgt{}} \PYG{n}{z}\PYG{p}{)}
+
+\PYG{n}{vector\PYGZus{}list} \PYG{o}{=} \PYG{p}{[}\PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{),} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{5.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{),} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{l+m+mf}{0.}\PYG{p}{)]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{vector\PYGZus{}list}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Tho make the following line work we need to implement either \PYGZus{}\PYGZus{}ge\PYGZus{}\PYGZus{} and \PYGZus{}\PYGZus{}lt\PYGZus{}\PYGZus{}}
+\PYG{c+c1}{\PYGZsh{} or \PYGZus{}\PYGZus{}gt\PYGZus{}\PYGZus{} and \PYGZus{}\PYGZus{}le\PYGZus{}\PYGZus{} (we need a complementary pair of operator)}
+\PYG{n}{vector\PYGZus{}list}\PYG{o}{.}\PYG{n}{sort}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{vector\PYGZus{}list}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Note: we got the full power of timsort for free! Nice :)}
+\end{Verbatim}

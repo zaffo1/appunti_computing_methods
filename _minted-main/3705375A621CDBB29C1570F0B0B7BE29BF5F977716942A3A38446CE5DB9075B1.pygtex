@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Create an integer variable}
+\PYG{n}{this\PYGZus{}is\PYGZus{}an\PYGZus{}int} \PYG{o}{=} \PYG{l+m+mi}{5}
+\PYG{c+c1}{\PYGZsh{} Now check its type}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{this\PYGZus{}is\PYGZus{}an\PYGZus{}int}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Same with a string}
+\PYG{n}{this\PYGZus{}is\PYGZus{}a\PYGZus{}string} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Hello world!\PYGZsq{}} 
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{this\PYGZus{}is\PYGZus{}a\PYGZus{}string}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Same with a list}
+\PYG{n}{this\PYGZus{}is\PYGZus{}a\PYGZus{}list} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Frodo\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Samvise\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Meriadoc\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Peregrino\PYGZsq{}}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{this\PYGZus{}is\PYGZus{}a\PYGZus{}list}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} And even a function!}
+\PYG{k}{def} \PYG{n+nf}{this\PYGZus{}is\PYGZus{}a\PYGZus{}function}\PYG{p}{():}
+    \PYG{k}{return} \PYG{l+m+mi}{0}
+    
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{this\PYGZus{}is\PYGZus{}a\PYGZus{}function}\PYG{p}{))}
+\end{Verbatim}

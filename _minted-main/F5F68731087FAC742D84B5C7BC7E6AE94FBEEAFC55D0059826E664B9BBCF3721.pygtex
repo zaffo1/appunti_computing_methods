@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{math} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{p}{[}\PYG{o}{...}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} Terrible: where the hell is sqrt coming from?}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mf}{2.}\PYG{p}{)}
+\PYG{k+kn}{from} \PYG{n+nn}{math} \PYG{k+kn}{import} \PYG{n}{sqrt}
+\PYG{p}{[}\PYG{o}{...}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} Better: if you haven’t redefined sqrt this is from the math library}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mf}{2.}\PYG{p}{)}
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{p}{[}\PYG{o}{...}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} Best: five more characters, but at least is clear where sqrt is coming from}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mf}{2.}\PYG{p}{)}
+\end{Verbatim}

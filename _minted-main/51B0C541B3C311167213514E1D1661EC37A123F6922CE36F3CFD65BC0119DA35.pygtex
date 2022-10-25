@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{SimpleCustomError}\PYG{p}{(}\PYG{n+ne}{Exception}\PYG{p}{):}  
+    \PYG{k}{pass} \PYG{c+c1}{\PYGZsh{} Yeah that\PYGZsq{}s it}
+
+\PYG{k}{raise} \PYG{n}{SimpleCustomError}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}simple error\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

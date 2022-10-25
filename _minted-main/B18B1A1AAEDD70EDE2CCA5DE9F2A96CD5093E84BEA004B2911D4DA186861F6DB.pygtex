@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+git add     \PYG{c+c1}{\PYGZsh{}per aggiungere file da tracciare}
+git status  \PYG{c+c1}{\PYGZsh{}per vedere lo stato dei file nella cartella}
+git commit \PYGZhy{}m \PYG{l+s+s2}{\PYGZdq{}commento\PYGZdq{}} \PYGZhy{}m \PYG{l+s+s2}{\PYGZdq{}ulteriore commento\PYGZdq{}}    \PYG{c+c1}{\PYGZsh{}per effettuare un \PYGZdq{}commit\PYGZdq{}}
+\end{Verbatim}

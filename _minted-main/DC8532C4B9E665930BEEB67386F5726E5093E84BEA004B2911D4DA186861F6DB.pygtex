@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{l+m}{1}
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+File \PYG{l+s+s2}{\PYGZdq{}snippets/class\PYGZus{}attributes\PYGZus{}1.py\PYGZdq{}}, line \PYG{l+m}{13}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+print\PYG{o}{(}another\PYGZus{}tv.x\PYG{o}{)}
+AttributeError: ’Television’ object has no attribute ’x’
+\end{Verbatim}

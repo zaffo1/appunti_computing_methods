@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Generator function that provides infinte fibonacci numbers}
+\PYG{k}{def} \PYG{n+nf}{fibonacci}\PYG{p}{():}
+    \PYG{n}{a}\PYG{p}{,} \PYG{n}{b} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}
+    \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+        \PYG{k}{yield} \PYG{n}{a}
+        \PYG{n}{a}\PYG{p}{,} \PYG{n}{b} \PYG{o}{=} \PYG{n}{b}\PYG{p}{,} \PYG{n}{a} \PYG{o}{+} \PYG{n}{b}
+
+\PYG{c+c1}{\PYGZsh{} We need to impose a stop condition externally to use it}
+\PYG{n}{max\PYGZus{}n} \PYG{o}{=} \PYG{l+m+mi}{7}
+\PYG{n}{fib\PYGZus{}numbers} \PYG{o}{=} \PYG{p}{[]}
+\PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{fib} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{fibonacci}\PYG{p}{()):}
+    \PYG{k}{if} \PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{n}{max\PYGZus{}n}\PYG{p}{:}
+        \PYG{k}{break}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{n}{fib\PYGZus{}numbers}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{fib}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fib\PYGZus{}numbers}\PYG{p}{)}
+      
+\PYG{c+c1}{\PYGZsh{} Another way of doing that is using \PYGZsq{}islice\PYGZsq{} from itertools}
+\PYG{k+kn}{import} \PYG{n+nn}{itertools}
+\PYG{c+c1}{\PYGZsh{} Generator expression}
+\PYG{n}{fib\PYGZus{}gen} \PYG{o}{=} \PYG{p}{(}\PYG{n}{fib} \PYG{k}{for} \PYG{n}{fib} \PYG{o+ow}{in} \PYG{n}{itertools}\PYG{o}{.}\PYG{n}{islice}\PYG{p}{(}\PYG{n}{fibonacci}\PYG{p}{(),} \PYG{n}{max\PYGZus{}n}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{fib\PYGZus{}gen}\PYG{p}{))}
+\end{Verbatim}

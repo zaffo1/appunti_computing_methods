@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{itertools} \PYG{k+kn}{import} \PYG{n}{dropwhile}
+
+\PYG{k}{class} \PYG{n+nc}{LabFileIterator}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{file\PYGZus{}obj}\PYG{p}{):}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}lines} \PYG{o}{=} \PYG{n}{dropwhile}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{line}\PYG{p}{:} \PYG{n}{line}\PYG{o}{.}\PYG{n}{startswith}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}\PYGZsq{}}\PYG{p}{),} \PYG{n}{file\PYGZus{}obj}\PYG{p}{)}
+        
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}next\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{n}{line} \PYG{o}{=} \PYG{n+nb}{next}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}lines}\PYG{p}{)}
+        \PYG{n}{values} \PYG{o}{=} \PYG{n}{line}\PYG{o}{.}\PYG{n}{strip}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{time} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}
+        \PYG{n}{tension} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{])}
+        \PYG{k}{return} \PYG{n}{time}\PYG{p}{,} \PYG{n}{tension}
+    
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}iter\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}
+
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}snippets/data/fake\PYGZus{}measurements.txt\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{lab\PYGZus{}data\PYGZus{}file}\PYG{p}{:}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{k}{for} \PYG{n}{line\PYGZus{}number}\PYG{p}{,} \PYG{p}{(}\PYG{n}{time}\PYG{p}{,} \PYG{n}{tension}\PYG{p}{)} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{LabFileIterator}\PYG{p}{(}\PYG{n}{lab\PYGZus{}data\PYGZus{}file}\PYG{p}{)):}
+            \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{line\PYGZus{}number}\PYG{p}{,} \PYG{n}{time}\PYG{p}{,} \PYG{n}{tension}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{} Here we get the wrong line number! Why?}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Line }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{ error: }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{line\PYGZus{}number}\PYG{p}{,} \PYG{n}{e}\PYG{p}{))}
+\end{Verbatim}

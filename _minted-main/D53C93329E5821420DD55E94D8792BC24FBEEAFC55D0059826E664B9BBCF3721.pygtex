@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{name} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Luca\PYGZsq{}}
+\PYG{n}{age} \PYG{o}{=} \PYG{l+m+mi}{42}
+
+\PYG{c+c1}{\PYGZsh{} The ugly way.}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My name is \PYGZsq{}} \PYG{o}{+} \PYG{n}{name} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{} I am \PYGZsq{}} \PYG{o}{+} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{age}\PYG{p}{)} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{} year(s) old.\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} The old way (\PYGZpc{} operator)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My name is }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{ I am }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{ year(s) old.\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{age}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} The new way (.format)}
+\PYG{c+c1}{\PYGZsh{} This is actually *much* more powerful and flexible than implied here.}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My name is }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{ I am }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{ year(s) old.\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{age}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} The newer way\PYGZhy{}\PYGZhy{}\PYGZhy{}new in Python 3.6. This is awesome!}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}My name is }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{name}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{ I am }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{age}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{ year(s) old.\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{n}{My} \PYG{n}{name} \PYG{o+ow}{is} \PYG{n}{Luca} \PYG{n}{I} \PYG{n}{am} \PYG{l+m+mi}{42} \PYG{n}{year}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{n}{old}\PYG{o}{.}
+\PYG{n}{My} \PYG{n}{name} \PYG{o+ow}{is} \PYG{n}{Luca} \PYG{n}{I} \PYG{n}{am} \PYG{l+m+mi}{42} \PYG{n}{year}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{n}{old}\PYG{o}{.}
+\PYG{n}{My} \PYG{n}{name} \PYG{o+ow}{is} \PYG{n}{Luca} \PYG{n}{I} \PYG{n}{am} \PYG{l+m+mi}{42} \PYG{n}{year}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{n}{old}\PYG{o}{.}
+\PYG{n}{My} \PYG{n}{name} \PYG{o+ow}{is} \PYG{n}{Luca} \PYG{n}{I} \PYG{n}{am} \PYG{l+m+mi}{42} \PYG{n}{year}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{n}{old}\PYG{o}{.}
+\end{Verbatim}

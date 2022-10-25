@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing} \PYG{k}{as} \PYG{n+nn}{mp}
+
+\PYG{c+c1}{\PYGZsh{} define a example function}
+\PYG{k}{def} \PYG{n+nf}{Hello}\PYG{p}{(}\PYG{n}{pos}\PYG{p}{,}\PYG{n}{name}\PYG{p}{):}
+    \PYG{n}{msg}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Hello \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}
+    \PYG{n}{output}\PYG{o}{.}\PYG{n}{put}\PYG{p}{((}\PYG{n}{pos}\PYG{p}{,} \PYG{n}{msg}\PYG{p}{))}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Define an output queue}
+    \PYG{n}{output} \PYG{o}{=} \PYG{n}{mp}\PYG{o}{.}\PYG{n}{Queue}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} Setup a list of processes that we want to run}
+    \PYG{n}{processes} \PYG{o}{=} \PYG{p}{[}\PYG{n}{mp}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{Hello}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Gianluca\PYGZdq{}}\PYG{p}{))} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)]}
+
+    \PYG{c+c1}{\PYGZsh{} Run processes}
+    \PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n}{processes}\PYG{p}{:}
+        \PYG{n}{p}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} Exit the completed processes}
+    \PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n}{processes}\PYG{p}{:}
+        \PYG{n}{p}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+            
+    \PYG{c+c1}{\PYGZsh{} Get process results from the output queue}
+    \PYG{n}{results} \PYG{o}{=} \PYG{p}{[}\PYG{n}{output}\PYG{o}{.}\PYG{n}{get}\PYG{p}{()} \PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n}{processes}\PYG{p}{]}
+            
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{results}\PYG{p}{)}
+\end{Verbatim}

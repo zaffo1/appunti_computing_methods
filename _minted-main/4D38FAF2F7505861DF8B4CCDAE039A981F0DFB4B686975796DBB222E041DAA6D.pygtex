@@ -1,0 +1,60 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Configuration file for the Sphinx documentation builder.}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} This file only contains a selection of the most common options. For a full}
+\PYG{c+c1}{\PYGZsh{} list see the documentation:}
+\PYG{c+c1}{\PYGZsh{} https://www.sphinx\PYGZhy{}doc.org/en/master/usage/configuration.html}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{} Path setup \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} If extensions (or modules to document with autodoc) are in another directory,}
+\PYG{c+c1}{\PYGZsh{} add these directories to sys.path here. If the directory is relative to the}
+\PYG{c+c1}{\PYGZsh{} documentation root, use os.path.abspath to make it absolute, like shown here.}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}..\PYGZsq{}}\PYG{p}{))}
+
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{} Project information \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{n}{project} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}PDF random generator\PYGZsq{}}
+\PYG{n}{copyright} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}2022, Lorenzo Zaffina\PYGZsq{}}
+\PYG{n}{author} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Lorenzo Zaffina\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} The full version, including alpha/beta/rc tags}
+\PYG{n}{release} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}00.00.01\PYGZsq{}}
+
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{} General configuration \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} Add any Sphinx extension module names here, as strings. They can be}
+\PYG{c+c1}{\PYGZsh{} extensions coming with Sphinx (named \PYGZsq{}sphinx.ext.*\PYGZsq{}) or your custom}
+\PYG{c+c1}{\PYGZsh{} ones.}
+\PYG{n}{extensions} \PYG{o}{=} \PYG{p}{[}
+    \PYG{l+s+s1}{\PYGZsq{}sphinx.ext.autodoc\PYGZsq{}}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}sphinx.ext.viewcode\PYGZsq{}}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}sphinx.ext.napoleon\PYGZsq{}}
+\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain templates here, relative to this directory.}
+\PYG{n}{templates\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}templates\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} List of patterns, relative to source directory, that match files and}
+\PYG{c+c1}{\PYGZsh{} directories to ignore when looking for source files.}
+\PYG{c+c1}{\PYGZsh{} This pattern also affects html\PYGZus{}static\PYGZus{}path and html\PYGZus{}extra\PYGZus{}path.}
+\PYG{n}{exclude\PYGZus{}patterns} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}build\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Thumbs.db\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}.DS\PYGZus{}Store\PYGZsq{}}\PYG{p}{]}
+
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{} Options for HTML output \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} The theme to use for HTML and HTML Help pages.  See the documentation for}
+\PYG{c+c1}{\PYGZsh{} a list of builtin themes.}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{n}{html\PYGZus{}theme} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}sphinx\PYGZus{}rtd\PYGZus{}theme\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain custom static files (such as style sheets) here,}
+\PYG{c+c1}{\PYGZsh{} relative to this directory. They are copied after the builtin static files,}
+\PYG{c+c1}{\PYGZsh{} so a file named \PYGZdq{}default.css\PYGZdq{} will overwrite the builtin \PYGZdq{}default.css\PYGZdq{}.}
+\PYG{n}{html\PYGZus{}static\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}static\PYGZsq{}}\PYG{p}{]}
+\end{Verbatim}

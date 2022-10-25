@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{l+m+mf}{3.001}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{err}{’}\PYG{n}{hello}\PYG{err}{’}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{err}{’}\PYG{n}{Hello}\PYG{err}{’}\PYG{p}{))}
+
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{l+m+mi}{3}
+\PYG{l+m+mi}{3}
+\PYG{l+m+mi}{2305843009213443}
+\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{8080512805622017032}
+\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{8706679013462221575}
+\end{Verbatim}

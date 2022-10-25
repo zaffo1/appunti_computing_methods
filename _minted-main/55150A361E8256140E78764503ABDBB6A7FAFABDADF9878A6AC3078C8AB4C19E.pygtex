@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{AudioDevice}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf}{play}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{p}{):}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}You are listening to channel n. }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{channel}\PYG{p}{))}
+
+\PYG{k}{class} \PYG{n+nc}{VideoDevice}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf}{play}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{p}{):}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}You are looking to channel n. }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{channel}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Multiple inheritance!}
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{(}\PYG{n}{AudioDevice}\PYG{p}{,} \PYG{n}{VideoDevice}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf}{show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{p}{):}
+        \PYG{n}{AudioDevice}\PYG{o}{.}\PYG{n}{play}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{p}{)}
+        \PYG{n}{VideoDevice}\PYG{o}{.}\PYG{n}{play}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{p}{)}
+    
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Is this a good idea?}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{play}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Which one do we get? Why?}
+\PYG{c+c1}{\PYGZsh{} Hint}
+\PYG{c+c1}{\PYGZsh{} print(Television.mro())}
+\end{Verbatim}

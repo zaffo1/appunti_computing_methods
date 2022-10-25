@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+
+\PYG{k}{class} \PYG{n+nc}{Vector2d}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class representing a Vector2d. We use float() to make sure of storing}
+\PYG{l+s+sd}{    the coordinates in the correct format \PYGZdq{}\PYGZdq{}\PYGZdq{}}   
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{):}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+   
+    \PYG{k}{def} \PYG{n+nf}{module}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x}\PYG{o}{**}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y}\PYG{o}{**}\PYG{l+m+mi}{2}\PYG{p}{)}
+       
+    \PYG{k}{def} \PYG{n+nf}{info}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Vector2d(}\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{, }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{)\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y}\PYG{p}{))}
+         
+    \PYG{k}{def} \PYG{n+nf}{add}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{other}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x} \PYG{o}{+} \PYG{n}{other}\PYG{o}{.}\PYG{n}{x}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y} \PYG{o}{+} \PYG{n}{other}\PYG{o}{.}\PYG{n}{y}\PYG{p}{)}
+       
+\PYG{n}{v} \PYG{o}{=} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{)}
+\PYG{n}{v}\PYG{o}{.}\PYG{n}{info}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{v}\PYG{o}{.}\PYG{n}{module}\PYG{p}{())}
+\PYG{n}{z} \PYG{o}{=} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{1.5}\PYG{p}{)}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{v}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{z}\PYG{p}{)}
+\PYG{n}{t}\PYG{o}{.}\PYG{n}{info}\PYG{p}{()}
+\end{Verbatim}

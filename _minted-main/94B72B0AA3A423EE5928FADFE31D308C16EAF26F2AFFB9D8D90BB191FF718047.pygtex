@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{crazy\PYGZus{}iterator} \PYG{k+kn}{import} \PYG{n}{CrazyIterable}
+   
+\PYG{n}{my\PYGZus{}iterable} \PYG{o}{=} \PYG{n}{CrazyIterable}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}D\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}E\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{for} \PYG{n}{element} \PYG{o+ow}{in} \PYG{n}{my\PYGZus{}iterable}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{element}\PYG{p}{)}
+\end{Verbatim}

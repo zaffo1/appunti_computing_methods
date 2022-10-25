@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{generator\PYGZus{}function\PYGZus{}simple}\PYG{p}{():}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}First call\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{yield} \PYG{l+m+mi}{1}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Second call\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{yield} \PYG{l+m+mi}{2}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}I am about to rise a StopIteration exception...\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{gen} \PYG{o}{=} \PYG{n}{generator\PYGZus{}function\PYGZus{}simple}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{} A generator function returns a generator}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{next}\PYG{p}{(}\PYG{n}{gen}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} We stop at the first yield and get the value}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{next}\PYG{p}{(}\PYG{n}{gen}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} Second yield}
+\PYG{n+nb}{next}\PYG{p}{(}\PYG{n}{gen}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} The third next() will throw StopIteration}
+\end{Verbatim}

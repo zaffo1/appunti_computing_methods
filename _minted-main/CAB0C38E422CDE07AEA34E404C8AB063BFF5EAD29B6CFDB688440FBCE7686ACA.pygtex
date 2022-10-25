@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing}
+
+\PYG{c+c1}{\PYGZsh{} empty list with global scope }
+\PYG{n}{result} \PYG{o}{=} \PYG{p}{[]} 
+
+\PYG{k}{def} \PYG{n+nf}{square\PYGZus{}list}\PYG{p}{(}\PYG{n}{mylist}\PYG{p}{):} 
+        \PYG{k}{global} \PYG{n}{result}  
+        \PYG{k}{for} \PYG{n}{num} \PYG{o+ow}{in} \PYG{n}{mylist}\PYG{p}{:} 
+                \PYG{n}{result}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{num} \PYG{o}{*} \PYG{n}{num}\PYG{p}{)} 
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Result(in process p1): \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{result}\PYG{p}{))} 
+ 
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} input list }
+    \PYG{n}{mylist} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{]} 
+    \PYG{c+c1}{\PYGZsh{} creating new process }
+    \PYG{n}{p1} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{square\PYGZus{}list}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{mylist}\PYG{p}{,))} 
+    \PYG{c+c1}{\PYGZsh{} starting process }
+    \PYG{n}{p1}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+    \PYG{c+c1}{\PYGZsh{} wait until process is finished }
+    \PYG{n}{p1}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+        
+    \PYG{c+c1}{\PYGZsh{} print global result list }
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Result(in main program): \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{result}\PYG{p}{))} 
+        
+\end{Verbatim}

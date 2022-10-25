@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{cut\PYGZus{}before}\PYG{p}{(}\PYG{n}{input\PYGZus{}string}\PYG{p}{,} \PYG{n}{substring}\PYG{p}{):}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{n}{result} \PYG{o}{=} \PYG{n}{input\PYGZus{}string}\PYG{p}{[:(}\PYG{n}{input\PYGZus{}string}\PYG{o}{.}\PYG{n}{index}\PYG{p}{(}\PYG{n}{substring}\PYG{p}{))]}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This line is not executed if an exception is raised in the try block\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{ValueError}\PYG{p}{:}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This line is executed only if a ValueError is raised in the try block\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{else}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} optional!}
+      \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This line is executed only if no exception is raised in the try block\PYGZsq{}}\PYG{p}{)}
+      \PYG{k}{return} \PYG{n}{result}
+    \PYG{k}{finally}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} optional!}
+      \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This line is always executed\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{cut\PYGZus{}before}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}We all live in a Yellow Submarine\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Yellow\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{cut\PYGZus{}before}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}We all live in a Yellow Submarine\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Red\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

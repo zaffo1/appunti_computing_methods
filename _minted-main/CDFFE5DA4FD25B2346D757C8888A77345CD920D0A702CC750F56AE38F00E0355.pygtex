@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy.optimize} \PYG{k+kn}{import} \PYG{n}{curve\PYGZus{}fit}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{callable} \PYG{k+kn}{import} \PYG{n}{CallCounter}
+
+\PYG{k}{def} \PYG{n+nf}{line}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{q}\PYG{p}{):}
+    \PYG{k}{return} \PYG{n}{m} \PYG{o}{*} \PYG{n}{x} \PYG{o}{+} \PYG{n}{q}
+
+\PYG{c+c1}{\PYGZsh{} Generate the datasets: a straight line + gaussian fluctuations}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{numpy}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{line}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{,} \PYG{l+m+mf}{10.}\PYG{p}{)} \PYG{o}{+} \PYG{n}{numpy}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{normal}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mf}{0.1}\PYG{p}{,} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{x}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Fit}
+\PYG{n}{counting\PYGZus{}func} \PYG{o}{=} \PYG{n}{CallCounter}\PYG{p}{(}\PYG{n}{line}\PYG{p}{)}
+\PYG{n}{popt}\PYG{p}{,} \PYG{n}{pcov} \PYG{o}{=} \PYG{n}{curve\PYGZus{}fit}\PYG{p}{(}\PYG{n}{counting\PYGZus{}func}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{p0}\PYG{o}{=}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{100.}\PYG{p}{])} \PYG{c+c1}{\PYGZsh{} p0 is mandatory here}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Fitted with }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{ function calls\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{counting\PYGZus{}func}\PYG{o}{.}\PYG{n}{num\PYGZus{}calls}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Show the results}
+\PYG{n}{m}\PYG{p}{,} \PYG{n}{q} \PYG{o}{=} \PYG{n}{popt}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}fit with custom callable\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}bo\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{line}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{q}\PYG{p}{),} \PYG{l+s+s1}{\PYGZsq{}r\PYGZhy{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

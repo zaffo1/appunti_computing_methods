@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf}{add\PYGZus{}an\PYGZus{}attribute}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Add a class attribute (remember the meaning of \PYGZsq{}self\PYGZsq{}) \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel} \PYG{o}{=} \PYG{l+m+mi}{1}
+
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} Add an attribute from inside a class method}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{add\PYGZus{}an\PYGZus{}attribute}\PYG{p}{()}
+\PYG{n+nb}{print} \PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Again, attributes are not shared}
+\PYG{n}{another\PYGZus{}tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n}{another\PYGZus{}tv}\PYG{o}{.}\PYG{n}{add\PYGZus{}an\PYGZus{}attribute}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} Changing the attribute for one will not affect other instances of the class}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel} \PYG{o}{=} \PYG{l+m+mi}{5}
+\PYG{c+c1}{\PYGZsh{} The following line will print 1, not 5}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{another\PYGZus{}tv}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel}\PYG{p}{)}
+\end{Verbatim}

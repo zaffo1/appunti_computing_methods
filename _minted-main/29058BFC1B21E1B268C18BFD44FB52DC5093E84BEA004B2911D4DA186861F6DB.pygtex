@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+Oops \PYGZhy{} file ’i\PYGZus{}do\PYGZus{}not\PYGZus{}exists.txt’ does not exist
+Oops \PYGZhy{} cannot \PYG{n+nb}{read} the file!
+\PYG{o}{[}Errno \PYG{l+m}{2}\PYG{o}{]} No such file or directory: ’i\PYGZus{}do\PYGZus{}not\PYGZus{}exists.txt’
+\end{Verbatim}

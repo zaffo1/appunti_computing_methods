@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{v1}\PYG{p}{,} \PYG{n}{v2} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{v1}\PYG{p}{,} \PYG{n}{v2}\PYG{p}{):}
+\PYG{n}{s} \PYG{o}{+=} \PYG{n}{vi} \PYG{o}{*} \PYG{n}{v2}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

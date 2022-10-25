@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Animal}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf}{sound}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{k+kc}{None}
+
+\PYG{k}{class} \PYG{n+nc}{Dog}\PYG{p}{(}\PYG{n}{Animal}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf}{sound}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} This will shadow the method in the base class\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{return} \PYG{l+s+s1}{\PYGZsq{}Woof!\PYGZsq{}}
+        
+\PYG{k}{class} \PYG{n+nc}{Cat}\PYG{p}{(}\PYG{n}{Animal}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf}{sound}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} This will shadow the method in the base class\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{return} \PYG{l+s+s1}{\PYGZsq{}Meow!\PYGZsq{}}
+
+\PYG{k}{class} \PYG{n+nc}{SilentAnimal}\PYG{p}{(}\PYG{n}{Animal}\PYG{p}{):}
+    \PYG{k}{pass} \PYG{c+c1}{\PYGZsh{} I make no sound}
+     
+\PYG{n}{animals} \PYG{o}{=} \PYG{p}{[}\PYG{n}{Animal}\PYG{p}{(),} \PYG{n}{Cat}\PYG{p}{(),} \PYG{n}{Dog}\PYG{p}{(),} \PYG{n}{SilentAnimal}\PYG{p}{()]}
+\PYG{k}{for} \PYG{n}{animal} \PYG{o+ow}{in} \PYG{n}{animals}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{animal}\PYG{o}{.}\PYG{n}{sound}\PYG{p}{())}
+\end{Verbatim}

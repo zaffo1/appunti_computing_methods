@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{a} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{uniform}\PYG{p}{(}\PYG{n}{size}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{)}
+\PYG{n}{mask} \PYG{o}{=} \PYG{n}{a} \PYG{o}{\PYGZgt{}} \PYG{l+m+mf}{0.5}
+
+\PYG{n}{mask}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}mi restituisce il numero di elementi che soddisano la condizione}
+
+\PYG{c+c1}{\PYGZsh{}posso passare una maschera tra parentesi quadre per indirizzare gli elementi di un array.}
+\PYG{c+c1}{\PYGZsh{}Mi restituisce un nuovo array contenente solo gli elementi che soddisfano la condizione}
+
+\PYG{n}{a}\PYG{p}{[}\PYG{n}{mask}\PYG{p}{]}
+\end{Verbatim}

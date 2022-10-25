@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{multiprocessing} \PYG{k+kn}{import} \PYG{n}{Process}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k}{def} \PYG{n+nf}{f0}\PYG{p}{(}\PYG{n}{name}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{()}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} function \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}\PYG{p}{)}
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}I am still the main process with ID \PYGZdq{}}
+           \PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{())}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} my father is ID:\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getppid}\PYG{p}{()))}
+
+\PYG{k}{def} \PYG{n+nf}{f1}\PYG{p}{(}\PYG{n}{name}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{()}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} function \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}\PYG{p}{)}
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}I am the first sub\PYGZhy{}process with ID \PYGZdq{}}
+           \PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{())}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} my father is ID:\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getppid}\PYG{p}{()))}
+    \PYG{n}{f2}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}two\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{f2}\PYG{p}{(}\PYG{n}{name}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{()}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} function \PYGZdq{}}\PYG{o}{+}\PYG{n}{name}\PYG{p}{)}
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}I am still the first sub\PYGZhy{}process with ID \PYGZdq{}}
+           \PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{())}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} my father is ID:\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getppid}\PYG{p}{()))}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}This is the end!\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}I am the main process with ID: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{()))}
+    \PYG{n}{f0}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}zero\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{p} \PYG{o}{=} \PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{f1}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}one\PYGZsq{}}\PYG{p}{,))}
+    \PYG{n}{p}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+    \PYG{n}{p}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+\end{Verbatim}

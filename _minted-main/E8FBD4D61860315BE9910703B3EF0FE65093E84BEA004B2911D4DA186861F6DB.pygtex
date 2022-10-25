@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+On branch main
+Your branch is up to date with \PYG{l+s+s1}{\PYGZsq{}origin/main\PYGZsq{}}.
+
+Changes to be committed:
+  \PYG{o}{(}use \PYG{l+s+s2}{\PYGZdq{}git restore \PYGZhy{}\PYGZhy{}staged \PYGZlt{}file\PYGZgt{}...\PYGZdq{}} to unstage\PYG{o}{)}
+        modified:   README.md
+        new file:   index.html
+\end{Verbatim}

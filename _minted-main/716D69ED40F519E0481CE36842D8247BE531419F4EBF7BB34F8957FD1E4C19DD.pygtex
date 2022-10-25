@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS} \PYG{o}{=} \PYG{l+m+mi}{999} \PYG{c+c1}{\PYGZsh{} This is a class attribute   }
+    
+\PYG{c+c1}{\PYGZsh{} We don\PYGZsq{}t need an instance to access class attributes}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{Television}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} But we can also access it through instances}
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Changing the attribute in the class namespace will change it for every instance}
+\PYG{n}{another\PYGZus{}tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n}{Television}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS} \PYG{o}{=} \PYG{l+m+mi}{998}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{another\PYGZus{}tv}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} But assigning to that attribute in an instance namespace will create a copy!}
+\PYG{c+c1}{\PYGZsh{} Result: the other instances won\PYGZsq{}t be affected!}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS} \PYG{o}{=} \PYG{l+m+mi}{997}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{another\PYGZus{}tv}\PYG{o}{.}\PYG{n}{NUMBER\PYGZus{}OF\PYGZus{}CHANNELS}\PYG{p}{)}
+\end{Verbatim}

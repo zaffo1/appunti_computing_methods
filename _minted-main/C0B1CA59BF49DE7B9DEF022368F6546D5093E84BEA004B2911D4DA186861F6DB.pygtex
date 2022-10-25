@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{o}{[}Errno \PYG{l+m}{2}\PYG{o}{]} No such file or directory: ’i\PYGZus{}do\PYGZus{}not\PYGZus{}exist.txt’
+\end{Verbatim}

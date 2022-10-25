@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing} \PYG{k}{as} \PYG{n+nn}{mp}
+\PYG{k+kn}{import} \PYG{n+nn}{time}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k}{def} \PYG{n+nf}{doingstuffs}\PYG{p}{(}\PYG{n}{x}\PYG{p}{):}
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Process: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{()))}
+    \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{n}{start}\PYG{o}{=}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()}
+    \PYG{n}{pool} \PYG{o}{=} \PYG{n}{mp}\PYG{o}{.}\PYG{n}{Pool}\PYG{p}{(}\PYG{n}{processes}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{)}
+    \PYG{n}{results} \PYG{o}{=} \PYG{n}{pool}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{doingstuffs}\PYG{p}{,}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{))}
+    \PYG{n}{end}\PYG{o}{=}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}elapsed time: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{end}\PYG{o}{\PYGZhy{}}\PYG{n}{start}\PYG{p}{))}
+\end{Verbatim}

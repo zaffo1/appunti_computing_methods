@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{n}{a1} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{])}
+\PYG{n}{a2} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([[}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{],} \PYG{p}{[}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{l+m+mf}{4.}\PYG{p}{]])}
+\PYG{n}{c} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a1}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a2}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a1} \PYG{o}{*} \PYG{n}{a1}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a1} \PYG{o}{*} \PYG{n}{c}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a1} \PYG{o}{*} \PYG{n}{a2}\PYG{p}{)}
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{2.}\PYG{p}{]}
+\PYG{p}{[[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{2.}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{3.} \PYG{l+m+mf}{4.}\PYG{p}{]]}
+\PYG{l+m+mf}{3.141592653589793}
+\PYG{p}{[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{4.}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{3.14159265} \PYG{l+m+mf}{6.28318531}\PYG{p}{]}
+\PYG{p}{[[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{4.}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{3.} \PYG{l+m+mf}{8.}\PYG{p}{]]}
+\end{Verbatim}

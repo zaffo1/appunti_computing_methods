@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{threading} 
+\PYG{k+kn}{import} \PYG{n+nn}{os} 
+
+\PYG{k}{def} \PYG{n+nf}{task1}\PYG{p}{():} 
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Task 1 assigned to thread: \PYGZdq{}}\PYG{o}{+}\PYG{n}{threading}\PYG{o}{.}\PYG{n}{current\PYGZus{}thread}\PYG{p}{()}\PYG{o}{.}\PYG{n}{name}\PYG{p}{)} 
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ID of process running task 1: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{()))} 
+\PYG{k}{def} \PYG{n+nf}{task2}\PYG{p}{():} 
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Task 2 assigned to thread: \PYGZdq{}}\PYG{o}{+}\PYG{n}{threading}\PYG{o}{.}\PYG{n}{current\PYGZus{}thread}\PYG{p}{()}\PYG{o}{.}\PYG{n}{name}\PYG{p}{)} 
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ID of process running task 2: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{()))} 
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{} print ID of current process }
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ID of process running main program: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{getpid}\PYG{p}{()))} 
+        \PYG{c+c1}{\PYGZsh{} print name of main thread }
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Main thread name: \PYGZdq{}}\PYG{o}{+}\PYG{n}{threading}\PYG{o}{.}\PYG{n}{main\PYGZus{}thread}\PYG{p}{()}\PYG{o}{.}\PYG{n}{name}\PYG{p}{)} 
+        
+        \PYG{c+c1}{\PYGZsh{} creating threads }
+        \PYG{n}{t1} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{task1}\PYG{p}{,} \PYG{n}{name}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}t1\PYGZsq{}}\PYG{p}{)} 
+        \PYG{n}{t2} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{task2}\PYG{p}{,} \PYG{n}{name}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}t2\PYGZsq{}}\PYG{p}{)} 
+        \PYG{c+c1}{\PYGZsh{} starting threads }
+        \PYG{n}{t1}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+        \PYG{n}{t2}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+        \PYG{c+c1}{\PYGZsh{} wait until all threads finish }
+        \PYG{n}{t1}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+        \PYG{n}{t2}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+\end{Verbatim}

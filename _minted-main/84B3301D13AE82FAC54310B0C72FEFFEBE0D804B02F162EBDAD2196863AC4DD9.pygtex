@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+
+\PYG{n}{file\PYGZus{}path} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}i\PYGZus{}do\PYGZus{}not\PYGZus{}exists.txt\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Defensive version}
+\PYG{k}{if} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} What if the file is deleted between these two lines? (by another process)}
+    \PYG{c+c1}{\PYGZsh{} What if the file exists but you don\PYGZsq{}t have permission to open it?}
+    \PYG{n}{data\PYGZus{}file} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{)} 
+\PYG{k}{else}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Do something}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Oops \PYGZhy{} file }\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+s1}{ does not exist\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Pythonic way \PYGZhy{} you should prefer this one!}
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{n}{data\PYGZus{}file} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{)}
+\PYG{k}{except} \PYG{n+ne}{OSError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} Cover more problems than FileNotFoundError}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Oops \PYGZhy{} cannot read the file!}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{e}\PYG{p}{))}
+\end{Verbatim}

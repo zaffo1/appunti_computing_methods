@@ -1,0 +1,39 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{threading} 
+
+\PYG{c+c1}{\PYGZsh{} global variable x }
+\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0}
+
+\PYG{k}{def} \PYG{n+nf}{increment}\PYG{p}{():} 
+    \PYG{k}{global} \PYG{n}{x} 
+    \PYG{n}{x} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+\PYG{k}{def} \PYG{n+nf}{thread\PYGZus{}task}\PYG{p}{(}\PYG{n}{lock}\PYG{p}{):} 
+    \PYG{k}{for} \PYG{n}{\PYGZus{}} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{100000}\PYG{p}{):}
+        \PYG{n}{lock}\PYG{o}{.}\PYG{n}{acquire}\PYG{p}{()}
+        \PYG{n}{increment}\PYG{p}{()} 
+        \PYG{n}{lock}\PYG{o}{.}\PYG{n}{release}\PYG{p}{()}
+
+\PYG{k}{def} \PYG{n+nf}{main\PYGZus{}task}\PYG{p}{():} 
+    \PYG{k}{global} \PYG{n}{x} 
+    \PYG{c+c1}{\PYGZsh{} setting global variable x as 0 }
+    \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{c+c1}{\PYGZsh{} creating a lock }
+    \PYG{n}{lock} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Lock}\PYG{p}{()} 
+
+    \PYG{c+c1}{\PYGZsh{} creating threads }
+    \PYG{n}{t1} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{thread\PYGZus{}task}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{lock}\PYG{p}{,))} 
+    \PYG{n}{t2} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{thread\PYGZus{}task}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{lock}\PYG{p}{,))} 
+    
+    \PYG{c+c1}{\PYGZsh{} start threads }
+    \PYG{n}{t1}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+    \PYG{n}{t2}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+    \PYG{c+c1}{\PYGZsh{} wait until threads finish their job }
+    \PYG{n}{t1}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+    \PYG{n}{t2}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{):} 
+    \PYG{n}{main\PYGZus{}task}\PYG{p}{()} 
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Iteration }\PYG{l+s+si}{\PYGZob{}0\PYGZcb{}}\PYG{l+s+s2}{: x = }\PYG{l+s+si}{\PYGZob{}1\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,}\PYG{n}{x}\PYG{p}{))} 
+\end{Verbatim}

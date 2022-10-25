@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} index() is the same as find(), but rise an exception in case of failure}
+\PYG{k}{def} \PYG{n+nf}{cut\PYGZus{}before}\PYG{p}{(}\PYG{n}{input\PYGZus{}string}\PYG{p}{,} \PYG{n}{substring}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Cut a string from the beginning up to the position before that of}
+\PYG{l+s+sd}{    the given substring, then return it \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{pos} \PYG{o}{=} \PYG{n}{input\PYGZus{}string}\PYG{o}{.}\PYG{n}{index}\PYG{p}{(}\PYG{n}{substring}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{input\PYGZus{}string}\PYG{p}{[:(}\PYG{n}{pos}\PYG{p}{)]}
+
+\PYG{c+c1}{\PYGZsh{} If the substring exists in the string everything works fine}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{cut\PYGZus{}before}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}We all live in a Yellow Submarine\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Yellow\PYGZsq{}}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} No silent bug here!}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{cut\PYGZus{}before}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}We all live in a Yellow Submarine\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Red\PYGZsq{}}\PYG{p}{))}
+\end{Verbatim}

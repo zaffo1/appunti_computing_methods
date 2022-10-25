@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Here we define the class}
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Television class. I will follow the convention of starting class names}
+\PYG{l+s+sd}{    with an uppercase. \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{pass} \PYG{c+c1}{\PYGZsh{} oops we have no code yet!}
+
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}To create instances of a class in python we use the parenthesis operator \PYGZsq{}()\PYGZsq{}.}
+\PYG{l+s+sd}{The syntax is similar to calling a function \PYGZhy{}\PYGZhy{} which is actually what is }
+\PYG{l+s+sd}{happening behind the scenes, as we will see later\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{n}{my\PYGZus{}television} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{} my\PYGZus{}television is an instance of the class Television}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{my\PYGZus{}television}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} Check its type}
+
+\PYG{n}{your\PYGZus{}television} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{} And this is another instance}
+
+\PYG{c+c1}{\PYGZsh{} Let\PYGZsq{}s check that they are really two different objects}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{my\PYGZus{}television} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n}{your\PYGZus{}television}\PYG{p}{)}
+\end{Verbatim}

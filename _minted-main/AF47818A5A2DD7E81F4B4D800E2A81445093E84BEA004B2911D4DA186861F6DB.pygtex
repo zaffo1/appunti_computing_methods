@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+sphinx\PYGZus{}basics
+ \PYG{p}{|}\PYGZhy{} docs
+ \PYG{p}{|}\PYGZhy{} maths
+    \PYG{p}{|}\PYGZhy{} add.py
+    \PYG{p}{|}\PYGZhy{} divide.py
+    \PYG{p}{|}\PYGZhy{} multiply.py
+    \PYG{p}{|}\PYGZhy{} subtract.py
+    \PYG{p}{|}\PYGZhy{} \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}.py
+\end{Verbatim}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{find\PYGZus{}maximum}\PYG{p}{(}\PYG{n}{list\PYGZus{}}\PYG{p}{):}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Find the biggest element in a list.}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{n}{maximum} \PYG{o}{=} \PYG{n}{list\PYGZus{}}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{k}{for} \PYG{n}{value} \PYG{o+ow}{in} \PYG{n}{list\PYGZus{}}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]:}
+\PYG{k}{if} \PYG{n}{value} \PYG{o}{\PYGZgt{}} \PYG{n}{maximum}\PYG{p}{:}
+\PYG{n}{maximum} \PYG{o}{=} \PYG{n}{value}
+\PYG{k}{return} \PYG{n}{maximum}
+
+\PYG{n}{l} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{98}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{1672}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+m+mi}{34}\PYG{p}{,} \PYG{l+m+mi}{651}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{find\PYGZus{}maximum}\PYG{p}{(}\PYG{n}{l}\PYG{p}{))}
+
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{l+m+mi}{1672}
+\end{Verbatim}

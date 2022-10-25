@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy.optimize} \PYG{k+kn}{import} \PYG{n}{curve\PYGZus{}fit}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{10.}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{l+m+mf}{2.5} \PYG{o}{+} \PYG{l+m+mf}{3.2} \PYG{o}{*} \PYG{n}{x}
+\PYG{k}{def} \PYG{n+nf}{model}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{q}\PYG{p}{):}
+\PYG{k}{return} \PYG{n}{m} \PYG{o}{*} \PYG{n}{x} \PYG{o}{+} \PYG{n}{q}
+\PYG{n}{popt}\PYG{p}{,} \PYG{n}{pcov} \PYG{o}{=} \PYG{n}{curve\PYGZus{}fit}\PYG{p}{(}\PYG{n}{model}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{errorbar}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{fmt}\PYG{o}{=}\PYG{err}{’}\PYG{n}{o}\PYG{err}{’}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Overlay the model without unpacking the best\PYGZhy{}fit parameters.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{model}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{o}{*}\PYG{n}{popt}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} Compare with}
+\PYG{c+c1}{\PYGZsh{} mhat, qhat = popt}
+\PYG{c+c1}{\PYGZsh{} plt.plot(x, model(x, mhat, qhat))}
+\end{Verbatim}

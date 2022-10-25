@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{n+nv}{y} \PYG{o}{=} \PYGZhy{}2.0 x + \PYG{l+m}{1}.0
+\PYG{n+nv}{Slope} \PYG{o}{=} \PYGZhy{}2.0, \PYG{n+nv}{Intercept} \PYG{o}{=} \PYG{l+m}{1}.0
+\PYGZhy{}3.0
+\end{Verbatim}

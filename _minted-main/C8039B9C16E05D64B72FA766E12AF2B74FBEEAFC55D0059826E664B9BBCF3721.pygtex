@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{c+c1}{\PYGZsh{} Initialization from a list}
+\PYG{n}{a1} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{])}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a1}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Zeros, ones, and fixed values}
+\PYG{n}{a2} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{zeros}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\PYG{n}{a3} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ones}\PYG{p}{((}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{))}
+\PYG{n}{a4} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{full}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mf}{3.}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a2}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a3}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a4}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Grids}
+\PYG{n}{a5} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{10.}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{)}
+\PYG{n}{a6} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{logspace}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a5}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a6}\PYG{p}{)}
+
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{2.} \PYG{l+m+mf}{3.}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{0.}\PYG{p}{]}
+\PYG{p}{[[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{1.}\PYG{p}{]}
+ \PYG{p}{[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{1.}\PYG{p}{]]}
+\PYG{p}{[}\PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{3.}\PYG{p}{]}
+\PYG{p}{[} \PYG{l+m+mf}{0.} \PYG{l+m+mf}{1.} \PYG{l+m+mf}{2.} \PYG{l+m+mf}{3.} \PYG{l+m+mf}{4.} \PYG{l+m+mf}{5.} \PYG{l+m+mf}{6.} \PYG{l+m+mf}{7.} \PYG{l+m+mf}{8.} \PYG{l+m+mf}{9.} \PYG{l+m+mf}{10.}\PYG{p}{]}
+\PYG{p}{[} \PYG{l+m+mf}{1.}        \PYG{l+m+mf}{1.25892541} \PYG{l+m+mf}{1.58489319} \PYG{l+m+mf}{1.99526231} \PYG{l+m+mf}{2.51188643} \PYG{l+m+mf}{3.16227766}
+\PYG{l+m+mf}{3.98107171} \PYG{l+m+mf}{5.01187234} \PYG{l+m+mf}{6.30957344} \PYG{l+m+mf}{7.94328235} \PYG{l+m+mf}{10.}      \PYG{p}{]}
+\end{Verbatim}

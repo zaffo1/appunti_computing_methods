@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing} 
+
+\PYG{k}{def} \PYG{n+nf}{withdraw}\PYG{p}{(}\PYG{n}{balance}\PYG{p}{):}	 
+        \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10000}\PYG{p}{):} 
+                \PYG{n}{balance}\PYG{o}{.}\PYG{n}{value} \PYG{o}{=} \PYG{n}{balance}\PYG{o}{.}\PYG{n}{value}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}
+\PYG{k}{def} \PYG{n+nf}{deposit}\PYG{p}{(}\PYG{n}{balance}\PYG{p}{):}	 
+	\PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10000}\PYG{p}{):} 
+		\PYG{n}{balance}\PYG{o}{.}\PYG{n}{value} \PYG{o}{=} \PYG{n}{balance}\PYG{o}{.}\PYG{n}{value} \PYG{o}{+} \PYG{l+m+mi}{1}
+
+\PYG{k}{def} \PYG{n+nf}{perform\PYGZus{}transactions}\PYG{p}{():} 
+	\PYG{c+c1}{\PYGZsh{} initial balance (in shared memory) }
+	\PYG{n}{balance} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Value}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}i\PYGZsq{}}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{)} 
+	\PYG{c+c1}{\PYGZsh{} creating new processes }
+	\PYG{n}{p1} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{withdraw}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{balance}\PYG{p}{,))} 
+	\PYG{n}{p2} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{deposit}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{balance}\PYG{p}{,))} 
+	\PYG{c+c1}{\PYGZsh{} starting processes }
+	\PYG{n}{p1}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+	\PYG{n}{p2}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()} 
+	\PYG{c+c1}{\PYGZsh{} wait until processes are finished }
+	\PYG{n}{p1}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+	\PYG{n}{p2}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()} 
+	\PYG{c+c1}{\PYGZsh{} print final balance }
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Final balance = }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{balance}\PYG{o}{.}\PYG{n}{value}\PYG{p}{))} 
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{):} 
+    \PYG{c+c1}{\PYGZsh{} perform same transaction process 10 times }
+    \PYG{n}{perform\PYGZus{}transactions}\PYG{p}{()} 
+\end{Verbatim}

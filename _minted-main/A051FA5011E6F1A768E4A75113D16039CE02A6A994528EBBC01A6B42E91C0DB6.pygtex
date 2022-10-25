@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy.interpolate} \PYG{k+kn}{import} \PYG{n}{InterpolatedUnivariateSpline}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{l+m+mf}{3.} \PYG{o}{*} \PYG{n}{x}\PYG{p}{)} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{l+m+mf}{3.} \PYG{o}{*} \PYG{n}{x}\PYG{p}{)}
+
+\PYG{n}{s1} \PYG{o}{=} \PYG{n}{InterpolatedUnivariateSpline}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{k}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{s3} \PYG{o}{=} \PYG{n}{InterpolatedUnivariateSpline}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{k}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{s1}\PYG{p}{(}\PYG{l+m+mf}{0.234}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{s1}\PYG{o}{.}\PYG{n}{integral}\PYG{p}{(}\PYG{l+m+mf}{0.2}\PYG{p}{,} \PYG{l+m+mf}{0.8}\PYG{p}{))}
+\end{Verbatim}

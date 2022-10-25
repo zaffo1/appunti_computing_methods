@@ -1,0 +1,3088 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  25 OCT 2022 11:08
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks14
+\footnotemargin=\dimen135
+\c@pp@next@reset=\count176
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen136
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen137
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count177
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count178
+\leftroot@=\count179
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count180
+\DOTSCASE@=\count181
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count182
+\c@MaxMatrixCols=\count183
+\dotsspace@=\muskip16
+\c@parentequation=\count184
+\dspbrk@lvl=\count185
+\tag@help=\toks18
+\row@=\count186
+\column@=\count187
+\maxfields@=\count188
+\andhelp@=\toks19
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen145
+\lightrulewidth=\dimen146
+\cmidrulewidth=\dimen147
+\belowrulesep=\dimen148
+\belowbottomsep=\dimen149
+\aboverulesep=\dimen150
+\abovetopsep=\dimen151
+\cmidrulesep=\dimen152
+\cmidrulekern=\dimen153
+\defaultaddspace=\dimen154
+\@cmidla=\count189
+\@cmidlb=\count190
+\@aboverulesep=\dimen155
+\@belowrulesep=\dimen156
+\@thisruleclass=\count191
+\@lastruleclass=\count192
+\@thisrulewidth=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen160
+\captionmargin@=\dimen161
+\captionwidth=\dimen162
+\caption@tempdima=\dimen163
+\caption@indent=\dimen164
+\caption@parindent=\dimen165
+\caption@hangindent=\dimen166
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count193
+\c@continuedfloat=\count194
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count195
+\c@subtable=\count196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count197
+\l__pdf_internal_box=\box47
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count198
+\g__xparse_grabber_int=\count199
+\l__xparse_m_args_int=\count266
+\l__xparse_v_nesting_int=\count267
+)
+Package: siunitx 2020/01/15 v2.7u A comprehensive (SI) units package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box48
+\extrarowheight=\dimen168
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box50
+\l__siunitx_tmp_dim=\dimen169
+\l__siunitx_tmp_int=\count268
+\l__siunitx_number_mantissa_length_int=\count269
+\l__siunitx_number_uncert_length_int=\count270
+\l__siunitx_round_int=\count271
+\l__siunitx_process_decimal_int=\count272
+\l__siunitx_process_uncertainty_int=\count273
+\l__siunitx_process_fixed_int=\count274
+\l__siunitx_process_integer_min_int=\count275
+\l__siunitx_process_precision_int=\count276
+\l__siunitx_group_min_int=\count277
+\l__siunitx_angle_marker_box=\box51
+\l__siunitx_angle_unit_box=\box52
+\l__siunitx_angle_marker_dim=\dimen170
+\l__siunitx_angle_unit_dim=\dimen171
+\l__siunitx_unit_int=\count278
+\l__siunitx_unit_denominator_int=\count279
+\l__siunitx_unit_numerator_int=\count280
+\l__siunitx_unit_prefix_int=\count281
+\l__siunitx_unit_prefix_base_int=\count282
+\l__siunitx_unit_prefix_gram_int=\count283
+\l__siunitx_number_product_int=\count284
+\c__siunitx_one_fill_skip=\skip54
+\l__siunitx_table_unit_align_skip=\skip55
+\l__siunitx_table_exponent_dim=\dimen172
+\l__siunitx_table_integer_dim=\dimen173
+\l__siunitx_table_mantissa_dim=\dimen174
+\l__siunitx_table_marker_dim=\dimen175
+\l__siunitx_table_result_dim=\dimen176
+\l__siunitx_table_uncert_dim=\dimen177
+\l__siunitx_table_fill_pre_dim=\dimen178
+\l__siunitx_table_fill_post_dim=\dimen179
+\l__siunitx_table_fill_mid_dim=\dimen180
+\l__siunitx_table_pre_box=\box53
+\l__siunitx_table_post_box=\box54
+\l__siunitx_table_mantissa_box=\box55
+\l__siunitx_table_result_box=\box56
+\l__siunitx_table_number_align_skip=\skip56
+\l__siunitx_table_text_align_skip=\skip57
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen181
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count287
+\pdfmajorversion=\count288
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count289
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen182
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count290
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count291
+\c@Item=\count292
+\c@Hfootnote=\count293
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count294
+\c@bookmark@seq@number=\count295
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen185
+\WF@size=\dimen186
+\c@WF@wrappedlines=\count296
+\WF@box=\box57
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count297
+\c@@ppsavesec=\count298
+\c@@ppsaveapp=\count299
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/easyreview/easyReview.sty
+Package: easyReview 2014/06/27 Package for Easy Review on LaTeX documents
+Package: easyReview 2013/12/09 Package for Easy Review on LaTeX documents
+
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks25
+\SOUL@lasttoken=\toks26
+\SOUL@cmds=\toks27
+\SOUL@buffer=\toks28
+\SOUL@token=\toks29
+\SOUL@spaceskip=\skip59
+\SOUL@ttwidth=\dimen187
+\SOUL@uldp=\dimen188
+\SOUL@ulht=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count300
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen190
+\pgfutil@tempdimb=\dimen191
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen192
+\pgf@y=\dimen193
+\pgf@xa=\dimen194
+\pgf@ya=\dimen195
+\pgf@xb=\dimen196
+\pgf@yb=\dimen197
+\pgf@xc=\dimen198
+\pgf@yc=\dimen199
+\pgf@xd=\dimen256
+\pgf@yd=\dimen257
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count305
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count306
+\pgfsyssoftpath@bigbuffer@items=\count307
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen258
+\pgfmath@count=\count308
+\pgfmath@box=\box59
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count309
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen259
+\pgf@picmaxx=\dimen260
+\pgf@picminy=\dimen261
+\pgf@picmaxy=\dimen262
+\pgf@pathminx=\dimen263
+\pgf@pathmaxx=\dimen264
+\pgf@pathminy=\dimen265
+\pgf@pathmaxy=\dimen266
+\pgf@xx=\dimen267
+\pgf@xy=\dimen268
+\pgf@yx=\dimen269
+\pgf@yy=\dimen270
+\pgf@zx=\dimen271
+\pgf@zy=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen273
+\pgf@path@lasty=\dimen274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen275
+\pgf@shorten@start@additional=\dimen276
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count310
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen277
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen278
+\pgf@pt@y=\dimen279
+\pgf@pt@temp=\dimen280
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen281
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen282
+\pgf@sys@shading@range@num=\count311
+\pgf@shadingcount=\count312
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box63
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box64
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen283
+\pgf@nodesepend=\dimen284
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen285
+\pgffor@skip=\dimen286
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count313
+\pgfplotmarksize=\dimen287
+)
+\tikz@lastx=\dimen288
+\tikz@lasty=\dimen289
+\tikz@lastxsaved=\dimen290
+\tikz@lastysaved=\dimen291
+\tikz@lastmovetox=\dimen292
+\tikz@lastmovetoy=\dimen293
+\tikzleveldistance=\dimen294
+\tikzsiblingdistance=\dimen295
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count314
+\tikznumberofchildren=\count315
+\tikznumberofcurrentchild=\count316
+\tikz@fig@count=\count317
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count318
+\pgfmatrixcurrentcolumn=\count319
+\pgf@matrix@numberofcolumns=\count320
+)
+\tikz@expandcount=\count321
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count322
+\calc@Bcount=\count323
+\calc@Adimen=\dimen296
+\calc@Bdimen=\dimen297
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count324
+\calc@Cskip=\skip62
+)
+\c@@todonotes@numberoftodonotes=\count325
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks44
+\verbatim@line=\toks45
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count326
+)
+\tcb@titlebox=\box69
+\tcb@upperbox=\box70
+\tcb@lowerbox=\box71
+\tcb@phantombox=\box72
+\c@tcbbreakpart=\count327
+\c@tcblayer=\count328
+\tcolorbox@number=\count329
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.22'
+\c@tcbrastercolumn=\count330
+\c@tcbrasterrow=\count331
+\c@tcbraster=\count332
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
+\tcb@waterbox=\box77
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+\tcb@testbox=\box78
+\tcb@totalupperbox=\box79
+\tcb@totallowerbox=\box80
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
+\tcbfitdim=\dimen298
+\tcb@lowerfitdim=\dimen299
+\tcb@upperfitdim=\dimen300
+\tcb@cur@hbadness=\count333
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count334
+\lst@gtempboxa=\box81
+\lst@token=\toks46
+\lst@length=\count335
+\lst@currlwidth=\dimen301
+\lst@column=\count336
+\lst@pos=\count337
+\lst@lostspace=\dimen302
+\lst@width=\dimen303
+\lst@newlines=\count338
+\lst@lineno=\count339
+\lst@maxwidth=\dimen304
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count340
+\lst@skipnumbers=\count341
+\lst@framebox=\box82
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+))
+\c@tcblisting=\count342
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.22'
+)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count343
+\Gm@cntv=\count344
+\c@Gm@tempcnt=\count345
+\Gm@bindingoffset=\dimen305
+\Gm@wd@mp=\dimen306
+\Gm@odd@mp=\dimen307
+\Gm@even@mp=\dimen308
+\Gm@layoutwidth=\dimen309
+\Gm@layoutheight=\dimen310
+\Gm@layouthoffset=\dimen311
+\Gm@layoutvoffset=\dimen312
+\Gm@dimlist=\toks47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count346
+\FV@InFile=\read4
+\FV@TabBox=\box83
+\c@FancyVerbLine=\count347
+\FV@StepNumber=\count348
+\FV@OutFile=\write6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count349
+\output=\toks48
+\linenoprevgraf=\count350
+\linenumbersep=\dimen313
+\linenumberwidth=\dimen314
+\c@linenumber=\count351
+\c@pagewiselinenumber=\count352
+\c@LN@truepage=\count353
+\c@internallinenumber=\count354
+\c@internallinenumbers=\count355
+\quotelinenumbersep=\dimen315
+\bframerule=\dimen316
+\bframesep=\dimen317
+\bframebox=\box84
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count356
+\c@FV@TrueTabCounter=\count357
+\FV@TabBox@Group=\box85
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count358
+\c@FV@HighlightLinesStop=\count359
+\FV@LoopCount=\count360
+\FV@NCharsBox=\box86
+\FV@BreakIndent=\dimen318
+\FV@BreakIndentNChars=\count361
+\FV@BreakSymbolSepLeft=\dimen319
+\FV@BreakSymbolSepLeftNChars=\count362
+\FV@BreakSymbolSepRight=\dimen320
+\FV@BreakSymbolSepRightNChars=\count363
+\FV@BreakSymbolIndentLeft=\dimen321
+\FV@BreakSymbolIndentLeftNChars=\count364
+\FV@BreakSymbolIndentRight=\dimen322
+\FV@BreakSymbolIndentRightNChars=\count365
+\c@FancyVerbLineBreakLast=\count366
+\FV@LineBox=\box87
+\FV@LineIndentBox=\box88
+\FV@LineWidth=\dimen323
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "main.w18")...executed.
+
+ (./main.w18)
+runsystem(rm -- "main.w18")...executed.
+
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count367
+\decimalpart=\count368
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip64
+\fb@frw=\dimen324
+\fb@frh=\dimen325
+\FrameRule=\dimen326
+\FrameSep=\dimen327
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count369
+\float@exts=\toks49
+\float@box=\box89
+\@float@everytoks=\toks50
+\@floatcapt=\box90
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box91
+\minted@code=\write7
+\c@minted@FancyVerbLineTemp=\count370
+\c@minted@pygmentizecounter=\count371
+\@float@every@listing=\toks51
+\c@listing=\count372
+)
+runsystem(mkdir -p _minted-main)...executed.
+
+runsystem(which pygmentize && touch main.aex)...executed.
+
+runsystem(rm main.aex)...executed.
+
+ (./main.aux
+(./Scientific_python.aux) (./Parallel_computing.aux) (./machine_learning.aux)
+(./medphys.aux) (./git.aux) (./sphinx.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count373
+\scratchdimen=\dimen328
+\scratchbox=\box92
+\nofMPsegments=\count374
+\nofMParguments=\count375
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen329
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
+\everyMPtoPDFconversion=\toks53
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
+-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+\AtBeginShipoutBox=\box93
+Package hyperref Info: Link coloring OFF on input line 59.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count379
+)
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
+
+(./main.out) (./main.out)
+\@outlinefile=\write8
+\openout8 = `main.out'.
+
+ ABD: EveryShipout initializing macros
+\c@lstlisting=\count380
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=717.00946pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=115.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] (./main.toc [3] [4] [5] [6])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [7]
+\openout2 = `Scientific_python.aux'.
+
+
+(./Scientific_python.tex [8
+
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
+
+ []
+
+[9]
+<lez1/localVCS.png, id=1338, 803.0pt x 685.56125pt>
+File: lez1/localVCS.png Graphic file (type png)
+<use lez1/localVCS.png>
+Package pdftex.def Info: lez1/localVCS.png  used on input line 53.
+(pdftex.def)             Requested size: 213.39568pt x 182.18544pt.
+<lez1/centralVCS.png, id=1340, 803.0pt x 558.085pt>
+File: lez1/centralVCS.png Graphic file (type png)
+<use lez1/centralVCS.png>
+Package pdftex.def Info: lez1/centralVCS.png  used on input line 64.
+(pdftex.def)             Requested size: 213.39568pt x 148.30908pt.
+ [10 <./lez1/localVCS.png> <./lez1/centralVCS.png>]
+<lez1/distributedVCS.png, id=1353, 670.505pt x 803.0pt>
+File: lez1/distributedVCS.png Graphic file (type png)
+<use lez1/distributedVCS.png>
+Package pdftex.def Info: lez1/distributedVCS.png  used on input line 85.
+(pdftex.def)             Requested size: 213.39568pt x 255.55618pt.
+<lez1/centralvsdistr.png, id=1354, 867.24pt x 355.3275pt>
+File: lez1/centralvsdistr.png Graphic file (type png)
+<use lez1/centralvsdistr.png>
+Package pdftex.def Info: lez1/centralvsdistr.png  used on input line 110.
+(pdftex.def)             Requested size: 426.79135pt x 174.86562pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[11 <./lez1/distributedVCS.png> <./lez1/centralvsdistr.png>]
+<lez1/hash.png, id=1364, 1204.5pt x 923.45pt>
+File: lez1/hash.png Graphic file (type png)
+<use lez1/hash.png>
+Package pdftex.def Info: lez1/hash.png  used on input line 128.
+(pdftex.def)             Requested size: 213.39568pt x 163.59296pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+\openout6 = `main.pyg'.
+
+(./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/colorful.pygstyle)
+
+(./_minted-main/A21468108A24BD97B43EBEC30CB5C3314FBEEAFC55D0059826E664B9BBCF372
+1.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+<lez1/branching.png, id=1365, 574.145pt x 371.3875pt>
+File: lez1/branching.png Graphic file (type png)
+<use lez1/branching.png>
+Package pdftex.def Info: lez1/branching.png  used on input line 183.
+(pdftex.def)             Requested size: 213.39568pt x 138.03458pt.
+ [12 <./lez1/hash.png>] [13 <./lez1/branching.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/60C22410721909DE4FB1F8C6BA673C944FBEEAFC55D0059826E664B9BBCF372
+1.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+3.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+[14]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/5E49DD21C5995B7C5E00B684875423154FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Overfull \hbox (10.48965pt too wide) in paragraph at lines 286--289
+\T1/cmr/m/n/10 É poco pithon-ico us-are l'operatore \T1/cmtt/m/n/10 + \T1/cmr/m
+/n/10 per unire due stringhe, facendo ad es-em-pio \T1/cmtt/m/n/10 'Luca' + 'Ba
+ldini'\T1/cmr/m/n/10 . 
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D53C93329E5821420DD55E94D8792BC24FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/6E604BAE6FB31BF70C83989245E29D5F4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [15])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D4136324192585D6279FFFE61E32777A4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0DCA9DB09A28253A12D5DE57CB9CC9B84FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [16])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/4D020D491C247C9BC7F6E71A178B025A4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/BF117EFD21E7FD75AFE6697BA72E46BA4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/3900A6CEDF3254D469F7A4A8D20220824FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [17])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/CB7A6D4768B9852F2D8A8D52BE1CB02E4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/F14BA7FB9ACA4A17DF47B47B1576DBF74FBEEAFC55D0059826E664B9BBCF372
+1.pygtex) [18]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/F5F68731087FAC742D84B5C7BC7E6AE94FBEEAFC55D0059826E664B9BBCF372
+1.pygtex) [19]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7252DE703EBAE623D2A8473EB9B6DB8A4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/FE2820DAE85EAE999B941F2C631096B64FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 702.
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0551902E5727480EDF6F3FBA89AC8B0B4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C4379A88E2F89569A5192B96A85244824FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [20])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A95B2E3ADE8036AB3FF2C47E919D19994FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [21]) [22]
+Underfull \hbox (badness 10000) in paragraph at lines 882--885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--894
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7FB80C53F3545895E34DDF4806C60AD14FBEEAFC55D0059826E664B9BBCF372
+1.pygtex) [23]
+<lez3/asymptotic_behavior.png, id=1454, 642.4pt x 481.8pt>
+File: lez3/asymptotic_behavior.png Graphic file (type png)
+<use lez3/asymptotic_behavior.png>
+Package pdftex.def Info: lez3/asymptotic_behavior.png  used on input line 1002.
+
+(pdftex.def)             Requested size: 341.43437pt x 256.0806pt.
+ [24]
+Overfull \hbox (4.41257pt too wide) in paragraph at lines 1035--1036
+[]\T1/cmr/m/n/10 Una let-tura leg-gera sulla "Com-plex-ity of Songs": []$\T1/cm
+tt/m/n/10 http : / / www . cs . bme . hu / ~friedl / alg / knuth _
+ []
+
+<lez3/list.png, id=1461, 1065.9825pt x 451.6875pt>
+File: lez3/list.png Graphic file (type png)
+<use lez3/list.png>
+Package pdftex.def Info: lez3/list.png  used on input line 1041.
+(pdftex.def)             Requested size: 298.75264pt x 126.58879pt.
+[25 <./lez3/asymptotic_behavior.png>]
+<lez3/hash.png, id=1470, 451.6875pt x 311.1625pt>
+File: lez3/hash.png Graphic file (type png)
+<use lez3/hash.png>
+Package pdftex.def Info: lez3/hash.png  used on input line 1074.
+(pdftex.def)             Requested size: 298.75264pt x 205.81894pt.
+<lez3/dict.png, id=1471, 514.92375pt x 226.8475pt>
+File: lez3/dict.png Graphic file (type png)
+<use lez3/dict.png>
+Package pdftex.def Info: lez3/dict.png  used on input line 1096.
+(pdftex.def)             Requested size: 256.07741pt x 112.81425pt.
+ [26 <./lez3/list.png> <./lez3/hash.png>]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/10B6940523401A576F69D0FD646AA7674FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/E7896C755637B146B72F8306906D0D974FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [27 <./lez3/dict.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
+
+ []
+
+<lez3/sort.png, id=1486, 1700.3525pt x 951.555pt>
+File: lez3/sort.png Graphic file (type png)
+<use lez3/sort.png>
+Package pdftex.def Info: lez3/sort.png  used on input line 1193.
+(pdftex.def)             Requested size: 426.79135pt x 238.83192pt.
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C14FEE84708274059605BA12A67D8A734FBEEAFC55D0059826E664B9BBCF372
+1.pygtex) [28 <./lez3/sort.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1261--1262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1265
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C8039B9C16E05D64B72FA766E12AF2B74FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [29])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/543CE8069A8626580C47F77DAAF4899F4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1333
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/DCB8446190E9C9EE6FA9B1FEBB708AD24FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1358
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7BCE60C48D0F63E9EDF3DFA4834B859B4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1367
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/BABAAA7EBA3D6FEB27EB0804F1D22A314FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1377
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/1C9E61C2BAC8C843673BC3134984C5894FBEEAFC55D0059826E664B9BBCF372
+1.pygtex) [31]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 1388.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1420--1421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1427
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1526--1527
+
+ []
+
+
+(./_minted-main/8F0210677E285B232FF6425ADB120ACD04C4B9F9D82D0BCD4B66066179EE780
+4.pygtex [33])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C4AC44CCECEF262D4E4BF2E5927C54CA5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/3705375A621CDBB29C1570F0B0B7BE29BF5F977716942A3A38446CE5DB9075B
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/DB47769945D08678AAAE3C33FCD705CE5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1553--1555
+
+ []
+
+[34]
+(./_minted-main/786ACB9D3177645F6EF6410637BE5D49FACF6BF9FA22D31F65A008893699060
+9.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C240A461EE434C13DFB77EFD2AB724845093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/486EDB77C7B91BD5357B0AF067C4FD5A1F99A562B4B65FCEA9EC6D3299DD956
+E.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/DC8532C4B9E665930BEEB67386F5726E5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/616413E17C192015D7E8DF62F8EF710181B7DE0378F7BB19016EBB8B3C329C5
+6.pygtex [35])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/CF6E86109F59FCC87708BEE26E37942B5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Overfull \hbox (44.92307pt too wide) in paragraph at lines 1590--1593
+[]\T1/cmr/m/n/9 Adding at-tributes like that would be crazy...what would hap-pe
+n if I for-got to call the 'add_a_class_attribute()'
+ []
+
+
+(./_minted-main/CB47E6C4DBBDFC3ED24C69B0257FBE7A8D56802E6030345BCCCE367161091B2
+9.pygtex [36])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A1C5D8A4AEBA0603295F9EE7EBA448685093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1629
+
+ []
+
+<lez4/namespaces.png, id=1542, 816.04875pt x 724.7075pt>
+File: lez4/namespaces.png Graphic file (type png)
+<use lez4/namespaces.png>
+Package pdftex.def Info: lez4/namespaces.png  used on input line 1630.
+(pdftex.def)             Requested size: 106.69783pt x 94.74606pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1637
+
+ []
+
+
+(./_minted-main/716D69ED40F519E0481CE36842D8247BE531419F4EBF7BB34F8957FD1E4C19D
+D.pygtex [37 <./lez4/namespaces.png>])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/40BFD698FDFCB548DA39E70337C976C75093E84BEA004B2911D4DA186861F6D
+B.pygtex) [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1739--1740
+
+ []
+
+
+(./_minted-main/7015E4B768C63A3B69CF18B9E97233D03F986EF61F2040BD4EB89779A997094
+A.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/58112C2D35A7BB769FC5E885319CFFB05093E84BEA004B2911D4DA186861F6D
+B.pygtex) [39]
+(./_minted-main/4E50B0E391C14C86BB9BC32427751875DF104C8E4C7B12756CB93FE3D94E03A
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/97015B05DCB96A318BEB7A2FBDA46CDD5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [40]
+(./_minted-main/51545F5548129CFD003FDF361EF23E59EBBED3E4090CE29C9CBFB6DBBFCD74C
+C.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/43AB6F162DAB87241CE23A8D46FBA0DE5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/A067472A5C86C05B0CE303B22C2A598F058A6B0C96441EC9E99CBC87D22DF75
+8.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7BCD78FC6DD6FCFAA8C6790E0D99A1025093E84BEA004B2911D4DA186861F6D
+B.pygtex) [41]
+(./_minted-main/880D457D134F41820DC50590E7043A8F97156D7E7146AAF70A252BCC31BBDAE
+6.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/43AB6F162DAB87241CE23A8D46FBA0DE5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/BE0FF3C5E4403B67519ED0451257A48F268A2233D4BD2BFBBE94838ED622770
+9.pygtex [42])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7BCD78FC6DD6FCFAA8C6790E0D99A1025093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/5568927F0102AF95230367397B2218B41B78D2CECC7A5704B18508B48035E9C
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/58EA2D617A40B74B0B4F4012C5507E695093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/893EB4518C8F3B20BF820AA916A2EFD7162139A7247FC82AF5199C864D1FC74
+E.pygtex [43])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/382A163D23C4167BE7723AB4F1550EA95093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 1902--1904
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1911--1912
+
+ []
+
+[44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 1986--1988
+
+ []
+
+
+(./_minted-main/667A6082402FC4E2C1F50A25646200BB0AE73B62DF4C76B4C23AD1158B2440C
+A.pygtex
+Underfull \hbox (badness 10000) in paragraph at lines 2012--1
+
+ []
+
+)
+\openout6 = `main.pyg'.
+
+ [46]
+(./_minted-main/EFA01D77C49D564B1B638DDEDFEF8BA15093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/C24FAA63EC43C03A64B1D729EF5143BBE5BBC8C2E4A68B9864085BC7EB5650E
+2.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/6233745898036C6B72D486BB0CC53FE35093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/55150A361E8256140E78764503ABDBB6A7FAFABDADF9878A6AC3078C8AB4C19
+E.pygtex [47])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/4872C82671CDB6FC922FA6A45D2026215093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2051
+
+ []
+
+
+(./_minted-main/5C920BEDD22F270C449E104270BFDB0C167FB2E2F054EFCA94A22442E8CB68D
+C.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0560A39F5F0C8DE5646904A805C28AF45093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2074--2075
+
+ []
+
+[48] [49]
+(./_minted-main/3A2FA4AA7E6563FCE327C25CB6381592D9B1E5F0D4C2F8A42FCD1A41E2B9F9E
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/92B40ECC836A5A171D500585B4B6D46A5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/E02124AE7D7F41DF08AF8EEF01A3196D755C469A31A79ED4EA3D695BE8D79DD
+6.pygtex [50])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/6874E9DC858D660C08C610BE72FAD0B15093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/FFE68640CD62A1926A62D0CCD8E17E1A7DED99DF4769CD177370090B9630343
+D.pygtex)
+\openout6 = `main.pyg'.
+
+ [51]
+(./_minted-main/68D67ACDA35CC44C750A108A0F09429E5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/0525EA605DC027CD4EF28C5BCE237311BFB653FAD0DA15EC88997B89B4FA31F
+4.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C754FAACCAEEC20980DD5A465D2904C45093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/422B253F4E9E7FE6D2AA98068B8B5BC6B6BC819699C12D74EE3B9A7ED72267E
+B.pygtex [52])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D235814F1FFDA249AA76EB84478F3DE75093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/34CBC7E9773D294786174FA6006EBE4C9C619F211582AC204B54E6DC4668D96
+D.pygtex)
+(./_minted-main/3AC8AFC385C60D4D91C4D9E0FB82481D0EB5E9AE569AA9290E4FA2C91E70554
+2.pygtex [53])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/DD5D278BF1E2E17485CE4E4BEBC57AC85093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/7926C11948DC302AADCA2333EA8CF48B46BD4E7274E5E672D1C4DC202F31376
+7.pygtex [54])
+(./_minted-main/0BE01E91053C60589C22D1BFB7D17355C877F38B147603C172A52C4A68B64E6
+F.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7D77978207FCED989C0626DA701943665093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/02A75A20950A3BBBCC044AB6752683F5D0FA2249ED48677FACE91F743EBABFD
+3.pygtex [55])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/3272C3CAF9E51BD6DBA7BEFEFC84F4205093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/66BCE45C8D6790EC4D2108194A5AA04D7A9559CCDA184E18FBE08CC55C4CE6B
+5.pygtex)
+(./_minted-main/A697D2CD90A5665C96C1854067AF1783F325E2278A2FC6AA487694440B463DA
+8.pygtex [56])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/88B4E2AC1ACDF92E1581C2EB2DC3756E5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/F483DB9FCFC1DB5C00DD3F368ECCD0DC5DC670CB49E2049C2004E4E894B2474
+5.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/5B01F9B9F53D5EAE10D179728F9068FB5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 2332.
+
+
+(./_minted-main/CC09F449D3CECAE9003F13A4BAF460ABB791F69FA12834D511B9A05D11FC5BD
+4.pygtex [57])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/5439E25568167E0B1BD491E8E2B551D95093E84BEA004B2911D4DA186861F6D
+B.pygtex) [58]
+(./_minted-main/C8D451227DF8049356F670A24D0B596C2286E8E829454BC3E3C2FD87B1B1439
+D.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A4658478A7AAF31B0DDE785ECD8A7AC95093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/FC62AB04B59CDBFBB498576F2697FB40EC02BBFCF46F6A406C9A86FBDBDDE1B
+A.pygtex [59])
+(./_minted-main/9BF14B546A39477076E108CB7397DF784D738CAD5560EE408FDE960FF968E89
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/EB301DAD150592832D9C3AF9CC37AB8F5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/324230BC3268BA64D536C737A239A468B432D239162FDDDF1B47896B0BFCA23
+1.pygtex [60])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7727970336BD190B8882E506A4D68A825093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/960798CE0BCDFA386B133FAA791F26F9687210852C120100E87318EB841A728
+4.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 2440--2442
+
+ []
+
+
+(./_minted-main/CDFFE5DA4FD25B2346D757C8888A77345CD920D0A702CC750F56AE38F00E035
+5.pygtex [61])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7762219ED66CF9758AB4B9EBE8EE0AD55093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+<lez5/fit.png, id=1660, 642.4pt x 481.8pt>
+File: lez5/fit.png Graphic file (type png)
+<use lez5/fit.png>
+Package pdftex.def Info: lez5/fit.png  used on input line 2454.
+(pdftex.def)             Requested size: 256.07741pt x 192.06227pt.
+ [62 <./lez5/fit.png>]
+(./_minted-main/08A59380B8B74FA568D826448AE444F688D3E98792ED6DCBABADED30234BAD3
+C.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/082BB52C13A439C19AA75ECE65514C8C5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [63]
+(./_minted-main/08A59380B8B74FA568D826448AE444F688D3E98792ED6DCBABADED30234BAD3
+C.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/082BB52C13A439C19AA75ECE65514C8C5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [64]
+(./_minted-main/A5646120C81253FBF2D47E4DB1FBED15D36A224E7A9C39B9FC198102818039B
+0.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/2B093FC529E8E8F2E91243378D6A2E385093E84BEA004B2911D4DA186861F6D
+B.pygtex) [65]
+(./_minted-main/7DAD85AC81BD172A9AB87CEDECAABDDC2B7AEF4D7608E188D6F2281D1C3492E
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A087E2E3F6E9B60DD0E9723F2706C0255093E84BEA004B2911D4DA186861F6D
+B.pygtex) [66]
+(./_minted-main/092170ABE5400E45B43A44E5B4AE07FF969A7556865E787CFF58B551E45DCE3
+F.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A025C78410D23A14298CE1515FEA8D5B5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [67]
+Underfull \hbox (badness 10000) in paragraph at lines 2756--2757
+
+ []
+
+<lez6/doc_scipy.png, id=1695, 1545.775pt x 937.5025pt>
+File: lez6/doc_scipy.png Graphic file (type png)
+<use lez6/doc_scipy.png>
+Package pdftex.def Info: lez6/doc_scipy.png  used on input line 2763.
+(pdftex.def)             Requested size: 426.79135pt x 258.83679pt.
+<lez6/codice_doc.png, id=1696, 1076.02pt x 980.66376pt>
+File: lez6/codice_doc.png Graphic file (type png)
+<use lez6/codice_doc.png>
+Package pdftex.def Info: lez6/codice_doc.png  used on input line 2771.
+(pdftex.def)             Requested size: 426.79135pt x 388.96654pt.
+[68 <./lez6/doc_scipy.png>]
+<lez6/sphinx.png, id=1704, 1105.12875pt x 840.13875pt>
+File: lez6/sphinx.png Graphic file (type png)
+<use lez6/sphinx.png>
+Package pdftex.def Info: lez6/sphinx.png  used on input line 2810.
+(pdftex.def)             Requested size: 384.1096pt x 292.00185pt.
+ [69 <./lez6/codice_doc.png>] [70 <./lez6/sphinx.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2835--2836
+
+ []
+
+
+(./_minted-main/B180E0DB94FD8253F1C6520E5EF0400F55D0DC97F2A3BE9BB460BEBDBC81DE4
+7.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0F3D98DA3E0B1C3D01939C12F992A8065093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/4F404EC300B51177BBD6644CF2E9FD029F050902CB89E67362F78BE90D9F4FB
+D.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D14C7FBD406151BC6C568980317DB2145093E84BEA004B2911D4DA186861F6D
+B.pygtex) [71]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/8248963219BAFCB4C8F8C67DAF78DA374FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C330451C226E7A14F9B0756B18B229594FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+(./_minted-main/A2F033E1660BD857B4A8482392458C2689913E71A70F817996261C6F834F293
+0.pygtex [72])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/887BD8D84CFC004B04E0C9CDA720EF835093E84BEA004B2911D4DA186861F6D
+B.pygtex) [73]
+<lez6/hitmiss.jpg, id=1733, 416.52386pt x 323.27226pt>
+File: lez6/hitmiss.jpg Graphic file (type jpg)
+<use lez6/hitmiss.jpg>
+Package pdftex.def Info: lez6/hitmiss.jpg  used on input line 2958.
+(pdftex.def)             Requested size: 213.39568pt x 165.62137pt.
+<lez6/spline.pdf, id=1734, 462.52798pt x 346.89601pt>
+File: lez6/spline.pdf Graphic file (type pdf)
+<use lez6/spline.pdf>
+Package pdftex.def Info: lez6/spline.pdf  used on input line 2995.
+(pdftex.def)             Requested size: 298.75264pt x 224.07703pt.
+ [74 <./lez6/hitmiss.jpg> <./lez6/spline.pdf>]
+(./_minted-main/A051FA5011E6F1A768E4A75113D16039CE02A6A994528EBBC01A6B42E91C0DB
+6.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/84984F58A63D99F1934A13D39A6CF89B5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [75]
+(./_minted-main/1DB6D190537F22575FB155B9A9C45445F1F1A866E072F652344D07DF9D4C6D6
+4.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/2E4477B97C0083BE107DB381BD5423CA5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [76]
+(./_minted-main/020CF0241F7E454FCDEEF1E62C8707ADD5BBD454FEA7B65B88E7321E8325BEF
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/CAFFB3987BAFC37C18520CFAEC6DDC445093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 3121--3123
+
+ []
+
+
+(./_minted-main/6A874260B7E9168720AE3DB293BCE7D25DC0AC46C1D91550F2F7C8F93D54A05
+6.pygtex [77])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A78B5E0AD01D721775EF0D7B22F53DD65093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/7752265BF5F06CB56D6A9D0C3EB53E60F853102D7C196ED864D5A82F44EB50B
+3.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/2EAF8E1FBF30901BFBF28DA373D26F3B5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [78]
+<lez7/error_tree.png, id=1798, 1435.3625pt x 1071.00125pt>
+File: lez7/error_tree.png Graphic file (type png)
+<use lez7/error_tree.png>
+Package pdftex.def Info: lez7/error_tree.png  used on input line 3213.
+(pdftex.def)             Requested size: 426.79135pt x 318.44298pt.
+ [79]
+(./_minted-main/67D6FA2B826BD047EFAE1C4500296E39745051B1F55B3F6EE2C027D4BE30A54
+F.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C0B1CA59BF49DE7B9DEF022368F6546D5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [80 <./lez7/error_tree.png>]
+(./_minted-main/84B3301D13AE82FAC54310B0C72FEFFEBE0D804B02F162EBDAD2196863AC4DD
+9.pygtex
+
+LaTeX Font Warning: Font shape `TS1/cmtt/bx/n' undefined
+(Font)              using `TS1/cmtt/m/n' instead
+(Font)              for symbol `textquotesingle' on input line 13.
+
+)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/29058BFC1B21E1B268C18BFD44FB52DC5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/D644E881B84444B0C20A8C30CE2D94280F0D55EB28FC50A4DF68BB2C89D506A
+D.pygtex [81])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/6C3E60CBA11BFAC390FCF2CE45D8F8805093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 3290--3291
+
+ []
+
+
+(./_minted-main/51B0C541B3C311167213514E1D1661EC37A123F6922CE36F3CFD65BC0119DA3
+5.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/57BDB6BEE26430647F1C795851D4774E5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/D9BBC816F990AC9237D8F7BE63EA8E0A7A7D3764D33A7319F4276ED92686E73
+4.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/3BD4DEC3176698A73332EE61058430E85093E84BEA004B2911D4DA186861F6D
+B.pygtex) [82]
+(./_minted-main/D81B9A7906254AACBB2B2218026E429629AE0A12EDD8755A9E29BBE4EB5A95E
+7.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/85A8AE2CA8D36D1BBE4BEF812272AE195093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/4A8E0A699BC755A3A2F02FA3B99C318492AF232906DAFCB0A78178303CC12D9
+A.pygtex)
+\openout6 = `main.pyg'.
+
+ [83]
+(./_minted-main/9C717DB7ACC57C167450756F06A8D9BA5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/BC9A7FA97F4DEEDE9804C2C36CCC8A2087536F119FAAF61938FD0BCCA807BE9
+0.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D59086729B56E34CF31DA452E31804C05093E84BEA004B2911D4DA186861F6D
+B.pygtex) [84]
+(./_minted-main/1905CB359A287E260F1FC95B419907880FB6B3AF240FF91B8C32014295F2F84
+0.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C254BEB45CBCF9628DCE40D56796A93D5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/46974C119CCDFA7005E657881B058A6C56BF4C389DAE5A00624912E74518BF1
+C.pygtex [85])
+(./_minted-main/FE2F9D2555ADC96BFBE8995D3282DC6FEFA2A9A0C1B144EE03BD8798CC14793
+6.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/244B753526C8A4DDB3C399F63324F8725093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/E9DC7DBEAF7545B182023203BB5A20955B8FFEAB056ACD90A0F995F8B4563D7
+F.pygtex [86])
+(./_minted-main/94B72B0AA3A423EE5928FADFE31D308C16EAF26F2AFFB9D8D90BB191FF71804
+7.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/1E1D282609DA7812139C7803D52C40BE5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 3470--3472
+
+ []
+
+[87]
+Underfull \hbox (badness 10000) in paragraph at lines 3492--3493
+
+ []
+
+
+(./_minted-main/87822359DD26C8B2AB28F41783F989A11696ACC3EFB9A2992CE7C749A680339
+A.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/4B61A429D307EB796EA1E30F91EF745D5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [88]
+(./_minted-main/2DE4183FC04CC024CC67803B8AD39C65C73AA8730661865F7243BCBAC6AFC8D
+F.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/CC06BFCACCA063B4B948012DC335B10F5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/066741D83659DAD5B0ABE1202F90BB16E2272E439F80F27EEDE30B5C1907D9C
+C.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/33D5777046DC5B942F265B3B46346B1B5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [89]
+Underfull \hbox (badness 10000) in paragraph at lines 3555--3556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3557--3558
+
+ []
+
+
+(./_minted-main/79FE34514A3C1D55BC4677D436602CCD8818BE47C3609A5356EEA77DBD20D46
+B.pygtex)
+\openout6 = `main.pyg'.
+
+ [90]
+(./_minted-main/D6C3650258C23225111C8FA06645B3475093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/EFC05028A171E3AE866CD2D58B415A015D41659C11B8CCB5DFD71DCF165C66B
+3.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/2EB15851FA1798E9E156B92D8E18B31D5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/032B9202503D0EA157F613CF0667FE98C7072A0875737B953DA132B17A17F93
+1.pygtex [91])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/23DA97F23963B39A715F3342F267598D5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/7880E25E5B8D9A6B9E99D244D1355420AA2C3713E95012269527B77AFF89162
+A.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D59086729B56E34CF31DA452E31804C05093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/DDF920985AFD28C70E396DDE78586F2E4032BAF94296291FFF263949F422D4C
+C.pygtex [92])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/D59086729B56E34CF31DA452E31804C05093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+(./_minted-main/3943CE8A8ADF087CC70CA2F3D7EC454F594839630AE37D710F719C20F11DE2C
+F.pygtex [93])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/5FA4C356E80F7E899523A6F9DCDA7CA55093E84BEA004B2911D4DA186861F6D
+B.pygtex)) [94]
+\openout2 = `Parallel_computing.aux'.
+
+ (./Parallel_computing.tex
+Chapter 2.
+
+Overfull \hbox (0.56235pt too wide) in paragraph at lines 8--8
+[][]\T1/cmr/bx/n/14.4 Computer ar-chi-tec-ture from a per-for-mance point of vi
+ew: from
+ []
+
+<figure_parallel/VN_arch.png, id=1872, 604.2575pt x 421.575pt>
+File: figure_parallel/VN_arch.png Graphic file (type png)
+<use figure_parallel/VN_arch.png>
+Package pdftex.def Info: figure_parallel/VN_arch.png  used on input line 27.
+(pdftex.def)             Requested size: 256.07741pt x 178.6556pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+<figure_parallel/bottleneck.png, id=1873, 1274.7625pt x 832.10875pt>
+File: figure_parallel/bottleneck.png Graphic file (type png)
+<use figure_parallel/bottleneck.png>
+Package pdftex.def Info: figure_parallel/bottleneck.png  used on input line 41.
+
+(pdftex.def)             Requested size: 256.07741pt x 167.15521pt.
+[95
+
+
+
+ <./figure_parallel/VN_arch.png>]
+<figure_parallel/server.png, id=1886, 907.39pt x 973.6375pt>
+File: figure_parallel/server.png Graphic file (type png)
+<use figure_parallel/server.png>
+Package pdftex.def Info: figure_parallel/server.png  used on input line 73.
+(pdftex.def)             Requested size: 213.39568pt x 228.96826pt.
+ [96 <./figure_parallel/bottleneck.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+<figure_parallel/cache.png, id=1896, 926.46124pt x 691.58376pt>
+File: figure_parallel/cache.png Graphic file (type png)
+<use figure_parallel/cache.png>
+Package pdftex.def Info: figure_parallel/cache.png  used on input line 93.
+(pdftex.def)             Requested size: 256.07741pt x 191.15169pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+<figure_parallel/7perf.png, id=1897, 967.615pt x 434.62375pt>
+File: figure_parallel/7perf.png Graphic file (type png)
+<use figure_parallel/7perf.png>
+Package pdftex.def Info: figure_parallel/7perf.png  used on input line 104.
+(pdftex.def)             Requested size: 256.07741pt x 115.0222pt.
+[97 <./figure_parallel/server.png> <./figure_parallel/cache.png>]
+<figure_parallel/vector_sum.png, id=1907, 1545.775pt x 584.1825pt>
+File: figure_parallel/vector_sum.png Graphic file (type png)
+<use figure_parallel/vector_sum.png>
+Package pdftex.def Info: figure_parallel/vector_sum.png  used on input line 126
+.
+(pdftex.def)             Requested size: 298.75264pt x 112.9034pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+<figure_parallel/superscalar.png, id=1908, 784.9325pt x 781.92125pt>
+File: figure_parallel/superscalar.png Graphic file (type png)
+<use figure_parallel/superscalar.png>
+Package pdftex.def Info: figure_parallel/superscalar.png  used on input line 13
+5.
+(pdftex.def)             Requested size: 170.71393pt x 170.05457pt.
+[98 <./figure_parallel/7perf.png> <./figure_parallel/vector_sum.png> <./figure_
+parallel/superscalar.png>]
+<figure_parallel/pipeline.png, id=1919, 982.67125pt x 209.78375pt>
+File: figure_parallel/pipeline.png Graphic file (type png)
+<use figure_parallel/pipeline.png>
+Package pdftex.def Info: figure_parallel/pipeline.png  used on input line 175.
+(pdftex.def)             Requested size: 298.75264pt x 63.77747pt.
+<figure_parallel/pipeline1.png, id=1920, 879.285pt x 157.58875pt>
+File: figure_parallel/pipeline1.png Graphic file (type png)
+<use figure_parallel/pipeline1.png>
+Package pdftex.def Info: figure_parallel/pipeline1.png  used on input line 184.
+
+(pdftex.def)             Requested size: 213.39568pt x 38.24527pt.
+<figure_parallel/pipeline2.png, id=1921, 975.645pt x 283.0575pt>
+File: figure_parallel/pipeline2.png Graphic file (type png)
+<use figure_parallel/pipeline2.png>
+Package pdftex.def Info: figure_parallel/pipeline2.png  used on input line 185.
+
+(pdftex.def)             Requested size: 213.39568pt x 61.91003pt.
+<figure_parallel/fet.png, id=1922, 698.61pt x 309.155pt>
+File: figure_parallel/fet.png Graphic file (type png)
+<use figure_parallel/fet.png>
+Package pdftex.def Info: figure_parallel/fet.png  used on input line 215.
+(pdftex.def)             Requested size: 149.37958pt x 66.10379pt.
+ [99 <./figure_parallel/pipeline.png> <./figure_parallel/pipeline1.png> <./figu
+re_parallel/pipeline2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
+
+ []
+
+<figure_parallel/dennard.png, id=1932, 633.36626pt x 787.94376pt>
+File: figure_parallel/dennard.png Graphic file (type png)
+<use figure_parallel/dennard.png>
+Package pdftex.def Info: figure_parallel/dennard.png  used on input line 230.
+(pdftex.def)             Requested size: 170.71393pt x 212.37494pt.
+<figure_parallel/moore.png, id=1933, 1443.3925pt x 943.525pt>
+File: figure_parallel/moore.png Graphic file (type png)
+<use figure_parallel/moore.png>
+Package pdftex.def Info: figure_parallel/moore.png  used on input line 249.
+(pdftex.def)             Requested size: 192.0548pt x 125.54195pt.
+<figure_parallel/moore2.png, id=1934, 971.63pt x 523.9575pt>
+File: figure_parallel/moore2.png Graphic file (type png)
+<use figure_parallel/moore2.png>
+Package pdftex.def Info: figure_parallel/moore2.png  used on input line 253.
+(pdftex.def)             Requested size: 192.0548pt x 103.5664pt.
+
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+ [100 <./figure_parallel/fet.png> <./figure_parallel/dennard.png> <./figure_par
+allel/moore.png> <./figure_parallel/moore2.png>]
+<figure_parallel/sisd2.png, id=1946, 1188.44pt x 220.825pt>
+File: figure_parallel/sisd2.png Graphic file (type png)
+<use figure_parallel/sisd2.png>
+Package pdftex.def Info: figure_parallel/sisd2.png  used on input line 281.
+(pdftex.def)             Requested size: 268.87555pt x 49.95978pt.
+<figure_parallel/SISD.png, id=1947, 501.875pt x 501.875pt>
+File: figure_parallel/SISD.png Graphic file (type png)
+<use figure_parallel/SISD.png>
+Package pdftex.def Info: figure_parallel/SISD.png  used on input line 285.
+(pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
+<figure_parallel/simd.png, id=1948, 1153.30875pt x 372.39125pt>
+File: figure_parallel/simd.png Graphic file (type png)
+<use figure_parallel/simd.png>
+Package pdftex.def Info: figure_parallel/simd.png  used on input line 303.
+(pdftex.def)             Requested size: 268.87555pt x 86.81871pt.
+<figure_parallel/simd2.png, id=1949, 501.875pt x 501.875pt>
+File: figure_parallel/simd2.png Graphic file (type png)
+<use figure_parallel/simd2.png>
+Package pdftex.def Info: figure_parallel/simd2.png  used on input line 307.
+(pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
+<figure_parallel/mimd.png, id=1950, 1212.53pt x 386.44376pt>
+File: figure_parallel/mimd.png Graphic file (type png)
+<use figure_parallel/mimd.png>
+Package pdftex.def Info: figure_parallel/mimd.png  used on input line 323.
+(pdftex.def)             Requested size: 268.87555pt x 85.6901pt.
+<figure_parallel/mimd2.png, id=1951, 501.875pt x 501.875pt>
+File: figure_parallel/mimd2.png Graphic file (type png)
+<use figure_parallel/mimd2.png>
+Package pdftex.def Info: figure_parallel/mimd2.png  used on input line 327.
+(pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
+ [101 <./figure_parallel/sisd2.png> <./figure_parallel/SISD.png> <./figure_para
+llel/simd.png> <./figure_parallel/simd2.png>]
+<figure_parallel/misd.png, id=1962, 1224.575pt x 441.65pt>
+File: figure_parallel/misd.png Graphic file (type png)
+<use figure_parallel/misd.png>
+Package pdftex.def Info: figure_parallel/misd.png  used on input line 340.
+(pdftex.def)             Requested size: 268.87555pt x 96.96786pt.
+<figure_parallel/misd2.png, id=1963, 501.875pt x 501.875pt>
+File: figure_parallel/misd2.png Graphic file (type png)
+<use figure_parallel/misd2.png>
+Package pdftex.def Info: figure_parallel/misd2.png  used on input line 344.
+(pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
+<figure_parallel/decomposition1.png, id=1964, 389.455pt x 216.81pt>
+File: figure_parallel/decomposition1.png Graphic file (type png)
+<use figure_parallel/decomposition1.png>
+Package pdftex.def Info: figure_parallel/decomposition1.png  used on input line
+ 352.
+(pdftex.def)             Requested size: 149.37958pt x 83.15947pt.
+<figure_parallel/decomposition2.png, id=1965, 589.20125pt x 354.32375pt>
+File: figure_parallel/decomposition2.png Graphic file (type png)
+<use figure_parallel/decomposition2.png>
+Package pdftex.def Info: figure_parallel/decomposition2.png  used on input line
+ 354.
+(pdftex.def)             Requested size: 149.37958pt x 89.82962pt.
+ [102 <./figure_parallel/mimd.png> <./figure_parallel/mimd2.png> <./figure_para
+llel/misd.png> <./figure_parallel/misd2.png> <./figure_parallel/decomposition1.
+png> <./figure_parallel/decomposition2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 395--398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+<figure_parallel/ant_sequential.png, id=1979, 1057.9525pt x 239.89626pt>
+File: figure_parallel/ant_sequential.png Graphic file (type png)
+<use figure_parallel/ant_sequential.png>
+Package pdftex.def Info: figure_parallel/ant_sequential.png  used on input line
+ 409.
+(pdftex.def)             Requested size: 298.75264pt x 67.74153pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--431
+
+ []
+
+<figure_parallel/ant_concurrent.png, id=1980, 1012.78375pt x 310.15875pt>
+File: figure_parallel/ant_concurrent.png Graphic file (type png)
+<use figure_parallel/ant_concurrent.png>
+Package pdftex.def Info: figure_parallel/ant_concurrent.png  used on input line
+ 435.
+(pdftex.def)             Requested size: 298.75264pt x 91.48657pt.
+[103 <./figure_parallel/ant_sequential.png> <./figure_parallel/ant_concurrent.p
+ng>]
+<figure_parallel/multiprogramming.png, id=1990, 653.44125pt x 736.7525pt>
+File: figure_parallel/multiprogramming.png Graphic file (type png)
+<use figure_parallel/multiprogramming.png>
+Package pdftex.def Info: figure_parallel/multiprogramming.png  used on input li
+ne 442.
+(pdftex.def)             Requested size: 162.18279pt x 182.84988pt.
+<figure_parallel/multiprocessing.png, id=1991, 661.47125pt x 765.86125pt>
+File: figure_parallel/multiprocessing.png Graphic file (type png)
+<use figure_parallel/multiprocessing.png>
+Package pdftex.def Info: figure_parallel/multiprocessing.png  used on input lin
+e 446.
+(pdftex.def)             Requested size: 162.18279pt x 187.77203pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--487
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--500
+
+ []
+
+<figure_parallel/multitasking.png, id=1992, 704.6325pt x 767.86874pt>
+File: figure_parallel/multitasking.png Graphic file (type png)
+<use figure_parallel/multitasking.png>
+Package pdftex.def Info: figure_parallel/multitasking.png  used on input line 5
+06.
+(pdftex.def)             Requested size: 149.37631pt x 162.78036pt.
+<figure_parallel/distributed_system.png, id=1993, 905.3825pt x 592.2125pt>
+File: figure_parallel/distributed_system.png Graphic file (type png)
+<use figure_parallel/distributed_system.png>
+Package pdftex.def Info: figure_parallel/distributed_system.png  used on input 
+line 511.
+(pdftex.def)             Requested size: 192.0548pt x 125.61531pt.
+[104 <./figure_parallel/multiprogramming.png> <./figure_parallel/multiprocessin
+g.png> <./figure_parallel/multitasking.png> <./figure_parallel/distributed_syst
+em.png>]
+<figure_parallel/ant_parallelism.png, id=2004, 1379.1525pt x 419.5675pt>
+File: figure_parallel/ant_parallelism.png Graphic file (type png)
+<use figure_parallel/ant_parallelism.png>
+Package pdftex.def Info: figure_parallel/ant_parallelism.png  used on input lin
+e 531.
+(pdftex.def)             Requested size: 298.75264pt x 90.88387pt.
+<figure_parallel/parallelization.png, id=2005, 507.8975pt x 327.2225pt>
+File: figure_parallel/parallelization.png Graphic file (type png)
+<use figure_parallel/parallelization.png>
+Package pdftex.def Info: figure_parallel/parallelization.png  used on input lin
+e 539.
+(pdftex.def)             Requested size: 162.18279pt x 104.48865pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--554
+
+ []
+
+<figure_parallel/speedup.png, id=2006, 955.57pt x 841.1425pt>
+File: figure_parallel/speedup.png Graphic file (type png)
+<use figure_parallel/speedup.png>
+Package pdftex.def Info: figure_parallel/speedup.png  used on input line 563.
+(pdftex.def)             Requested size: 162.18279pt x 142.7613pt.
+
+Underfull \hbox (badness 6758) in paragraph at lines 576--577
+[]\T1/cmr/m/n/10 For a per-fect par-al-lel al-go-rithm $\OML/cmm/m/it/10 S[] \O
+T1/cmr/m/n/10 = \OML/cmm/m/it/10 n$\T1/cmr/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 576--577
+\T1/cmr/m/n/10 That's prat-i-cally im-pos-si-ble, even if for very spe-
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 576--577
+\T1/cmr/m/n/10 cific cases could be also $\OML/cmm/m/it/10 S[] > n$ \T1/cmr/m/n
+/10 (su-per-lin-ear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+
+ []
+
+[105
+
+ <./figure_parallel/ant_parallelism.png> <./figure_parallel/parallelization.png
+> <./figure_parallel/speedup.png>]
+<figure_parallel/amdahl.png, id=2018, 853.1875pt x 579.16376pt>
+File: figure_parallel/amdahl.png Graphic file (type png)
+<use figure_parallel/amdahl.png>
+Package pdftex.def Info: figure_parallel/amdahl.png  used on input line 597.
+(pdftex.def)             Requested size: 204.85802pt x 139.064pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+
+ []
+
+<figure_parallel/gustafson1.png, id=2019, 803.0pt x 563.10374pt>
+File: figure_parallel/gustafson1.png Graphic file (type png)
+<use figure_parallel/gustafson1.png>
+Package pdftex.def Info: figure_parallel/gustafson1.png  used on input line 660
+.
+(pdftex.def)             Requested size: 192.0548pt x 134.67508pt.
+<figure_parallel/gustafson2.png, id=2020, 403.5075pt x 271.0125pt>
+File: figure_parallel/gustafson2.png Graphic file (type png)
+<use figure_parallel/gustafson2.png>
+Package pdftex.def Info: figure_parallel/gustafson2.png  used on input line 664
+.
+(pdftex.def)             Requested size: 192.0548pt x 128.99278pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
+
+ []
+
+[106 <./figure_parallel/amdahl.png>] [107 <./figure_parallel/gustafson1.png> <.
+/figure_parallel/gustafson2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
+
+ []
+
+<figure_parallel/Thread_and_processes.png, id=2035, 658.46pt x 484.81125pt>
+File: figure_parallel/Thread_and_processes.png Graphic file (type png)
+<use figure_parallel/Thread_and_processes.png>
+Package pdftex.def Info: figure_parallel/Thread_and_processes.png  used on inpu
+t line 694.
+(pdftex.def)             Requested size: 256.07741pt x 188.55038pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--702
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--710
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
+
+ []
+
+[108 <./figure_parallel/Thread_and_processes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 718--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--730
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--754
+
+ []
+
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 768--770
+
+ []
+
+<figure_parallel/deadlock.png, id=2047, 866.23625pt x 589.20125pt>
+File: figure_parallel/deadlock.png Graphic file (type png)
+<use figure_parallel/deadlock.png>
+Package pdftex.def Info: figure_parallel/deadlock.png  used on input line 781.
+(pdftex.def)             Requested size: 213.39568pt x 145.14223pt.
+[110 <./figure_parallel/deadlock.png>]
+(./_minted-main/671BECEACC2B085404D7EB6A345B69816575AE3514A59238E8B91506DDFC2C2
+1.pygtex)
+(./_minted-main/0D83550560431FD5894E9E358ECFF412D3DC90D8AB3F488476668CFA379FD7D
+7.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
+
+ []
+
+[111]
+<figure_parallel/father_sons.png, id=2058, 700.6175pt x 384.43625pt>
+File: figure_parallel/father_sons.png Graphic file (type png)
+<use figure_parallel/father_sons.png>
+Package pdftex.def Info: figure_parallel/father_sons.png  used on input line 81
+2.
+(pdftex.def)             Requested size: 213.39568pt x 117.09157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+
+ []
+
+
+(./_minted-main/60B3052206E46D59742EACE39658C74D8CCCD7FB0BE1F73881B8FB54E62FA9C
+A.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/B63FF30AFAF6DEAC1D4819E79C4D7D894FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [112 <./figure_parallel/father_sons.png>])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/BB4E79709FFBB4DD10B995AED6A162DF4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
+
+ []
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 854.
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0A5A6A1A21A69568AAC2D445BD35DCD04FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/FF36E1D2B31C3510F216EB621FB891DB4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+(./_minted-main/CAB0C38E422CDE07AEA34E404C8AB063BFF5EAD29B6CFDB688440FBCE7686AC
+A.pygtex [113])
+<figure_parallel/communication_global.png, id=2069, 783.92876pt x 456.70625pt>
+File: figure_parallel/communication_global.png Graphic file (type png)
+<use figure_parallel/communication_global.png>
+Package pdftex.def Info: figure_parallel/communication_global.png  used on inpu
+t line 890.
+(pdftex.def)             Requested size: 192.0548pt x 111.88354pt.
+<figure_parallel/shared_memory.png, id=2070, 937.5025pt x 636.3775pt>
+File: figure_parallel/shared_memory.png Graphic file (type png)
+<use figure_parallel/shared_memory.png>
+Package pdftex.def Info: figure_parallel/shared_memory.png  used on input line 
+902.
+(pdftex.def)             Requested size: 192.0548pt x 130.36113pt.
+
+(./_minted-main/2E609352B92E95CC5A779B7C7B2937C5611A90ADB547C3AAF8CF800AC0FB15D
+D.pygtex [114 <./figure_parallel/communication_global.png> <./figure_parallel/s
+hared_memory.png>])
+(./_minted-main/CA7271047ADB42468119A0376BF9BF1D39253D4BB60EED3073D9054A0312EB1
+9.pygtex)
+<figure_parallel/server_process.png, id=2079, 547.04375pt x 218.8175pt>
+File: figure_parallel/server_process.png Graphic file (type png)
+<use figure_parallel/server_process.png>
+Package pdftex.def Info: figure_parallel/server_process.png  used on input line
+ 941.
+(pdftex.def)             Requested size: 234.73654pt x 93.89603pt.
+ [115]
+<figure_parallel/queue.png, id=2085, 634.37pt x 373.395pt>
+File: figure_parallel/queue.png Graphic file (type png)
+<use figure_parallel/queue.png>
+Package pdftex.def Info: figure_parallel/queue.png  used on input line 951.
+(pdftex.def)             Requested size: 192.0548pt x 113.04492pt.
+
+(./_minted-main/D3FBAF31EB68639837B2E8B01E0F35C1A224438B391EDE3A10AC88EAFAA2370
+5.pygtex)
+<figure_parallel/pipe.png, id=2086, 700.6175pt x 377.41pt>
+File: figure_parallel/pipe.png Graphic file (type png)
+<use figure_parallel/pipe.png>
+Package pdftex.def Info: figure_parallel/pipe.png  used on input line 966.
+(pdftex.def)             Requested size: 213.39568pt x 114.9515pt.
+ [116 <./figure_parallel/server_process.png> <./figure_parallel/queue.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--972
+
+ []
+
+
+(./_minted-main/50CB188C8B78BD639F28AD27908D893B202EE32EF6D2069E31F37C401655945
+4.pygtex) [117 <./figure_parallel/pipe.png>]
+(./_minted-main/E16B38FB3BDAF8319B5A81A7D7E231B72B17EAAB2054A38213ED811D9B3D959
+6.pygtex)
+<figure_parallel/thread.png, id=2101, 909.3975pt x 1193.45876pt>
+File: figure_parallel/thread.png Graphic file (type png)
+<use figure_parallel/thread.png>
+Package pdftex.def Info: figure_parallel/thread.png  used on input line 1009.
+(pdftex.def)             Requested size: 192.0548pt x 252.03595pt.
+ [118]
+(./_minted-main/4143367EE3BFDE6A66824C0D1C52568D706E31CA916CEC822F03586E23C026F
+7.pygtex)
+(./_minted-main/311FFF857B0ED6AD83F09513C2B1D814AB92ED9F09B5B597BCA7EE69EAEB9A0
+0.pygtex [119 <./figure_parallel/thread.png>])
+(./_minted-main/57F18374423290D83AA9A26EF4ABEDAC76866D3AA107C9095775C177BF8A3D1
+D.pygtex [120])
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+
+ []
+
+<figure_parallel/comparison_thread_processes.png, id=2116, 1151.30125pt x 244.9
+15pt>
+File: figure_parallel/comparison_thread_processes.png Graphic file (type png)
+<use figure_parallel/comparison_thread_processes.png>
+Package pdftex.def Info: figure_parallel/comparison_thread_processes.png  used 
+on input line 1040.
+(pdftex.def)             Requested size: 426.79135pt x 90.78903pt.
+
+(./_minted-main/77E25CD4958A67E877B89BC66B482CB0EC4C01B35213CE5D73DACD4929D8FA2
+B.pygtex [121 <./figure_parallel/comparison_thread_processes.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123])
+<figure_parallel/comparison_time.png, id=2132, 768.8725pt x 576.1525pt>
+File: figure_parallel/comparison_time.png Graphic file (type png)
+<use figure_parallel/comparison_time.png>
+Package pdftex.def Info: figure_parallel/comparison_time.png  used on input lin
+e 1049.
+(pdftex.def)             Requested size: 213.39568pt x 159.90617pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1056
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/3B9704A46EEFC35CC61DBB9AFE2922D04FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [124 <./figure_parallel/comparison_time.png>])
+\openout6 = `main.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-main/FDD0849709A292612B215CD642DE17294FBEEAFC55D0059826E664B9BBCF3721.py
+gtex main.pyg)...executed.
+
+
+(./_minted-main/FDD0849709A292612B215CD642DE17294FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+<figure_parallel/process_vs_thread.png, id=2139, 818.05624pt x 340.27126pt>
+File: figure_parallel/process_vs_thread.png Graphic file (type png)
+<use figure_parallel/process_vs_thread.png>
+Package pdftex.def Info: figure_parallel/process_vs_thread.png  used on input l
+ine 1135.
+(pdftex.def)             Requested size: 298.75264pt x 124.26807pt.
+) [125 <./figure_parallel/process_vs_thread.png>]
+\openout2 = `machine_learning.aux'.
+
+
+(./machine_learning.tex [126
+
+
+
+]
+Chapter 3.
+) [127]
+\openout2 = `medphys.aux'.
+
+ (./medphys.tex [128
+
+
+
+]
+Chapter 4.
+) [129]
+\openout2 = `git.aux'.
+
+ (./git.tex [130
+
+
+
+]
+Appendix A.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/13C38A4ADC7EC556E98F41A8EEB7AED55093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/98A562E06A029BBC95930860EBB951665093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/8C77655AD89D118B76703895BDEC5C5C5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/31FEA9C686268C28539CB53991D854675093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+ [131]
+(./_minted-main/D27C2CCC166FD5550124E367C81990AD5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/635939D6483B2A79BC85CB60AE1BEC295093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/E8FBD4D61860315BE9910703B3EF0FE65093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/00C9888BEF571F29DA459075540DD29D5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/A2801F894CFE4C9DB88C07E19CC8D9455093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/C7242A6B0386EAF1CC6AF8507D606AAF5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/F2FF70BC8D2851894868BAD9C8F93EC15093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/B18B1A1AAEDD70EDE2CCA5DE9F2A96CD5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/85CBBAD027AB6744449638F5757E52E35093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+<images/screenshot_github_tutorial_repo.png, id=2173, 1531.7225pt x 176.66pt>
+File: images/screenshot_github_tutorial_repo.png Graphic file (type png)
+<use images/screenshot_github_tutorial_repo.png>
+Package pdftex.def Info: images/screenshot_github_tutorial_repo.png  used on in
+put line 252.
+(pdftex.def)             Requested size: 426.79135pt x 49.22185pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[132]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0F6985B2D91A73DC778CF454189034B35093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/553CFB7CBF630ADCB56BFB401CA622E15093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/692CFCAD82672FE950073E01147C28B25093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/049FAAEFA5026E90C7B0CCC8758B55235093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/7E0A27DAAC38FB6F207B9B472F29A6835093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+<images/git_workflow.jpeg, id=2178, 883.3pt x 627.34375pt>
+File: images/git_workflow.jpeg Graphic file (type jpg)
+<use images/git_workflow.jpeg>
+Package pdftex.def Info: images/git_workflow.jpeg  used on input line 340.
+(pdftex.def)             Requested size: 256.07741pt x 181.86758pt.
+) [133 <./images/screenshot_github_tutorial_repo.png> <./images/git_workflow.jp
+eg>]
+\openout2 = `sphinx.aux'.
+
+ (./sphinx.tex [134
+
+
+
+]
+Appendix B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+<images/sphinx_workflow.png, id=2193, 390.45876pt x 865.2325pt>
+File: images/sphinx_workflow.png Graphic file (type png)
+<use images/sphinx_workflow.png>
+Package pdftex.def Info: images/sphinx_workflow.png  used on input line 17.
+(pdftex.def)             Requested size: 226.19888pt x 501.2411pt.
+[135]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 21.
+
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/AF47818A5A2DD7E81F4B4D800E2A81445093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+ [136 <./images/sphinx_workflow.png>]
+(./_minted-main/B6C535ABF88D54EE0929968E435BDCC65093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/0456EE9ED4AA6C24FA425F3FF9B491795093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/148A57582D95D7F2E8CE26C11455D0855093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Overfull \hbox (29.30002pt too wide) in paragraph at lines 65--66
+[]\T1/cmr/m/n/10 Go to your conf.py file and un-com-ment line num-bers 13,14 an
+d 15. Change the \T1/cmtt/m/n/10 os.path.abspath('.')
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+(./_minted-main/4D38FAF2F7505861DF8B4CCDAE039A981F0DFB4B686975796DBB222E041DAA6
+D.pygtex [137])
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/8B999A2171B2CF55F08C98D83B82CA5D5093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/F7214893EC70E357C4190226B10437E65093E84BEA004B2911D4DA186861F6D
+B.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/3C4C57EE0612662FC7DF741A4D8FCA2A5093E84BEA004B2911D4DA186861F6D
+B.pygtex) [138]
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/91F33584D8618A86B18D91E7C3B093645093E84BEA004B2911D4DA186861F6D
+B.pygtex)) [139]
+runsystem(rm _minted-main/C703D249A2C83D1E23C28385B1A240384FBEEAFC55D0059826E66
+4B9BBCF3721.pygtex)...executed.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+ (./main.aux (./Scientific_python.aux)
+(./Parallel_computing.aux) (./machine_learning.aux) (./medphys.aux) (./git.aux)
+(./sphinx.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7A60DD8D7D721A638354A14839E351C2;19355.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+runsystem(rm main.pyg)...executed.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+ ) 
+Here is how much of TeX's memory you used:
+ 33794 strings out of 483107
+ 760940 string characters out of 5964630
+ 1038400 words of memory out of 5000000
+ 46950 multiletter control sequences out of 15000+600000
+ 566752 words of font info for 112 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 76i,8n,103p,985b,1074s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0800.5
+25pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt080
+0.525pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi
+1200.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/t
+crm0800.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecti0800.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecti0900.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/tcrm0900.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ectt1200.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/tcrm1000.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/lj
+four/jknappen/ec/tctt0800.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ectt0800.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecrm0500.600pk> </home/lorenzo/.texlive2019/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/lorenzo/.texlive2019/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lorenzo/.texlive2019/texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/lorenzo/.texlive2019/tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/lorenzo/.texlive2019/
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/lorenzo/.texlive20
+19/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1000.600pk> </home/lorenzo/.texliv
+e2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/lorenzo/.tex
+live2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/lorenzo/.
+texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/lorenz
+o/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/lor
+enzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/
+lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </ho
+me/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> <
+/home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.60
+0pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728
+.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0
+700.600pk> </home/lorenzo/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+cc1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on main.pdf (139 pages, 5035679 bytes).
+PDF statistics:
+ 3401 PDF objects out of 3580 (max. 8388607)
+ 2083 compressed objects within 21 object streams
+ 478 named destinations out of 1000 (max. 500000)
+ 2467 words of extra memory for PDF output out of 10000 (max. 10000000)
+

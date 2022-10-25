@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{k}{def} \PYG{n+nf}{square}\PYG{p}{(}\PYG{n}{x}\PYG{p}{):}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Return the square of x.}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{k}{return} \PYG{n}{x} \PYG{o}{*} \PYG{n}{x}
+\PYG{k}{def} \PYG{n+nf}{cartesian\PYGZus{}to\PYGZus{}polar}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+m+mf}{1.}\PYG{p}{):}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Convert cartesian to polar coordinates.}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{n}{r} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{x}\PYG{o}{**}\PYG{l+m+mf}{2.} \PYG{o}{+} \PYG{n}{y}\PYG{o}{**}\PYG{l+m+mf}{2.}\PYG{p}{)}
+\PYG{n}{phi} \PYG{o}{=} \PYG{n}{math}\PYG{o}{.}\PYG{n}{atan2}\PYG{p}{(}\PYG{n}{y}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)}
+\PYG{k}{return} \PYG{n}{r}\PYG{p}{,} \PYG{n}{phi}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{square}\PYG{p}{(}\PYG{l+m+mf}{2.}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{cartesian\PYGZus{}to\PYGZus{}polar}\PYG{p}{(}\PYG{l+m+mf}{0.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{cartesian\PYGZus{}to\PYGZus{}polar}\PYG{p}{())}
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{l+m+mf}{4.0}
+\PYG{p}{(}\PYG{l+m+mf}{1.0}\PYG{p}{,} \PYG{l+m+mf}{1.5707963267948966}\PYG{p}{)}
+\PYG{p}{(}\PYG{l+m+mf}{1.4142135623730951}\PYG{p}{,} \PYG{l+m+mf}{0.7853981633974483}\PYG{p}{)}
+\end{Verbatim}

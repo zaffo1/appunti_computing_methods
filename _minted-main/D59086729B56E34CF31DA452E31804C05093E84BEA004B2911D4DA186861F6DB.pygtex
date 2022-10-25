@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{l+m}{0}.1 \PYG{l+m}{15}.2
+\PYG{l+m}{0}.2 \PYG{l+m}{12}.4
+Line \PYG{l+m}{3} error: could not convert string to float: ’pippo’
+\PYG{l+m}{0}.4 \PYG{l+m}{13}.2
+\end{Verbatim}

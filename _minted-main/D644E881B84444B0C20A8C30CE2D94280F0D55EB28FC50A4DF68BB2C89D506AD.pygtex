@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{raising\PYGZus{}function}\PYG{p}{():}
+    \PYG{c+c1}{\PYGZsh{} You can pass an useful message to the exceptions you raise}
+    \PYG{k}{raise} \PYG{n+ne}{RuntimeError}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}this is a useful debug message\PYGZsq{}}\PYG{p}{)} 
+
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{n}{raising\PYGZus{}function}\PYG{p}{()}
+\PYG{k}{except} \PYG{n+ne}{RuntimeError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} The message can be retrieved by printing the exception}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{e}\PYG{p}{)}
+\end{Verbatim}

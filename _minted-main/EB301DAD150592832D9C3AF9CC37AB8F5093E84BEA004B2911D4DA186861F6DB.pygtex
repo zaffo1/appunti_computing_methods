@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{o}{(}\PYG{l+m}{1}.0, \PYG{l+m}{2}.0, \PYG{l+m}{3}.0\PYG{o}{)}
+\PYG{l+m}{3}.741657386773941
+\PYG{l+m}{6}.0
+False False True
+\PYG{o}{(}\PYG{l+m}{2}.0, \PYG{l+m}{4}.0, \PYG{l+m}{8}.0\PYG{o}{)}
+\PYG{o}{(}\PYG{l+m}{2}.0, \PYG{l+m}{4}.0, \PYG{l+m}{6}.0\PYG{o}{)}
+\end{Verbatim}

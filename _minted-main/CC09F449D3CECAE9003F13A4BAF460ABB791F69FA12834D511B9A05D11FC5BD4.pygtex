@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Duck}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} This is a duck \PYGZhy{} it quacks\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    
+    \PYG{k}{def} \PYG{n+nf}{quack}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Quack!\PYGZsq{}}\PYG{p}{)}
+        
+\PYG{k}{class} \PYG{n+nc}{Goose}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} This is a goose \PYGZhy{} it quacks too\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    
+    \PYG{k}{def} \PYG{n+nf}{quack}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Quack!\PYGZsq{}}\PYG{p}{)}
+
+\PYG{k}{class} \PYG{n+nc}{Penguin}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} This is a penguin \PYGZhy{}\PYGZhy{} He doesn\PYGZsq{}t quack!\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{pass} 
+
+\PYG{n}{birds} \PYG{o}{=} \PYG{p}{[}\PYG{n}{Duck}\PYG{p}{(),} \PYG{n}{Goose}\PYG{p}{(),} \PYG{n}{Penguin}\PYG{p}{()]}
+
+\PYG{k}{for} \PYG{n}{bird} \PYG{o+ow}{in} \PYG{n}{birds}\PYG{p}{:}
+    \PYG{n}{bird}\PYG{o}{.}\PYG{n}{quack}\PYG{p}{()}
+\end{Verbatim}

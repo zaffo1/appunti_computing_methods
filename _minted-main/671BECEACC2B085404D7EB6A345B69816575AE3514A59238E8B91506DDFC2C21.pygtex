@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{multiprocessing} \PYG{k+kn}{import} \PYG{n}{Process}
+
+\PYG{k}{def} \PYG{n+nf}{f}\PYG{p}{(}\PYG{n}{name}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Hello \PYGZsq{}}\PYG{o}{+}\PYG{n}{name}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}}\PYG{o}{==}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{n}{p} \PYG{o}{=} \PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{f}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}World\PYGZsq{}}\PYG{p}{,))}
+    \PYG{n}{p}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+    \PYG{n}{p}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+\end{Verbatim}

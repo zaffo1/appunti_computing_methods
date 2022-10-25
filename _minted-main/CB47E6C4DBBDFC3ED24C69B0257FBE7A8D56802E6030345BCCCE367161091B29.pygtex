@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}  
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{owner}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} The special method \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{} is called each time a class istance is}
+\PYG{l+s+sd}{        created.  We can pass arguments to the constructor, just like any }
+\PYG{l+s+sd}{        function.\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Creating a television instance...\PYGZsq{}}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{model} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Sv32X\PYGZhy{}553T\PYGZsq{}} \PYG{c+c1}{\PYGZsh{} This class attribute is hard\PYGZhy{}coded}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{owner} \PYG{o}{=} \PYG{n}{owner} \PYG{c+c1}{\PYGZsh{} This is set to the value of the argument}
+    
+    \PYG{k}{def} \PYG{n+nf}{print\PYGZus{}info}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):} \PYG{c+c1}{\PYGZsh{} Let\PYGZsq{}s see}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Print the model and owner\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n}{message} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}This is television model }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{, owned by }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{message}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{model}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{owner}\PYG{p}{))}
+
+\PYG{n}{my\PYGZus{}television} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Alberto\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{my\PYGZus{}television}\PYG{o}{.}\PYG{n}{print\PYGZus{}info}\PYG{p}{()}
+\PYG{n}{batman\PYGZus{}television} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Batman\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{batman\PYGZus{}television}\PYG{o}{.}\PYG{n}{print\PYGZus{}info}\PYG{p}{()}
+\end{Verbatim}

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{vector2d\PYGZus{}hashable} \PYG{k+kn}{import} \PYG{n}{Vector2d}
+     
+\PYG{n}{v}\PYG{p}{,} \PYG{n}{t}\PYG{p}{,} \PYG{n}{z} \PYG{o}{=} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{),} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{5.}\PYG{p}{,} \PYG{l+m+mf}{1.}\PYG{p}{),} \PYG{n}{Vector2d}\PYG{p}{(}\PYG{l+m+mf}{3.}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Check the equality}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{v} \PYG{o}{==} \PYG{n}{t}\PYG{p}{,} \PYG{n}{v} \PYG{o}{==} \PYG{n}{z}\PYG{p}{,} \PYG{n}{t} \PYG{o}{==} \PYG{n}{z}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Check the hash: v and z are equal, so they will have the same hash}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{hash}\PYG{p}{(}\PYG{n}{v}\PYG{p}{),} \PYG{n+nb}{hash}\PYG{p}{(}\PYG{n}{t}\PYG{p}{),} \PYG{n+nb}{hash}\PYG{p}{(}\PYG{n}{z}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} v and t have different hash, so they can be in the same set}
+\PYG{n+nb}{print}\PYG{p}{(\PYGZob{}}\PYG{n}{v}\PYG{p}{,} \PYG{n}{t}\PYG{p}{\PYGZcb{})}
+\PYG{c+c1}{\PYGZsh{} v and z have the same hash \PYGZhy{}\PYGZhy{} only one will be stored in the set!}
+\PYG{n+nb}{print}\PYG{p}{(\PYGZob{}}\PYG{n}{v}\PYG{p}{,} \PYG{n}{z}\PYG{p}{\PYGZcb{})}
+\end{Verbatim}

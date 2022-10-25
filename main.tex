@@ -1,0 +1,86 @@
+% !TeX document-id = {283edc98-46be-43e5-9b77-8f898508d0c7}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[10pt,a4paper,hidelinks]{book}
+
+\setcounter{secnumdepth}{0} %
+\setcounter{tocdepth}{4} %per non numerare le section e subsection
+
+\usepackage[stable]{footmisc} %per mettere caption nel titole delle section
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{placeins}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{xcolor}  % to access the named colour LightGray
+\usepackage{easyReview}  % for \comment, \alert, etc.
+\usepackage[most,breakable,skins]{tcolorbox} %crea box colorati per il testo
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2.5cm]{geometry}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\usepackage{minted}
+\usemintedstyle{colorful}
+\definecolor{LightGray}{gray}{0.97}
+
+\newmintedfile[pythoncode]{python}{
+frame=single,
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos
+ }
+ 
+\setminted[python]{frame=single,
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+linenos}
+
+\setminted[bash]{frame=single,
+framesep=2mm,
+baselinestretch=1.2,
+fontsize=\footnotesize,
+bgcolor=LightGray,
+linenos}
+
+%\title{Computing Methods for Experimental \\ Physics and Data Analysis - Appunti}
+%\author{Lorenzo Zaffina}
+%\date{compilato il \today}
+\begin{document}
+
+\title{ \normalsize \textsc{Note del corso\footnote{Queste note nascono dalle lezioni del corso CMEPDA dell'a.a. 2022-23. Per realizzarle ho in gran parte utilizzato il materiale disponibile su github al link \url{https://github.com/lucabaldini/cmepda.git}.}:}
+		\\ [0.2cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Computing Methods for Experimental Physics and Data Analysis}}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize Compilato il \today \vspace*{5\baselineskip}}
+
+\date{}
+
+\author{
+		Lorenzo Zaffina \\  [0.8cm]
+		Università di Pisa \\ }
+
+\maketitle
+
+\tableofcontents
+
+\include{Scientific_python}
+\include{Parallel_computing}
+\include{machine_learning}
+\include{medphys}
+
+\appendix
+\include{git}
+\include{sphinx}
+\end{document}

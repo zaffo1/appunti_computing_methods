@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{o}{[}\PYGZhy{}1. \PYG{l+m}{0}. \PYG{l+m}{1}.\PYG{o}{]}
+\PYG{o}{[}\PYG{l+m}{1}.10517092e+00 \PYG{l+m}{2}.71828183e+00 \PYG{l+m}{2}.20264658e+04\PYG{o}{]}
+\PYG{o}{[} \PYG{l+m}{0}.09983342 \PYG{l+m}{0}.84147098 \PYGZhy{}0.54402111\PYG{o}{]}
+\PYGZhy{}1.0
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/numpy\PYGZus{}functions.py\PYGZdq{}}, line \PYG{l+m}{12}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+        print\PYG{o}{(}math.log10\PYG{o}{(}a\PYG{o}{))}
+TypeError: only size\PYGZhy{}1 arrays can be converted to Python scalars
+\end{Verbatim}

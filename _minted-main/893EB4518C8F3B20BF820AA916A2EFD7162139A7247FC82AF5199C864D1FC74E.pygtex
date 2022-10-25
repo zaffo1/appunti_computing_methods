@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{owner}\PYG{p}{):}
+       \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class constructor\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+       \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}owner} \PYG{o}{=} \PYG{n}{owner} \PYG{c+c1}{\PYGZsh{} owner is private}
+    
+    \PYG{n+nd}{@property}
+    \PYG{k}{def} \PYG{n+nf}{owner}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}owner}
+
+    \PYG{n+nd}{@owner}\PYG{o}{.}\PYG{n}{setter}
+    \PYG{k}{def} \PYG{n+nf}{owner}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{new\PYGZus{}owner}\PYG{p}{):}
+       \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Make the attribute read\PYGZhy{}only by acting on the setter\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+       \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Nope }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{. Do you want to steal my tv?\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{new\PYGZus{}owner}\PYG{p}{))}
+ 
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Batman\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This tv belongs to }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{owner}\PYG{p}{))} 
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{owner} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Joker\PYGZsq{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}This tv belongs to }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{owner}\PYG{p}{))}
+\end{Verbatim}

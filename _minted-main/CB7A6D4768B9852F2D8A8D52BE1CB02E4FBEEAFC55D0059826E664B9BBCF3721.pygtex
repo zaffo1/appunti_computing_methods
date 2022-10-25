@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{list1} \PYG{o}{=} \PYG{p}{[}\PYG{err}{’}\PYG{n}{a}\PYG{err}{’}\PYG{p}{,} \PYG{err}{’}\PYG{n}{b}\PYG{err}{’}\PYG{p}{,} \PYG{err}{’}\PYG{n}{c}\PYG{err}{’}\PYG{p}{]}
+\PYG{n}{list2} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{,} \PYG{l+m+mi}{12}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} Horrible (and very un\PYGZhy{}Pythonic, too)!}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{list1}\PYG{p}{)):}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{list1}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}
+\PYG{c+c1}{\PYGZsh{} Nice\PYGZhy{}looking.}
+\PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{item} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{list1}\PYG{p}{):}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{item}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Zipping iterables}
+\PYG{k}{for} \PYG{n}{item1}\PYG{p}{,} \PYG{n}{item2} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{list1}\PYG{p}{,} \PYG{n}{list2}\PYG{p}{):}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{item1}\PYG{p}{,} \PYG{n}{item2}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} List comprehension}
+\PYG{n+nb}{print}\PYG{p}{([}\PYG{n}{x}\PYG{o}{**}\PYG{l+m+mi}{2} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{list2}\PYG{p}{])}
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{l+m+mi}{0} \PYG{n}{a}
+\PYG{l+m+mi}{1} \PYG{n}{b}
+\PYG{l+m+mi}{2} \PYG{n}{c}
+\PYG{l+m+mi}{0} \PYG{n}{a}
+\PYG{l+m+mi}{1} \PYG{n}{b}
+\PYG{l+m+mi}{2} \PYG{n}{c}
+\PYG{n}{a} \PYG{l+m+mi}{10}
+\PYG{n}{b} \PYG{l+m+mi}{11}
+\PYG{n}{c} \PYG{l+m+mi}{12}
+\PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{121}\PYG{p}{,} \PYG{l+m+mi}{144}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing}
+
+\PYG{k}{def} \PYG{n+nf}{add\PYGZus{}element}\PYG{p}{(}\PYG{n}{record}\PYG{p}{,}\PYG{n}{records}\PYG{p}{):}
+    \PYG{n}{records}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{record}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}New element added to records list\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{sum\PYGZus{}elements}\PYG{p}{(}\PYG{n}{records}\PYG{p}{):}
+    \PYG{n}{summ}\PYG{o}{=}\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{records}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}New sum is: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{summ}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{with} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Manager}\PYG{p}{()} \PYG{k}{as} \PYG{n}{manager}\PYG{p}{:}
+    \PYG{n}{list\PYGZus{}elements}\PYG{o}{=}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{]}
+    \PYG{n}{records}\PYG{o}{=}\PYG{n}{manager}\PYG{o}{.}\PYG{n}{list}\PYG{p}{(}\PYG{n}{list\PYGZus{}elements}\PYG{p}{)}
+    \PYG{n}{new\PYGZus{}element}\PYG{o}{=}\PYG{l+m+mi}{5}
+    
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Old sum is: \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{list\PYGZus{}elements}\PYG{p}{)))}
+    \PYG{c+c1}{\PYGZsh{}creating new processes}
+    \PYG{n}{p1} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{add\PYGZus{}element}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{new\PYGZus{}element}\PYG{p}{,}\PYG{n}{records}\PYG{p}{))}
+    \PYG{n}{p2}\PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{sum\PYGZus{}elements}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{records}\PYG{p}{,))}
+
+    \PYG{c+c1}{\PYGZsh{}running process p1 to insert new element}
+    \PYG{n}{p1}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+    \PYG{n}{p1}\PYG{o}{.}\PYG{n}{join}
+    
+    \PYG{c+c1}{\PYGZsh{}running process p2 to sum list elements}
+    \PYG{n}{p2}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+    \PYG{n}{p2}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+    
+\end{Verbatim}

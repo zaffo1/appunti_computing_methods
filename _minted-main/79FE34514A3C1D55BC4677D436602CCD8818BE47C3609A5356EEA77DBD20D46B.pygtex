@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{itertools} \PYG{k+kn}{import} \PYG{n}{accumulate}\PYG{p}{,} \PYG{n}{product}\PYG{p}{,} \PYG{n}{chain}\PYG{p}{,} \PYG{n}{groupby}\PYG{p}{,} \PYG{n}{permutations}\PYG{p}{,} \PYG{n}{combinations}
+\PYG{k+kn}{import} \PYG{n+nn}{operator}
+
+\PYG{n}{l1} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{accumulate}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{)))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{accumulate}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{,} \PYG{n}{func}\PYG{o}{=}\PYG{n}{operator}\PYG{o}{.}\PYG{n}{mul}\PYG{p}{)))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{combinations}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)))}
+
+\PYG{n}{l2} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{permutations}\PYG{p}{(}\PYG{n}{l2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{)))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{product}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{,} \PYG{n}{l2}\PYG{p}{)))}
+
+\PYG{k}{def} \PYG{n+nf}{is\PYGZus{}even}\PYG{p}{(}\PYG{n}{n}\PYG{p}{):}
+    \PYG{k}{return} \PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2} \PYG{o}{==} \PYG{l+m+mi}{0}
+
+\PYG{n}{l3} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{chain}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{,} \PYG{n}{l2}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} groupby expect the list to be sorted by the grouping function}
+\PYG{n}{l3}\PYG{o}{.}\PYG{n}{sort}\PYG{p}{(}\PYG{n}{key}\PYG{o}{=}\PYG{n}{is\PYGZus{}even}\PYG{p}{)}
+\PYG{k}{for} \PYG{n}{k}\PYG{p}{,} \PYG{n}{g} \PYG{o+ow}{in} \PYG{n}{groupby}\PYG{p}{(}\PYG{n}{l3}\PYG{p}{,} \PYG{n}{key}\PYG{o}{=}\PYG{n}{is\PYGZus{}even}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{k}\PYG{p}{,} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{g}\PYG{p}{))}
+\end{Verbatim}

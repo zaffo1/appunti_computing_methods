@@ -1,0 +1,245 @@
+\BOOKMARK [0][-]{chapter.1}{Modulo Base - Scientifc Python}{}% 1
+\BOOKMARK [1][-]{section*.2}{Lun 20 sett - Lezione 1}{chapter.1}% 2
+\BOOKMARK [1][-]{section*.3}{Lecture basic 1: Development workflow}{chapter.1}% 3
+\BOOKMARK [2][-]{section*.4}{L'importanza della riproducibilit\340}{section*.3}% 4
+\BOOKMARK [2][-]{section*.5}{Version control}{section*.3}% 5
+\BOOKMARK [2][-]{section*.6}{Terminologia}{section*.3}% 6
+\BOOKMARK [2][-]{section*.7}{Tipologie di Version Control System}{section*.3}% 7
+\BOOKMARK [2][-]{section*.8}{Local version control systems \(e.g. RCS\)}{section*.3}% 8
+\BOOKMARK [2][-]{section*.10}{Centralized Version Control Systems \(e.g. CVS, Subversion\)}{section*.3}% 9
+\BOOKMARK [2][-]{section*.12}{Distributed version control system \(e.g. git, mercurial\)}{section*.3}% 10
+\BOOKMARK [2][-]{section*.14}{Versioning single files vs. the entire repository}{section*.3}% 11
+\BOOKMARK [2][-]{section*.15}{Centralized vs. distributed VCS}{section*.3}% 12
+\BOOKMARK [2][-]{section*.17}{Funzioni di Hash}{section*.3}% 13
+\BOOKMARK [2][-]{section*.19}{Altra Terminologia}{section*.3}% 14
+\BOOKMARK [1][-]{section*.21}{Gio 22 sett - Lezione 2}{chapter.1}% 15
+\BOOKMARK [1][-]{section*.22}{Lecture basic 2: Python Basics \(1/2\)}{chapter.1}% 16
+\BOOKMARK [2][-]{section*.23}{PEP: Python Enhancement Proposal}{section*.22}% 17
+\BOOKMARK [2][-]{section*.24}{Coding Conventions}{section*.22}% 18
+\BOOKMARK [2][-]{section*.25}{Variables and basic types}{section*.22}% 19
+\BOOKMARK [2][-]{section*.26}{String Formatting}{section*.22}% 20
+\BOOKMARK [2][-]{section*.27}{Le Funzioni}{section*.22}% 21
+\BOOKMARK [2][-]{section*.28}{Funzioni Variadiche}{section*.22}% 22
+\BOOKMARK [2][-]{section*.29}{Arbitrary argument lists}{section*.22}% 23
+\BOOKMARK [2][-]{section*.30}{Un esempio: la funzione di fit}{section*.22}% 24
+\BOOKMARK [2][-]{section*.31}{Keyword arguments}{section*.22}% 25
+\BOOKMARK [2][-]{section*.32}{Basic control flow}{section*.22}% 26
+\BOOKMARK [2][-]{section*.33}{Advanced Iteration}{section*.22}% 27
+\BOOKMARK [2][-]{section*.34}{Nota: I numeri in virgola mobile sono esatti}{section*.22}% 28
+\BOOKMARK [2][-]{section*.35}{Rappresentazione in virgola mobile}{section*.22}% 29
+\BOOKMARK [2][-]{section*.36}{References}{section*.22}% 30
+\BOOKMARK [1][-]{section*.37}{Lecture basic 3: Python Basics \(2/2\)}{chapter.1}% 31
+\BOOKMARK [2][-]{section*.38}{La Python Standard Lybrary}{section*.37}% 32
+\BOOKMARK [2][-]{section*.39}{Il sistema di Import}{section*.37}% 33
+\BOOKMARK [2][-]{section*.40}{La Standard Library: time, datetime and calendar}{section*.37}% 34
+\BOOKMARK [2][-]{section*.41}{La Standard Library: math}{section*.37}% 35
+\BOOKMARK [2][-]{section*.42}{La Standard Library: random}{section*.37}% 36
+\BOOKMARK [2][-]{section*.43}{La Standard Library: os, os.path, glob and shutil}{section*.37}% 37
+\BOOKMARK [2][-]{section*.44}{La Standard Library: argparse}{section*.37}% 38
+\BOOKMARK [2][-]{section*.45}{La Standard Library: logging}{section*.37}% 39
+\BOOKMARK [2][-]{section*.46}{Typical layout of a Python package}{section*.37}% 40
+\BOOKMARK [2][-]{section*.47}{References}{section*.37}% 41
+\BOOKMARK [1][-]{section*.48}{Gio 29 sett - Lezione 3}{chapter.1}% 42
+\BOOKMARK [1][-]{section*.49}{Lecture basic 4: Algorithms and data structures}{chapter.1}% 43
+\BOOKMARK [2][-]{section*.50}{Esempio: ricerca sequenziale vs ricerca binaria}{section*.49}% 44
+\BOOKMARK [2][-]{section*.51}{Complessit\340 di un algoritmo}{section*.49}% 45
+\BOOKMARK [2][-]{section*.52}{Andamento asintotico e notazioni O-grandi}{section*.49}% 46
+\BOOKMARK [2][-]{section*.54}{Come misuro il comportamento asintotico?}{section*.49}% 47
+\BOOKMARK [2][-]{section*.55}{Strutture dati: le liste}{section*.49}% 48
+\BOOKMARK [2][-]{section*.57}{Hash table}{section*.49}% 49
+\BOOKMARK [2][-]{section*.59}{Strutture dati: I dizionari}{section*.49}% 50
+\BOOKMARK [2][-]{section*.61}{Sorting}{section*.49}% 51
+\BOOKMARK [2][-]{section*.63}{References}{section*.49}% 52
+\BOOKMARK [1][-]{section*.64}{Lecture basic 7: Numpy e Scipy}{chapter.1}% 53
+\BOOKMARK [2][-]{section*.65}{Array di numpy}{section*.64}% 54
+\BOOKMARK [2][-]{section*.66}{numpy arrays vs. Python lists}{section*.64}% 55
+\BOOKMARK [2][-]{section*.67}{Broadcasting}{section*.64}% 56
+\BOOKMARK [1][-]{section*.68}{Lun 3 ott - Lezione 4}{chapter.1}% 57
+\BOOKMARK [1][-]{section*.69}{Lecture basic: 5 - OOPIn informatica, la programmazione orientata agli oggetti \(in inglese object-oriented programming, in acronimo OOP\) \350 un paradigma di programmazione che permette di definire oggetti software in grado di interagire gli uni con gli altri attraverso lo scambio di messaggi. Particolarmente adatta nei contesti in cui si possono definire delle relazioni di interdipendenza tra i concetti da modellare \(contenimento, uso, specializzazione\), un ambito che pi\371 di altri riesce a sfruttare i vantaggi della programmazione ad oggetti \350 quello delle interfacce grafiche. introduction \(1/2\)}{chapter.1}% 58
+\BOOKMARK [2][-]{section*.70}{Classi e Oggetti}{section*.69}% 59
+\BOOKMARK [2][-]{section*.71}{Esempio: creiamo la classe televisione }{section*.69}% 60
+\BOOKMARK [2][-]{section*.72}{Python Classes}{section*.69}% 61
+\BOOKMARK [2][-]{section*.73}{Metodi}{section*.69}% 62
+\BOOKMARK [2][-]{section*.74}{Attributi}{section*.69}% 63
+\BOOKMARK [2][-]{section*.75}{Costruttore}{section*.69}% 64
+\BOOKMARK [2][-]{section*.76}{Namespaces}{section*.69}% 65
+\BOOKMARK [2][-]{section*.77}{Instance attributes vs class attributes}{section*.69}% 66
+\BOOKMARK [2][-]{section*.78}{Class attributes \(and their strange behaviour\)}{section*.69}% 67
+\BOOKMARK [2][-]{section*.79}{Encapsulation - hidden state and interfaces}{section*.69}% 68
+\BOOKMARK [2][-]{section*.80}{Enforcing behaviour}{section*.69}% 69
+\BOOKMARK [2][-]{section*.81}{Pythonic encapsulation}{section*.69}% 70
+\BOOKMARK [2][-]{section*.82}{"Private" attributes in Python}{section*.69}% 71
+\BOOKMARK [2][-]{section*.83}{Pythonic encapsulation with properties}{section*.69}% 72
+\BOOKMARK [2][-]{section*.84}{Old-style encapsulation: never do that!}{section*.69}% 73
+\BOOKMARK [2][-]{section*.85}{Properties to emulate attributes}{section*.69}% 74
+\BOOKMARK [2][-]{section*.86}{Setter properties}{section*.69}% 75
+\BOOKMARK [2][-]{section*.87}{Make attributes read-only using properties}{section*.69}% 76
+\BOOKMARK [2][-]{section*.88}{Interfaccia vs Implementazione}{section*.69}% 77
+\BOOKMARK [2][-]{section*.89}{Ereditariet\340}{section*.69}% 78
+\BOOKMARK [2][-]{section*.90}{Inheritance: a basic example}{section*.69}% 79
+\BOOKMARK [2][-]{section*.91}{Overload}{section*.69}% 80
+\BOOKMARK [2][-]{section*.92}{Ereditariet\340 multipla}{section*.69}% 81
+\BOOKMARK [2][-]{section*.93}{Composizione}{section*.69}% 82
+\BOOKMARK [2][-]{section*.94}{Composition vs Inheritance}{section*.69}% 83
+\BOOKMARK [2][-]{section*.95}{Pitfalls of Inheritance}{section*.69}% 84
+\BOOKMARK [1][-]{section*.96}{Gio 6 ott - Lezione 5}{chapter.1}% 85
+\BOOKMARK [1][-]{section*.97}{Lecture basic: 5 - OOP Introduction \(2/2\)}{chapter.1}% 86
+\BOOKMARK [2][-]{section*.98}{Special Methods}{section*.97}% 87
+\BOOKMARK [2][-]{section*.99}{\137\137str\137\137 and \137\137repr\137\137}{section*.97}% 88
+\BOOKMARK [2][-]{section*.100}{Mathematical operations}{section*.97}% 89
+\BOOKMARK [2][-]{section*.101}{In-place operations}{section*.97}% 90
+\BOOKMARK [2][-]{section*.102}{Comparisons}{section*.97}% 91
+\BOOKMARK [2][-]{section*.103}{In-place operations}{section*.97}% 92
+\BOOKMARK [2][-]{section*.104}{An hashable Vector2d}{section*.97}% 93
+\BOOKMARK [2][-]{section*.105}{Array N-dimensionali}{section*.97}% 94
+\BOOKMARK [2][-]{section*.106}{An Iterable Vector}{section*.97}% 95
+\BOOKMARK [2][-]{section*.107}{Duck Typing"If it looks like a duck and quacks like a duck, it must be a duck."}{section*.97}% 96
+\BOOKMARK [2][-]{section*.108}{Polymorphism}{section*.97}% 97
+\BOOKMARK [2][-]{section*.109}{The power of iterables}{section*.97}% 98
+\BOOKMARK [2][-]{section*.110}{A vector that behaves like a duck}{section*.97}% 99
+\BOOKMARK [2][-]{section*.111}{Function are classes}{section*.97}% 100
+\BOOKMARK [2][-]{section*.112}{A simple callable for a straight line}{section*.97}% 101
+\BOOKMARK [2][-]{section*.113}{Create a call counter}{section*.97}% 102
+\BOOKMARK [2][-]{section*.114}{Fit hacking}{section*.97}% 103
+\BOOKMARK [1][-]{section*.116}{Lun 10 ott - Lezione 6}{chapter.1}% 104
+\BOOKMARK [1][-]{section*.117}{Lecture Advanced 1: Testing and documentation}{chapter.1}% 105
+\BOOKMARK [2][-]{section*.118}{How do I make sure my program is correct?}{section*.117}% 106
+\BOOKMARK [2][-]{section*.119}{Unit testing na\357ve example}{section*.117}% 107
+\BOOKMARK [2][-]{section*.120}{Unit testing in a nutshell}{section*.117}% 108
+\BOOKMARK [2][-]{section*.121}{Back to our na\357ve example}{section*.117}% 109
+\BOOKMARK [2][-]{section*.122}{Unit tests the Python way: The unittest module}{section*.117}% 110
+\BOOKMARK [2][-]{section*.123}{Wait a moment\203How is this different?}{section*.117}% 111
+\BOOKMARK [2][-]{section*.124}{Static code analysis}{section*.117}% 112
+\BOOKMARK [2][-]{section*.125}{Static analysis: an example}{section*.117}% 113
+\BOOKMARK [2][-]{section*.126}{Static code analysis}{section*.117}% 114
+\BOOKMARK [2][-]{section*.127}{Digression: optional static typing in Python}{section*.117}% 115
+\BOOKMARK [2][-]{section*.128}{Continuous integration}{section*.117}% 116
+\BOOKMARK [2][-]{section*.129}{Documentation}{section*.117}% 117
+\BOOKMARK [2][-]{section*.132}{Sphinx: the documentation tool for Python}{section*.117}% 118
+\BOOKMARK [2][-]{section*.133}{Sphynx basics}{section*.117}% 119
+\BOOKMARK [2][-]{section*.135}{Ok, I have the documentation compiled, now what do I do with it?}{section*.117}% 120
+\BOOKMARK [1][-]{section*.136}{Torniamo a numpy}{chapter.1}% 121
+\BOOKMARK [2][-]{section*.137}{Mathematical functions in Numpy}{section*.136}% 122
+\BOOKMARK [2][-]{section*.138}{Array and Masks}{section*.136}% 123
+\BOOKMARK [2][-]{section*.139}{Digression: pseudo-random number generators}{section*.136}% 124
+\BOOKMARK [2][-]{section*.140}{Vettorizzazione}{section*.136}% 125
+\BOOKMARK [2][-]{section*.141}{How does vectorizaion work?}{section*.136}% 126
+\BOOKMARK [1][-]{section*.142}{Secondo Assegnamento}{chapter.1}% 127
+\BOOKMARK [2][-]{section*.143}{How do I throw PRN with arbitrary pdf?}{section*.142}% 128
+\BOOKMARK [2][-]{section*.144}{An interesting object: splines}{section*.142}% 129
+\BOOKMARK [2][-]{section*.145}{Splines: construction and properties}{section*.142}% 130
+\BOOKMARK [1][-]{section*.146}{Gio 13 ott - Lezione 7}{chapter.1}% 131
+\BOOKMARK [1][-]{section*.147}{Advanced Python Features}{chapter.1}% 132
+\BOOKMARK [2][-]{section*.148}{Errors and Exceptions}{section*.147}% 133
+\BOOKMARK [2][-]{section*.149}{Error flags \(no\)}{section*.147}% 134
+\BOOKMARK [2][-]{section*.150}{Problems of error flags}{section*.147}% 135
+\BOOKMARK [2][-]{section*.151}{A different way}{section*.147}% 136
+\BOOKMARK [2][-]{section*.152}{Eccezioni}{section*.147}% 137
+\BOOKMARK [2][-]{section*.153}{Try block}{section*.147}% 138
+\BOOKMARK [2][-]{section*.154}{else, finally}{section*.147}% 139
+\BOOKMARK [2][-]{section*.155}{Using else and finally}{section*.147}% 140
+\BOOKMARK [2][-]{section*.156}{The beauty of exceptions}{section*.147}% 141
+\BOOKMARK [2][-]{section*.157}{The family tree of Python exceptions}{section*.147}% 142
+\BOOKMARK [2][-]{section*.159}{Catching specific exceptions}{section*.147}% 143
+\BOOKMARK [2][-]{section*.160}{Exception caveats}{section*.147}% 144
+\BOOKMARK [2][-]{section*.161}{There is no check - only try}{section*.147}% 145
+\BOOKMARK [2][-]{section*.162}{Catching specific exceptions}{section*.147}% 146
+\BOOKMARK [2][-]{section*.163}{Raising exceptions}{section*.147}% 147
+\BOOKMARK [2][-]{section*.164}{Custom exceptions}{section*.147}% 148
+\BOOKMARK [2][-]{section*.165}{Where to catch exceptions?}{section*.147}% 149
+\BOOKMARK [2][-]{section*.166}{When to catch}{section*.147}% 150
+\BOOKMARK [2][-]{section*.167}{Catch too early}{section*.147}% 151
+\BOOKMARK [2][-]{section*.168}{Catch when needed}{section*.147}% 152
+\BOOKMARK [1][-]{section*.169}{Lun 17 ott - Lezione 8}{chapter.1}% 153
+\BOOKMARK [1][-]{section*.170}{Iterators}{chapter.1}% 154
+\BOOKMARK [2][-]{section*.171}{Iterators and iterables}{section*.170}% 155
+\BOOKMARK [2][-]{section*.172}{A 'for' loop unpacked}{section*.170}% 156
+\BOOKMARK [2][-]{section*.173}{A simple iterator}{section*.170}% 157
+\BOOKMARK [2][-]{section*.174}{A crazy iterator}{section*.170}% 158
+\BOOKMARK [2][-]{section*.175}{Python tools for iterables}{section*.170}% 159
+\BOOKMARK [1][-]{section*.176}{Generatori}{chapter.1}% 160
+\BOOKMARK [2][-]{section*.177}{Generators first look}{section*.176}% 161
+\BOOKMARK [2][-]{section*.178}{Generator functions}{section*.176}% 162
+\BOOKMARK [2][-]{section*.179}{Infinite sequence generators}{section*.176}% 163
+\BOOKMARK [2][-]{section*.180}{Python generator functions}{section*.176}% 164
+\BOOKMARK [2][-]{section*.181}{Itertools showcase}{section*.176}% 165
+\BOOKMARK [1][-]{section*.182}{Lambda functions}{chapter.1}% 166
+\BOOKMARK [2][-]{section*.183}{Recap example: file iterator}{section*.182}% 167
+\BOOKMARK [2][-]{section*.184}{File iterator redone}{section*.182}% 168
+\BOOKMARK [2][-]{section*.185}{File iterator, final version}{section*.182}% 169
+\BOOKMARK [1][-]{section*.186}{Decorators}{chapter.1}% 170
+\BOOKMARK [2][-]{section*.187}{The @classmethod decorator}{section*.186}% 171
+\BOOKMARK [0][-]{chapter.2}{Parallel Computing}{}% 172
+\BOOKMARK [1][-]{section*.188}{Gio 20 ott - Lezione 9}{chapter.2}% 173
+\BOOKMARK [1][-]{section*.189}{Computer architecture from a performance point of view: from serial to parallel}{chapter.2}% 174
+\BOOKMARK [2][-]{section*.190}{Architettura di Von Neumann}{section*.189}% 175
+\BOOKMARK [2][-]{section*.192}{Von Neumann Bottleneck}{section*.189}% 176
+\BOOKMARK [2][-]{section*.194}{Simple Server architecture}{section*.189}% 177
+\BOOKMARK [2][-]{section*.196}{Memoria}{section*.189}% 178
+\BOOKMARK [2][-]{section*.198}{Seven dimensions of performance}{section*.189}% 179
+\BOOKMARK [2][-]{section*.200}{Processori Vettoriali}{section*.189}% 180
+\BOOKMARK [2][-]{section*.202}{Superscalari}{section*.189}% 181
+\BOOKMARK [2][-]{section*.204}{Pipelining}{section*.189}% 182
+\BOOKMARK [2][-]{section*.207}{Dennard Scaling}{section*.189}% 183
+\BOOKMARK [2][-]{section*.210}{Moore scaling}{section*.189}% 184
+\BOOKMARK [2][-]{section*.212}{Hardware parallelism}{section*.189}% 185
+\BOOKMARK [2][-]{section*.213}{Flynn\220s taxonomy}{section*.189}% 186
+\BOOKMARK [2][-]{section*.214}{SISD: Single Instruction Single Data}{section*.189}% 187
+\BOOKMARK [2][-]{section*.216}{SIMD: Single Instruction Multiple Data}{section*.189}% 188
+\BOOKMARK [2][-]{section*.218}{MIMD: Multiple Instruction Multiple Data}{section*.189}% 189
+\BOOKMARK [2][-]{section*.220}{MISD: Multiple Instruction Single Data}{section*.189}% 190
+\BOOKMARK [2][-]{section*.222}{Logic partitioning and decomposition}{section*.189}% 191
+\BOOKMARK [2][-]{section*.224}{Multiprocessor Execution Model}{section*.189}% 192
+\BOOKMARK [2][-]{section*.225}{Sequential processing}{section*.189}% 193
+\BOOKMARK [2][-]{section*.227}{Concurrent Processing}{section*.189}% 194
+\BOOKMARK [2][-]{section*.230}{Types of concurrent processing:}{section*.189}% 195
+\BOOKMARK [2][-]{section*.231}{Multiprogramming}{section*.189}% 196
+\BOOKMARK [2][-]{section*.232}{Multiprocessing}{section*.189}% 197
+\BOOKMARK [2][-]{section*.233}{Multitasking}{section*.189}% 198
+\BOOKMARK [2][-]{section*.234}{Distributed systems}{section*.189}% 199
+\BOOKMARK [2][-]{section*.236}{Parallelism vs Concurrency}{section*.189}% 200
+\BOOKMARK [2][-]{section*.238}{Parallelization}{section*.189}% 201
+\BOOKMARK [2][-]{section*.240}{Speedup and Efficiency}{section*.189}% 202
+\BOOKMARK [2][-]{section*.242}{Cost and Scalability}{section*.189}% 203
+\BOOKMARK [2][-]{section*.243}{Amdhal\220s law \(1967\)}{section*.189}% 204
+\BOOKMARK [2][-]{section*.245}{Overhead of parallelization}{section*.189}% 205
+\BOOKMARK [2][-]{section*.246}{Limits of Amdhal\220s law}{section*.189}% 206
+\BOOKMARK [2][-]{section*.247}{Gustafson\220s law \(1988\)}{section*.189}% 207
+\BOOKMARK [1][-]{section*.249}{Multithreading and multiprocessing in Python}{chapter.2}% 208
+\BOOKMARK [2][-]{section*.250}{Threads and processes}{section*.249}% 209
+\BOOKMARK [2][-]{section*.252}{The Global Interpreter Lock \(GIL\)}{section*.249}% 210
+\BOOKMARK [2][-]{section*.253}{Processi e Thread}{section*.249}% 211
+\BOOKMARK [2][-]{section*.254}{When to use threads vs processes?}{section*.249}% 212
+\BOOKMARK [2][-]{section*.255}{Things to be afraid of! \(not only in python...\)}{section*.249}% 213
+\BOOKMARK [1][-]{section*.257}{Gio 20 ott - Lezione 9}{chapter.2}% 214
+\BOOKMARK [2][-]{section*.258}{The multiprocessing module}{section*.257}% 215
+\BOOKMARK [3][-]{section*.259}{HelloWorld}{section*.258}% 216
+\BOOKMARK [3][-]{section*.260}{FatherAndSons}{section*.258}% 217
+\BOOKMARK [3][-]{section*.262}{Use the Queue to get the result from multiple processes}{section*.258}% 218
+\BOOKMARK [3][-]{section*.263}{How to distribute work to workers \(aka cpu cores\)}{section*.258}% 219
+\BOOKMARK [3][-]{section*.264}{Another example with pool.map and pool.map\137async}{section*.258}% 220
+\BOOKMARK [2][-]{section*.265}{Communication between processes}{section*.257}% 221
+\BOOKMARK [3][-]{section*.267}{Comm. between processes: shared memory}{section*.265}% 222
+\BOOKMARK [3][-]{section*.269}{Comm. between processes: server process}{section*.265}% 223
+\BOOKMARK [3][-]{section*.271}{Comm. between processes: queue}{section*.265}% 224
+\BOOKMARK [3][-]{section*.273}{Comm. between process: pipe}{section*.265}% 225
+\BOOKMARK [2][-]{section*.275}{Synchronization between processes}{section*.257}% 226
+\BOOKMARK [2][-]{section*.276}{Threading}{section*.257}% 227
+\BOOKMARK [2][-]{section*.278}{Threading module}{section*.257}% 228
+\BOOKMARK [2][-]{section*.279}{Threads synchronization}{section*.257}% 229
+\BOOKMARK [2][-]{section*.280}{Comparison between Threads and Processes}{section*.257}% 230
+\BOOKMARK [2][-]{section*.283}{Why should I use threads?}{section*.257}% 231
+\BOOKMARK [2][-]{section*.284}{Process vs Threads}{section*.257}% 232
+\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 233
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 234
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 235
+\BOOKMARK [1][-]{section*.286}{Creare una Repository partendo da GitHub}{appendix.A}% 236
+\BOOKMARK [2][-]{section*.287}{Copiare la Repository in Locale}{section*.286}% 237
+\BOOKMARK [2][-]{section*.288}{Comandi principali in locale}{section*.286}% 238
+\BOOKMARK [2][-]{section*.289}{Creare una Repository in locale}{section*.286}% 239
+\BOOKMARK [2][-]{section*.291}{Git Workflow}{section*.286}% 240
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 241
+\BOOKMARK [1][-]{section*.294}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 242
+\BOOKMARK [2][-]{section*.295}{Step 2: Configure the conf.py}{section*.294}% 243
+\BOOKMARK [2][-]{section*.296}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.294}% 244
+\BOOKMARK [2][-]{section*.297}{Step 4: Including module.rst and generating html}{section*.294}% 245

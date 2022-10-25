@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{sloppy\PYGZus{}sort}\PYG{p}{(}\PYG{n}{list\PYGZus{}}\PYG{p}{):}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Poor man’s implementation of a sorting algorithm.}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{n}{sorted\PYGZus{}list} \PYG{o}{=} \PYG{p}{[]}
+\PYG{k}{for} \PYG{n}{item} \PYG{o+ow}{in} \PYG{n}{list\PYGZus{}}\PYG{p}{:}
+\PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{sorted\PYGZus{}list}\PYG{p}{)} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+\PYG{n}{sorted\PYGZus{}list}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{item}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+\PYG{k}{if} \PYG{n}{item} \PYG{o}{\PYGZlt{}} \PYG{n}{sorted\PYGZus{}list}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]:}
+\PYG{n}{sorted\PYGZus{}list}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{item}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+\PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{sorted\PYGZus{}item} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{sorted\PYGZus{}list}\PYG{p}{):}
+\PYG{k}{if} \PYG{n}{item} \PYG{o}{\PYGZlt{}=} \PYG{n}{sorted\PYGZus{}item}\PYG{p}{:}
+\PYG{n}{sorted\PYGZus{}list}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{item}\PYG{p}{)}
+\PYG{k}{break}
+\PYG{k}{return} \PYG{n}{sorted\PYGZus{}list}
+\PYG{n}{l} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{9}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{sloppy\PYGZus{}sort}\PYG{p}{(}\PYG{n}{l}\PYG{p}{))}
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{9}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{9}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{]}
+\end{Verbatim}

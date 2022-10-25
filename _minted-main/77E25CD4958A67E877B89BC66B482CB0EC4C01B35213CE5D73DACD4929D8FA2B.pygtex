@@ -1,0 +1,176 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{k+kn}{import} \PYG{n+nn}{multiprocessing}
+\PYG{k+kn}{import} \PYG{n+nn}{random}
+\PYG{k+kn}{import} \PYG{n+nn}{threading}
+\PYG{k+kn}{import} \PYG{n+nn}{time}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} 
+
+
+\PYG{k}{class} \PYG{n+nc}{Timer}\PYG{p}{(}\PYG{n+nb}{object}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{name}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{):}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name} \PYG{o}{=} \PYG{n}{name}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{timee}\PYG{o}{=}\PYG{l+m+mi}{0}
+
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}enter\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tstart} \PYG{o}{=} \PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()}
+
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}exit\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n+nb}{type}\PYG{p}{,} \PYG{n}{value}\PYG{p}{,} \PYG{n}{traceback}\PYG{p}{):}
+        \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}\PYG{p}{:}
+            \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}[}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{]\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}\PYG{p}{,} \PYG{n}{end}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{timee}\PYG{o}{=}\PYG{p}{(}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tstart}\PYG{p}{)}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Elapsed: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tstart}\PYG{p}{))}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{output}\PYG{p}{()}
+
+    \PYG{k}{def} \PYG{n+nf}{output}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{timee}
+
+
+\PYG{k}{def} \PYG{n+nf}{factorize\PYGZus{}naive}\PYG{p}{(}\PYG{n}{n}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} A naive factorization method. Take integer \PYGZsq{}n\PYGZsq{}, return list of}
+\PYG{l+s+sd}{        factors.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{if} \PYG{n}{n} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{2}\PYG{p}{:}
+        \PYG{k}{return} \PYG{p}{[]}
+    \PYG{n}{factors} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{n}{p} \PYG{o}{=} \PYG{l+m+mi}{2}
+
+    \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{n} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{:}
+            \PYG{k}{return} \PYG{n}{factors}
+        \PYG{n}{r} \PYG{o}{=} \PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n}{p}
+        \PYG{k}{if} \PYG{n}{r} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+            \PYG{n}{factors}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+            \PYG{n}{n} \PYG{o}{=} \PYG{n}{n} \PYG{o}{//} \PYG{n}{p}
+        \PYG{k}{elif} \PYG{n}{p} \PYG{o}{*} \PYG{n}{p} \PYG{o}{\PYGZgt{}=} \PYG{n}{n}\PYG{p}{:}
+            \PYG{n}{factors}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+            \PYG{k}{return} \PYG{n}{factors}
+        \PYG{k}{elif} \PYG{n}{p} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{2}\PYG{p}{:}
+            \PYG{c+c1}{\PYGZsh{} Advance in steps of 2 over odd numbers}
+            \PYG{n}{p} \PYG{o}{+=} \PYG{l+m+mi}{2}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{c+c1}{\PYGZsh{} If p == 2, get to 3}
+            \PYG{n}{p} \PYG{o}{+=} \PYG{l+m+mi}{1}
+    \PYG{k}{assert} \PYG{k+kc}{False}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}unreachable\PYGZdq{}}
+
+
+\PYG{c+c1}{\PYGZsh{} Each \PYGZdq{}factorizer\PYGZdq{} function returns a dict mapping num \PYGZhy{}\PYGZgt{} factors}
+\PYG{k}{def} \PYG{n+nf}{serial\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{):}
+    \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{n}{n}\PYG{p}{:} \PYG{n}{factorize\PYGZus{}naive}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)} \PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n}{nums}\PYG{p}{\PYGZcb{}}
+
+\PYG{k}{def} \PYG{n+nf}{threaded\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{nthreads}\PYG{p}{):}
+    \PYG{k}{def} \PYG{n+nf}{worker}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{outdict}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} The worker function, invoked in a thread. \PYGZsq{}nums\PYGZsq{} is a}
+\PYG{l+s+sd}{            list of numbers to factor. The results are placed in}
+\PYG{l+s+sd}{            outdict.}
+\PYG{l+s+sd}{        \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n}{nums}\PYG{p}{:}
+            \PYG{n}{outdict}\PYG{p}{[}\PYG{n}{n}\PYG{p}{]} \PYG{o}{=} \PYG{n}{factorize\PYGZus{}naive}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Each thread will get \PYGZsq{}chunksize\PYGZsq{} nums and its own output dict}
+    \PYG{n}{chunksize} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{ceil}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{)} \PYG{o}{/} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{nthreads}\PYG{p}{)))}
+    \PYG{n}{threads} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{n}{outs} \PYG{o}{=} \PYG{p}{[\PYGZob{}\PYGZcb{}} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{nthreads}\PYG{p}{)]}
+
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{nthreads}\PYG{p}{):}
+        \PYG{c+c1}{\PYGZsh{} Create each thread, passing it its chunk of numbers to factor}
+        \PYG{c+c1}{\PYGZsh{} and output dict.}
+        \PYG{n}{t} \PYG{o}{=} \PYG{n}{threading}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}
+                \PYG{n}{target}\PYG{o}{=}\PYG{n}{worker}\PYG{p}{,}
+                \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{[}\PYG{n}{chunksize} \PYG{o}{*} \PYG{n}{i}\PYG{p}{:}\PYG{n}{chunksize} \PYG{o}{*} \PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)],}
+                      \PYG{n}{outs}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]))}
+        \PYG{n}{threads}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}
+        \PYG{n}{t}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} Wait for all threads to finish}
+    \PYG{k}{for} \PYG{n}{t} \PYG{o+ow}{in} \PYG{n}{threads}\PYG{p}{:}
+        \PYG{n}{t}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} Merge all partial output dicts into a single dict and return it}
+    \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{n}{k}\PYG{p}{:} \PYG{n}{v} \PYG{k}{for} \PYG{n}{out\PYGZus{}d} \PYG{o+ow}{in} \PYG{n}{outs} \PYG{k}{for} \PYG{n}{k}\PYG{p}{,} \PYG{n}{v} \PYG{o+ow}{in} \PYG{n}{out\PYGZus{}d}\PYG{o}{.}\PYG{n}{items}\PYG{p}{()\PYGZcb{}}
+
+\PYG{k}{def} \PYG{n+nf}{mp\PYGZus{}worker}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{out\PYGZus{}q}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} The worker function, invoked in a process. \PYGZsq{}nums\PYGZsq{} is a}
+\PYG{l+s+sd}{        list of numbers to factor. The results are placed in}
+\PYG{l+s+sd}{        a dictionary that\PYGZsq{}s pushed to a queue.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{outdict} \PYG{o}{=} \PYG{p}{\PYGZob{}\PYGZcb{}}
+    \PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n}{nums}\PYG{p}{:}
+        \PYG{n}{outdict}\PYG{p}{[}\PYG{n}{n}\PYG{p}{]} \PYG{o}{=} \PYG{n}{factorize\PYGZus{}naive}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+    \PYG{n}{out\PYGZus{}q}\PYG{o}{.}\PYG{n}{put}\PYG{p}{(}\PYG{n}{outdict}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{mp\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{nprocs}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} Each process will get \PYGZsq{}chunksize\PYGZsq{} nums and a queue to put his out}
+    \PYG{c+c1}{\PYGZsh{} dict into}
+    \PYG{n}{out\PYGZus{}q} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Queue}\PYG{p}{()}
+    \PYG{n}{chunksize} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{ceil}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{)} \PYG{o}{/} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{nprocs}\PYG{p}{)))}
+    \PYG{n}{procs} \PYG{o}{=} \PYG{p}{[]}
+
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{nprocs}\PYG{p}{):}
+        \PYG{n}{p} \PYG{o}{=} \PYG{n}{multiprocessing}\PYG{o}{.}\PYG{n}{Process}\PYG{p}{(}
+                \PYG{n}{target}\PYG{o}{=}\PYG{n}{mp\PYGZus{}worker}\PYG{p}{,}
+                \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{[}\PYG{n}{chunksize} \PYG{o}{*} \PYG{n}{i}\PYG{p}{:}\PYG{n}{chunksize} \PYG{o}{*} \PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)],}
+                      \PYG{n}{out\PYGZus{}q}\PYG{p}{))}
+        \PYG{n}{procs}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+        \PYG{n}{p}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} Collect all results into a single result dict. We know how many dicts}
+    \PYG{c+c1}{\PYGZsh{} with results to expect.}
+    \PYG{n}{resultdict} \PYG{o}{=} \PYG{p}{\PYGZob{}\PYGZcb{}}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{nprocs}\PYG{p}{):}
+        \PYG{n}{resultdict}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n}{out\PYGZus{}q}\PYG{o}{.}\PYG{n}{get}\PYG{p}{())}
+
+    \PYG{c+c1}{\PYGZsh{} Wait for all worker processes to finish}
+    \PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n}{procs}\PYG{p}{:}
+        \PYG{n}{p}\PYG{o}{.}\PYG{n}{join}\PYG{p}{()}
+
+    \PYG{k}{return} \PYG{n}{resultdict}
+
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}results}\PYG{p}{(}\PYG{n}{elapsed}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{rcdefaults}\PYG{p}{()}
+    \PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{()}
+    \PYG{n}{laby} \PYG{o}{=} \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Serial\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Thread 2\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Process 2\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Thread 4\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Process 4\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Thread 8\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}Process 8\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{y\PYGZus{}pos} \PYG{o}{=} \PYG{n}{numpy}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{laby}\PYG{p}{))}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{y\PYGZus{}pos}\PYG{p}{,} \PYG{n}{elapsed}\PYG{p}{,} \PYG{n}{align}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}center\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}yticks}\PYG{p}{(}\PYG{n}{y\PYGZus{}pos}\PYG{p}{)}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}yticklabels}\PYG{p}{(}\PYG{n}{laby}\PYG{p}{)}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{invert\PYGZus{}yaxis}\PYG{p}{()}  \PYG{c+c1}{\PYGZsh{} labels read top\PYGZhy{}to\PYGZhy{}bottom}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Elapsed time\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Serial, threads, processes comparison\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+    \PYG{n}{wait}\PYG{p}{()}
+
+\PYG{k}{def} \PYG{n+nf}{benchmark}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Running benchmark...\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{elapsed\PYGZus{}times}\PYG{o}{=}\PYG{p}{[]}
+
+    \PYG{n}{tserial}\PYG{o}{=}\PYG{n}{Timer}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}serial\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{with} \PYG{n}{tserial} \PYG{k}{as} \PYG{n}{qq}\PYG{p}{:}
+        \PYG{n}{s\PYGZus{}d} \PYG{o}{=} \PYG{n}{serial\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{)}
+    \PYG{n}{elapsed\PYGZus{}times}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{tserial}\PYG{o}{.}\PYG{n}{output}\PYG{p}{())}
+
+    \PYG{k}{for} \PYG{n}{numparallel} \PYG{o+ow}{in} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{]:}
+        \PYG{n}{tthread}\PYG{o}{=}\PYG{n}{Timer}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}threaded }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{numparallel}\PYG{p}{)}
+        \PYG{k}{with} \PYG{n}{tthread} \PYG{k}{as} \PYG{n}{qq}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}d} \PYG{o}{=} \PYG{n}{threaded\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{numparallel}\PYG{p}{)}
+        \PYG{n}{elapsed\PYGZus{}times}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{tthread}\PYG{o}{.}\PYG{n}{output}\PYG{p}{())}
+        \PYG{n}{tmpar}\PYG{o}{=}\PYG{n}{Timer}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}mp }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{numparallel}\PYG{p}{)}
+        \PYG{k}{with} \PYG{n}{tmpar} \PYG{k}{as} \PYG{n}{qq}\PYG{p}{:}
+            \PYG{n}{m\PYGZus{}d} \PYG{o}{=} \PYG{n}{mp\PYGZus{}factorizer}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{,} \PYG{n}{numparallel}\PYG{p}{)}
+        \PYG{n}{elapsed\PYGZus{}times}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{tmpar}\PYG{o}{.}\PYG{n}{output}\PYG{p}{())}
+    
+    \PYG{n+nb}{print} \PYG{p}{(}\PYG{n}{elapsed\PYGZus{}times}\PYG{p}{)}
+    \PYG{n}{plot\PYGZus{}results}\PYG{p}{(}\PYG{n}{elapsed\PYGZus{}times}\PYG{p}{)}
+    
+
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{n}{N} \PYG{o}{=} \PYG{l+m+mi}{299}
+
+\PYG{n}{nums} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{999999999999}\PYG{p}{]}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{N}\PYG{p}{):}
+    \PYG{n}{nums}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{)} 
+\PYG{n}{benchmark}\PYG{p}{(}\PYG{n}{nums}\PYG{p}{)}
+\end{Verbatim}

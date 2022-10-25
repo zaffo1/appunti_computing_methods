@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{k}{with} \PYG{n+nb}{open} \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}i\PYGZus{}do\PYGZus{}not\PYGZus{}exist.txt\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{lab\PYGZus{}data\PYGZus{}file}\PYG{p}{:}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Do some process here...}
+\PYG{l+s+sd}{        \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{pass}
+        
+\PYG{k}{except} \PYG{n+ne}{FileNotFoundError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} we assign a name to the the exception }
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{e}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} We can be less specific by catching a parent exception}
+\PYG{k}{except} \PYG{n+ne}{OSError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} OSError is a parent class of FileNotFoundError}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{e}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} catching Exception will catch almost everything!}
+\PYG{k}{except} \PYG{n+ne}{Exception} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{e}\PYG{p}{)}
+\end{Verbatim}

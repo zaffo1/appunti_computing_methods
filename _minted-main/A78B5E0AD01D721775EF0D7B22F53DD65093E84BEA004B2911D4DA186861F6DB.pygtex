@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+This line is not executed \PYG{k}{if} an exception is raised \PYG{k}{in} the try block
+This line is executed only \PYG{k}{if} a ValueError is raised \PYG{k}{in} the try block
+\end{Verbatim}

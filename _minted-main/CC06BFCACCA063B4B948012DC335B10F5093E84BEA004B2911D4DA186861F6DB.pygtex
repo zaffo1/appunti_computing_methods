@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+First call
+\PYG{l+m}{1}
+Second call
+\PYG{l+m}{2}
+I am about to rise a StopIteration exception...
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/generator\PYGZus{}functions.py\PYGZdq{}}, line \PYG{l+m}{11}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+        next\PYG{o}{(}gen\PYG{o}{)} \PYG{c+c1}{\PYGZsh{} The third next() will throw StopIteration}
+StopIteration
+\end{Verbatim}

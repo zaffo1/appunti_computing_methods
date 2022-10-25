@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{vector\PYGZus{}iterable} \PYG{k+kn}{import} \PYG{n}{Vector}
+\PYG{k+kn}{from} \PYG{n+nn}{itertools} \PYG{k+kn}{import} \PYG{n}{permutations}
+
+\PYG{n}{vec} \PYG{o}{=} \PYG{n}{Vector}\PYG{p}{([}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{,} \PYG{l+m+mf}{4.}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} Select only the elements passing a given condition}
+\PYG{k}{def} \PYG{n+nf}{filter\PYGZus{}function}\PYG{p}{(}\PYG{n}{x}\PYG{p}{):}
+    \PYG{k}{return} \PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{l+m+mf}{3.}
+    
+\PYG{n}{filtered} \PYG{o}{=} \PYG{p}{[}\PYG{n}{x} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{filter}\PYG{p}{(}\PYG{n}{filter\PYGZus{}function}\PYG{p}{,} \PYG{n}{vec}\PYG{p}{)]} \PYG{c+c1}{\PYGZsh{} list comprehension}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{filtered}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Print all the permutations of two elements}
+\PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n}{permutations}\PYG{p}{(}\PYG{n}{vec}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+
+\PYG{k}{class} \PYG{n+nc}{Particle}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a generic particle.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{mass}\PYG{p}{,} \PYG{n}{charge}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{name}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{momentum}\PYG{o}{=}\PYG{l+m+mf}{0.}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class constructor\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{mass} \PYG{o}{=} \PYG{n}{mass} \PYG{c+c1}{\PYGZsh{} in MeV}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{charge} \PYG{o}{=} \PYG{n}{charge} \PYG{c+c1}{\PYGZsh{} in e}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name} \PYG{o}{=} \PYG{n}{name}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{momentum} \PYG{o}{=} \PYG{n}{momentum} \PYG{c+c1}{\PYGZsh{} in MeV/c}
+    
+    \PYG{k}{def} \PYG{n+nf}{energy}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Return the energy of the particle in MeV/c\PYGZca{}2\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{return} \PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{momentum}\PYG{o}{**}\PYG{l+m+mf}{2.} \PYG{o}{+} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{mass}\PYG{o}{**}\PYG{l+m+mf}{2.}\PYG{p}{)}
+ 
+\PYG{k}{class} \PYG{n+nc}{Electron}\PYG{p}{(}\PYG{n}{Particle}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing an electron. We inherit from Particle}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{momentum}\PYG{o}{=}\PYG{l+m+mf}{0.}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Derived class constructor. We call the base class constructor\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n}{Particle}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{l+m+mf}{0.511}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}e\PYGZhy{}\PYGZsq{}}\PYG{p}{,} \PYG{n}{momentum}\PYG{p}{)}
+        
+\PYG{n}{el} \PYG{o}{=} \PYG{n}{Electron}\PYG{p}{(}\PYG{n}{momentum}\PYG{o}{=}\PYG{l+m+mf}{1.}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Energy of }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{ is }\PYG{l+s+si}{\PYGZob{}:.4f\PYGZcb{}}\PYG{l+s+s1}{ MeV/c\PYGZca{}2\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{el}\PYG{o}{.}\PYG{n}{name}\PYG{p}{,} \PYG{n}{el}\PYG{o}{.}\PYG{n}{energy}\PYG{p}{()))}
+\end{Verbatim}

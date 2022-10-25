@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+This line
+This line
+This line
+This line
+This line
+A. Manfreda \PYG{o}{(}INFN\PYG{o}{)}
+is
+is
+is
+is
+is
+not executed \PYG{k}{if} an exception is raised \PYG{k}{in} the try block
+executed only \PYG{k}{if} no exception is raised \PYG{k}{in} the try block
+always executed
+executed only \PYG{k}{if} a ValueError is raised \PYG{k}{in} the try block
+always executed
+\end{Verbatim}

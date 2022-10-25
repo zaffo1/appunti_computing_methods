@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+We all live \PYG{k}{in} a
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/exceptions\PYGZus{}vs\PYGZus{}err\PYGZus{}flags.py\PYGZdq{}}, line \PYG{l+m}{11}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+        print\PYG{o}{(}cut\PYGZus{}before\PYG{o}{(}’We all live \PYG{k}{in} a Yellow Submarine’, ’Red’\PYG{o}{))}
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/exceptions\PYGZus{}vs\PYGZus{}err\PYGZus{}flags.py\PYGZdq{}}, line \PYG{l+m}{5}, \PYG{k}{in} cut\PYGZus{}before
+    \PYG{n+nv}{pos} \PYG{o}{=} input\PYGZus{}string.index\PYG{o}{(}substring\PYG{o}{)}
+ValueError: substring not found
+\end{Verbatim}

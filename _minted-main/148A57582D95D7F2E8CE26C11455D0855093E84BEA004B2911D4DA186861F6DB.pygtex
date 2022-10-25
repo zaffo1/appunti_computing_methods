@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+docs
+\PYGZhy{}\PYGZhy{} Makefile
+\PYGZhy{}\PYGZhy{} build
+\PYGZhy{}\PYGZhy{} make.bat
+\PYGZhy{}\PYGZhy{} \PYG{n+nb}{source}
+    \PYG{p}{|}\PYGZhy{} \PYGZus{}static
+    \PYG{p}{|}\PYGZhy{} \PYGZus{}templates
+    \PYG{p}{|}\PYGZhy{} conf.py
+    \PYG{p}{|}\PYGZhy{} index.rst
+\end{Verbatim}

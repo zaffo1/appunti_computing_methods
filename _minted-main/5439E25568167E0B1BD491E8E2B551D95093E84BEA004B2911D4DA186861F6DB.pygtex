@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+Quack!
+Quack!
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/duck\PYGZus{}typing.py\PYGZdq{}}, line \PYG{l+m}{20}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+        bird.quack\PYG{o}{()}
+AttributeError: ’Penguin’ object has no attribute ’quack’
+\end{Verbatim}

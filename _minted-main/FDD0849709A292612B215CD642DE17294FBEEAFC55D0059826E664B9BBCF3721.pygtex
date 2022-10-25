@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{threading} \PYG{k}{as} \PYG{n+nn}{thr}
+\PYG{k+kn}{import} \PYG{n+nn}{requests}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{from} \PYG{n+nn}{time} \PYG{k+kn}{import} \PYG{n}{perf\PYGZus{}counter}
+
+\PYG{n}{buffer\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{1024}
+
+\PYG{c+c1}{\PYGZsh{}define a function to manage the download}
+\PYG{k}{def} \PYG{n+nf}{download}\PYG{p}{(}\PYG{n}{url}\PYG{p}{):}
+	\PYG{n}{response} \PYG{o}{=} \PYG{n}{requests}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{n}{url}\PYG{p}{,} \PYG{n}{stream}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+	\PYG{n}{filename} \PYG{o}{=} \PYG{n}{url}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{p}{)[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}
+	\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}wb\PYGZdq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+		\PYG{k}{for} \PYG{n}{data} \PYG{o+ow}{in} \PYG{n}{response}\PYG{o}{.}\PYG{n}{iter\PYGZus{}content}\PYG{p}{(}\PYG{n}{buffer\PYGZus{}size}\PYG{p}{):}
+			\PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{data}\PYG{p}{)}
+			
+			
+\PYG{c+c1}{\PYGZsh{}MAIN}
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+\PYG{n}{urls}\PYG{o}{=} \PYG{p}{[}
+\PYG{l+s+s2}{\PYGZdq{}http://cds.cern.ch/record/2690508/files/201909\PYGZhy{}262\PYGZus{}01.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}http://cds.cern.ch/record/2274473/files/05\PYGZhy{}07\PYGZhy{}2017\PYGZus{}Calorimeters.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}http://cds.cern.ch/record/2274473/files/08\PYGZhy{}07\PYGZhy{}2017\PYGZus{}Spectrometer\PYGZus{}magnet.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}http://cds.cern.ch/record/2127067/files/\PYGZus{}MG\PYGZus{}3944.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}http://cds.cern.ch/record/2274473/files/08\PYGZhy{}07\PYGZhy{}2017\PYGZus{}Electronics.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{}define 5 threads}
+\PYG{n}{threads} \PYG{o}{=} \PYG{p}{[}\PYG{n}{thr}\PYG{o}{.}\PYG{n}{Thread}\PYG{p}{(}\PYG{n}{target}\PYG{o}{=}\PYG{n}{download}\PYG{p}{,} \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{urls}\PYG{p}{[}\PYG{n}{x}\PYG{p}{],))} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)]}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{perf\PYGZus{}counter}\PYG{p}{()}
+\end{Verbatim}

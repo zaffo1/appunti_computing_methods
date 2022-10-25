@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+File \PYG{l+s+s2}{\PYGZdq{}snippets/custom\PYGZus{}exceptions.py\PYGZdq{}}, line \PYG{l+m}{4}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+raise SimpleCustomError\PYG{o}{(}’simple error’\PYG{o}{)}
+\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}.SimpleCustomError: simple error
+\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{c+c1}{\PYGZsh{} arrays and lists seem similar...}
+\PYG{n}{l} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mf}{1.}\PYG{p}{,} \PYG{l+m+mf}{2.}\PYG{p}{,} \PYG{l+m+mf}{3.}\PYG{p}{]}
+\PYG{n}{a} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} ...but they support basic arithmetic in a different fashion}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{l}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a} \PYG{o}{+} \PYG{n}{a}\PYG{p}{)}
+
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{1.0}\PYG{p}{,} \PYG{l+m+mf}{2.0}\PYG{p}{,} \PYG{l+m+mf}{3.0}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{1.} \PYG{l+m+mf}{2.} \PYG{l+m+mf}{3.}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{1.0}\PYG{p}{,} \PYG{l+m+mf}{2.0}\PYG{p}{,} \PYG{l+m+mf}{3.0}\PYG{p}{,} \PYG{l+m+mf}{1.0}\PYG{p}{,} \PYG{l+m+mf}{2.0}\PYG{p}{,} \PYG{l+m+mf}{3.0}\PYG{p}{]}
+\PYG{p}{[}\PYG{l+m+mf}{2.} \PYG{l+m+mf}{4.} \PYG{l+m+mf}{6.}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{l+m}{0}.1 \PYG{l+m}{15}.2
+\PYG{l+m}{0}.2 \PYG{l+m}{12}.4
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+File \PYG{l+s+s2}{\PYGZdq{}snippets/when\PYGZus{}to\PYGZus{}catch.py\PYGZdq{}}, line \PYG{l+m}{12}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+time, \PYG{n+nv}{tension} \PYG{o}{=} parse\PYGZus{}line\PYG{o}{(}line\PYG{o}{)}
+File \PYG{l+s+s2}{\PYGZdq{}snippets/when\PYGZus{}to\PYGZus{}catch.py\PYGZdq{}}, line \PYG{l+m}{6}, \PYG{k}{in} parse\PYGZus{}line
+\PYG{n+nv}{tension} \PYG{o}{=} float\PYG{o}{(}values\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{])}
+ValueError: could not convert string to float: ’pippo’
+\end{Verbatim}

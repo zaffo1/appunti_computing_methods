@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{owner}\PYG{p}{):}
+       \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class constructor\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{} Single underscore \PYGZhy{} tells the user he shouldn\PYGZsq{}t access the variable}
+        \PYG{c+c1}{\PYGZsh{} directly outside the class}
+       \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}model} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}Sv32X\PYGZhy{}553T\PYGZsq{}}
+        \PYG{c+c1}{\PYGZsh{} Double underscore \PYGZhy{} python will prepend \PYGZus{}Television to the name}
+       \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}\PYGZus{}owner} \PYG{o}{=} \PYG{n}{owner}
+    
+
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Alberto\PYGZsq{}}\PYG{p}{)}
+ \PYG{c+c1}{\PYGZsh{} The following line is bad practice, but it\PYGZsq{}s technically possible}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{\PYGZus{}model}\PYG{p}{)}
+ \PYG{c+c1}{\PYGZsh{} Even with two underscores I can still access it if I know the \PYGZdq{}trick\PYGZdq{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{\PYGZus{}Television\PYGZus{}\PYGZus{}owner}\PYG{p}{)}
+\end{Verbatim}

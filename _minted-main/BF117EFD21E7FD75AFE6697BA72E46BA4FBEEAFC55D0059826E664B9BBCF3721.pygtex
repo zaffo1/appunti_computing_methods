@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{func}\PYG{p}{(}\PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{kwargs}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{err}{’}\PYG{n}{verbose}\PYG{err}{’}\PYG{p}{,} \PYG{k+kc}{False}\PYG{p}{))}
+\PYG{n}{func}\PYG{p}{()}
+\PYG{n}{func}\PYG{p}{(}\PYG{n}{verbose}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{func}\PYG{p}{(}\PYG{n}{verbose}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
+\PYG{n}{func}\PYG{p}{(}\PYG{n}{verbose}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{num\PYGZus{}events}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{func}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{p}{[}\PYG{n}{Output}\PYG{p}{]}
+\PYG{k+kc}{False}
+\PYG{k+kc}{True}
+\PYG{k+kc}{False}
+\PYG{k+kc}{True}
+\PYG{n}{Traceback} \PYG{p}{(}\PYG{n}{most} \PYG{n}{recent} \PYG{n}{call} \PYG{n}{last}\PYG{p}{):}
+\PYG{n}{File} \PYG{l+s+s2}{\PYGZdq{}snippets/func\PYGZus{}kwargs.py\PYGZdq{}}\PYG{p}{,} \PYG{n}{line} \PYG{l+m+mi}{11}\PYG{p}{,} \PYG{o+ow}{in} \PYG{o}{\PYGZlt{}}\PYG{n}{module}\PYG{o}{\PYGZgt{}}
+\PYG{n}{func}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n+ne}{TypeError}\PYG{p}{:} \PYG{n}{func}\PYG{p}{()} \PYG{n}{takes} \PYG{l+m+mi}{0} \PYG{n}{positional} \PYG{n}{arguments} \PYG{n}{but} \PYG{l+m+mi}{1} \PYG{n}{was} \PYG{n}{given}
+\end{Verbatim}

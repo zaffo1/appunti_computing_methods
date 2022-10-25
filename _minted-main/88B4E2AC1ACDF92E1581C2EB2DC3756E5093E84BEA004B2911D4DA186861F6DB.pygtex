@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+\PYG{l+m}{4}
+\PYG{l+m}{5}.0 \PYG{l+m}{3}.0
+Vector\PYG{o}{([}\PYG{l+m}{5}.0, \PYG{l+m}{10}.0, \PYGZhy{}1.0, \PYG{l+m}{8}.0\PYG{o}{])}
+Traceback \PYG{o}{(}most recent call last\PYG{o}{)}:
+    File \PYG{l+s+s2}{\PYGZdq{}snippets/test\PYGZus{}vector\PYGZus{}random\PYGZus{}access.py\PYGZdq{}}, line \PYG{l+m}{12}, \PYG{k}{in} \PYGZlt{}module\PYGZgt{}
+        print \PYG{o}{(}v\PYG{o}{[}\PYG{l+m}{9}\PYG{o}{])} \PYG{c+c1}{\PYGZsh{} This will generate an error!}
+    File \PYG{l+s+s2}{\PYGZdq{}/data/work/teaching/cmepda/slides/latex/snippets/vector\PYGZus{}random\PYGZus{}access.py\PYGZdq{}}, line \PYG{l+m}{13},
+        \PYG{k}{return} self.\PYGZus{}components\PYG{o}{[}index\PYG{o}{]}
+IndexError: array index out of range
+\end{Verbatim}

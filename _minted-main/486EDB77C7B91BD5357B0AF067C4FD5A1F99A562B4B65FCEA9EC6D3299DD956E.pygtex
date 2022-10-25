@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{pass}
+
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} Add an attribute manually, with a simple assignment}
+\PYG{c+c1}{\PYGZsh{} Attributes are accessed through the \PYGZsq{}.\PYGZsq{} (dot) operator}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{1}
+\PYG{n+nb}{print} \PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{x}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} This attribute is not shared with other instances of the class}
+\PYG{n}{another\PYGZus{}tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{another\PYGZus{}tv}\PYG{o}{.}\PYG{n}{x}\PYG{p}{)}
+\end{Verbatim}

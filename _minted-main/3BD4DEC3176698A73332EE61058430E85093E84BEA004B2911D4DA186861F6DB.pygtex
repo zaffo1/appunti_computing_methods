@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+ValueTooLargeError: \PYG{l+m}{100} is too large
+\end{Verbatim}

@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf}{turn\PYGZus{}on}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{channel}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{):} \PYG{c+c1}{\PYGZsh{} Class method}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}All the class methods get the object instance as their first argument.}
+\PYG{l+s+sd}{        It is customary to call this argument \PYGZsq{}self\PYGZsq{}, though is not required}
+\PYG{l+s+sd}{        by the language rules (you can call it \PYGZsq{}pippo\PYGZsq{} and it will work }
+\PYG{l+s+sd}{        just as well)}
+\PYG{l+s+sd}{        \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Turning on }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{))}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Showing channel }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{channel}\PYG{p}{))}
+
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} Class methods and members are accessed through the \PYGZsq{}.\PYGZsq{} (dot) operator}
+\PYG{c+c1}{\PYGZsh{} You must not pass the \PYGZsq{}self\PYGZsq{} argument, it is added automatically!}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{turn\PYGZus{}on}\PYG{p}{(}\PYG{n}{channel}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}

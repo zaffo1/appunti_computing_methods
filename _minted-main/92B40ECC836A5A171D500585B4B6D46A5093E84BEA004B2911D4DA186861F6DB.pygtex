@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{[}Output\PYG{o}{]}
+Vector2d\PYG{o}{(}\PYG{l+m}{3}.0, \PYGZhy{}1.0\PYG{o}{)}
+\PYG{l+m}{3}.1622776601683795
+Vector2d\PYG{o}{(}\PYG{l+m}{4}.0, \PYG{l+m}{0}.5\PYG{o}{)}
+\end{Verbatim}

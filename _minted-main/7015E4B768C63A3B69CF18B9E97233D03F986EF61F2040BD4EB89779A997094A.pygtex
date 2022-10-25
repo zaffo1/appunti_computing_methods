@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Television}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class describing a televsion.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+       \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Class constructor\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+       \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{is\PYGZus{}on} \PYG{o}{=} \PYG{k+kc}{False}
+       \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel} \PYG{o}{=} \PYG{l+m+mi}{1}       
+    
+    \PYG{k}{def} \PYG{n+nf}{turn\PYGZus{}on}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Turn on the tv (I omit the turn\PYGZus{}off() method for brevity)\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Turning on!\PYGZsq{}}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{is\PYGZus{}on} \PYG{o}{=} \PYG{k+kc}{True}
+
+    \PYG{k}{def} \PYG{n+nf}{next\PYGZus{}channel}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} Go to next channel. Works only if the tv is on! \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{is\PYGZus{}on}\PYG{p}{):}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+\PYG{n}{tv} \PYG{o}{=} \PYG{n}{Television}\PYG{p}{()}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{next\PYGZus{}channel}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{} This will do nothing}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel}\PYG{p}{)}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{turn\PYGZus{}on}\PYG{p}{()}
+\PYG{n}{tv}\PYG{o}{.}\PYG{n}{next\PYGZus{}channel}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{} This will work}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tv}\PYG{o}{.}\PYG{n}{current\PYGZus{}channel}\PYG{p}{)}
+\end{Verbatim}
