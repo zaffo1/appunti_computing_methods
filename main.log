@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  25 OCT 2022 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  25 OCT 2022 11:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2759,29 +2759,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 1053--1056
 \openout6 = `main.pyg'.
 
 runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-main/FDD0849709A292612B215CD642DE17294FBEEAFC55D0059826E664B9BBCF3721.py
+minted-main/9E9803BBFEF9E2D5A9BDE6CB3DADD3DC4FBEEAFC55D0059826E664B9BBCF3721.py
 gtex main.pyg)...executed.
 
 
-(./_minted-main/FDD0849709A292612B215CD642DE17294FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/9E9803BBFEF9E2D5A9BDE6CB3DADD3DC4FBEEAFC55D0059826E664B9BBCF372
 1.pygtex)
 <figure_parallel/process_vs_thread.png, id=2139, 818.05624pt x 340.27126pt>
 File: figure_parallel/process_vs_thread.png Graphic file (type png)
 <use figure_parallel/process_vs_thread.png>
 Package pdftex.def Info: figure_parallel/process_vs_thread.png  used on input l
-ine 1135.
+ine 1147.
 (pdftex.def)             Requested size: 298.75264pt x 124.26807pt.
-) [125 <./figure_parallel/process_vs_thread.png>]
+ [125]) [126 <./figure_parallel/process_vs_thread.png>]
 \openout2 = `machine_learning.aux'.
 
 
-(./machine_learning.tex [126
+(./machine_learning.tex
+Chapter 3.
+) [127
 
 
 
 ]
-Chapter 3.
-) [127]
 \openout2 = `medphys.aux'.
 
  (./medphys.tex [128
@@ -3013,7 +3013,7 @@ B.pygtex) [138]
 
 (./_minted-main/91F33584D8618A86B18D91E7C3B093645093E84BEA004B2911D4DA186861F6D
 B.pygtex)) [139]
-runsystem(rm _minted-main/C703D249A2C83D1E23C28385B1A240384FBEEAFC55D0059826E66
+runsystem(rm _minted-main/FDD0849709A292612B215CD642DE17294FBEEAFC55D0059826E66
 4B9BBCF3721.pygtex)...executed.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
@@ -3036,7 +3036,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 Here is how much of TeX's memory you used:
  33794 strings out of 483107
  760940 string characters out of 5964630
- 1038400 words of memory out of 5000000
+ 1038404 words of memory out of 5000000
  46950 multiletter control sequences out of 15000+600000
  566752 words of font info for 112 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -3079,7 +3079,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (139 pages, 5035679 bytes).
+Output written on main.pdf (139 pages, 5036011 bytes).
 PDF statistics:
  3401 PDF objects out of 3580 (max. 8388607)
  2083 compressed objects within 21 object streams
