@@ -1860,7 +1860,8 @@ void blurKernel(unsigned char * in, unsigned char * out, int w, int h) {
 				// Verify we have a valid image pixel
 				if(curRow > -1 && curRow < h && curCol > -1 && curCol < w) {
 					pixVal += in[curRow * w + curCol];
-					pixels++; // Keep track of number of pixels in the accumulated total
+					pixels++; // Keep track of number of pixels in
+					the accumulated total
 				}
 			}
 		}
@@ -1901,17 +1902,93 @@ void blurKernel(unsigned char * in, unsigned char * out, int w, int h) {
 
 
 \newpage
+
+\section{Hands-on CUDA/C}
+\subsection{Characteristics of GPU we are using: GeForce GTX650}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/gtx650.png}
+\end{figure}
+
+\subsection{Hello World}
+-Try to change the kernel launch parameters
+
+\inputminted{c}{cuda/HelloWordGpu.cu}
+
 la funzione \texttt{print} è un po' particolare, è bene usarla solo per il debugging.\\
 
 il lancio del kernel è sempre asincrono sulla GPU. Se tolgo \texttt{cudaDeviceSyncronize()}, la fine del programma (\texttt{return 0}) arriva prima dei print.
 
 
-\subsection{Vector Sum}
 
-\subsection{Vector Parallel}
+\subsection{Vector Sum (Serial)}
+We want to sum two vectors of 1048576 elements each. First we will try to write a «serial» version of the code. Due to the presence of cuda functions to measure the time, this code must be compiled with nvcc.\\
+
+\textbf{Time: 5.0 ms}
+\inputminted{c}{cuda/VecAdd_Serial.cu}
+
+\subsection{Vector Sum (parallel)}
+
+Let’s try to parallelize, by using several blocks. Remember to copy data from host to device and results back. 
+
+\inputminted{c}{cuda/VecAdd_WithBlocks.cu}
+
+The results is not what we expect $\rightarrow$ Time: 17 ms !!! Why?\\
+
 
 Abbiamo chiesto di far lavorare solo due thread per blocco! Stiamo sfruttando male la GPU (il coverage delle risorse è molto basso)
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figure_parallel/gtx650.png}
+\end{figure}
+
+\subsection{Vector Sum (parallel): 2° attempt}
+
+Then let’s try to use one single block
+and N Threads:
+
+\begin{minted}{c}
+<skip>
+//Launch Kernel on GPU
+	VecAddGpu<<<1,N>>>(d_a,d_b,d_c);
+	cudaDeviceSynchronize();
+\end{minted}
+
+Time=0.007 ms $\rightarrow$ SpeedUp = 714 !!!\\
+Uhmmmmmmmmmmmm...A reasonable speedup is around 100 or less\\
+\textbf{Try to print something:}\\
+The results\\
+The error code\\
+Try to have a look to the maximum size of threads per block...
+
+\subsection{Vector Sum (parallel): final attempt}
+
+\textbf{Use both threads and blocks}.\\
+The total number of threads must be equal to the number of elements in the vectors.\\ Define an «index» by using the block/thread identifier. The kernel must be adapted to this structure.
+
+\begin{minted}{c}
+<skip>
+#define THREADS_PER_BLOCK 128
+<skip>
+//kernel
+__global__ void VecAddGpu(int *a, int *b, int *c){
+	int index = threadIdx.x + blockIdx.x*blockDim.x;
+	c[index] = a[index]+b[index];
+}
+
+<skip>
+//Launch Kernel on GPU
+VecAddGpu<<<N/THREADS_PER_BLOCK,THREADS_PER_BLOCK>>>(d_a,d_b,d_c);
+cudaDeviceSynchronize();
+\end{minted}
+
+Time=0.45 ms. Without errors!
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/vector_sum_final.png}
+\end{figure}
 
 
-\textbf{Dobbiamo esplicitamente chiedere seè è avvenuto un errore}
+\textbf{Dobbiamo esplicitamente chiedere se è avvenuto un errore}

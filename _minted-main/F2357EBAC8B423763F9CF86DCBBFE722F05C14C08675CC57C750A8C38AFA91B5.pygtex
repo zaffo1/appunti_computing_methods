@@ -1,0 +1,80 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
+
+\PYG{c+cp}{\PYGZsh{}define N 1048576}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{RandomVector}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{nn}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{nn}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{rand}\PYG{p}{()}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{100}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//kernel}
+\PYG{n}{\PYGZus{}\PYGZus{}global\PYGZus{}\PYGZus{}}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{VecAddGpu}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{c}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  }\PYG{n}{c}\PYG{p}{[}\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{[}\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{p}{]}\PYG{o}{+}\PYG{n}{b}\PYG{p}{[}\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{main}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{h\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{h\PYGZus{}b}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{h\PYGZus{}c}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{d\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{d\PYGZus{}b}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{d\PYGZus{}c}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{size}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{N}\PYG{o}{*}\PYG{k}{sizeof}\PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{time}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{cudaEvent\PYGZus{}t}\PYG{+w}{ }\PYG{n}{start}\PYG{p}{,}\PYG{n}{stop}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{cudaEventCreate}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{start}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaEventCreate}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{stop}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//Alloc in Host (and filling)}
+\PYG{+w}{  }\PYG{n}{h\PYGZus{}a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{)}\PYG{n}{malloc}\PYG{p}{(}\PYG{n}{size}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{h\PYGZus{}b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{)}\PYG{n}{malloc}\PYG{p}{(}\PYG{n}{size}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{h\PYGZus{}c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{)}\PYG{n}{malloc}\PYG{p}{(}\PYG{n}{size}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{RandomVector}\PYG{p}{(}\PYG{n}{h\PYGZus{}a}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{RandomVector}\PYG{p}{(}\PYG{n}{h\PYGZus{}b}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//Alloc in Device}
+\PYG{+w}{  }\PYG{n}{cudaMalloc}\PYG{p}{((}\PYG{k+kt}{void}\PYG{+w}{ }\PYG{o}{**}\PYG{p}{)}\PYG{o}{\PYGZam{}}\PYG{n}{d\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaMalloc}\PYG{p}{((}\PYG{k+kt}{void}\PYG{+w}{ }\PYG{o}{**}\PYG{p}{)}\PYG{o}{\PYGZam{}}\PYG{n}{d\PYGZus{}b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaMalloc}\PYG{p}{((}\PYG{k+kt}{void}\PYG{+w}{ }\PYG{o}{**}\PYG{p}{)}\PYG{o}{\PYGZam{}}\PYG{n}{d\PYGZus{}c}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{);}
+
+
+
+\PYG{+w}{  }\PYG{c+c1}{//Copy input vectors form host to device}
+\PYG{+w}{  }\PYG{n}{cudaMemcpy}\PYG{p}{(}\PYG{n}{d\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{h\PYGZus{}a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cudaMemcpyHostToDevice}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaMemcpy}\PYG{p}{(}\PYG{n}{d\PYGZus{}b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{h\PYGZus{}b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cudaMemcpyHostToDevice}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//start time}
+\PYG{+w}{  }\PYG{n}{cudaEventRecord}\PYG{p}{(}\PYG{n}{start}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//Launch Kernel  on GPU}
+\PYG{+w}{  }\PYG{n}{VecAddGpu}\PYG{o}{\PYGZlt{}\PYGZlt{}\PYGZlt{}}\PYG{n}{N}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{p}{(}\PYG{n}{d\PYGZus{}a}\PYG{p}{,}\PYG{n}{d\PYGZus{}b}\PYG{p}{,}\PYG{n}{d\PYGZus{}c}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaDeviceSynchronize}\PYG{p}{();}
+
+\PYG{+w}{  }\PYG{c+c1}{//stop time}
+\PYG{+w}{  }\PYG{n}{cudaEventRecord}\PYG{p}{(}\PYG{n}{stop}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaEventSynchronize}\PYG{p}{(}\PYG{n}{stop}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaEventElapsedTime}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{time}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{start}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{stop}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//Copy back the results}
+\PYG{+w}{  }\PYG{n}{cudaMemcpy}\PYG{p}{(}\PYG{n}{h\PYGZus{}c}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{d\PYGZus{}c}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{size}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cudaMemcpyDeviceToHost}\PYG{p}{);}
+
+
+
+\PYG{+w}{  }\PYG{c+c1}{//Print Result}
+\PYG{+w}{  }\PYG{c+c1}{//    for(int i=0;i\PYGZlt{}N;i++)\PYGZob{}}
+\PYG{+w}{  }\PYG{c+c1}{//   printf (\PYGZdq{}\PYGZpc{}d) h\PYGZus{}a:\PYGZpc{}d h\PYGZus{}b:\PYGZpc{}d h\PYGZus{}c:\PYGZpc{}d\PYGZbs{}n\PYGZdq{},i,h\PYGZus{}a[i],h\PYGZus{}b[i],h\PYGZus{}c[i]);}
+\PYG{+w}{  }\PYG{c+c1}{//\PYGZcb{}}
+
+\PYG{+w}{  }\PYG{c+c1}{//print time}
+\PYG{+w}{  }\PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Time: \PYGZpc{}3.5f ms}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{time}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{c+c1}{//Cleanup}
+\PYG{+w}{  }\PYG{n}{free}\PYG{p}{(}\PYG{n}{h\PYGZus{}a}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{free}\PYG{p}{(}\PYG{n}{h\PYGZus{}b}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{free}\PYG{p}{(}\PYG{n}{h\PYGZus{}c}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaFree}\PYG{p}{(}\PYG{n}{d\PYGZus{}a}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaFree}\PYG{p}{(}\PYG{n}{d\PYGZus{}b}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{cudaFree}\PYG{p}{(}\PYG{n}{d\PYGZus{}c}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{k}{return}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

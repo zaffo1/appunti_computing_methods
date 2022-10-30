@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZlt{}}\PYG{n}{skip}\PYG{o}{\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define THREADS\PYGZus{}PER\PYGZus{}BLOCK 128}
+\PYG{o}{\PYGZlt{}}\PYG{n}{skip}\PYG{o}{\PYGZgt{}}
+\PYG{c+c1}{//kernel}
+\PYG{n}{\PYGZus{}\PYGZus{}global\PYGZus{}\PYGZus{}}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{VecAddGpu}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{c}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{threadIdx}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{o}{*}\PYG{n}{blockDim}\PYG{p}{.}\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{c}\PYG{p}{[}\PYG{n}{index}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{[}\PYG{n}{index}\PYG{p}{]}\PYG{o}{+}\PYG{n}{b}\PYG{p}{[}\PYG{n}{index}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{o}{\PYGZlt{}}\PYG{n}{skip}\PYG{o}{\PYGZgt{}}
+\PYG{c+c1}{//Launch Kernel on GPU}
+\PYG{n}{VecAddGpu}\PYG{o}{\PYGZlt{}\PYGZlt{}\PYGZlt{}}\PYG{n}{N}\PYG{o}{/}\PYG{n}{THREADS\PYGZus{}PER\PYGZus{}BLOCK}\PYG{p}{,}\PYG{n}{THREADS\PYGZus{}PER\PYGZus{}BLOCK}\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{p}{(}\PYG{n}{d\PYGZus{}a}\PYG{p}{,}\PYG{n}{d\PYGZus{}b}\PYG{p}{,}\PYG{n}{d\PYGZus{}c}\PYG{p}{);}
+\PYG{n}{cudaDeviceSynchronize}\PYG{p}{();}
+\end{Verbatim}

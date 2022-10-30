@@ -269,18 +269,23 @@
 \contentsline {subsection}{GPU for images}{138}{section*.346}%
 \contentsline {subsection}{RGB to Grayscale conversion}{139}{section*.348}%
 \contentsline {section}{Blurring an image}{140}{section*.350}%
-\contentsline {subsection}{Vector Sum}{140}{section*.352}%
-\contentsline {subsection}{Vector Parallel}{140}{section*.353}%
-\contentsline {chapter}{\numberline {3}Machine Learning}{141}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Fisica Medica}{143}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{145}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{145}{section*.354}%
-\contentsline {subsection}{Copiare la Repository in Locale}{145}{section*.355}%
-\contentsline {subsection}{Comandi principali in locale}{145}{section*.356}%
-\contentsline {subsection}{Creare una Repository in locale}{146}{section*.357}%
-\contentsline {subsection}{Git Workflow}{147}{section*.359}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{149}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{150}{section*.362}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{151}{section*.363}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{152}{section*.364}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{152}{section*.365}%
+\contentsline {section}{Hands-on CUDA/C}{142}{section*.352}%
+\contentsline {subsection}{Characteristics of GPU we are using: GeForce GTX650}{142}{section*.353}%
+\contentsline {subsection}{Hello World}{142}{section*.355}%
+\contentsline {subsection}{Vector Sum (Serial)}{142}{section*.356}%
+\contentsline {subsection}{Vector Sum (parallel)}{143}{section*.357}%
+\contentsline {subsection}{Vector Sum (parallel): 2° attempt}{145}{section*.359}%
+\contentsline {subsection}{Vector Sum (parallel): final attempt}{145}{section*.360}%
+\contentsline {chapter}{\numberline {3}Machine Learning}{147}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{149}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{151}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{151}{section*.362}%
+\contentsline {subsection}{Copiare la Repository in Locale}{151}{section*.363}%
+\contentsline {subsection}{Comandi principali in locale}{151}{section*.364}%
+\contentsline {subsection}{Creare una Repository in locale}{152}{section*.365}%
+\contentsline {subsection}{Git Workflow}{153}{section*.367}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{155}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{156}{section*.370}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{157}{section*.371}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{158}{section*.372}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{158}{section*.373}%
