@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}define CHANNELS 3 }\PYG{c+c1}{// we have 3 channels corresponding to RGB}
+\PYG{c+c1}{// The input image is encoded as unsigned characters [0, 255]}
+\PYG{n}{\PYGZus{}\PYGZus{}global\PYGZus{}\PYGZus{}}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{colorConvert}\PYG{p}{(}\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{grayImage}\PYG{p}{,}
+\PYG{+w}{									}\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{rgbImage}\PYG{p}{,}
+\PYG{+w}{						}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{width}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{height}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{threadIdx}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{blockDim}\PYG{p}{.}\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{threadIdx}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{blockDim}\PYG{p}{.}\PYG{n}{y}\PYG{p}{;}
+
+\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{width}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{height}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{c+c1}{// get 1D coordinate for the grayscale image}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{grayOffset}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{y}\PYG{o}{*}\PYG{n}{width}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{	}\PYG{c+c1}{// one can think of the RGB image having}
+\PYG{+w}{	}\PYG{c+c1}{// CHANNEL times columns than the gray scale image}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{rgbOffset}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{grayOffset}\PYG{o}{*}\PYG{n}{CHANNELS}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{r}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rgbImage}\PYG{p}{[}\PYG{n}{rgbOffset}\PYG{+w}{	}\PYG{p}{];}\PYG{+w}{ }\PYG{c+c1}{// red value for pixel}
+\PYG{+w}{	}\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{g}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rgbImage}\PYG{p}{[}\PYG{n}{rgbOffset}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{];}\PYG{+w}{ }\PYG{c+c1}{// green value for pixel}
+\PYG{+w}{	}\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rgbImage}\PYG{p}{[}\PYG{n}{rgbOffset}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{];}\PYG{+w}{ }\PYG{c+c1}{// blue value for pixel}
+\PYG{+w}{	}\PYG{c+c1}{// perform the rescaling and store it}
+\PYG{+w}{	}\PYG{c+c1}{// We multiply by floating point constants}
+\PYG{+w}{	}\PYG{n}{grayImage}\PYG{p}{[}\PYG{n}{grayOffset}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.21f}\PYG{o}{*}\PYG{n}{r}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mf}{0.71f}\PYG{o}{*}\PYG{n}{g}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mf}{0.07f}\PYG{o}{*}\PYG{n}{b}\PYG{p}{;}
+\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{\PYGZus{}\PYGZus{}global\PYGZus{}\PYGZus{}}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{PictureKernel}\PYG{p}{(}\PYG{k+kt}{float}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{d\PYGZus{}Pin}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{d\PYGZus{}Pout}\PYG{p}{,}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{height}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{width}\PYG{p}{)}
+
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// Calculate the row \PYGZsh{} of the d\PYGZus{}Pin and d\PYGZus{}Pout element}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{Row}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{y}\PYG{o}{*}\PYG{n}{blockDim}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{threadIdx}\PYG{p}{.}\PYG{n}{y}\PYG{p}{;}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// Calculate the column \PYGZsh{} of the d\PYGZus{}Pin and d\PYGZus{}Pout element}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{Col}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{blockIdx}\PYG{p}{.}\PYG{n}{x}\PYG{o}{*}\PYG{n}{blockDim}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{threadIdx}\PYG{p}{.}\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{// each thread computes one element of d\PYGZus{}Pout if in range}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{Row}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{height}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Col}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{width}\PYG{p}{))}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{n}{d\PYGZus{}Pout}\PYG{p}{[}\PYG{n}{Row}\PYG{o}{*}\PYG{n}{width}\PYG{o}{+}\PYG{n}{Col}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.0}\PYG{o}{*}\PYG{n}{d\PYGZus{}Pin}\PYG{p}{[}\PYG{n}{Row}\PYG{o}{*}\PYG{n}{width}\PYG{o}{+}\PYG{n}{Col}\PYG{p}{];}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

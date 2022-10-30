@@ -782,7 +782,7 @@ Threads provide no benefit in python for CPU intensive tasks because of the GIL.
 \FloatBarrier
 
 \newpage
-\section{\textit{Gio 20 ott - Lezione 9}}
+\section{\textit{Lun 24 ott - Lezione 10}}
 
 \subsection{The multiprocessing module}
 \subsubsection{HelloWorld}
@@ -1147,3 +1147,771 @@ Performaces depend on network speed. Overheads for thread start and lock release
     \includegraphics[width=0.7\textwidth]{figure_parallel/process_vs_thread.png}\end{figure}
 \FloatBarrier
 
+
+
+\newpage
+\section{\textit{Gio 27 ottobre - Lezione 11}}
+\section{Introduction to GPU computing (1)}
+
+\subsubsection{Moore's Law}
+
+Moore’s law: “The performance of microprocessors and the number of their transistors will double every 18 months”.\\
+The increasing of performance is related to the clock.\\
+Faster clock means higher dissipation $\rightarrow$ power wall
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/moore.png}\end{figure}
+\FloatBarrier
+
+
+\subsection{Parallel programming}
+
+Parallel computing is no longer something for SuperComputers. All the processors nowadays are multicores.\\
+The use of parallel architectures is mainly due to the physical constraints to
+frequency scaling.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/parallel_programming.png}\end{figure}
+\FloatBarrier
+
+\subsection{Limits of parallel programming}
+
+Several problems can be split in
+smaller problems to be solved
+concurrently. In any case the maximum speedup is not linear , but it depends on the serial part of the code (Amdahls’s law)\\
+The situation can improve if the
+amount of parallelizable part
+depends on the resources(Gustafson’s Law)
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/limits_parallel_programming.png}\end{figure}
+\FloatBarrier
+
+\begin{equation*}
+	S_{latency} = \dfrac{1}{1-p+\frac{p}{s}}
+\end{equation*}
+
+\begin{equation*}
+	S_{latency} = 1 - p + sp
+\end{equation*}
+
+\subsection{What are GPUs?}
+
+The GPUs are processors dedicated to parallel programming for
+graphical application.
+Rendering, Image transformation, ray tracing, etc. are typical
+application where parallelization can helps a lot.
+
+
+\subsection{Standard GPU pipeline}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/gpu_pipeline.png}\end{figure}
+\FloatBarrier
+
+Ogni triangolino è indipendente dall'altro. Possiamo agire contemporaneamente su questi triangolini in maniera parallela.
+
+\subsection{Standard GPU requirements}
+
+\textbf{Graphics pipeline}: huge amount of arithmetic on independent data:\\
+-Transforming positions\\
+-Generating pixel colors\\
+-Applying material properties and light situation to every pixel\\
+\textbf{Hardware needs}\\
+-Access memory simultaneously and contiguously\\
+-Bandwidth more important than latency\\
+-Floating point and fixed-function logic\\
+
+\subsection{What are the GPUs?}
+
+The technical definition of a GPU is "a single-chip processor with integrated
+transform, lighting, triangle setup/clipping, and rendering engines that is
+capable of processing a minimum of 10 million polygons per second.“\\
+The possibility to use the GPU for generic computing (GPGPU) has been
+introduced by NVIDIA in 2007 (CUDA)\\
+In 2008 OpenCL: consortium of different firms to introduce a multi-platform
+language for manycores computing.
+
+\subsection{Why the GPUs?}
+
+-GPU is a way to cheat the Moore’s law\\
+Implementano la possibilità di eseguire operazioni ad una velocità superiore a quella del clock.\\
+-SIMD/SIMT parallel architecture\\
+-The PC no longer get faster, just wider.\\
+-Very high computing power for «vectorizable» problems\\
+-Impressive derivative almost a factor of 2 in each generation\\
+-Continuous development\\
+-Easy to have a desktop PC with teraflops of computing power, with thousand of cores.\\
+-Several applications in HPC, simulation, scientific computing…\\
+
+Vogliamo imparare a sfruttare una tecnologia utilizzata sul mercato (che migliora ogni anno), per i nostri scopi di calcolo scientifico.\\
+
+\subsection{A lot of cores...}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/cores.png}\end{figure}
+\FloatBarrier
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/cores2.png}\end{figure}
+\FloatBarrier
+
+
+\subsection{Metrics}
+
+\textbf{FLOPS} (Floating Point operation per
+second):\\
+It is a measurement of the computing power of a processor. Theoretically is defined as:
+\begin{equation*}
+	FLOPS = clock * cores * Operation/cycle
+\end{equation*}
+%%%%
+Actually this formula doesn’t take into account several things\\
+The real extimation is made experimentally by using standard packages (LINPACK,
+LAPACK)\\
+The FLOPS is only a first indication of the computing power.\\
+Other metrics has been invented to avoid the limitations of the FLOPS.\\
+
+\textbf{SPECint and SPECf}\\
+They are suites of 12 benchmarks of different type (for integer and floating point). The extimation is relative to a particular
+machine.
+
+
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=.9\linewidth]{figure_parallel/metrics.png}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=.9\linewidth]{figure_parallel/metrics2.png}
+\end{subfigure}
+\end{figure}
+\FloatBarrier
+
+
+
+
+
+
+
+\subsection{Computing power comparison}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figure_parallel/computing_power_comparison.png}\end{figure}
+\FloatBarrier
+
+\subsection{CPU}
+
+-\textbf{Multilevel and Large Caches}: Convert long latency memory access to -short latency cache latency.\\
+-\textbf{Branch prediction:} To reduce latency in branching
+-Instruction level parallelism (ILP)\\
+-Powerful ALU: Reduced operation latency\\
+-Memory management\\
+-Large control part\\
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.38\textwidth]{figure_parallel/CPU.png}
+	\caption{CPU: latency oriented design}
+\end{figure}
+\FloatBarrier
+
+\subsection{GPU}
+
+-SIMT/SIMD (Single instruction Multiple Thread/Data) architecture\\
+-SMX (Streaming Multi Processors) to execute kernels\\
+-Thread level parallelism: Massive threading to hide the latency\\
+-Limited caching: To boost memory throughput\\
+-Limited control\\
+-No branch prediction, but branch predication
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.36\textwidth]{figure_parallel/GPU.png}
+	\caption{GPU: throughput oriented design}
+\end{figure}
+\FloatBarrier
+
+\subsection{CPU vs GPU}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/cpu_vs_gpu.png}
+\end{figure}
+\FloatBarrier
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figure_parallel/cpu_vs_gpu_table.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{SIMT}
+
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+	\begin{center}
+		\includegraphics[width=0.43\textwidth]{figure_parallel/simt.png}
+	\end{center}
+\end{wrapfigure}
+
+Consideriamo un processore da 4000 core. La struttura SIMD prevederebbe che tutti i core facciano la stessa cosa nello stesso momento (ad es sommare due vettori di 4000 elementi).
+
+
+
+\begin{itemize}
+	\item Standard CPU : Scalar processors
+	\item SIMD CPU: vector processors
+	\item Simultaneous threads in multicore processors
+	\item SIMT (Single Instruction Multiple	Threads)
+	\begin{itemize}
+		\item CPU core ~ GPU multiprocessor (SMX)
+		\item Working unit: a set of threads (32, a warp)
+		\item Fast switching of threads
+	\end{itemize}
+\end{itemize}
+
+\subsection{CPU core vs GPU SMX}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/core_vs_smx.png}
+\end{figure}
+\FloatBarrier
+
+
+The latency in a SMX is hidden thanks to very deep pipelines.\\
+The multithreading in a single CPU core is based on context switching.\\
+
+
+
+\subsection{GPU+CPU}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{figure_parallel/GPU_CPU.png}
+	\end{center}
+\end{wrapfigure}
+
+The winning application uses both CPU and GPU:
+
+\begin{itemize}
+	\item CPUs for sequential parts
+	\begin{itemize}
+		\item can be 10X faster than GPU for sequential code
+	\end{itemize}
+	\item GPUs for parallel part where throughput wins
+	\begin{itemize}
+		\item can be 100X faster than CPU for parallel code
+	\end{itemize}
+	\item The Host-Device connection is done with PCIe-gen3 (16 GB/s) or NVLINK (80 GB/s)
+	\begin{itemize}
+		\item Relatively slow
+		\item Do as little as possible
+	\end{itemize}
+	\item The bandwidth between GPU and video memory is HBM2 (720 GB/s in P100, 900 GB/s in V100)
+\end{itemize}
+
+
+\vfill
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={Summary: },colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+		\item Superscalars, Pipelining and Vectorialization are methods to exploit some «parallelism» at the instruction and data level: ILP
+		\begin{itemize}
+			\item Probably OOO (Out-of-order) execution should be included in this category
+		\end{itemize}
+		\item The possible improvement thanks to ILP depends on problem and data structures
+		\begin{itemize}
+			\item 1x-10x for Superscalars and Pipeline
+			\item 2x,4x,8x,16x for the vectorialization
+		\end{itemize}
+		\item These methods show «saturation» because they are limited by the CPU resources available
+		\begin{itemize}
+			\item Pentium 4: 30 pipeline stages (nowadays 10-15 maximum)
+			\item ARM A57 (Apple A7/A8): 9 ports/6 instructions superscalar
+			\item Intel Tiger Lake: vector of 512 bits for a subset of AVX512 instructions
+		\end{itemize}
+	\end{itemize}  
+	… the point is: can CPU resources grow indefinitely?
+\end{tcolorbox}
+
+\newpage
+\clearpage
+
+\section{Introduction to GPU computing (2)}
+\subsection{CUDA model}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figure_parallel/cuda.png}
+\end{figure}
+\FloatBarrier
+
+CUDA is a set of C/C++ extensions to enable the GPGPU computing on
+NVIDIA GPUs. Dedicated APIs allow to control almost all the functions of the graphics processor.\\
+Three steps:
+\begin{enumerate}
+	\item copy data from Host to Device
+	\item copy Kernel and execute
+	\item copy back results
+\end{enumerate}
+
+\subsection{Grid, blocks and threads}
+
+The computing resources are logically (and physically) grouped in a flexible parallel model of computation:\\
+\begin{itemize}
+	\item 1D,2D and 3D grid
+	\item With 1D, 2D and 3D blocks
+	\item With 1D, 2D and 3D threads
+\end{itemize}
+
+Only threads can communicate and synchronize in a block.\\
+Threads in different blocks do not interact, threads in same block execute same instruction at the same time.\\
+The “shape” of the system is decided at kernel launch time.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.55\textwidth]{figure_parallel/gbt.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{GPU structure}
+I singoli thread runnano sui core.
+I thread sono raggruppate in blocchi. Un blocco è implementato da un multiprocessore.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure_parallel/gpu_structure.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Multiprocessor}
+Anche se il numero di core è più piccolo del numero di thread, continua a poterli runnare, perché lo scheduler si prende il compito di fare eseguire i vari compiti in maniera parallela.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/multiprocessor.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Memory}
+
+The memory hierarchy is fundamental in GPU programming.
+Most of the memory managing and data locality is left to the user.\\
+\begin{itemize}
+	\item Unified Address Space
+	\item Global Memory
+	\begin{itemize}
+		\item On board, relatively slow, lifetime of the application, accessible from host and device 
+	\end{itemize}
+	\item Shared memory/registers
+		\begin{itemize}
+		\item On Chip, very fast, lifetime of blocks/threads, accessible from kernel only
+	\end{itemize}
+\end{itemize}
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure_parallel/memory.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Asynchronicity}
+
+\textbf{Problem}: Memory transfer is comparably slow\\
+\textbf{Solution}: Do something else in meantime (computation)!\\
+Overlap tasks:\\
+-Copy and compute engines run separately (streams)
+-GPU needs to be fed: Schedule many computations
+-CPU can do other work while GPU computes; synchronization
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/asyncronicity.png}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{How to program GPU?}
+
+\begin{itemize}
+	\item CUDA is the “best” way to program NVIDIA GPU at “low level”
+	\item If your code is almost CPU or if you need to accelerate dedicated functions, you could consider to use
+	\begin{itemize}
+		\item Directives
+			\begin{itemize}
+			\item OpenMP, OpenACC, …
+			\end{itemize}
+	\end{itemize}
+		\begin{itemize}
+		\item Libraries
+			\begin{itemize}
+			\item Thrust, ArrayFire,…
+			\end{itemize}
+		\end{itemize}
+	\item OpenCL is a framework equivalent to CUDA to program multiplatforms
+	\begin{itemize}
+		\item GPU, CPU, DSP, FPGA,… 
+	\end{itemize}
+	\item C/C++ and Fortran are the “official” languages for CUDA
+		\begin{itemize}
+		\item Python and other languages are supported through	wrapping and libraries
+		\end{itemize}
+	\end{itemize}
+
+\subsection{Libraries: cuBLAS}
+
+GPU-parallel linear algebra routines (152 routines).\\
+Single, double, complex data types\\
+Possibility to use multiple GPUs\\
+Example (among 152 routines): Saxpy: given two vectors x[10] and y[10] compute y[i]=a*x[i]+y[i]\\
+\url{https://docs.nvidia.com/cuda/cublas/index.html}\\
+\url{https://developer.nvidia.com/cublas}\\
+
+\begin{minted}{c}
+int a = 42;
+int n = 10;
+float x[n], y[n];
+// fill x, y
+cublasInit();
+float * d_x, * d_y;
+cudaMalloc((void **)&d_x, n * sizeof(x[0]);
+cudaMalloc((void **)&d_y, n * sizeof(y[0]);
+cublasSetVector(n, sizeof(x[0]), x, 1, d_x, 1);
+cublasSetVector(n, sizeof(y[0]), y, 1, d_y, 1);
+cublasSaxpy(n, a, d_x, 1, d_y, 1);
+cublasGetVector(n, sizeof(y[0]), d_y, 1, y, 1);
+cublasShutdown();
+\end{minted}
+
+\subsection{Libraries: Thrust}
+
+-Template library\\
+-Data parallel primitives (scan(), sort(), reduce(), … )\\
+-Comes when you install CUDA for free\\
+
+\begin{minted}{c}
+int a = 42;
+int n = 10;
+thrust::host_vector<float> x(n), y(n);
+// fill x, y
+thrust::device_vector d_x = x, d_y = y;
+using namespace thrust::placeholders;
+thrust::transform(d_x.begin(), d_x.end(), d_y.begin(), d_y.begin(), a * _1 + _2);
+x = d_x;
+\end{minted}
+
+\subsection{Directives: OpenMP, OpenACC}
+
+The directive is the best transparent way to use GPU.\\
+You must only «annotate» the part of the code you want to parallelize:
+\begin{minted}{c}
+#pragma acc loop
+for (int i = 0; i < 100; i++) {};
+\end{minted}
+
+\subsection{Hello world}
+
+Per compilare si usa il compilatore \texttt{nvcc}. Lo si installa installando CUDA dal sito NVIDIA.
+
+\begin{minted}{shell}
+	nvcc -o HelloWorldGpu HelloWorldGpu.cu -arch=compute_30 -code=sm_30
+\end{minted}
+
+\noindent
+\textbf{Pro}: Portability; easy to program\\
+\textbf{Cons}: Not all the raw GPU power available; harder to debug; easy to program wrong\\
+
+OpenACC is more focused on GPU, while OpenMP is for multi-computers (but still usable with GPU)\\
+
+\begin{minted}{c}
+void saxpy_acc(int n, float a, float * x, float * y) {
+	#pragma acc kernels
+	for (int i = 0; i < n; i++) y[i] = a * x[i] + y[i];
+}
+…
+int a = 42;
+int n = 10;
+float x[n], y[n];
+// fill x, y
+saxpy_acc(n, a, x, y);
+\end{minted}
+
+\subsection{Direct Programming: CUDA vs OpenCL}
+
+\begin{multicols}{2}
+	CUDA:
+	\begin{itemize}
+		\item NVIDIA GPU’s Platform
+		\item Platform: Drivers, programming language (CUDA C/C++), API, compiler, debuggers, profilers, …
+		\item Only NVIDIA GPUs
+		\item Compilation with dedicated compiler (nvcc)
+		\item CUDA fortran
+	\end{itemize}
+	
+	\columnbreak
+	
+	OpenCL:
+	\begin{itemize}
+		\item Consortium: Open Computing Language by Khronos Group (Apple, IBM, AMD, NVIDIA, …)
+		\item Programming language (OpenCL C/C++), API, and compiler
+		\item Targets CPUs, GPUs, FPGAs, and other many-core machines
+		\item Fully open source
+		\item Different compilers available
+	\end{itemize}
+\end{multicols}
+
+\subsection{CUDA C/C++}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{figure_parallel/cuda_c_cpp.png}
+	\end{center}
+\end{wrapfigure}
+
+The function running on GPU is called Kernel.
+\begin{itemize}
+	\item Access own ID by global variables threadIdx.x, blockIdx.y, …
+	\item Execution order non-deterministic!
+	\item Only threads in one warp (32 threads of block) can communicate quickly
+	\item A kernel can call other kernels to run on the same GPU (more than one kernel can be executed in the GPU at the same time)
+	\item The kernels exploit the SIMD/SIMT structure of the GPU
+\end{itemize}
+
+
+\subsection{Example}
+
+\begin{minted}{c}
+__global__ void saxpy_cuda(int n, float a, float * x, float * y) {
+	int i = blockIdx.x * blockDim.x + threadIdx.x;
+	if (i < n) y[i] = a * x[i] + y[i];
+}
+int a = 42;
+int n = 10;
+float x[n], y[n];
+// fill x, y
+cudaMallocManaged(&x, n * sizeof(float));
+cudaMallocManaged(&y, n * sizeof(float));
+saxpy_cuda<<<2, 5>>>(n, a, x, y);
+cudaDeviceSynchronize();
+\end{minted}
+
+First the data must be copied on the device from the host\\
+Then the kernel is launched\\
+The architecture of threads and blocks is decided at run time\\
+
+
+\subsection{PyCUDA}
+GPUs are everything that scripting languages are not (Highly parallel; very architecture-sensitive; built for maximum throughput).\\
+In this sense GPU and Python can complement each other.\\
+“Alternative” to write the code: Scripting for ‘brains’ and GPUs for ‘inner loops
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/pycuda.png}
+\end{figure}
+\FloatBarrier
+
+
+
+\section{CUDA threads and blocks}
+
+\textbf{A CUDA kernel is executed by a grid of threads}.\\
+All threads in a grid run the same code (SIMD or better SPMD (Single Program Multiple Data).\\
+Each thread has indexes that it uses to compute memory addresses and make control decisions.\\
+
+\textbf{Organize threads in blocks}\\
+Threads within a block cooperate via shared memory, atomic operations and barrier
+synchronization. Threads in different blocks do not interact.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/threads_blocks.png}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{GPU for images}
+Assume to have a picture of 62x76 pixels.\\
+You want to increase the «luminosity» of each pixel by a factor of 2.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/pixel.png}
+\end{figure}
+\FloatBarrier
+
+\begin{minted}{c}
+__global__ void PictureKernel(float* d_Pin, float* d_Pout,
+int height, int width)
+
+{
+	
+	// Calculate the row # of the d_Pin and d_Pout element
+	int Row = blockIdx.y*blockDim.y + threadIdx.y;
+	
+	// Calculate the column # of the d_Pin and d_Pout element
+	int Col = blockIdx.x*blockDim.x + threadIdx.x;
+	
+	// each thread computes one element of d_Pout if in range
+	if ((Row < height) && (Col < width)) {
+		d_Pout[Row*width+Col] = 2.0*d_Pin[Row*width+Col];
+	}
+\end{minted}
+
+
+\begin{minted}{c}
+// assume that the picture is m × n,
+// m pixels in y dimension and n pixels in x dimension
+// input d_Pin has been allocated on and copied to device\\
+// output d_Pout has been allocated on device
+...
+dim3 DimGrid((n-1)/16 + 1, (m-1)/16+1, 1);
+dim3 DimBlock(16, 16, 1);
+PictureKernel<<<DimGrid,DimBlock>>>(d_Pin, d_Pout, m, n);
+...z
+\end{minted}
+
+\subsection{RGB to Grayscale conversion}
+Assume you want to convert an image in which you have the rgb code for each pixel in greyscale.\\
+Rgb is a standard to define the quantity of red, green and blue in each pixel.
+A greyscale image is an image in which the value of each pixel carries only intensity information.
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.2\textwidth]{figure_parallel/rgb.png}
+\end{figure}
+\FloatBarrier
+Conversion formula: \textbf{For each pixel (I, J) do:} grayPixel[I,J] = 0.21*r + 0.71*g + 0.07*b
+
+
+\begin{minted}{c}
+#define CHANNELS 3 // we have 3 channels corresponding to RGB
+// The input image is encoded as unsigned characters [0, 255]
+__global__ void colorConvert(unsigned char * grayImage, 
+									unsigned char * rgbImage,
+						int width, int height) {
+	int x = threadIdx.x + blockIdx.x * blockDim.x;
+	int y = threadIdx.y + blockIdx.y * blockDim.y;
+
+if (x < width && y < height) {
+	// get 1D coordinate for the grayscale image
+	int grayOffset = y*width + x;
+	// one can think of the RGB image having
+	// CHANNEL times columns than the gray scale image
+	int rgbOffset = grayOffset*CHANNELS;
+	unsigned char r = rgbImage[rgbOffset	]; // red value for pixel
+	unsigned char g = rgbImage[rgbOffset + 2]; // green value for pixel
+	unsigned char b = rgbImage[rgbOffset + 3]; // blue value for pixel
+	// perform the rescaling and store it
+	// We multiply by floating point constants
+	grayImage[grayOffset] = 0.21f*r + 0.71f*g + 0.07f*b;
+ }
+}
+\end{minted}
+
+
+\section{Blurring an image}
+Assume you want to Blur an image.\\
+Defines a Blur box: the blurring is a kind of «average» of the pixel in the blurring box.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figure_parallel/blur.png}
+\end{figure}
+\FloatBarrier
+
+
+\begin{minted}{c}
+__global__
+void blurKernel(unsigned char * in, unsigned char * out, int w, int h) {
+	int Col = blockIdx.x * blockDim.x + threadIdx.x;
+	int Row = blockIdx.y * blockDim.y + threadIdx.y;
+	
+	if (Col < w && Row < h) {
+		int pixVal = 0;
+		int pixels = 0;
+		
+		// Get the average of the surrounding 2xBLUR_SIZE x 2xBLUR_SIZE box
+		for(int blurRow = -BLUR_SIZE; blurRow < BLUR_SIZE+1; ++blurRow) {
+			for(int blurCol = -BLUR_SIZE; blurCol < BLUR_SIZE+1; ++blurCol) {
+		
+				int curRow = Row + blurRow;
+				int curCol = Col + blurCol;
+				// Verify we have a valid image pixel
+				if(curRow > -1 && curRow < h && curCol > -1 && curCol < w) {
+					pixVal += in[curRow * w + curCol];
+					pixels++; // Keep track of number of pixels in the accumulated total
+				}
+			}
+		}
+
+		// Write our new pixel value out
+		out[Row * w + Col] = (unsigned char)(pixVal / pixels);
+	}
+}
+\end{minted}
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={Recap: CUDA program structure},colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+		\item Global variables declaration
+		\item Function prototypes
+		\begin{itemize}
+			\item \texttt{\_\_global\_\_ void kernelOne(…)}
+		\end{itemize}
+		\item Main
+		\begin{itemize}
+			\item allocate memory space on the device transfer data from host to device
+			\item execution configuration setup
+			\item kernel call – \texttt{kernelOne<<<execution configuration>>>( args… )};
+			\item transfer results from device to host
+			\item optional: compare against golden (host computed) solution
+		\end{itemize}
+		\item Kernel – \texttt{void kernelOne(type args,…)}
+		\begin{itemize}
+			\item variables declaration - \texttt{\_\_local\_\_, \_\_shared\_\_} 
+			\begin{itemize}
+				\item automatic variables transparently assigned to registers or local memory
+			\end{itemize}
+			\item \texttt{syncthreads() …}
+		\end{itemize}
+	\end{itemize}  
+\end{tcolorbox}
+
+
+
+
+\newpage
+la funzione \texttt{print} è un po' particolare, è bene usarla solo per il debugging.\\
+
+il lancio del kernel è sempre asincrono sulla GPU. Se tolgo \texttt{cudaDeviceSyncronize()}, la fine del programma (\texttt{return 0}) arriva prima dei print.
+
+
+\subsection{Vector Sum}
+
+\subsection{Vector Parallel}
+
+Abbiamo chiesto di far lavorare solo due thread per blocco! Stiamo sfruttando male la GPU (il coverage delle risorse è molto basso)
+
+
+
+\textbf{Dobbiamo esplicitamente chiedere seè è avvenuto un errore}

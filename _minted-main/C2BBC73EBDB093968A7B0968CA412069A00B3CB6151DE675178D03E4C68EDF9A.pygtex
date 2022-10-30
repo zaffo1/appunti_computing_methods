@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	nvcc \PYGZhy{}o HelloWorldGpu HelloWorldGpu.cu \PYGZhy{}arch\PYG{o}{=}compute\PYGZus{}30 \PYGZhy{}code\PYG{o}{=}sm\PYGZus{}30
+\end{Verbatim}

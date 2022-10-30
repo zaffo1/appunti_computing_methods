@@ -211,7 +211,7 @@
 \BOOKMARK [2][-]{section*.253}{Processi e Thread}{section*.249}% 211
 \BOOKMARK [2][-]{section*.254}{When to use threads vs processes?}{section*.249}% 212
 \BOOKMARK [2][-]{section*.255}{Things to be afraid of! \(not only in python...\)}{section*.249}% 213
-\BOOKMARK [1][-]{section*.257}{Gio 20 ott - Lezione 9}{chapter.2}% 214
+\BOOKMARK [1][-]{section*.257}{Lun 24 ott - Lezione 10}{chapter.2}% 214
 \BOOKMARK [2][-]{section*.258}{The multiprocessing module}{section*.257}% 215
 \BOOKMARK [3][-]{section*.259}{HelloWorld}{section*.258}% 216
 \BOOKMARK [3][-]{section*.260}{FatherAndSons}{section*.258}% 217
@@ -230,16 +230,57 @@
 \BOOKMARK [2][-]{section*.280}{Comparison between Threads and Processes}{section*.257}% 230
 \BOOKMARK [2][-]{section*.283}{Why should I use threads?}{section*.257}% 231
 \BOOKMARK [2][-]{section*.284}{Process vs Threads}{section*.257}% 232
-\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 233
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 234
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 235
-\BOOKMARK [1][-]{section*.286}{Creare una Repository partendo da GitHub}{appendix.A}% 236
-\BOOKMARK [2][-]{section*.287}{Copiare la Repository in Locale}{section*.286}% 237
-\BOOKMARK [2][-]{section*.288}{Comandi principali in locale}{section*.286}% 238
-\BOOKMARK [2][-]{section*.289}{Creare una Repository in locale}{section*.286}% 239
-\BOOKMARK [2][-]{section*.291}{Git Workflow}{section*.286}% 240
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 241
-\BOOKMARK [1][-]{section*.294}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 242
-\BOOKMARK [2][-]{section*.295}{Step 2: Configure the conf.py}{section*.294}% 243
-\BOOKMARK [2][-]{section*.296}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.294}% 244
-\BOOKMARK [2][-]{section*.297}{Step 4: Including module.rst and generating html}{section*.294}% 245
+\BOOKMARK [1][-]{section*.286}{Gio 27 ottobre - Lezione 11}{chapter.2}% 233
+\BOOKMARK [1][-]{section*.287}{Introduction to GPU computing \(1\)}{chapter.2}% 234
+\BOOKMARK [2][-]{section*.288}{Moore's Law}{section*.287}% 235
+\BOOKMARK [2][-]{section*.290}{Parallel programming}{section*.287}% 236
+\BOOKMARK [2][-]{section*.292}{Limits of parallel programming}{section*.287}% 237
+\BOOKMARK [2][-]{section*.294}{What are GPUs?}{section*.287}% 238
+\BOOKMARK [2][-]{section*.295}{Standard GPU pipeline}{section*.287}% 239
+\BOOKMARK [2][-]{section*.297}{Standard GPU requirements}{section*.287}% 240
+\BOOKMARK [2][-]{section*.298}{What are the GPUs?}{section*.287}% 241
+\BOOKMARK [2][-]{section*.299}{Why the GPUs?}{section*.287}% 242
+\BOOKMARK [2][-]{section*.300}{A lot of cores...}{section*.287}% 243
+\BOOKMARK [2][-]{section*.303}{Metrics}{section*.287}% 244
+\BOOKMARK [2][-]{section*.305}{Computing power comparison}{section*.287}% 245
+\BOOKMARK [2][-]{section*.307}{CPU}{section*.287}% 246
+\BOOKMARK [2][-]{section*.309}{GPU}{section*.287}% 247
+\BOOKMARK [2][-]{section*.311}{CPU vs GPU}{section*.287}% 248
+\BOOKMARK [2][-]{section*.314}{SIMT}{section*.287}% 249
+\BOOKMARK [2][-]{section*.316}{CPU core vs GPU SMX}{section*.287}% 250
+\BOOKMARK [2][-]{section*.318}{GPU+CPU}{section*.287}% 251
+\BOOKMARK [1][-]{section*.320}{Introduction to GPU computing \(2\)}{chapter.2}% 252
+\BOOKMARK [2][-]{section*.321}{CUDA model}{section*.320}% 253
+\BOOKMARK [2][-]{section*.323}{Grid, blocks and threads}{section*.320}% 254
+\BOOKMARK [2][-]{section*.325}{GPU structure}{section*.320}% 255
+\BOOKMARK [2][-]{section*.327}{Multiprocessor}{section*.320}% 256
+\BOOKMARK [2][-]{section*.329}{Memory}{section*.320}% 257
+\BOOKMARK [2][-]{section*.331}{Asynchronicity}{section*.320}% 258
+\BOOKMARK [2][-]{section*.333}{How to program GPU?}{section*.320}% 259
+\BOOKMARK [2][-]{section*.334}{Libraries: cuBLAS}{section*.320}% 260
+\BOOKMARK [2][-]{section*.335}{Libraries: Thrust}{section*.320}% 261
+\BOOKMARK [2][-]{section*.336}{Directives: OpenMP, OpenACC}{section*.320}% 262
+\BOOKMARK [2][-]{section*.337}{Hello world}{section*.320}% 263
+\BOOKMARK [2][-]{section*.338}{Direct Programming: CUDA vs OpenCL}{section*.320}% 264
+\BOOKMARK [2][-]{section*.339}{CUDA C/C++}{section*.320}% 265
+\BOOKMARK [2][-]{section*.341}{Example}{section*.320}% 266
+\BOOKMARK [2][-]{section*.342}{PyCUDA}{section*.320}% 267
+\BOOKMARK [1][-]{section*.344}{CUDA threads and blocks}{chapter.2}% 268
+\BOOKMARK [2][-]{section*.346}{GPU for images}{section*.344}% 269
+\BOOKMARK [2][-]{section*.348}{RGB to Grayscale conversion}{section*.344}% 270
+\BOOKMARK [1][-]{section*.350}{Blurring an image}{chapter.2}% 271
+\BOOKMARK [2][-]{section*.352}{Vector Sum}{section*.350}% 272
+\BOOKMARK [2][-]{section*.353}{Vector Parallel}{section*.350}% 273
+\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 274
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 275
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 276
+\BOOKMARK [1][-]{section*.354}{Creare una Repository partendo da GitHub}{appendix.A}% 277
+\BOOKMARK [2][-]{section*.355}{Copiare la Repository in Locale}{section*.354}% 278
+\BOOKMARK [2][-]{section*.356}{Comandi principali in locale}{section*.354}% 279
+\BOOKMARK [2][-]{section*.357}{Creare una Repository in locale}{section*.354}% 280
+\BOOKMARK [2][-]{section*.359}{Git Workflow}{section*.354}% 281
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 282
+\BOOKMARK [1][-]{section*.362}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 283
+\BOOKMARK [2][-]{section*.363}{Step 2: Configure the conf.py}{section*.362}% 284
+\BOOKMARK [2][-]{section*.364}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.362}% 285
+\BOOKMARK [2][-]{section*.365}{Step 4: Including module.rst and generating html}{section*.362}% 286

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// assume that the picture is m × n,}
+\PYG{c+c1}{// m pixels in y dimension and n pixels in x dimension}
+\PYG{c+c1}{// input d\PYGZus{}Pin has been allocated on and copied to device\PYGZbs{}\PYGZbs{}}
+\PYG{c+c1}{// output d\PYGZus{}Pout has been allocated on device}
+\PYG{p}{...}
+\PYG{n}{dim3}\PYG{+w}{ }\PYG{n}{DimGrid}\PYG{p}{((}\PYG{n}{n}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{16}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{m}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{16}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{);}
+\PYG{n}{dim3}\PYG{+w}{ }\PYG{n+nf}{DimBlock}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{);}
+\PYG{n}{PictureKernel}\PYG{o}{\PYGZlt{}\PYGZlt{}\PYGZlt{}}\PYG{n}{DimGrid}\PYG{p}{,}\PYG{n}{DimBlock}\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{p}{(}\PYG{n}{d\PYGZus{}Pin}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{d\PYGZus{}Pout}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{);}
+\PYG{p}{...}\PYG{n}{z}
+\end{Verbatim}

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{42}\PYG{p}{;}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{;}
+\PYG{n}{thrust}\PYG{o}{::}\PYG{n}{host\PYGZus{}vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{float}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{(}\PYG{n}{n}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{(}\PYG{n}{n}\PYG{p}{);}
+\PYG{c+c1}{// fill x, y}
+\PYG{n}{thrust}\PYG{o}{::}\PYG{n}{device\PYGZus{}vector}\PYG{+w}{ }\PYG{n}{d\PYGZus{}x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{d\PYGZus{}y}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{;}
+\PYG{n}{using}\PYG{+w}{ }\PYG{n}{namespace}\PYG{+w}{ }\PYG{n}{thrust}\PYG{o}{::}\PYG{n}{placeholders}\PYG{p}{;}
+\PYG{n}{thrust}\PYG{o}{::}\PYG{n}{transform}\PYG{p}{(}\PYG{n}{d\PYGZus{}x}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{d\PYGZus{}x}\PYG{p}{.}\PYG{n}{end}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{d\PYGZus{}y}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{d\PYGZus{}y}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{\PYGZus{}1}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{\PYGZus{}2}\PYG{p}{);}
+\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{d\PYGZus{}x}\PYG{p}{;}
+\end{Verbatim}
