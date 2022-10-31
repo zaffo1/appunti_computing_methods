@@ -277,26 +277,31 @@
 \BOOKMARK [2][-]{section*.359}{Vector Sum \(parallel\): 2\260 attempt}{section*.352}% 277
 \BOOKMARK [2][-]{section*.360}{Vector Sum \(parallel\): final attempt}{section*.352}% 278
 \BOOKMARK [2][-]{section*.362}{Matrix Multiplication}{section*.352}% 279
-\BOOKMARK [2][-]{section*.363}{Limitations to computing power}{section*.352}% 280
-\BOOKMARK [2][-]{section*.364}{Syncronization}{section*.352}% 281
-\BOOKMARK [2][-]{section*.365}{Memory coalescing}{section*.352}% 282
-\BOOKMARK [2][-]{section*.368}{Memory access in Matrix Multiplication}{section*.352}% 283
-\BOOKMARK [1][-]{section*.369}{Gio 27 ottobre - Lezione 11}{chapter.2}% 284
-\BOOKMARK [1][-]{section*.370}{Introduction to GPU computing \(3\)}{chapter.2}% 285
-\BOOKMARK [2][-]{section*.371}{PyCuda Module \046 Numba}{section*.370}% 286
-\BOOKMARK [2][-]{section*.373}{Colab}{section*.370}% 287
-\BOOKMARK [2][-]{section*.374}{Jupyter}{section*.370}% 288
-\BOOKMARK [1][-]{section*.375}{Hands on GPU:}{chapter.2}% 289
-\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 290
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 291
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 292
-\BOOKMARK [1][-]{section*.376}{Creare una Repository partendo da GitHub}{appendix.A}% 293
-\BOOKMARK [2][-]{section*.377}{Copiare la Repository in Locale}{section*.376}% 294
-\BOOKMARK [2][-]{section*.378}{Comandi principali in locale}{section*.376}% 295
-\BOOKMARK [2][-]{section*.379}{Creare una Repository in locale}{section*.376}% 296
-\BOOKMARK [2][-]{section*.381}{Git Workflow}{section*.376}% 297
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 298
-\BOOKMARK [1][-]{section*.384}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 299
-\BOOKMARK [2][-]{section*.385}{Step 2: Configure the conf.py}{section*.384}% 300
-\BOOKMARK [2][-]{section*.386}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.384}% 301
-\BOOKMARK [2][-]{section*.387}{Step 4: Including module.rst and generating html}{section*.384}% 302
+\BOOKMARK [2][-]{section*.365}{Limitations to computing power}{section*.352}% 280
+\BOOKMARK [3][-]{section*.367}{Shared Memory}{section*.365}% 281
+\BOOKMARK [2][-]{section*.369}{Shared memory for Matrix Multiplication}{section*.352}% 282
+\BOOKMARK [2][-]{section*.372}{Shared memory: phase 0 use block \(0,0\)}{section*.352}% 283
+\BOOKMARK [2][-]{section*.374}{Execution phases}{section*.352}% 284
+\BOOKMARK [2][-]{section*.376}{Syncronization}{section*.352}% 285
+\BOOKMARK [2][-]{section*.377}{MatrixMultiplication code}{section*.352}% 286
+\BOOKMARK [2][-]{section*.379}{Memory coalescing}{section*.352}% 287
+\BOOKMARK [2][-]{section*.383}{Memory access in Matrix Multiplication}{section*.352}% 288
+\BOOKMARK [1][-]{section*.385}{Gio 27 ottobre - Lezione 11}{chapter.2}% 289
+\BOOKMARK [1][-]{section*.386}{Introduction to GPU computing \(3\)}{chapter.2}% 290
+\BOOKMARK [2][-]{section*.387}{PyCuda Module \046 Numba}{section*.386}% 291
+\BOOKMARK [2][-]{section*.389}{Colab}{section*.386}% 292
+\BOOKMARK [2][-]{section*.390}{Jupyter}{section*.386}% 293
+\BOOKMARK [1][-]{section*.391}{Hands on GPU:}{chapter.2}% 294
+\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 295
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 296
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 297
+\BOOKMARK [1][-]{section*.392}{Creare una Repository partendo da GitHub}{appendix.A}% 298
+\BOOKMARK [2][-]{section*.393}{Copiare la Repository in Locale}{section*.392}% 299
+\BOOKMARK [2][-]{section*.394}{Comandi principali in locale}{section*.392}% 300
+\BOOKMARK [2][-]{section*.395}{Creare una Repository in locale}{section*.392}% 301
+\BOOKMARK [2][-]{section*.397}{Git Workflow}{section*.392}% 302
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 303
+\BOOKMARK [1][-]{section*.400}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 304
+\BOOKMARK [2][-]{section*.401}{Step 2: Configure the conf.py}{section*.400}% 305
+\BOOKMARK [2][-]{section*.402}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.400}% 306
+\BOOKMARK [2][-]{section*.403}{Step 4: Including module.rst and generating html}{section*.400}% 307

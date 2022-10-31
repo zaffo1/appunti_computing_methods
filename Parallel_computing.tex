@@ -1,7 +1,9 @@
 \chapter{Parallel Computing}
 %\vspace{10.5cm}
+\vfill
+Per realizzare gli appunti su questa parte del corso, ho usato le slides del prof. Gianluca Lamanna disponibili su e-learning.
 
-
+\newpage
 \section{\textit{Gio 20 ott - Lezione 9}}
 \section{Computer architecture from a
 performance point of view: from
@@ -1994,46 +1996,177 @@ Time=0.45 ms. Without errors!
 \textbf{Nota:} In generale dobbiamo esplicitamente chiedere se è avvenuto un errore.
 
 \subsection{Matrix Multiplication}
-%FINIRE SLIDE 35-47
+
 Assume you want to multiply two large matrices.\\
-2D structure of threads and blocks.\\
-Each thread computes one element of the matrix.\\
-Use the blocks to subdivide the matrix in sub-
-blocks.\\
+-2D structure of threads and blocks.\\
+-Each thread computes one element of the matrix.\\
+-Use the blocks to subdivide the matrix in sub-blocks.\\
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/matrix_mult.png}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure_parallel/mm.png}
+\end{figure}
+\FloatBarrier
 
 \subsection{Limitations to computing power}
 
-L'operazione di moltiplicazione tra matrice permette di poter parlare di un aspetto fondamentale della programmazione di GPU: la memoria condivisa (shared memory). L'idea è portare i dati più usati sulla shared memory che è di più facile accesso.
+A lot of access to memory:
+\begin{itemize}
+	\item For each element computed we need 2N global memory access
+	\item For each element computed we need 2N operations (N multiplications and N sums)
+	\item The compute-to-global-memory-access is 1:1=1
+\end{itemize}
+
+In the GTX650 the memory bandwidth is 7GB/s
+
+\begin{itemize}
+	\item Assume 100x100 matrices
+	\item How many operands per seconds we can load? 7GB/(2N*4bytes)=8.75 Moperands/s
+	\item Being the computer-to-global-memory-access limited to 1 this means that the computing throughput is 8.75 MFlops
+	\item Very far from the 800 Gflops of the board!
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/limitations_to_computing_power.png}
+\end{figure}
+\FloatBarrier
+
+
+
+\subsubsection{Shared Memory}
+L'operazione di moltiplicazione tra matrici permette di poter parlare di un aspetto fondamentale della programmazione di GPU: la memoria condivisa (shared memory). L'idea è portare i dati più usati sulla shared memory che è di più facile accesso.\\
+
+\textbf{Shared memory:} A special type of memory whose contents are explicitly defined and used in the kernel source code.
+
+\begin{itemize}
+	\item One in each SM
+	\item Accessed at much higher speed (in both latency and throughput) than global memory
+	\item Scope of access and sharing - thread blocks
+	\item Lifetime – thread block, contents will disappear after the corresponding thread finishes terminates execution 
+	\item Accessed by memory load/store instructions
+	\item A form of scratchpad memory in computer architecture
+\end{itemize}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.55\textwidth]{figure_parallel/shared_memory_1.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Shared memory for Matrix Multiplication}
+
+\begin{itemize}
+	\item Identify a “tile” of global memory contents that are accessed by multiple threads
+	\item Load the tile from global memory into on-chip memory
+	\item Use barrier synchronization to make sure that all threads are ready to start the phase
+	\item Have the multiple threads to access their data from the on-chip memory
+	\item Use barrier synchronization to make sure that all threads have completed the current phase
+	\item Move on to the next tile
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/sm_mm.png}
+\end{figure}
+\FloatBarrier
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figure_parallel/phase0.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Shared memory: phase 0 use block (0,0)}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/phase0_use.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Execution phases}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/execution_phases.png}
+\end{figure}
+\FloatBarrier
 
 \subsection{Syncronization}
+Synchronize all threads in a block $\rightarrow$ \texttt{\_\_syncthreads()}\\
+All threads in the same block must reach the \texttt{\_\_syncthreads()} before any of the them can move on.\\
+Best used to coordinate the phased execution tiled algorithms:\\
+-To ensure that all elements of a tile are loaded at the beginning of a
+phase\\
+-To ensure that all elements of a tile are consumed at the end of a
+phase\\
 
-\texttt{\_\_syncthreads()}
 A un certo punto del codice vogliamo essere certi che tutti i thread siano arrivati allo stesso punto, uso \texttt{\_\_syncthreads()}. Garantisce che quando abbiamo bisogno di un certo risultato, esso è già disponibile.
 
 \textbf{Nota:} L'operazione di cudaMalloc sulla GPU viene fatta dall'host. Invece, allocare uno spazio di memoria nella shered memory non si fa nell'host ma nel kernel.
+\subsection{MatrixMultiplication code}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.2\textwidth]{figure_parallel/mm_code.png}
+\end{figure}
+\FloatBarrier
+
+\inputminted{c}{cuda/MatrixMultiplication_shared.cu}
 
 \subsection{Memory coalescing}
 La programmazione sulle GPU è incrementale.
 I dati all'interno della memoria sono letti in maniera coalescente (vero pe tutte le ddr, e soprattutto per le gpu).\\
-
 La memoria è organizzata in sezioni (burst).
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figure_parallel/memory_coalescing2.png}
+	\includegraphics[width=0.5\textwidth]{figure_parallel/memory_coalescing2.png}
 \end{figure}
 
 I dati vengono copiati all'interno di questi burst. A un certo punto vogliamo accedere a questi dati. Se noi chiediamo ad esempio il dato contenuto nella locazione 0, la memoria mi fornisce i dati di tutto il burst contenente 0.\\
-Sia la global memory che la shared memory sono organizzate in questo modo. Possiamo organizzare i dati nella memoria in modo da poter sfruttare questo comportamento.
+Sia la global memory che la shared memory sono organizzate in questo modo. Possiamo organizzare i dati nella memoria in modo da poter sfruttare questo comportamento.\\
+
+Each address space is partitioned into burst sections. Whenever a location is accessed, all other locations in the same section are also
+delivered to the processor.\\
+Basic example: a 16-byte address space, 4-byte burst sections.\\
+In practice, we have at least 4GB address space, burst section sizes of 128-bytes or more.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figure_parallel/memory_coalescing.png}
+	\includegraphics[width=0.5\textwidth]{figure_parallel/memory_coalescing.png}
 \end{figure}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure_parallel/memory_coalescing1.png}
+\end{figure}
+\FloatBarrier
+
+If all accessed locations fall into the same burst section, only one DRAM request will be made and the access is fully coalesced.\\
+When the accessed locations spread across burst section boundaries:\\
+-Coalescing fails\\
+-Multiple DRAM requests are made\\
+-The access is not fully coalesced.\\
+-Some of the bytes accessed and transferred are not used by the threads
 
 \subsection{Memory access in Matrix Multiplication}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_parallel/memory_access_mm.png}
+\end{figure}
+\FloatBarrier
 
 L'accesso alla matrice A non è coalescente. Mentre l'accesso alla matrice B è coalescente. Il vantaggio è quindi relativo, perché in questi casi domina il più lento.\\
 
