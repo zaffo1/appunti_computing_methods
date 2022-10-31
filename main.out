@@ -276,16 +276,27 @@
 \BOOKMARK [2][-]{section*.357}{Vector Sum \(parallel\)}{section*.352}% 276
 \BOOKMARK [2][-]{section*.359}{Vector Sum \(parallel\): 2\260 attempt}{section*.352}% 277
 \BOOKMARK [2][-]{section*.360}{Vector Sum \(parallel\): final attempt}{section*.352}% 278
-\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 279
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 280
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 281
-\BOOKMARK [1][-]{section*.362}{Creare una Repository partendo da GitHub}{appendix.A}% 282
-\BOOKMARK [2][-]{section*.363}{Copiare la Repository in Locale}{section*.362}% 283
-\BOOKMARK [2][-]{section*.364}{Comandi principali in locale}{section*.362}% 284
-\BOOKMARK [2][-]{section*.365}{Creare una Repository in locale}{section*.362}% 285
-\BOOKMARK [2][-]{section*.367}{Git Workflow}{section*.362}% 286
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 287
-\BOOKMARK [1][-]{section*.370}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 288
-\BOOKMARK [2][-]{section*.371}{Step 2: Configure the conf.py}{section*.370}% 289
-\BOOKMARK [2][-]{section*.372}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.370}% 290
-\BOOKMARK [2][-]{section*.373}{Step 4: Including module.rst and generating html}{section*.370}% 291
+\BOOKMARK [2][-]{section*.362}{Matrix Multiplication}{section*.352}% 279
+\BOOKMARK [2][-]{section*.363}{Limitations to computing power}{section*.352}% 280
+\BOOKMARK [2][-]{section*.364}{Syncronization}{section*.352}% 281
+\BOOKMARK [2][-]{section*.365}{Memory coalescing}{section*.352}% 282
+\BOOKMARK [2][-]{section*.368}{Memory access in Matrix Multiplication}{section*.352}% 283
+\BOOKMARK [1][-]{section*.369}{Gio 27 ottobre - Lezione 11}{chapter.2}% 284
+\BOOKMARK [1][-]{section*.370}{Introduction to GPU computing \(3\)}{chapter.2}% 285
+\BOOKMARK [2][-]{section*.371}{PyCuda Module \046 Numba}{section*.370}% 286
+\BOOKMARK [2][-]{section*.373}{Colab}{section*.370}% 287
+\BOOKMARK [2][-]{section*.374}{Jupyter}{section*.370}% 288
+\BOOKMARK [1][-]{section*.375}{Hands on GPU:}{chapter.2}% 289
+\BOOKMARK [0][-]{chapter.3}{Machine Learning}{}% 290
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 291
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 292
+\BOOKMARK [1][-]{section*.376}{Creare una Repository partendo da GitHub}{appendix.A}% 293
+\BOOKMARK [2][-]{section*.377}{Copiare la Repository in Locale}{section*.376}% 294
+\BOOKMARK [2][-]{section*.378}{Comandi principali in locale}{section*.376}% 295
+\BOOKMARK [2][-]{section*.379}{Creare una Repository in locale}{section*.376}% 296
+\BOOKMARK [2][-]{section*.381}{Git Workflow}{section*.376}% 297
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 298
+\BOOKMARK [1][-]{section*.384}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 299
+\BOOKMARK [2][-]{section*.385}{Step 2: Configure the conf.py}{section*.384}% 300
+\BOOKMARK [2][-]{section*.386}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.384}% 301
+\BOOKMARK [2][-]{section*.387}{Step 4: Including module.rst and generating html}{section*.384}% 302

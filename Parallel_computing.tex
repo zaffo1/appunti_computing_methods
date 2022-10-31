@@ -1940,7 +1940,7 @@ Abbiamo chiesto di far lavorare solo due thread per blocco! Stiamo sfruttando ma
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.4\textwidth]{figure_parallel/gtx650.png}
+	\includegraphics[width=0.3\textwidth]{figure_parallel/parallel_bad.png}
 \end{figure}
 
 \subsection{Vector Sum (parallel): 2° attempt}
@@ -1994,5 +1994,121 @@ Time=0.45 ms. Without errors!
 \textbf{Nota:} In generale dobbiamo esplicitamente chiedere se è avvenuto un errore.
 
 \subsection{Matrix Multiplication}
-FINIRE SLIDE 35-47
+%FINIRE SLIDE 35-47
+Assume you want to multiply two large matrices.\\
+2D structure of threads and blocks.\\
+Each thread computes one element of the matrix.\\
+Use the blocks to subdivide the matrix in sub-
+blocks.\\
+
+\subsection{Limitations to computing power}
+
+L'operazione di moltiplicazione tra matrice permette di poter parlare di un aspetto fondamentale della programmazione di GPU: la memoria condivisa (shared memory). L'idea è portare i dati più usati sulla shared memory che è di più facile accesso.
+
+\subsection{Syncronization}
+
+\texttt{\_\_syncthreads()}
+A un certo punto del codice vogliamo essere certi che tutti i thread siano arrivati allo stesso punto, uso \texttt{\_\_syncthreads()}. Garantisce che quando abbiamo bisogno di un certo risultato, esso è già disponibile.
+
+\textbf{Nota:} L'operazione di cudaMalloc sulla GPU viene fatta dall'host. Invece, allocare uno spazio di memoria nella shered memory non si fa nell'host ma nel kernel.
+
+
+\subsection{Memory coalescing}
+La programmazione sulle GPU è incrementale.
+I dati all'interno della memoria sono letti in maniera coalescente (vero pe tutte le ddr, e soprattutto per le gpu).\\
+
+La memoria è organizzata in sezioni (burst).
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/memory_coalescing2.png}
+\end{figure}
+
+I dati vengono copiati all'interno di questi burst. A un certo punto vogliamo accedere a questi dati. Se noi chiediamo ad esempio il dato contenuto nella locazione 0, la memoria mi fornisce i dati di tutto il burst contenente 0.\\
+Sia la global memory che la shared memory sono organizzate in questo modo. Possiamo organizzare i dati nella memoria in modo da poter sfruttare questo comportamento.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_parallel/memory_coalescing.png}
+\end{figure}
+
+
+\subsection{Memory access in Matrix Multiplication}
+
+L'accesso alla matrice A non è coalescente. Mentre l'accesso alla matrice B è coalescente. Il vantaggio è quindi relativo, perché in questi casi domina il più lento.\\
+
+La cosa da tenere in mente è che,  per avere un migliore speedup, bisogna pensare anche a come sono organizzati i dati in memoria!
+
+\newpage
+\section{\textit{Gio 27 ottobre - Lezione 11}}
+\section{Introduction to GPU computing (3)}
+
+\subsection{PyCuda Module \& Numba}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\begin{center}
+		\includegraphics[width=0.48\textwidth]{figure_parallel/pycuda.png}
+	\end{center}
+\end{wrapfigure}
+
+Numba è una libreria che permette di generare funzioni in C che quindi possono essere parallelizzate.
+
+\begin{itemize}
+	\item PyCUDA lets you access Nvidia's CUDA parallel
+	computation API from Python
+	\begin{itemize}
+		\item All the CUDA features can be accessed through pyCUDA
+	\end{itemize}
+	\item Supports Just-in-time compilation of the CUDA kernels in C
+	\item Small overhead with respect to the C implementation to the GPU part
+	\item Several additional features
+	\begin{itemize}
+		\item Example: cuda exceptions translated to python exception
+	\end{itemize}
+	\item One of the virtues of PyCUDA is that is allows us to use the class \texttt{GPUArray}
+	\item We will use Numba to compile ufuncs on GPU
+	\item \url{https://pypi.org/project/pycuda/}
+	\item \url{https://documen.tician.de/pycuda/}
+	\item \url{http://numba.pydata.org/numba-doc/latest/cuda/index.html}
+\end{itemize}
+
+
+
+
+
+\subsection{Colab}
+
+Also know as Colaboratory, is free Jupyter notebook running on google cloud. The notebooks are stored in google drive (\url{http://colab.research.google.com})\\
+
+The notebooks are environment to write
+text and run code based on Python3 $\rightarrow$ It’s possible to run on cloud computers housing GPUs.\\
+
+Thanks to the IPython library it’s possible to run shell commands (including compilers) on the cloud filesystem.\\
+
+-Possibility to add modules in the
+development environment.
+
+\subsection{Jupyter}
+
+Colab implement a cloud version of the Jupyter notebook (\url{https://jupyter.org/}). It’s free and open-source.\\
+A Jupyter Notebook document is a JSON document:
+\begin{itemize}
+	\item ordered list of input/output cells
+	\item can contain code, text, latex, mathematics, plots and media
+	\item ".ipynb" extension.
+\end{itemize}
+
+It implements a language shell (aka interactive toplevel) environment built on IPython library.\\
+
+\begin{itemize}
+	\item IPython is command shell for interactive python
+	\item Jupyter is a web-based, graphics implementation of IPython
+\end{itemize}
+
+Other programming languages (49) are supported including R, Matlab, Julia, etc.\\
+\textbf{Tutorial:} \url{https://www.geeksforgeeks.org/how-to-use-jupyter-notebook-an-ultimate-guide/}
+
+\section{Hands on GPU:}
+
+\includepdf[pages=-]{handson_gpu_2022.pdf}
 
