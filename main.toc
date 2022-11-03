@@ -293,15 +293,46 @@
 \contentsline {subsection}{Jupyter}{158}{section*.390}%
 \contentsline {section}{Hands on GPU:}{159}{section*.391}%
 \contentsline {chapter}{\numberline {3}Machine Learning}{201}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Fisica Medica}{203}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{205}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{205}{section*.392}%
-\contentsline {subsection}{Copiare la Repository in Locale}{205}{section*.393}%
-\contentsline {subsection}{Comandi principali in locale}{205}{section*.394}%
-\contentsline {subsection}{Creare una Repository in locale}{206}{section*.395}%
-\contentsline {subsection}{Git Workflow}{207}{section*.397}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{209}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{210}{section*.400}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{211}{section*.401}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{212}{section*.402}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{212}{section*.403}%
+\contentsline {section}{\textit {Lun 3 novembre - Lezione 12}}{201}{section*.392}%
+\contentsline {section}{Introduction to Machine Learning}{201}{section*.393}%
+\contentsline {subsection}{Topics}{201}{section*.394}%
+\contentsline {subsection}{Machine Learning Basics}{201}{section*.395}%
+\contentsline {subsection}{Types of typical ML problems}{202}{section*.396}%
+\contentsline {subsection}{Function approximation}{202}{section*.397}%
+\contentsline {subsection}{Model and Hyper-parameters}{202}{section*.399}%
+\contentsline {subsection}{Parameters}{203}{section*.400}%
+\contentsline {section}{Objective function}{203}{section*.401}%
+\contentsline {subsubsection}{Objective function: binary cross entropy}{203}{section*.402}%
+\contentsline {subsection}{Learning / Training}{204}{section*.405}%
+\contentsline {subsubsection}{Supervised learning}{204}{section*.406}%
+\contentsline {subsubsection}{Unsupervised learning}{204}{section*.409}%
+\contentsline {subsubsection}{Supervised vs unsupervised}{205}{section*.411}%
+\contentsline {subsubsection}{Reinforcement learning (not covered in this lectures)}{205}{section*.414}%
+\contentsline {subsection}{Capacity and representational power}{205}{section*.416}%
+\contentsline {subsection}{Generalization}{206}{section*.420}%
+\contentsline {subsection}{Regularization}{207}{section*.423}%
+\contentsline {subsection}{Hyperparameters(model) optimization}{207}{section*.425}%
+\contentsline {subsection}{K-folding cross validation}{207}{section*.427}%
+\contentsline {subsection}{Inference}{208}{section*.429}%
+\contentsline {subsection}{Accuracy, Precision, Sensitivity, Specificity}{208}{section*.430}%
+\contentsline {section}{Examples of ML techniques}{208}{section*.432}%
+\contentsline {subsection}{Linear regression (Supervised)}{208}{section*.433}%
+\contentsline {subsection}{Principal Component Analysis (aka PCA) (Unsupervised)}{209}{section*.434}%
+\contentsline {subsubsection}{Nearest neighbors}{209}{section*.437}%
+\contentsline {subsection}{Decision trees}{210}{section*.439}%
+\contentsline {subsection}{Ensembles of trees}{210}{section*.441}%
+\contentsline {subsection}{Limitations of decision trees}{211}{section*.446}%
+\contentsline {subsection}{Many more ML techniques!}{212}{section*.449}%
+\contentsline {subsection}{What do we need to create our first ML program}{212}{section*.451}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{239}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{241}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{241}{section*.452}%
+\contentsline {subsection}{Copiare la Repository in Locale}{241}{section*.453}%
+\contentsline {subsection}{Comandi principali in locale}{241}{section*.454}%
+\contentsline {subsection}{Creare una Repository in locale}{242}{section*.455}%
+\contentsline {subsection}{Git Workflow}{243}{section*.457}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{245}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{246}{section*.460}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{247}{section*.461}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{248}{section*.462}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{248}{section*.463}%
