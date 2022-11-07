@@ -1,6 +1,6 @@
 \chapter{Machine Learning}
 
-\section{\textit{Lun 3 novembre - Lezione 12}}
+\section{\textit{Gio 3 novembre - Lezione 12}}
 \section{Introduction to Machine Learning}
 
 \subsection{Topics}
@@ -500,36 +500,46 @@ Combine multiple trees (\#trees is an hyperpar)
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figure_ml/bagging.png}
+	\caption{Bagging}
 \end{figure}
 \FloatBarrier
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figure_ml/g_b.png}
-\end{figure}
-\FloatBarrier
+
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figure_ml/g_b2.png}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/g_b.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/g_b2.png}
+	\end{subfigure}
+	\caption{Gradient Boosting}
 \end{figure}
-\FloatBarrier
+
+
 
 \subsection{Limitations of decision trees}
 Cuts are axis aligned!\\
 Classification of \textbf{x1 > x2} is a hard problem for a decision tree
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.4\textwidth]{figure_ml/limitations_trees.png}
-\end{figure}
-\FloatBarrier
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figure_ml/limitations_trees2.png}
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/limitations_trees.png}
+	\end{subfigure}%
+	\begin{subfigure}{.6\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/limitations_trees2.png}
+	\end{subfigure}
 \end{figure}
-\FloatBarrier
+
+
+
 
 \subsection{Many more ML techniques!}
 
@@ -538,7 +548,7 @@ Scikit-learn library offers many ML techniques implementation in python.\\
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figure_ml/scikit.png}
+	\includegraphics[width=0.9\textwidth]{figure_ml/scikit.png}
 \end{figure}
 \FloatBarrier
 
@@ -561,5 +571,407 @@ Scikit-learn library offers many ML techniques implementation in python.\\
 
 Check the result: We need to understand how to do the inference of a trained model, for example on a new sample or on a new dataset.
 
+\subsection{Hands-on}
+
+
+First exercise is taken from \href{http://shop.oreilly.com/product/0636920034919.do}{Python Data Science Handbook} by Jake
+VanderPlas with some minor edits (the content is available on \href{https://github.com/jakevdp/PythonDataScienceHandbook}{GitHub} 
+Click here and “make a copy” to be able to edit: \url{https://colab.research.google.com/drive/1Sqn5fuiB5-2EP6UKUmwqjQd_b3uUNu2r?usp=sharing}\\
+NB: the example uses scikit learn library, that we will NOT use in the next lectures
 
 \includepdf[pages=-]{Copy_of_Scikit-Learn.pdf}
+%\subsection{Python numpy reshape and stack cheatsheet}
+\includepdf[pages=-]{reshape.pdf}
+
+\section{\textit{Lun 7 novembre - lezione 13}}
+
+\section{Introduction to Artificial Neural Networks}
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={Recap lezione 1 },colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+	\item ML techniques have common elements:
+		\begin{itemize}
+			\item The function “f” to approximate
+			\item The model used to approximate “f” (e.g. polynomials functions or a decision tree or a NN)
+			\item The parameters of the model (e.g. the coefficients of the poly) 
+			\item The hyper-parameters of the models (e.g. the grade of the polynomial, N=1 for linear)
+			\item The objective function (i.e. the loss such as MSE or binary cross entropy)
+			\item The variance-bias tradeoff (aka training vs generalization)
+			\item The regularization techniques
+		\end{itemize}
+	\item Example of ML algorithms
+		\begin{itemize}
+			\item Linear regression
+			\item PCA
+			\item Nearest Neighbours
+			\item Decision trees
+			\begin{itemize}
+				\item Bagging vs boosting
+			\end{itemize}
+		\end{itemize}
+	\end{itemize} 
+\end{tcolorbox}
+
+\section{Artificial Neural Networks}
+\subsection{(Artificial) neural networks: the “Model”}
+
+
+\begin{itemize}
+	\item Computation achieved with a network of elementary computing units (neurons) 
+	\item Each basic units, a neuron, has:
+	\begin{itemize}
+		\item \textbf{Weighted} input connections to other neurons
+		\item A \textbf{non linear} activation function
+		\item An output value to pass to other neurons
+	\end{itemize}
+	\item Biologically inspired to brain structure as a network of neuron
+	\begin{itemize}
+		\item But artificial NN goal is not that of “simulating” a brain!
+	\end{itemize}
+	\item Actual modern NN go much beyond the brain-inspired models
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figure_ml/model.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Brief history, highs and lows}
+
+\begin{wrapfigure}{r}{0.6\textwidth}
+	\includegraphics[width=0.6\textwidth]{figure_ml/history.png}
+\end{wrapfigure} 
+
+\quad
+\begin{itemize}
+	\item First work originates back in ~1940-1960 “cybernetics” 
+	\begin{itemize}
+		\item Linear models
+	\end{itemize}
+	\item Then called “connectionism” in ’80-’90
+	\begin{itemize}
+		\item development of neural networks, backpropagation, non-linear activations (mostly sigmoid)
+	\end{itemize}
+	\item High expectations, low achievements in the ‘90
+	\begin{itemize}
+		\item A decade of stagnation
+	\end{itemize}
+	\item New name, “Deep Learning”, from 2006
+	\begin{itemize}
+		\item Deep architectures (see next slides)
+		\item Very active field in the past decade
+		\item Availability of GP-GPU game changing on typical “size”
+		\item Processing raw, low level, features
+		\begin{itemize}
+			\item It doesn’t mean you \textbf{must} use “raw features” but that rather that you \textbf{can} use raw features!
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+Dal 2006 in poi è diventato disponibile un sistema di calcolo pensato per fare videogiochi (GPU), che però si prestano bene anche al calcolo necessario per questo tipo di computing.
+
+
+\subsection{Complexity growth}
+Dataset become larger and larger (“big data”). Not just in “industry”, experimental scientific research is now producing multi PetaByte datasets. Digital era => everything can be “data”.\\
+
+Increasing hardware performance => increasing complexity of the network (number of neurons and connections).\\
+\begin{itemize}
+	\item 2020 largest ANN: OpenAI GPT3, 175 billion parameters ( $10^{11}$)
+	\item 2021 “Switch transformer” and “Wu Dao 2.0” => trillion parameters models ( $10^{12}$ )
+	\item (for comparison) Human brain $10^{13} - 10^{15} $synapses ( ~ parameters )
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{figure_ml/complexity_growth.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Performance on classic problems}
+Image classification and speech recognition are the typical problems where ML (and Neural Networks) failed in the 90’. Now it beats humans...
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/speech.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/img_class.png}
+	\end{subfigure}
+\end{figure}
+
+
+\subsection{My favorite performance examples}
+
+\begin{itemize}
+	\item 
+\end{itemize}
+
+\url{https://www.technologyreview.com/2020/11/03/1011616/ai-godfather-geoffrey-hinton-deep-learning-will-do-everything/}
+
+\subsection{OpenAI GPT3}
+
+Generative Pre-trained Transformer A 12M\$ autocomplete (that is not really understanding what is talking about, but can still write better than most of us). \url{https://openai.com/blog/openai-api/}\\
+\url{https://doi.org/10.1007/s11023-020-09548-1}.
+\section{Neural Nets Basic elements}
+\subsection{A neural network node: the artificial neuron}
+The elementary processing unit, a neuron, can be seen as a node in a directed graph. Inputs are \textbf{summed}, with \textbf{weights}, and an \textbf{activation function} is evaluated on such sum.\\
+Nodes are typically also connected (with weight b) to an input “bias node” that has a fixed output value of 1. Different activation functions can be used, common ones are: sigmoid, atan, relu (rectified linear unit).
+
+\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\linewidth]{figure_ml/neuron.png}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{The MLP model}
+
+\begin{wrapfigure}{r}{0.6\textwidth}
+	\includegraphics[width=0.6\textwidth]{figure_ml/mlp.png}
+\end{wrapfigure} 
+\quad
+\begin{itemize}
+	\item The most common NN in the ‘90 was the Multi Layer	Perceptron (MLP)
+	\item Graph structure organized in “layers”
+		\begin{itemize}
+			\item Input layer (nodes filled with input value)
+			\item Hidden layer
+			\item Output layer (node(s) where output is read out)
+		\end{itemize}
+	\item Nodes are connected only from one layer to the next and all possible connections are present (known as \textbf{“dense” or “fully connected”} layer)
+		\begin{itemize}
+			\item No intra-layer connections
+			\item No direct connections from input to output
+		\end{itemize}
+	\item Size of input and output layers are fixed by the problem
+	\item \textbf{Hyperparameters} are
+		\begin{itemize}
+			\item The size of the hidden layers
+			\item The type of activation function
+		\end{itemize}
+	\item The \textbf{parameters} to learn are the weights of the connections
+\end{itemize}
+
+\subsection{Universal approximation theorem}
+\textit{“One hidden layer is enough to represent (not learn) an approximation of any function to an arbitrary degree of accuracy”} (I. Goodfellow et al. 2016).\\
+
+\begin{itemize}
+	\item You can approximate any function with arbitrary precision having \textbf{enough hidden nodes} and the \textbf{right weights}
+	\item How do you get the right weights? You need a “training” for your network
+	\begin{itemize}
+		\item The theorem does not say that one hidden layer (+ some training algorithm) is enough to find the optimal weights, just that they exists!
+	\end{itemize}
+	\item Achieving some (even modest with some metric) level of accuracy may need an unmanageable hidden layer size
+	\begin{itemize}
+		\item And may need an unreasonable number of “examples” to learn from
+	\end{itemize}
+\end{itemize}
+
+\subsection{Example (1-D input)}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_ml/example1d.png}
+\end{figure}
+\FloatBarrier
+
+The Universal Approximation Theorem says that increasing \#nodes I can
+increase the accuracy as much as I want. More hidden nodes, higher “capacity” => more accuracy
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figure_ml/example1d2.png}
+	\caption{\url{https://towardsdatascience.com/can-neural-networks-really-learn-any-function-65e106617fc6}}
+\end{figure}
+\FloatBarrier
+
+\subsection{Training of an MLP}
+How do I get the weights?\\
+Remember: we do not know the function we want to approximate, we only have some “samples”.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_ml/training_mlp.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Training a NN}
+
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/training_nn.png}
+\end{wrapfigure} 
+
+The goal of training is to minimize the objective
+function (possibly both on the training and validation
+sample). I.e. we want to minimize the loss as a function of the model parameters (i.e. the weights).\\
+For a MLP the basic idea is the following
+
+
+\begin{enumerate}
+	\item Start with random weights
+	\item Compute the prediction y\_pred for a given input x and compare target y\_true computing the loss (repeat for a few example, aka “one batch”)
+	\item Estimate an update for the weights that reduces the loss
+	\item Iterate from point (b), repeating for all samples
+	\item When the sample has been used completely (end of an epoch), iterate from (b) again on all samples
+	\item Repeat for multiple epochs
+\end{enumerate}
+
+The important point is how to implement point (c) => (stochastic) gradient descent.
+
+\subsection{How to find a minimum?}
+
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/find_minimum.png}
+\end{wrapfigure} 
+
+\textbf{Gradient Descent}\\
+We know the loss function value in a point in the weights phase space (e.g. the initial set of random weights, or the iteration
+N-1), computed numerically as the mean or the sum of the losses for each of our training examples.\\
+We can compute the gradient of the loss function in that point, we expect the minimum on “the way down” hence we adjust our set of weights doing a “step” in the direction pointed by the gradient with a step size that is proportional to the length
+of the gradient.\\
+
+\textbf{Stochastic Gradient Descent (SGD):}
+Compute the gradient on “batches” of events rather than full sample. The “noise” may help avoiding local minima.
+
+\subsection{Not as simple as you would imagine}
+
+A parameter named \textbf{learning rate} controls how big the step in the direction of the gradient is.
+\begin{itemize}
+	\item A too large step may let you bounce back and forth on the walls of your “valley”
+	\item A too small step would make your descent lasting forever
+\end{itemize}
+Several variants of SGD
+\begin{itemize}
+	\item Include “momentum” from previous gradient	calculations (may help overcome local obstacles) 
+	\item Reduce step size over time
+	\item Adadelta, Adagrad, \textbf{Adam}, and many more
+\end{itemize}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/sgd.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/sgd2.png}
+	\end{subfigure}
+\end{figure}
+
+
+
+\subsection{Learning rate, epochs and batches}
+
+
+\begin{wrapfigure}{r}{0.35\textwidth}
+	\includegraphics[width=0.35\textwidth]{figure_ml/learning_rate.png}
+\end{wrapfigure} 
+
+The gradient update (in SGD) is repeated for each “batch” of events.\\
+
+A full pass of the whole dataset (i.e. all batches) is called an epoch.\\
+
+A typical training foresee iteration on multiple epochs.\\
+
+The size of the update step can be controlled with a multiplicative factor called “learning rate”. Learning rate can be adapted over time.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/real_lr.png}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{Training and overfitting}
+
+\begin{wrapfigure}{r}{0.35\textwidth}
+	\includegraphics[width=0.35\textwidth]{figure_ml/training_overfitting.png}
+\end{wrapfigure} 
+As discussed previously if the capacity is large enough the network could “overfit” on the training dataset.
+
+\begin{itemize}
+	\item Have a separate, stat independent, validation/generalization sample
+	\item Evaluate performance (with “loss” or with other metrics) on the validation sample
+	\item Training results depends on many choices
+	\begin{itemize}
+		\item Size of batches (amount of “noise”)
+		\item Learning rate (how much you move along the gradient at
+		each iteration)
+		\item Gradient Descent algorithm
+		\item Capacity of the network
+	\end{itemize}
+\end{itemize}
+
+\subsection{Neural Networks, computers and mathematics}
+
+\subsection{Back-propagation}
+
+
+\section{Deep Networks}
+
+\subsection{Deep Feed Forward networks}
+
+\subsection{Why going deeper?}
+Hold on… wasn’t there a theorem saying that MLP is good enough ? Yes but…
+\begin{itemize}
+	\item Amount of nodes to represent complex functions can be too high
+	\item Learning the weights on finite samples could be too difficult
+\end{itemize}
+
+Advantages of Deep architectures
+
+\begin{itemize}
+	\item Hierarchical structure can allow easier “abstraction” by the network with early layers computing low level features and deeper layers representing more abstract properties 
+	\item Number of neurons and connections needed to represent the same function highly reduced in many realistic cases
+\end{itemize}
+I primi layer imparano features più semplici, quelli dopo imparano features sempre di più alto livello.
+
+\subsection{Activation functions}
+\subsection{Deep architectures}
+
+
+\subsection{Dropout and regularization methods}
+
+\subsection{(Batch) normalization}
+Input features have typically different ranges, means, variance.\\
+It is generally useful to “normalize” the input distribution:\\
+\begin{itemize}
+	\item Mean zero
+	\item Variance 1
+\end{itemize}
+
+Often it could be practical to compute the normalization on individual batches rather than full sample (Batch vs full sample ? may depend on your use case).
+
+\section{DNN Tools}
+
+\subsection{Keras}
+
+Keras is a python library that allow to build, train and evaluate NN with many modern technologies.\\
+Keras supports multiple backends for actual calculations.\\
+Two different syntax are usable to build the network architecture
+\begin{itemize}
+	\item Sequential: simple linear “stack” of layers
+	\item Model (functional API): create more complex topologies
+\end{itemize}
+
+Multiple type of “Layers” are supported
+
+\begin{itemize}
+	\item Dense: the classic fully connected layer of a FF network
+	\item Convolutional layers
+	\item Recurrent layers
+\end{itemize}
+
+Multiple type of activation functions.\\
+Various optimizers and gradient descent techniques.
+
+\subsection{Other common tools}
+\subsection{Keras Sequential example}
+\subsection{Keras “Model” Functional API}
