@@ -888,7 +888,7 @@ The size of the update step can be controlled with a multiplicative factor calle
 \end{figure}
 \FloatBarrier
 
-
+\clearpage
 \subsection{Training and overfitting}
 
 \begin{wrapfigure}{r}{0.35\textwidth}
@@ -910,13 +910,44 @@ As discussed previously if the capacity is large enough the network could “ove
 \end{itemize}
 
 \subsection{Neural Networks, computers and mathematics}
+ANN use a fairly limited and simple set of operations
+\begin{itemize}
+	\item Many operation are simply represented with linear algebra
+	\item Non linear function are typically applied, repeated, to multiple inputs (hence can be “vectorized”)
+	\item Gradient Descent works by knowing the derivatives of the functions involved in the NN calculations (weights, activations) and in the loss
+\end{itemize}
 
+Datasets are represented as multidimensional tensors
+
+\begin{itemize}
+	\item The number of indices and the length per index is usually called “shape” and is a tuple with dimension of each index
+	\item The first index is the one running the “number of sample in the dataset”, and is sometimes omitted when describing a neural network
+\end{itemize}
+
+Classification with multiple category is often converted in the “categorical” representation
+\begin{itemize}
+	\item I.e. rather than labelling with a scalar “y” (with 0=horse, 1=dog, 2=cat, 3=bird, …) a vector y is used with as many components as the category (with [1,0,0,0]=horse, [0,1,0,0]=dog, etc..)
+\end{itemize}
+Tools exist to describe mathematically the network structure that are optimized for fast computations on CPU/GPU/TPU
 \subsection{Back-propagation}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/backpropagation.png}
+\end{figure}
+\FloatBarrier
 
 
 \section{Deep Networks}
 
 \subsection{Deep Feed Forward networks}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/activation_functions.png}
+\end{figure}
+\FloatBarrier
+
 
 \subsection{Why going deeper?}
 Hold on… wasn’t there a theorem saying that MLP is good enough ? Yes but…
@@ -934,14 +965,46 @@ Advantages of Deep architectures
 I primi layer imparano features più semplici, quelli dopo imparano features sempre di più alto livello.
 
 \subsection{Activation functions}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/activation_functions.png}
+\end{figure}
+\FloatBarrier
+
+\newpage
 \subsection{Deep architectures}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.85\linewidth]{figure_ml/mcc_NN}
+\end{figure}
+\FloatBarrier
+
+\newpage
 
 \subsection{Dropout and regularization methods}
 
+NN training is a numerical process. Often the number of samples is limited hence the gradient accuracy is not great. Several regularization methods exists to avoid being dominated by stochastic effects.
+\begin{itemize}
+	\item Caps to the weights (so that individual nodes cannot be worth more than some amount)
+	\item \textbf{Dropout} techniques: during the training a fraction of nodes
+	is discarded, randomly, at each iteration
+	\begin{itemize}
+		\item NN more robust to noise
+		\item Effectively “augmenting” the input dataset
+	\end{itemize}
+\end{itemize}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figure_ml/dropout.png}
+\end{figure}
+
+
 \subsection{(Batch) normalization}
 Input features have typically different ranges, means, variance.\\
-It is generally useful to “normalize” the input distribution:\\
+It is generally useful to “normalize” the input distribution:
 \begin{itemize}
 	\item Mean zero
 	\item Variance 1
@@ -949,7 +1012,14 @@ It is generally useful to “normalize” the input distribution:\\
 
 Often it could be practical to compute the normalization on individual batches rather than full sample (Batch vs full sample ? may depend on your use case).
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/batch_norm.png}
+\end{figure}
+\FloatBarrier
+
 \section{DNN Tools}
+
 
 \subsection{Keras}
 
@@ -973,5 +1043,32 @@ Multiple type of activation functions.\\
 Various optimizers and gradient descent techniques.
 
 \subsection{Other common tools}
+
+Common alternative to keras
+
+\begin{itemize}
+	\item Pytorch (trending up!) 
+	\item Sonnet 
+	\item Direct usage of TensorFlow (or other backends, e.g. Theano)
+	\begin{itemize}
+		\item Need to write yourself some of the basics of NN training
+		\item Especially useful to develop new ideas (e.g. a new descent technique, a new type of basic unit/layer)
+	\end{itemize}
+\end{itemize}
+
 \subsection{Keras Sequential example}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/seq_ex.png}
+\end{figure}
+\FloatBarrier
 \subsection{Keras “Model” Functional API}
+
+
+\section{Keras Layers}
+\subsection{Keras basic layers}
+
+\begin{itemize}
+	\item 
+\end{itemize}

@@ -317,4 +317,57 @@
 \BOOKMARK [2][-]{section*.430}{Accuracy, Precision, Sensitivity, Specificity}{section*.401}% 317
 \BOOKMARK [1][-]{section*.432}{Examples of ML techniques}{chapter.3}% 318
 \BOOKMARK [2][-]{section*.433}{Linear regression \(Supervised\)}{section*.432}% 319
-\BOOKMARK
+\BOOKMARK [2][-]{section*.434}{Principal Component Analysis \(aka PCA\) \(Unsupervised\)}{section*.432}% 320
+\BOOKMARK [3][-]{section*.437}{Nearest neighbors}{section*.434}% 321
+\BOOKMARK [2][-]{section*.439}{Decision trees}{section*.432}% 322
+\BOOKMARK [2][-]{section*.441}{Ensembles of trees}{section*.432}% 323
+\BOOKMARK [2][-]{section*.445}{Limitations of decision trees}{section*.432}% 324
+\BOOKMARK [2][-]{section*.447}{Many more ML techniques!}{section*.432}% 325
+\BOOKMARK [2][-]{section*.449}{What do we need to create our first ML program}{section*.432}% 326
+\BOOKMARK [2][-]{section*.450}{Hands-on}{section*.432}% 327
+\BOOKMARK [1][-]{section*.451}{Lun 7 novembre - lezione 13}{chapter.3}% 328
+\BOOKMARK [1][-]{section*.452}{Introduction to Artificial Neural Networks}{chapter.3}% 329
+\BOOKMARK [1][-]{section*.453}{Artificial Neural Networks}{chapter.3}% 330
+\BOOKMARK [2][-]{section*.454}{\(Artificial\) neural networks: the \215Model\216}{section*.453}% 331
+\BOOKMARK [2][-]{section*.456}{Brief history, highs and lows}{section*.453}% 332
+\BOOKMARK [2][-]{section*.458}{Complexity growth}{section*.453}% 333
+\BOOKMARK [2][-]{section*.460}{Performance on classic problems}{section*.453}% 334
+\BOOKMARK [2][-]{section*.462}{My favorite performance examples}{section*.453}% 335
+\BOOKMARK [2][-]{section*.463}{OpenAI GPT3}{section*.453}% 336
+\BOOKMARK [1][-]{section*.464}{Neural Nets Basic elements}{chapter.3}% 337
+\BOOKMARK [2][-]{section*.465}{A neural network node: the artificial neuron}{section*.464}% 338
+\BOOKMARK [2][-]{section*.467}{The MLP model}{section*.464}% 339
+\BOOKMARK [2][-]{section*.469}{Universal approximation theorem}{section*.464}% 340
+\BOOKMARK [2][-]{section*.470}{Example \(1-D input\)}{section*.464}% 341
+\BOOKMARK [2][-]{section*.473}{Training of an MLP}{section*.464}% 342
+\BOOKMARK [2][-]{section*.475}{Training a NN}{section*.464}% 343
+\BOOKMARK [2][-]{section*.477}{How to find a minimum?}{section*.464}% 344
+\BOOKMARK [2][-]{section*.479}{Not as simple as you would imagine}{section*.464}% 345
+\BOOKMARK [2][-]{section*.481}{Learning rate, epochs and batches}{section*.464}% 346
+\BOOKMARK [2][-]{section*.484}{Training and overfitting}{section*.464}% 347
+\BOOKMARK [2][-]{section*.486}{Neural Networks, computers and mathematics}{section*.464}% 348
+\BOOKMARK [2][-]{section*.487}{Back-propagation}{section*.464}% 349
+\BOOKMARK [1][-]{section*.489}{Deep Networks}{chapter.3}% 350
+\BOOKMARK [2][-]{section*.490}{Deep Feed Forward networks}{section*.489}% 351
+\BOOKMARK [2][-]{section*.492}{Why going deeper?}{section*.489}% 352
+\BOOKMARK [2][-]{section*.493}{Activation functions}{section*.489}% 353
+\BOOKMARK [2][-]{section*.495}{Deep architectures}{section*.489}% 354
+\BOOKMARK [2][-]{section*.497}{Dropout and regularization methods}{section*.489}% 355
+\BOOKMARK [2][-]{section*.499}{\(Batch\) normalization}{section*.489}% 356
+\BOOKMARK [1][-]{section*.501}{DNN Tools}{chapter.3}% 357
+\BOOKMARK [2][-]{section*.502}{Keras}{section*.501}% 358
+\BOOKMARK [2][-]{section*.503}{Other common tools}{section*.501}% 359
+\BOOKMARK [2][-]{section*.504}{Keras Sequential example}{section*.501}% 360
+\BOOKMARK [2][-]{section*.506}{Keras \215Model\216 Functional API}{section*.501}% 361
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 362
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 363
+\BOOKMARK [1][-]{section*.507}{Creare una Repository partendo da GitHub}{appendix.A}% 364
+\BOOKMARK [2][-]{section*.508}{Copiare la Repository in Locale}{section*.507}% 365
+\BOOKMARK [2][-]{section*.509}{Comandi principali in locale}{section*.507}% 366
+\BOOKMARK [2][-]{section*.510}{Creare una Repository in locale}{section*.507}% 367
+\BOOKMARK [2][-]{section*.512}{Git Workflow}{section*.507}% 368
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 369
+\BOOKMARK [1][-]{section*.515}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 370
+\BOOKMARK [2][-]{section*.516}{Step 2: Configure the conf.py}{section*.515}% 371
+\BOOKMARK [2][-]{section*.517}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.515}% 372
+\BOOKMARK [2][-]{section*.518}{Step 4: Including module.rst and generating html}{section*.515}% 373
