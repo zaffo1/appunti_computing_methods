@@ -1072,3 +1072,218 @@ Common alternative to keras
 \begin{itemize}
 	\item 
 \end{itemize}
+
+
+%finire lez 2
+
+\section{\textit{Giovedì 10 novembre - Lezione 14}}
+
+\section{Convolutional and recurrent networks}
+
+\subsection{Classification of images}
+
+Come si fa a processare un'immagine con una rete neurale?\\
+
+Images are data structure with 2 or 3 indices: X,Y or X,Y,channel (=R,G,B)
+\begin{itemize}
+	\item Shape of the input dataset (Nsamples, Width, Height, nchannels)
+	\item nchannels is typically 1 (B\&W), 3 (RGB) or 4 with transparency
+\end{itemize}
+We can use FF networks to classify images
+\begin{itemize}
+	\item Reshape the input tensor with the “Flatten” keras layer
+	\item Use multiple dense layers with a final one for one-hot encoding output
+\end{itemize}
+Limitations of this approach:
+\begin{itemize}
+	\item If the image is translated, even by a single pixel in x or y, the network may not recognize as “similar” to the untranslated image
+	\item Nearby pixels in “Y” (or even the same pixel but in a different color) are not treated any differently than far away pixels
+\end{itemize}
+We know that our problem has some invariance. We know that input data has some locality information.
+
+\subsection{Exploit invariance and locality}
+
+\begin{itemize}
+	\item Suppose you want to count windows in a 800x600	picture with houses
+	\begin{itemize}
+		\item With an MLP or DFF you have 800x600x3(RGB)=1.4M inputs
+		\item Each node process independently some part of the image
+		\item The initial “Dense” connection should converge to something with lot of “zero” weights because far away pixel points have no reason to be considered at the same time in order to detect	local features
+		\item => the problem cannot be managed this way
+	\end{itemize}
+\end{itemize}
+
+But the problem is translation invariant!
+
+\begin{itemize}
+	\item “Windows” are local features, you can just analyze a patch of the image \textbf{(locality)}
+	\item A window is a window no matter if it is top left or bottom right of	your image (\textbf{Invariance)}
+	\item And actually windows are made of even more local features (some borders/frame, some uniform area, a squared shape)
+\end{itemize}
+
+\subsection{Can we exploit problem invariance?}
+
+Convolutional neural networks (CNN) attempt to exploit invariance against spatial translations.
+\begin{itemize}
+	\item Smaller networks (locality !)
+	\item Acting on a single patch of the image
+	\item Stacking multiple such Convolutional Layers one after the other
+	\item Use “subsampling” layer to scale from local to global
+\end{itemize}
+
+Hierarchical approach
+
+\begin{itemize}
+	\item Early layers learn local features
+	\item Subsampling reduce the information extracted from a given “patch”
+	\item A final flatten+one or more dense layers is used to reach the final target
+\end{itemize}
+
+Il vantaggio di questo approccio è che ognuna delle reti che alleniamo vedrà un numero di input molto maggiore, dato che da ogni immagine prendiamo più subsample.
+
+
+\subsection{Limitations}
+
+The linear algebra formalism we use can handle nicely images, hence implement nicely CNN (translation invariance along x and y).\\
+
+There are more invariances out there! (Rotation, Scale, Luminosity).\\
+
+So currently the networks have to learn them all.\\
+We can do tricks to increase the number of samples in our datasets with augmentation techniques (i.e. apply random transformations of scale, rotation etc..).\\
+“Built-in” invariance (such as the x-y one) has the advantage of reducing by orders of magnitude the number of weights to learn.
+
+\subsection{Understanding the dimensions of the convolution}
+
+\begin{itemize}
+	\item Convolution can be 1D, 2D, 3D
+	\item Kernel size, typically square (MxM) with M odd (but can be any shape)
+	\item Padding: how to we handle borders? We can do only “valid” windows (no padding) or process borders as if there were zeros (or other values) outside
+	\item Each “point” in the 1D, 2D, 3D matrix can have multiple features (e.g. R,G,B)
+	\item Each Convolutional layer have mutiple outputs (filters) for every “patch” it scans on (one optimized to detect if the patch is uniformly filled, one looking for vertical lines, etc..)
+\end{itemize}
+
+Stride: di quanto sposto il kernel ad ogni iterazione? Posso spostarmi di 1 (ho overlap), oppure mi sposto della kernel size, o della metà etc.
+
+
+\subsection{Pooling (subsampling)}
+
+Pooling layers are simply finding maxima or computing average in patches of some convolution layer output.\\
+Pooling is used to reduce the space dimensionality after a convolutional layer.
+\begin{itemize}
+	\item The Conv “filters” look for features (e.g. a filter may look for cats eyes)
+	\item The Pooling layer checks if in a given 	region some filtered fired (there was a cat eye somewhere in this broader region)
+\end{itemize}
+
+\subsection{Typical CNN architecture}
+
+
+\subsection{More on convolution}
+
+Convolution is a way to correlate \textbf{local} input information and to reduce the NN size by sharing the weights of the nodes across all repeated patches.\\
+
+What if I have multiple objects, with no local correlation, but with multiple features (like R,G,B channels) and I want to process them all in the same way?
+\begin{itemize}
+	\item 1x1 convolution!
+	\item Conv1D is usually enough (as the x-y coordinates have no meanin here)
+	\item The symmetry here is that all “objects” are the same
+\end{itemize}
+
+\textbf{Example :} Particles in a detector with information about 4-vector, tracking hits, calorimeter deposits, p-ID etc… and want to preprocess them one by one before using them for some higher level task
+
+
+\subsection{Bounding Box}
+In order to predict “where” an object is a “bounding box” is defined.
+\begin{itemize}
+	\item Coordinates of two opposite corners
+	\item Essentially a “regression” problem
+\end{itemize}
+
+Not simple to extend to multiple objects in a single image, YOLO (You Only Look Once) algorithm is an option \url{https://pjreddie.com/darknet/yolo/}\\
+\begin{itemize}
+	\item Divide the image in cells, in each cell you predict up to N bounding box corners (relative to the cell position) 
+	\item Pick only cells with high score (and cluster multiple predictions of the same bb)
+\end{itemize}
+
+\subsection{Transfer learning}
+If learn to process images of a given size, can we apply that to different size.
+\begin{itemize}
+	\item If the “scale” is the same, the convolutional part can work unchanged
+	\item The dense (when present) anyhow need to be adapted/retrained
+\end{itemize}
+
+Transfer learning is a technique to reuse a network training for a task to2 perform another task with reduced retraining.
+\begin{itemize}
+	\item E.g. a Conv2D network meant for image
+	processing have initial layers processing “local
+	features”... that is not very domain specific (if
+	you trained on flowers images it may work on
+	animals too)
+	\item Very useful when the available sample of the proper domain is small
+	\begin{itemize}
+		\item E.g. annotated medical images are
+		harder to get than labelled real world
+		pictures
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Variable length, sequences and causality}
+
+What if the input size has a variable length? For example:
+\begin{itemize}
+	\item Text translations
+	\item Identification of “jets” of particle in High Energy Physics
+\end{itemize}
+In many case sequences have still a concept of locality and translation invariance
+\begin{itemize}
+	\item “A cat” or “the cat” are two sentences, both containing “cat” but in different position
+\end{itemize}
+Sequences often also have implied ordering
+\begin{itemize}
+	\item “The cat eat a mouse” and “The mouse eat a cat” have different meanings
+\end{itemize}
+
+
+\subsection{Exploiting time invariance}
+
+Some problems are “time invariant” (recognize words in a sentence (written or spoken))\\
+Order matters and some causality is implied in the sequence. Length of the inputs or the output may not be fixed.\\
+
+Recurrent Networks (RNN)
+\begin{itemize}
+	\item Iterative networks with output passed again as input
+	\begin{itemize}
+		\item Allow some “memory” of the previous inputs and/or some internal “state” of what the network understood so far in the sequence
+	\end{itemize}
+	\item Most commonly used RNN are LSTM (Long Short Term Memory) and GRU (Gated Recurrent Unit)
+\end{itemize}
+
+\subsection{LSTM and GRU}
+\begin{itemize}
+	\item LSTM and GRU are RNN units with additional features to control their “memory”
+	\item “Gates” allow to control (keep or drop) input, output and internal state
+	\item The advantage of gated units is that they can forget so
+	that when processing a sequence they focus on the
+	relevant part (e.g. when processing a text we may know that each time we encounter a space the word is over)
+\end{itemize}
+
+Ultimamente questi concetti sono stati estesi ai cosiddetti \textit{meccanismi di attenzione}.
+
+\subsection{Different ways of processing time series}
+
+Recurrent Networks can be used to implement networks with variable number of inputs and outputs (Encoding, Decoding, Sequence2Sequence)
+
+
+\subsection{Keras basic layers}
+
+\begin{itemize}
+	\item Convolutional layers
+	\begin{itemize}
+		\item Flatten
+		\item Conv1D/2D/3D
+		\item ConvTranspose or “Deconvolution”
+		\item UpSampling and ZeroPadding
+		\item MaxPooling, AveragePooling
+		\item Flatten
+	\end{itemize}
+\end{itemize}
