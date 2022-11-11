@@ -359,15 +359,38 @@
 \BOOKMARK [2][-]{section*.503}{Other common tools}{section*.501}% 359
 \BOOKMARK [2][-]{section*.504}{Keras Sequential example}{section*.501}% 360
 \BOOKMARK [2][-]{section*.506}{Keras \215Model\216 Functional API}{section*.501}% 361
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 362
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 363
-\BOOKMARK [1][-]{section*.507}{Creare una Repository partendo da GitHub}{appendix.A}% 364
-\BOOKMARK [2][-]{section*.508}{Copiare la Repository in Locale}{section*.507}% 365
-\BOOKMARK [2][-]{section*.509}{Comandi principali in locale}{section*.507}% 366
-\BOOKMARK [2][-]{section*.510}{Creare una Repository in locale}{section*.507}% 367
-\BOOKMARK [2][-]{section*.512}{Git Workflow}{section*.507}% 368
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 369
-\BOOKMARK [1][-]{section*.515}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 370
-\BOOKMARK [2][-]{section*.516}{Step 2: Configure the conf.py}{section*.515}% 371
-\BOOKMARK [2][-]{section*.517}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.515}% 372
-\BOOKMARK [2][-]{section*.518}{Step 4: Including module.rst and generating html}{section*.515}% 373
+\BOOKMARK [1][-]{section*.507}{Keras Layers}{chapter.3}% 362
+\BOOKMARK [2][-]{section*.508}{Keras basic layers}{section*.507}% 363
+\BOOKMARK [1][-]{section*.509}{Gioved\354 10 novembre - Lezione 14}{chapter.3}% 364
+\BOOKMARK [1][-]{section*.510}{Convolutional and recurrent networks}{chapter.3}% 365
+\BOOKMARK [2][-]{section*.511}{Classification of images}{section*.510}% 366
+\BOOKMARK [2][-]{section*.514}{Exploit invariance and locality}{section*.510}% 367
+\BOOKMARK [2][-]{section*.516}{Can we exploit problem invariance?}{section*.510}% 368
+\BOOKMARK [2][-]{section*.518}{Limitations}{section*.510}% 369
+\BOOKMARK [2][-]{section*.519}{Understanding the dimensions of the convolution}{section*.510}% 370
+\BOOKMARK [2][-]{section*.521}{Pooling \(subsampling\)}{section*.510}% 371
+\BOOKMARK [2][-]{section*.523}{Typical CNN architecture}{section*.510}% 372
+\BOOKMARK [2][-]{section*.525}{More on convolution}{section*.510}% 373
+\BOOKMARK [2][-]{section*.527}{Bounding Box}{section*.510}% 374
+\BOOKMARK [2][-]{section*.530}{Transfer learning}{section*.510}% 375
+\BOOKMARK [2][-]{section*.532}{Variable length, sequences and causality}{section*.510}% 376
+\BOOKMARK [2][-]{section*.533}{Exploiting time invariance}{section*.510}% 377
+\BOOKMARK [2][-]{section*.535}{LSTM and GRU}{section*.510}% 378
+\BOOKMARK [2][-]{section*.537}{Different ways of processing time series}{section*.510}% 379
+\BOOKMARK [2][-]{section*.539}{Keras basic layers}{section*.510}% 380
+\BOOKMARK [2][-]{section*.541}{More on LSTM}{section*.510}% 381
+\BOOKMARK [2][-]{section*.543}{Using LSTM}{section*.510}% 382
+\BOOKMARK [1][-]{section*.545}{Assignment 3}{chapter.3}% 383
+\BOOKMARK [1][-]{section*.546}{Assignment 4}{chapter.3}% 384
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 385
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 386
+\BOOKMARK [1][-]{section*.547}{Creare una Repository partendo da GitHub}{appendix.A}% 387
+\BOOKMARK [2][-]{section*.548}{Copiare la Repository in Locale}{section*.547}% 388
+\BOOKMARK [2][-]{section*.549}{Comandi principali in locale}{section*.547}% 389
+\BOOKMARK [2][-]{section*.550}{Creare una Repository in locale}{section*.547}% 390
+\BOOKMARK [2][-]{section*.552}{Git Workflow}{section*.547}% 391
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 392
+\BOOKMARK [1][-]{section*.555}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 393
+\BOOKMARK [2][-]{section*.556}{Step 2: Configure the conf.py}{section*.555}% 394
+\BOOKMARK [2][-]{section*.557}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.555}% 395
+\BOOKMARK [2][-]{section*.558}{Step 4: Including module.rst and generating html}{section*.555}% 396

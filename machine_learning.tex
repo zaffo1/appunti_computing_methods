@@ -1084,6 +1084,12 @@ Common alternative to keras
 
 Come si fa a processare un'immagine con una rete neurale?\\
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.3\linewidth]{figure_ml/classif.png}
+\end{figure}
+\FloatBarrier
+
 Images are data structure with 2 or 3 indices: X,Y or X,Y,channel (=R,G,B)
 \begin{itemize}
 	\item Shape of the input dataset (Nsamples, Width, Height, nchannels)
@@ -1092,6 +1098,23 @@ Images are data structure with 2 or 3 indices: X,Y or X,Y,channel (=R,G,B)
 We can use FF networks to classify images
 \begin{itemize}
 	\item Reshape the input tensor with the “Flatten” keras layer
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/classif1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/classif2.png}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/classif3.png}
+	\end{subfigure}
+\end{figure}
+
+	
 	\item Use multiple dense layers with a final one for one-hot encoding output
 \end{itemize}
 Limitations of this approach:
@@ -1103,6 +1126,10 @@ We know that our problem has some invariance. We know that input data has some l
 
 \subsection{Exploit invariance and locality}
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth]{figure_ml/windows.png}
+\end{wrapfigure} 
+\quad
 \begin{itemize}
 	\item Suppose you want to count windows in a 800x600	picture with houses
 	\begin{itemize}
@@ -1139,6 +1166,12 @@ Hierarchical approach
 	\item A final flatten+one or more dense layers is used to reach the final target
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/cnn.png}
+\end{figure}
+\FloatBarrier
+
 Il vantaggio di questo approccio è che ognuna delle reti che alleniamo vedrà un numero di input molto maggiore, dato che da ogni immagine prendiamo più subsample.
 
 
@@ -1162,10 +1195,22 @@ We can do tricks to increase the number of samples in our datasets with augmenta
 	\item Each Convolutional layer have mutiple outputs (filters) for every “patch” it scans on (one optimized to detect if the patch is uniformly filled, one looking for vertical lines, etc..)
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/convolution.png}
+\end{figure}
+\FloatBarrier
+
 Stride: di quanto sposto il kernel ad ogni iterazione? Posso spostarmi di 1 (ho overlap), oppure mi sposto della kernel size, o della metà etc.
 
 
+
+
 \subsection{Pooling (subsampling)}
+
+ \begin{wrapfigure}{r}{0.4\textwidth}
+ 	\includegraphics[width=0.4\textwidth]{figure_ml/pooling.png}
+ \end{wrapfigure}
 
 Pooling layers are simply finding maxima or computing average in patches of some convolution layer output.\\
 Pooling is used to reduce the space dimensionality after a convolutional layer.
@@ -1176,8 +1221,14 @@ Pooling is used to reduce the space dimensionality after a convolutional layer.
 
 \subsection{Typical CNN architecture}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/cnn_arch.png}
+\end{figure}
+\FloatBarrier
 
 \subsection{More on convolution}
+
 
 Convolution is a way to correlate \textbf{local} input information and to reduce the NN size by sharing the weights of the nodes across all repeated patches.\\
 
@@ -1188,10 +1239,21 @@ What if I have multiple objects, with no local correlation, but with multiple fe
 	\item The symmetry here is that all “objects” are the same
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.3\linewidth]{figure_ml/more_conv.png}
+\end{figure}
+\FloatBarrier
+
 \textbf{Example :} Particles in a detector with information about 4-vector, tracking hits, calorimeter deposits, p-ID etc… and want to preprocess them one by one before using them for some higher level task
 
 
 \subsection{Bounding Box}
+
+ \begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.35\textwidth]{figure_ml/stop_bb.png}
+\end{wrapfigure}
+
 In order to predict “where” an object is a “bounding box” is defined.
 \begin{itemize}
 	\item Coordinates of two opposite corners
@@ -1204,7 +1266,19 @@ Not simple to extend to multiple objects in a single image, YOLO (You Only Look 
 	\item Pick only cells with high score (and cluster multiple predictions of the same bb)
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_ml/bb.png}
+\end{figure}
+\FloatBarrier
+
+
 \subsection{Transfer learning}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\includegraphics[width=0.48\textwidth]{figure_ml/tl.png}
+\end{wrapfigure}
+
 If learn to process images of a given size, can we apply that to different size.
 \begin{itemize}
 	\item If the “scale” is the same, the convolutional part can work unchanged
@@ -1249,6 +1323,10 @@ Sequences often also have implied ordering
 Some problems are “time invariant” (recognize words in a sentence (written or spoken))\\
 Order matters and some causality is implied in the sequence. Length of the inputs or the output may not be fixed.\\
 
+ \begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.35\textwidth]{figure_ml/t_invariance.png}
+\end{wrapfigure}
+
 Recurrent Networks (RNN)
 \begin{itemize}
 	\item Iterative networks with output passed again as input
@@ -1269,13 +1347,41 @@ Recurrent Networks (RNN)
 
 Ultimamente questi concetti sono stati estesi ai cosiddetti \textit{meccanismi di attenzione}.
 
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/lstm.png}
+	\end{subfigure}%
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/gru.png}
+	\end{subfigure}%
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure_ml/gates.png}
+	\end{subfigure}
+\end{figure}
+
 \subsection{Different ways of processing time series}
 
 Recurrent Networks can be used to implement networks with variable number of inputs and outputs (Encoding, Decoding, Sequence2Sequence)
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/t_series.png}
+\end{figure}
+\FloatBarrier
+
 
 \subsection{Keras basic layers}
 
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.35\textwidth]{figure_ml/keras_layers.png}
+\end{wrapfigure}
+\quad
 \begin{itemize}
 	\item Convolutional layers
 	\begin{itemize}
@@ -1287,3 +1393,61 @@ Recurrent Networks can be used to implement networks with variable number of inp
 		\item Flatten
 	\end{itemize}
 \end{itemize}
+
+\begin{itemize}
+	\item Recurrent layers
+	\begin{itemize}
+		\item LSTM
+		\item GRU
+		\item SimpleRNN
+		\item TimeDistributed
+		\item ConvLSTM2D
+	\end{itemize}
+\end{itemize}
+
+
+
+\subsection{More on LSTM}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/more_lstm.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Using LSTM}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/using_lstm.png}
+\end{figure}
+\FloatBarrier
+
+
+\section{\textit{Assignment 3}}
+
+Create a CNN that recognize squares and circles in an image. Let’s try three variations:
+
+\begin{enumerate}
+	\item Classify: does it contain a rectangle or a circle?
+	\item Count circles and rectangles when there is more than one in the dataset
+	\item Find the position (bounding box) of the circle or rectangle
+\end{enumerate}
+
+\url{https://colab.research.google.com/drive/1kRP1NfbL3hj9xIHAnfMEx9ug76ozGeqR}\\
+
+\href{https://colab.research.google.com/drive/1KHjAsly12wQnrENOgJhF1XKnRFAGmAA6#scrollTo=YiUPPdZ6pNsi}{Solution}
+
+
+\section{\textit{Assignment 4}}
+
+
+Try building from scratch a LSTM that find the maximum length and its position in a sequence of two dimensional vectors.\\
+
+\begin{itemize}
+	\item Generate some data
+	\item Build a network with one LSTM layer followed by a Dense one
+\end{itemize}
+
+
+\href{https://colab.research.google.com/drive/1AyK6r9VG7rV0ZDjqDXu1q0ROEfAAwlU7?usp=sharing}{Solution}
