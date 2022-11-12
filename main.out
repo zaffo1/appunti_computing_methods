@@ -360,38 +360,43 @@
 \BOOKMARK [2][-]{section*.504}{Keras Sequential example}{section*.501}% 360
 \BOOKMARK [2][-]{section*.506}{Keras \215Model\216 Functional API}{section*.501}% 361
 \BOOKMARK [2][-]{section*.508}{A \(modernized\) MLP in keras}{section*.501}% 362
-\BOOKMARK [1][-]{section*.510}{Keras Layers}{chapter.3}% 363
-\BOOKMARK [2][-]{section*.511}{Keras basic layers}{section*.510}% 364
-\BOOKMARK [1][-]{section*.512}{Gioved\354 10 novembre - Lezione 14}{chapter.3}% 365
-\BOOKMARK [1][-]{section*.513}{Convolutional and recurrent networks}{chapter.3}% 366
-\BOOKMARK [2][-]{section*.514}{Classification of images}{section*.513}% 367
-\BOOKMARK [2][-]{section*.517}{Exploit invariance and locality}{section*.513}% 368
-\BOOKMARK [2][-]{section*.519}{Can we exploit problem invariance?}{section*.513}% 369
-\BOOKMARK [2][-]{section*.521}{Limitations}{section*.513}% 370
-\BOOKMARK [2][-]{section*.522}{Understanding the dimensions of the convolution}{section*.513}% 371
-\BOOKMARK [2][-]{section*.524}{Pooling \(subsampling\)}{section*.513}% 372
-\BOOKMARK [2][-]{section*.526}{Typical CNN architecture}{section*.513}% 373
-\BOOKMARK [2][-]{section*.528}{More on convolution}{section*.513}% 374
-\BOOKMARK [2][-]{section*.530}{Bounding Box}{section*.513}% 375
-\BOOKMARK [2][-]{section*.533}{Transfer learning}{section*.513}% 376
-\BOOKMARK [2][-]{section*.535}{Variable length, sequences and causality}{section*.513}% 377
-\BOOKMARK [2][-]{section*.536}{Exploiting time invariance}{section*.513}% 378
-\BOOKMARK [2][-]{section*.538}{LSTM and GRU}{section*.513}% 379
-\BOOKMARK [2][-]{section*.540}{Different ways of processing time series}{section*.513}% 380
-\BOOKMARK [2][-]{section*.542}{Keras basic layers}{section*.513}% 381
-\BOOKMARK [2][-]{section*.544}{More on LSTM}{section*.513}% 382
-\BOOKMARK [2][-]{section*.546}{Using LSTM}{section*.513}% 383
-\BOOKMARK [1][-]{section*.548}{Assignment 3}{chapter.3}% 384
-\BOOKMARK [1][-]{section*.549}{Assignment 4}{chapter.3}% 385
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 386
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 387
-\BOOKMARK [1][-]{section*.550}{Creare una Repository partendo da GitHub}{appendix.A}% 388
-\BOOKMARK [2][-]{section*.551}{Copiare la Repository in Locale}{section*.550}% 389
-\BOOKMARK [2][-]{section*.552}{Comandi principali in locale}{section*.550}% 390
-\BOOKMARK [2][-]{section*.553}{Creare una Repository in locale}{section*.550}% 391
-\BOOKMARK [2][-]{section*.555}{Git Workflow}{section*.550}% 392
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 393
-\BOOKMARK [1][-]{section*.558}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 394
-\BOOKMARK [2][-]{section*.559}{Step 2: Configure the conf.py}{section*.558}% 395
-\BOOKMARK [2][-]{section*.560}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.558}% 396
-\BOOKMARK [2][-]{section*.561}{Step 4: Including module.rst and generating html}{section*.558}% 397
+\BOOKMARK [1][-]{section*.510}{From the 1995 to 2010}{chapter.3}% 363
+\BOOKMARK [1][-]{section*.511}{Training a model with Keras}{chapter.3}% 364
+\BOOKMARK [1][-]{section*.512}{Keras Layers}{chapter.3}% 365
+\BOOKMARK [2][-]{section*.513}{Keras basic layers}{section*.512}% 366
+\BOOKMARK [2][-]{section*.514}{Callbacks}{section*.512}% 367
+\BOOKMARK [1][-]{section*.515}{Assignment 1}{chapter.3}% 368
+\BOOKMARK [1][-]{section*.517}{Assignment 2}{chapter.3}% 369
+\BOOKMARK [1][-]{section*.519}{Gioved\354 10 novembre - Lezione 14}{chapter.3}% 370
+\BOOKMARK [1][-]{section*.520}{Convolutional and recurrent networks}{chapter.3}% 371
+\BOOKMARK [2][-]{section*.521}{Classification of images}{section*.520}% 372
+\BOOKMARK [2][-]{section*.524}{Exploit invariance and locality}{section*.520}% 373
+\BOOKMARK [2][-]{section*.526}{Can we exploit problem invariance?}{section*.520}% 374
+\BOOKMARK [2][-]{section*.528}{Limitations}{section*.520}% 375
+\BOOKMARK [2][-]{section*.529}{Understanding the dimensions of the convolution}{section*.520}% 376
+\BOOKMARK [2][-]{section*.531}{Pooling \(subsampling\)}{section*.520}% 377
+\BOOKMARK [2][-]{section*.533}{Typical CNN architecture}{section*.520}% 378
+\BOOKMARK [2][-]{section*.535}{More on convolution}{section*.520}% 379
+\BOOKMARK [2][-]{section*.537}{Bounding Box}{section*.520}% 380
+\BOOKMARK [2][-]{section*.540}{Transfer learning}{section*.520}% 381
+\BOOKMARK [2][-]{section*.542}{Variable length, sequences and causality}{section*.520}% 382
+\BOOKMARK [2][-]{section*.543}{Exploiting time invariance}{section*.520}% 383
+\BOOKMARK [2][-]{section*.545}{LSTM and GRU}{section*.520}% 384
+\BOOKMARK [2][-]{section*.547}{Different ways of processing time series}{section*.520}% 385
+\BOOKMARK [2][-]{section*.549}{Keras basic layers}{section*.520}% 386
+\BOOKMARK [2][-]{section*.551}{More on LSTM}{section*.520}% 387
+\BOOKMARK [2][-]{section*.553}{Using LSTM}{section*.520}% 388
+\BOOKMARK [1][-]{section*.555}{Assignment 3}{chapter.3}% 389
+\BOOKMARK [1][-]{section*.556}{Assignment 4}{chapter.3}% 390
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 391
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 392
+\BOOKMARK [1][-]{section*.557}{Creare una Repository partendo da GitHub}{appendix.A}% 393
+\BOOKMARK [2][-]{section*.558}{Copiare la Repository in Locale}{section*.557}% 394
+\BOOKMARK [2][-]{section*.559}{Comandi principali in locale}{section*.557}% 395
+\BOOKMARK [2][-]{section*.560}{Creare una Repository in locale}{section*.557}% 396
+\BOOKMARK [2][-]{section*.562}{Git Workflow}{section*.557}% 397
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 398
+\BOOKMARK [1][-]{section*.565}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 399
+\BOOKMARK [2][-]{section*.566}{Step 2: Configure the conf.py}{section*.565}% 400
+\BOOKMARK [2][-]{section*.567}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.565}% 401
+\BOOKMARK [2][-]{section*.568}{Step 4: Including module.rst and generating html}{section*.565}% 402

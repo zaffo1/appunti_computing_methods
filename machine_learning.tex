@@ -1073,11 +1073,71 @@ Common alternative to keras
 
 \subsection{A (modernized) MLP in keras}
 
+\begin{minted}{python}
+from keras.models import Model
+from keras.layers import Input, Dense
+x = Input(shape=(32,))
+hid = Dense(32, activation=”relu”)(x)
+out = Dense(1, activation=”sigmoid”)(hid)
+model = Model(inputs=x, outputs=out)
+model.summary()
+from keras.utils import plot_model
+plot_model(model, to_file='model.png')
+\end{minted}
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1\linewidth]{figure_ml/modernized_mlp.png}
 \end{figure}
 \FloatBarrier
+
+\section{From the 1995 to 2010}
+
+\begin{minted}{python}
+from keras.models import Model
+from keras.layers import Input, Dense
+x = Input(shape=(32,))
+hid = Dense(32, activation=”sigmoid”)(x)
+out = Dense(1, activation=”sigmoid”)(hid)
+model = Model(inputs=x, outputs=out)
+\end{minted}
+
+\begin{center}
+	$\downarrow$
+\end{center}
+
+\begin{minted}{python}
+from keras.models import Model
+from keras.layers import Input, Dense
+x = Input(shape=(32,))
+b = Dense(32,activation=”relu”)(a)
+c = Dense(32,activation=”relu”)(b)
+d = Dense(32,activation=”relu”)(c)
+e = Dense(32,,activation=”sigmoid”)(d)
+model = Model(inputs=x, outputs=e)
+\end{minted}
+
+\section{Training a model with Keras}
+
+\begin{minted}{python}
+from keras.layers import Input, Dense
+from keras.models import Model
+# This returns a tensor
+inputs = Input(shape=(784,))
+# a layer instance is callable on a tensor, and returns a tensor
+x = Dense(64, activation='relu')(inputs)
+x = Dense(64, activation='relu')(x)
+predictions = Dense(10, activation='softmax')(x)
+# This creates a model that includes
+# the Input layer and three Dense layers
+model = Model(inputs=inputs, outputs=predictions)
+model.compile(optimizer='rmsprop',
+		loss='categorical_crossentropy',
+		metrics=['accuracy'])
+model.fit(data, labels) # starts training
+\end{minted}
+
+
 
 \section{Keras Layers}
 \subsection{Keras basic layers}
@@ -1106,12 +1166,70 @@ Common alternative to keras
 \end{itemize}
 
 \subsection{Callbacks}
+During training some “callbacks” can be passed to the fit function.
+\begin{itemize}
+	\item E.g. to monitor the progress of the training
+	\item To adapt the training
+	\begin{itemize}
+		\item Stop if no improvements in the last N epochs
+		\item Change learning rate (reduce) if no improvements in the last M epochs
+	\end{itemize}
+	\item Some callbacks are predefined in keras, other can be user implemented
+\end{itemize}
+
+\begin{minted}{python}
+from keras.callbacks import EarlyStopping, ReduceLROnPlateau
+# train
+history = model.fit(X_train, y_train, epochs=n_epochs, batch_size=batch_size, verbose = 2,
+		validation_data=(X_test, y_test),
+		callbacks = [
+		EarlyStopping(monitor='val_loss', patience=10, verbose=1),
+		ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=2, verbose=1)
+		])
+\end{minted}
 
 \section{\textit{Assignment 1}}
 
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/ass1.png}
+\end{wrapfigure} 
+\quad
+\begin{itemize}
+	\item Partition a 2D region with a simple function that returns true vs false having x1,x2 as arguments
+	\begin{itemize}
+		\item E.g. x1>x2 or x1*2>x2 or x1 > 1/x2 or … whatever...
+	\end{itemize}
+	\item Generate 1000 samples
+	\item Create a classifier with a MLP or a DNN with similar number of parameters that approximate the function above
+\end{itemize}
+Link: \\
+\href{https://colab.research.google.com/drive/1OOZIT1AFV7IaHajrruOJ6AmZeZkGeBJa?usp=sharing}{Exercise1}\\
+\href{https://colab.research.google.com/drive/1ghow_mdPfIOPkALZAS2ubUxIUFRwhotS?usp=sharing}{Solution}
 
 \section{\textit{Assignment 2}}
-%finire lez 2
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/ass2.png}
+\end{wrapfigure} 
+\quad
+\begin{itemize}
+	\item Let’s try to implement a \textbf{regression} with DNN in keras
+	\item Invent a function of x1,x2,x3,x4,x5
+	\item Generate some data
+	\item Create a Feed Forward model (with 1 or more hidden layers)
+	\item What should we change compared to the classification problem?
+	\begin{itemize}
+		\item What is the loss function to use?
+		\item Which activation function in last layer?
+	\end{itemize}
+	\item Try to make a histogram of the residuals on the validation sample
+	\begin{itemize}
+		\item residuals=(y\_predicted - y\_truth)
+	\end{itemize}
+\end{itemize}
+
+Link: \\
+\href{https://colab.research.google.com/drive/131B2QwLAm1Ct7e5KdYgRPLIBHGUY05j5?usp=sharing}{Exercise2}\\
+\href{https://colab.research.google.com/drive/1_J3EO4IpDoYk1BKIQcxxazxmKqCmLfGJ?usp=sharing}{Solution}
 
 \section{\textit{Giovedì 10 novembre - Lezione 14}}
 
