@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  13 NOV 2022 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  14 NOV 2022 10:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -5362,118 +5362,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
  []
 
 [266]
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1619
+Underfull \hbox (badness 10000) in paragraph at lines 1619--1620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1622
 
  []
 
 <figure_ml/dim_reduction.png, id=4300, 1858.945pt x 447.6725pt>
 File: figure_ml/dim_reduction.png Graphic file (type png)
 <use figure_ml/dim_reduction.png>
-Package pdftex.def Info: figure_ml/dim_reduction.png  used on input line 1627.
+Package pdftex.def Info: figure_ml/dim_reduction.png  used on input line 1630.
 (pdftex.def)             Requested size: 426.79135pt x 102.77806pt.
 <figure_ml/autoencoder.png, id=4301, 1474.50874pt x 581.17125pt>
 File: figure_ml/autoencoder.png Graphic file (type png)
 <use figure_ml/autoencoder.png>
-Package pdftex.def Info: figure_ml/autoencoder.png  used on input line 1639.
+Package pdftex.def Info: figure_ml/autoencoder.png  used on input line 1642.
 (pdftex.def)             Requested size: 277.41176pt x 109.33292pt.
-<figure_ml/generative_models.png, id=4302, 454.69875pt x 905.3825pt>
+<figure_ml/bottleneck.png, id=4302, 1579.9025pt x 899.36pt>
+File: figure_ml/bottleneck.png Graphic file (type png)
+<use figure_ml/bottleneck.png>
+Package pdftex.def Info: figure_ml/bottleneck.png  used on input line 1656.
+(pdftex.def)             Requested size: 277.41176pt x 157.91183pt.
+[267 <./figure_ml/dim_reduction.png> <./figure_ml/autoencoder.png>]
+<figure_ml/generative_models.png, id=4311, 454.69875pt x 905.3825pt>
 File: figure_ml/generative_models.png Graphic file (type png)
 <use figure_ml/generative_models.png>
 Package pdftex.def Info: figure_ml/generative_models.png  used on input line 16
-65.
+81.
 (pdftex.def)             Requested size: 192.0548pt x 382.4132pt.
-[267 <./figure_ml/dim_reduction.png> <./figure_ml/autoencoder.png>]
-Underfull \hbox (badness 7273) in paragraph at lines 1678--1679
+
+Underfull \hbox (badness 7273) in paragraph at lines 1694--1695
 []\T1/cmr/m/n/10 Generate re-al-is-tic ^^Pre-con-structed
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 1688--1689
+Underfull \hbox (badness 1803) in paragraph at lines 1704--1705
 []\T1/cmr/m/n/10 Latent space rep-re-sent-ing
  []
 
 
-Package wrapfig Warning: Collision between wrapping environments on input line 
-1697.
+Underfull \hbox (badness 4013) in paragraph at lines 1704--1705
+\T1/cmr/m/n/10 learned fea-tures (tu-to-rial
+ []
 
-<figure_ml/gan.png, id=4311, 1217.54875pt x 530.98375pt>
+[268 <./figure_ml/bottleneck.png> <./figure_ml/generative_models.png>]
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+1713.
+
+<figure_ml/gan.png, id=4321, 1217.54875pt x 530.98375pt>
 File: figure_ml/gan.png Graphic file (type png)
 <use figure_ml/gan.png>
-Package pdftex.def Info: figure_ml/gan.png  used on input line 1698.
+Package pdftex.def Info: figure_ml/gan.png  used on input line 1714.
 (pdftex.def)             Requested size: 192.0548pt x 83.7519pt.
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
-01.
+17.
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
-04.
+20.
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
-05.
+21.
 
-<figure_ml/dogs.png, id=4312, 492.84125pt x 492.84125pt>
+<figure_ml/dogs.png, id=4322, 492.84125pt x 492.84125pt>
 File: figure_ml/dogs.png Graphic file (type png)
 <use figure_ml/dogs.png>
-Package pdftex.def Info: figure_ml/dogs.png  used on input line 1726.
+Package pdftex.def Info: figure_ml/dogs.png  used on input line 1743.
 (pdftex.def)             Requested size: 140.84192pt x 140.84473pt.
-[268 <./figure_ml/generative_models.png> <./figure_ml/gan.png>]
-<figure_ml/faces.png, id=4321, 933.4875pt x 937.5025pt>
+<figure_ml/faces.png, id=4323, 933.4875pt x 937.5025pt>
 File: figure_ml/faces.png Graphic file (type png)
 <use figure_ml/faces.png>
-Package pdftex.def Info: figure_ml/faces.png  used on input line 1733.
+Package pdftex.def Info: figure_ml/faces.png  used on input line 1750.
 (pdftex.def)             Requested size: 140.84192pt x 141.4347pt.
-<figure_ml/pacman.png, id=4324, 321.2pt x 321.2pt>
+<figure_ml/pacman.png, id=4326, 321.2pt x 321.2pt>
 File: figure_ml/pacman.png Graphic file (type png)
 <use figure_ml/pacman.png>
-Package pdftex.def Info: figure_ml/pacman.png  used on input line 1740.
+Package pdftex.def Info: figure_ml/pacman.png  used on input line 1757.
 (pdftex.def)             Requested size: 140.84192pt x 140.84322pt.
- [269 <./figure_ml/dogs.png> <./figure_ml/faces.png> <./figure_ml/pacman.png>]
+[269 <./figure_ml/gan.png> <./figure_ml/dogs.png>]
 <figure_ml/ass5_1.png, id=4335, 381.425pt x 248.93pt>
 File: figure_ml/ass5_1.png Graphic file (type png)
 <use figure_ml/ass5_1.png>
-Package pdftex.def Info: figure_ml/ass5_1.png  used on input line 1749.
+Package pdftex.def Info: figure_ml/ass5_1.png  used on input line 1769.
 (pdftex.def)             Requested size: 170.71393pt x 111.41351pt.
 <figure_ml/ass5_2.png, id=4336, 387.4475pt x 248.93pt>
 File: figure_ml/ass5_2.png Graphic file (type png)
 <use figure_ml/ass5_2.png>
-Package pdftex.def Info: figure_ml/ass5_2.png  used on input line 1750.
+Package pdftex.def Info: figure_ml/ass5_2.png  used on input line 1770.
 (pdftex.def)             Requested size: 170.71393pt x 109.68146pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1751
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1771
 [][]
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 1760--1761
+Underfull \hbox (badness 1043) in paragraph at lines 1780--1781
 []\T1/cmr/m/n/10 Generate 1000 events in a ring with
  []
 
-<figure_ml/ass6.png, id=4337, 870.25125pt x 633.36626pt>
+[270 <./figure_ml/faces.png> <./figure_ml/pacman.png> <./figure_ml/ass5_1.png> 
+<./figure_ml/ass5_2.png>]
+<figure_ml/ass6.png, id=4350, 870.25125pt x 633.36626pt>
 File: figure_ml/ass6.png Graphic file (type png)
 <use figure_ml/ass6.png>
-Package pdftex.def Info: figure_ml/ass6.png  used on input line 1784.
+Package pdftex.def Info: figure_ml/ass6.png  used on input line 1807.
 (pdftex.def)             Requested size: 170.71393pt x 124.24524pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1787--1788
+Underfull \hbox (badness 10000) in paragraph at lines 1810--1811
 
  []
 
-) [270 <./figure_ml/ass5_1.png> <./figure_ml/ass5_2.png> <./figure_ml/ass6.png>
-]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1819--1820
+
+ []
+
+) [271 <./figure_ml/ass6.png>]
 \openout2 = `medphys.aux'.
 
- (./medphys.tex
-Chapter 4.
-) [271
+ (./medphys.tex [272
 
 
 
 ]
+Chapter 4.
+) [273]
 \openout2 = `git.aux'.
 
- (./git.tex [272
+ (./git.tex [274
 
 
 
@@ -5518,7 +5540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 B.pygtex)
 \openout6 = `main.pyg'.
 
- [273]
+ [275]
 (./_minted-main/D27C2CCC166FD5550124E367C81990AD5093E84BEA004B2911D4DA186861F6D
 B.pygtex)
 \openout6 = `main.pyg'.
@@ -5569,7 +5591,7 @@ B.pygtex)
 
 (./_minted-main/85CBBAD027AB6744449638F5757E52E35093E84BEA004B2911D4DA186861F6D
 B.pygtex)
-<images/screenshot_github_tutorial_repo.png, id=4363, 1531.7225pt x 176.66pt>
+<images/screenshot_github_tutorial_repo.png, id=4378, 1531.7225pt x 176.66pt>
 File: images/screenshot_github_tutorial_repo.png Graphic file (type png)
 <use images/screenshot_github_tutorial_repo.png>
 Package pdftex.def Info: images/screenshot_github_tutorial_repo.png  used on in
@@ -5579,7 +5601,7 @@ put line 252.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[274]
+[276]
 \openout6 = `main.pyg'.
 
 
@@ -5605,16 +5627,16 @@ B.pygtex)
 
 (./_minted-main/7E0A27DAAC38FB6F207B9B472F29A6835093E84BEA004B2911D4DA186861F6D
 B.pygtex)
-<images/git_workflow.jpeg, id=4368, 883.3pt x 627.34375pt>
+<images/git_workflow.jpeg, id=4383, 883.3pt x 627.34375pt>
 File: images/git_workflow.jpeg Graphic file (type jpg)
 <use images/git_workflow.jpeg>
 Package pdftex.def Info: images/git_workflow.jpeg  used on input line 340.
 (pdftex.def)             Requested size: 256.07741pt x 181.86758pt.
-) [275 <./images/screenshot_github_tutorial_repo.png> <./images/git_workflow.jp
+) [277 <./images/screenshot_github_tutorial_repo.png> <./images/git_workflow.jp
 eg>]
 \openout2 = `sphinx.aux'.
 
- (./sphinx.tex [276
+ (./sphinx.tex [278
 
 
 
@@ -5625,12 +5647,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-<images/sphinx_workflow.png, id=4382, 390.45876pt x 865.2325pt>
+<images/sphinx_workflow.png, id=4398, 390.45876pt x 865.2325pt>
 File: images/sphinx_workflow.png Graphic file (type png)
 <use images/sphinx_workflow.png>
 Package pdftex.def Info: images/sphinx_workflow.png  used on input line 17.
 (pdftex.def)             Requested size: 226.19888pt x 501.2411pt.
-[277]
+[279]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 21.
@@ -5642,7 +5664,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 B.pygtex)
 \openout6 = `main.pyg'.
 
- [278 <./images/sphinx_workflow.png>]
+ [280 <./images/sphinx_workflow.png>]
 (./_minted-main/B6C535ABF88D54EE0929968E435BDCC65093E84BEA004B2911D4DA186861F6D
 B.pygtex)
 \openout6 = `main.pyg'.
@@ -5672,7 +5694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
 
 (./_minted-main/4D38FAF2F7505861DF8B4CCDAE039A981F0DFB4B686975796DBB222E041DAA6
-D.pygtex [279])
+D.pygtex [281])
 \openout6 = `main.pyg'.
 
 
@@ -5687,12 +5709,12 @@ B.pygtex)
 
 
 (./_minted-main/3C4C57EE0612662FC7DF741A4D8FCA2A5093E84BEA004B2911D4DA186861F6D
-B.pygtex) [280]
+B.pygtex) [282]
 \openout6 = `main.pyg'.
 
 
 (./_minted-main/91F33584D8618A86B18D91E7C3B093645093E84BEA004B2911D4DA186861F6D
-B.pygtex)) [281]
+B.pygtex)) [283]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./main.aux (./Scientific_python.aux)
@@ -5700,15 +5722,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
 (./sphinx.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C98891DAF70277554FF2A46528C3D306;31606.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D64DBC00713474AB0B78E2941F347B5D;31606
-(rerunfilecheck)             After:  1AB5B38BF7E1049071F1EB1D52E731D6;31606.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -5717,10 +5733,10 @@ runsystem(rm main.pyg)...executed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 36324 strings out of 483107
- 819617 string characters out of 5964630
- 1072591 words of memory out of 5000000
- 48798 multiletter control sequences out of 15000+600000
+ 36332 strings out of 483107
+ 819794 string characters out of 5964630
+ 1072643 words of memory out of 5000000
+ 48803 multiletter control sequences out of 15000+600000
  568340 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  76i,18n,103p,985b,1082s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5764,10 +5780,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (281 pages, 36336768 bytes).
+Output written on main.pdf (283 pages, 36543896 bytes).
 PDF statistics:
- 5739 PDF objects out of 6186 (max. 8388607)
- 3758 compressed objects within 38 object streams
- 936 named destinations out of 1000 (max. 500000)
- 4840 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5758 PDF objects out of 6186 (max. 8388607)
+ 3772 compressed objects within 38 object streams
+ 939 named destinations out of 1000 (max. 500000)
+ 4845 words of extra memory for PDF output out of 10000 (max. 10000000)
 

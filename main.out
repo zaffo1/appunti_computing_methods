@@ -392,20 +392,20 @@
 \BOOKMARK [1][-]{section*.558}{Autoencoders and Generative Networks}{chapter.3}% 392
 \BOOKMARK [2][-]{section*.559}{Dimensionality reduction task}{section*.558}% 393
 \BOOKMARK [1][-]{section*.562}{Autoencoder example}{chapter.3}% 394
-\BOOKMARK [2][-]{section*.563}{Generative models}{section*.562}% 395
-\BOOKMARK [2][-]{section*.565}{Generative Adversarial Networks}{section*.562}% 396
-\BOOKMARK [2][-]{section*.567}{GAN progress}{section*.562}% 397
-\BOOKMARK [1][-]{section*.571}{Assignment 5}{chapter.3}% 398
-\BOOKMARK [1][-]{section*.573}{Assignment 6}{chapter.3}% 399
+\BOOKMARK [2][-]{section*.564}{Generative models}{section*.562}% 395
+\BOOKMARK [2][-]{section*.566}{Generative Adversarial Networks}{section*.562}% 396
+\BOOKMARK [2][-]{section*.568}{GAN progress}{section*.562}% 397
+\BOOKMARK [1][-]{section*.572}{Assignment 5}{chapter.3}% 398
+\BOOKMARK [1][-]{section*.574}{Assignment 6}{chapter.3}% 399
 \BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 400
 \BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 401
-\BOOKMARK [1][-]{section*.575}{Creare una Repository partendo da GitHub}{appendix.A}% 402
-\BOOKMARK [2][-]{section*.576}{Copiare la Repository in Locale}{section*.575}% 403
-\BOOKMARK [2][-]{section*.577}{Comandi principali in locale}{section*.575}% 404
-\BOOKMARK [2][-]{section*.578}{Creare una Repository in locale}{section*.575}% 405
-\BOOKMARK [2][-]{section*.580}{Git Workflow}{section*.575}% 406
+\BOOKMARK [1][-]{section*.576}{Creare una Repository partendo da GitHub}{appendix.A}% 402
+\BOOKMARK [2][-]{section*.577}{Copiare la Repository in Locale}{section*.576}% 403
+\BOOKMARK [2][-]{section*.578}{Comandi principali in locale}{section*.576}% 404
+\BOOKMARK [2][-]{section*.579}{Creare una Repository in locale}{section*.576}% 405
+\BOOKMARK [2][-]{section*.581}{Git Workflow}{section*.576}% 406
 \BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 407
-\BOOKMARK [1][-]{section*.583}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 408
-\BOOKMARK [2][-]{section*.584}{Step 2: Configure the conf.py}{section*.583}% 409
-\BOOKMARK [2][-]{section*.585}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.583}% 410
-\BOOKMARK [2][-]{section*.586}{Step 4: Including module.rst and generating html}{section*.583}% 411
+\BOOKMARK [1][-]{section*.584}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 408
+\BOOKMARK [2][-]{section*.585}{Step 2: Configure the conf.py}{section*.584}% 409
+\BOOKMARK [2][-]{section*.586}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.584}% 410
+\BOOKMARK [2][-]{section*.587}{Step 4: Including module.rst and generating html}{section*.584}% 411

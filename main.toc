@@ -392,20 +392,20 @@
 \contentsline {section}{Autoencoders and Generative Networks}{267}{section*.558}%
 \contentsline {subsection}{Dimensionality reduction task}{267}{section*.559}%
 \contentsline {section}{Autoencoder example}{267}{section*.562}%
-\contentsline {subsection}{Generative models}{267}{section*.563}%
-\contentsline {subsection}{Generative Adversarial Networks}{268}{section*.565}%
-\contentsline {subsection}{GAN progress}{269}{section*.567}%
-\contentsline {section}{\textit {Assignment 5}}{270}{section*.571}%
-\contentsline {section}{\textit {Assignment 6}}{270}{section*.573}%
-\contentsline {chapter}{\numberline {4}Fisica Medica}{271}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{273}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{273}{section*.575}%
-\contentsline {subsection}{Copiare la Repository in Locale}{273}{section*.576}%
-\contentsline {subsection}{Comandi principali in locale}{273}{section*.577}%
-\contentsline {subsection}{Creare una Repository in locale}{274}{section*.578}%
-\contentsline {subsection}{Git Workflow}{275}{section*.580}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{277}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{278}{section*.583}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{279}{section*.584}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{280}{section*.585}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{280}{section*.586}%
+\contentsline {subsection}{Generative models}{268}{section*.564}%
+\contentsline {subsection}{Generative Adversarial Networks}{269}{section*.566}%
+\contentsline {subsection}{GAN progress}{269}{section*.568}%
+\contentsline {section}{\textit {Assignment 5}}{270}{section*.572}%
+\contentsline {section}{\textit {Assignment 6}}{271}{section*.574}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{273}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{275}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{275}{section*.576}%
+\contentsline {subsection}{Copiare la Repository in Locale}{275}{section*.577}%
+\contentsline {subsection}{Comandi principali in locale}{275}{section*.578}%
+\contentsline {subsection}{Creare una Repository in locale}{276}{section*.579}%
+\contentsline {subsection}{Git Workflow}{277}{section*.581}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{279}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{280}{section*.584}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{281}{section*.585}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{282}{section*.586}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{282}{section*.587}%

@@ -1615,6 +1615,9 @@ Try building from scratch a LSTM that find the maximum length and its position i
 \section{Autoencoders and Generative Networks}
 
 \subsection{Dimensionality reduction task}
+
+Avevamo visto l'algoritmo PCA che permette di fare riduzione della dimensionalità tramite un algoritmo unsupervised.\\
+
 We have as input N numbers, we want to transform them to M numbers, with M < N, that contains as much information as possible of the initial numbers.\\
 
 PCA is a possible way to do this dimensionality reduction
@@ -1640,7 +1643,20 @@ There are (even simple) data distributions where PCA is not going to help.\\
 \end{figure}
 \FloatBarrier
 
+Gli autoencoder sono delle reti che hanno due parti: codifica e decodifica. La codifica cerca di ridurre i nostri dati da uno spazio multidimensionale a uno spazio più piccolo.\\ La fase di decoding, partendo dalla rappresentazione complessa deve tornare all'input approssimato.\\
+Calcolando una loss function tra l'input approssimato e l'input "vero" ci permette di fare un unsupervised learning.
+
+
 \section{Autoencoder example}
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.65\linewidth]{figure_ml/bottleneck.png}
+\end{figure}
+\FloatBarrier
+
 
 \begin{itemize}
 	\item Create a “bottleneck” to reduce the
@@ -1685,7 +1701,7 @@ How can we do it in Keras?\\
 			\item Take the trained “decoder” and start decoding a vector of random noise
 			\item This works best with so called “Variational Autoencoders”
 			\begin{itemize}
-				\item Latent space representing “mean and variance” of the learned	features (tutorial)
+				\item Latent space representing “mean and variance” of the learned	features (tutorial \href{https://towardsdatascience.com/variational-autoencoders-as-generative-models-with-keras-e0c79415a7eb}{link})
 			\end{itemize}
 		\end{itemize}
 	\item With Generative Adversarial Networks
@@ -1717,6 +1733,7 @@ The two networks “compete” against each other
 	\end{itemize}
 	\item \textbf{Generator} loss is controlled by the \textbf{discriminator} being able to recognize the fake
 \end{itemize}
+in pratica abbiamo ottenuto un algoritmo \textit{supervised}. Il concatenamento Generatore + Discriminatore dovrebbe restituire sempre "\textit{fake}".
 
 \subsection{GAN progress}
 
@@ -1741,6 +1758,9 @@ The two networks “compete” against each other
 	\caption{2019: re-create a		playable video game	just by looking at videos of an existing one (so far PacMan). \quad	2021: GANTheftAuto}
 \end{figure}
 
+
+In realtà le GAN stanno passando di moda... Un altra cosa interessante sono i \textit{Normalising Flow} di cui però non parleremo.
+
 \newpage
 
 \section{\textit{Assignment 5}}
@@ -1761,9 +1781,9 @@ Steps for the exercise
 	\item Create an autoencoder with
 	\begin{itemize}
 		\item An input with dimension 2
-		\item 2 encoding hidden layers with ~50 nodes per layer
+		\item 2 encoding hidden layers with $\sim$50 nodes per layer
 		\item A latent layer with a single node (sigmoid output) <= give it a name to later reuse
-		\item 2 decoding hidden layers with ~50 nodes per layer
+		\item 2 decoding hidden layers with $\sim$50 nodes per layer
 		\item An output with 2 nodes
 	\end{itemize}
 	\item Reuse the latent layer to create two models
@@ -1777,6 +1797,9 @@ Steps for the exercise
 		\item If we scan the code from 0 to 1, how does it map to (x,y)
 	\end{itemize}
 \end{itemize}
+
+\href{https://colab.research.google.com/drive/128MRt1zD5iRLhqcUrZz6Bjjndebm7ZSU?usp=sharing}{Esercizio}\\
+\href{https://colab.research.google.com/drive/1-mP435EXwv77Z4sEWbMlnVwvtPeWuseD?usp=sharing}{Soluzione}
 
 \section{\textit{Assignment 6}}
 
@@ -1792,3 +1815,21 @@ Nicely following a similar approach to what we had in this lectures: start from 
 	\item Generate points in a x1,x2 plane following a known function
 	\item Ask the GAN to produce “samples” that look like our dataset (i.e. follow the same distribution)
 \end{itemize}
+
+\href{https://colab.research.google.com/drive/17Ad1AjATCVbkMaSInfTmryZYK52qLRox#scrollTo=Y7Yhi844aP2Y&uniqifier=1}{solution}.\\
+
+
+\textbf{nota:} ci vogliono tante epoche per far convergere un oggetto del genere!
+
+
+$\star$\textbf{Nota:} Per generare immagini si usano encoding e deconding convolutivi, così come nella GAN. Si usano layer convolutional e de-convonutional (Conv2DTranspose).
+
+$\star$Un problema delle GAN è che non c'è un modo quantitativo di capire come stanno performando. Non c'è una metrica ovvia per capire se le cose stanno andando bene.\\
+
+
+le GAN non sono un granché nell'ambito scientifico, perché non possiamo controllare le proprietà statistiche dei dati che generiamo.\\
+
+Un nuovo pardigma generativo è chiamato \textbf{Normalising Flow}\\
+
+
+\textbf{Almeno un paio domande per ogni modulo}
