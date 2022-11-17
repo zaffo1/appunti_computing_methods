@@ -397,15 +397,35 @@
 \BOOKMARK [2][-]{section*.568}{GAN progress}{section*.562}% 397
 \BOOKMARK [1][-]{section*.572}{Assignment 5}{chapter.3}% 398
 \BOOKMARK [1][-]{section*.574}{Assignment 6}{chapter.3}% 399
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 400
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 401
-\BOOKMARK [1][-]{section*.576}{Creare una Repository partendo da GitHub}{appendix.A}% 402
-\BOOKMARK [2][-]{section*.577}{Copiare la Repository in Locale}{section*.576}% 403
-\BOOKMARK [2][-]{section*.578}{Comandi principali in locale}{section*.576}% 404
-\BOOKMARK [2][-]{section*.579}{Creare una Repository in locale}{section*.576}% 405
-\BOOKMARK [2][-]{section*.581}{Git Workflow}{section*.576}% 406
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 407
-\BOOKMARK [1][-]{section*.584}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 408
-\BOOKMARK [2][-]{section*.585}{Step 2: Configure the conf.py}{section*.584}% 409
-\BOOKMARK [2][-]{section*.586}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.584}% 410
-\BOOKMARK [2][-]{section*.587}{Step 4: Including module.rst and generating html}{section*.584}% 411
+\BOOKMARK [1][-]{section*.576}{Gioved\354 17 novembre - Lezione 16}{chapter.3}% 400
+\BOOKMARK [1][-]{section*.577}{Graph Neural Networks}{chapter.3}% 401
+\BOOKMARK [2][-]{section*.578}{Why graph networks?}{section*.577}% 402
+\BOOKMARK [2][-]{section*.580}{Example of datasets}{section*.577}% 403
+\BOOKMARK [2][-]{section*.582}{Graph structures in physics}{section*.577}% 404
+\BOOKMARK [2][-]{section*.584}{Sparse datasets}{section*.577}% 405
+\BOOKMARK [2][-]{section*.586}{Locality and invariance}{section*.577}% 406
+\BOOKMARK [2][-]{section*.588}{Adjacency matrix}{section*.577}% 407
+\BOOKMARK [2][-]{section*.590}{Data on a graph}{section*.577}% 408
+\BOOKMARK [2][-]{section*.591}{Tasks}{section*.577}% 409
+\BOOKMARK [2][-]{section*.592}{Learn new representation on nodes}{section*.577}% 410
+\BOOKMARK [2][-]{section*.593}{Update of edges, nodes, global state}{section*.577}% 411
+\BOOKMARK [2][-]{section*.594}{Propagate information}{section*.577}% 412
+\BOOKMARK [2][-]{section*.595}{Message passing}{section*.577}% 413
+\BOOKMARK [2][-]{section*.596}{How/what do we train?}{section*.577}% 414
+\BOOKMARK [2][-]{section*.597}{Example: b-tag at LHC}{section*.577}% 415
+\BOOKMARK [1][-]{section*.598}{Tools}{chapter.3}% 416
+\BOOKMARK [2][-]{section*.600}{How do we build a network in pytorch?}{section*.598}% 417
+\BOOKMARK [2][-]{section*.601}{How do we train a network in pytorch?}{section*.598}% 418
+\BOOKMARK [1][-]{section*.602}{Exercise: our first GNN with pytorch}{chapter.3}% 419
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 420
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 421
+\BOOKMARK [1][-]{section*.603}{Creare una Repository partendo da GitHub}{appendix.A}% 422
+\BOOKMARK [2][-]{section*.604}{Copiare la Repository in Locale}{section*.603}% 423
+\BOOKMARK [2][-]{section*.605}{Comandi principali in locale}{section*.603}% 424
+\BOOKMARK [2][-]{section*.606}{Creare una Repository in locale}{section*.603}% 425
+\BOOKMARK [2][-]{section*.608}{Git Workflow}{section*.603}% 426
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 427
+\BOOKMARK [1][-]{section*.611}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 428
+\BOOKMARK [2][-]{section*.612}{Step 2: Configure the conf.py}{section*.611}% 429
+\BOOKMARK [2][-]{section*.613}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.611}% 430
+\BOOKMARK [2][-]{section*.614}{Step 4: Including module.rst and generating html}{section*.611}% 431

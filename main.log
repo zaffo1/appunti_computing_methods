@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  14 NOV 2022 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.23)  17 NOV 2022 18:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1252,23 +1252,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
  []
 
 [12]
-<lez1/localVCS.png, id=2184, 803.0pt x 685.56125pt>
+<lez1/localVCS.png, id=2285, 803.0pt x 685.56125pt>
 File: lez1/localVCS.png Graphic file (type png)
 <use lez1/localVCS.png>
 Package pdftex.def Info: lez1/localVCS.png  used on input line 58.
 (pdftex.def)             Requested size: 213.39568pt x 182.18544pt.
-<lez1/centralVCS.png, id=2186, 803.0pt x 558.085pt>
+<lez1/centralVCS.png, id=2287, 803.0pt x 558.085pt>
 File: lez1/centralVCS.png Graphic file (type png)
 <use lez1/centralVCS.png>
 Package pdftex.def Info: lez1/centralVCS.png  used on input line 69.
 (pdftex.def)             Requested size: 213.39568pt x 148.30908pt.
  [13 <./lez1/localVCS.png> <./lez1/centralVCS.png>]
-<lez1/distributedVCS.png, id=2200, 670.505pt x 803.0pt>
+<lez1/distributedVCS.png, id=2300, 670.505pt x 803.0pt>
 File: lez1/distributedVCS.png Graphic file (type png)
 <use lez1/distributedVCS.png>
 Package pdftex.def Info: lez1/distributedVCS.png  used on input line 90.
 (pdftex.def)             Requested size: 213.39568pt x 255.55618pt.
-<lez1/centralvsdistr.png, id=2201, 867.24pt x 355.3275pt>
+<lez1/centralvsdistr.png, id=2301, 867.24pt x 355.3275pt>
 File: lez1/centralvsdistr.png Graphic file (type png)
 <use lez1/centralvsdistr.png>
 Package pdftex.def Info: lez1/centralvsdistr.png  used on input line 115.
@@ -1279,7 +1279,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
  []
 
 [14 <./lez1/distributedVCS.png> <./lez1/centralvsdistr.png>]
-<lez1/hash.png, id=2211, 1204.5pt x 923.45pt>
+<lez1/hash.png, id=2311, 1204.5pt x 923.45pt>
 File: lez1/hash.png Graphic file (type png)
 <use lez1/hash.png>
 Package pdftex.def Info: lez1/hash.png  used on input line 133.
@@ -1298,7 +1298,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )
-<lez1/branching.png, id=2212, 574.145pt x 371.3875pt>
+<lez1/branching.png, id=2312, 574.145pt x 371.3875pt>
 File: lez1/branching.png Graphic file (type png)
 <use lez1/branching.png>
 Package pdftex.def Info: lez1/branching.png  used on input line 188.
@@ -1440,7 +1440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 898--899
 
 (./_minted-main/7FB80C53F3545895E34DDF4806C60AD14FBEEAFC55D0059826E664B9BBCF372
 1.pygtex) [26]
-<lez3/asymptotic_behavior.png, id=2300, 642.4pt x 481.8pt>
+<lez3/asymptotic_behavior.png, id=2400, 642.4pt x 481.8pt>
 File: lez3/asymptotic_behavior.png Graphic file (type png)
 <use lez3/asymptotic_behavior.png>
 Package pdftex.def Info: lez3/asymptotic_behavior.png  used on input line 1007.
@@ -1452,18 +1452,18 @@ Overfull \hbox (4.41257pt too wide) in paragraph at lines 1040--1041
 tt/m/n/10 http : / / www . cs . bme . hu / ~friedl / alg / knuth _
  []
 
-<lez3/list.png, id=2307, 1065.9825pt x 451.6875pt>
+<lez3/list.png, id=2407, 1065.9825pt x 451.6875pt>
 File: lez3/list.png Graphic file (type png)
 <use lez3/list.png>
 Package pdftex.def Info: lez3/list.png  used on input line 1046.
 (pdftex.def)             Requested size: 298.75264pt x 126.58879pt.
 [28 <./lez3/asymptotic_behavior.png>]
-<lez3/hash.png, id=2315, 451.6875pt x 311.1625pt>
+<lez3/hash.png, id=2415, 451.6875pt x 311.1625pt>
 File: lez3/hash.png Graphic file (type png)
 <use lez3/hash.png>
 Package pdftex.def Info: lez3/hash.png  used on input line 1079.
 (pdftex.def)             Requested size: 298.75264pt x 205.81894pt.
-<lez3/dict.png, id=2316, 514.92375pt x 226.8475pt>
+<lez3/dict.png, id=2416, 514.92375pt x 226.8475pt>
 File: lez3/dict.png Graphic file (type png)
 <use lez3/dict.png>
 Package pdftex.def Info: lez3/dict.png  used on input line 1101.
@@ -1487,7 +1487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
 
  []
 
-<lez3/sort.png, id=2331, 1700.3525pt x 951.555pt>
+<lez3/sort.png, id=2431, 1700.3525pt x 951.555pt>
 File: lez3/sort.png Graphic file (type png)
 <use lez3/sort.png>
 Package pdftex.def Info: lez3/sort.png  used on input line 1198.
@@ -1649,7 +1649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1633--1634
 
  []
 
-<lez4/namespaces.png, id=2389, 816.04875pt x 724.7075pt>
+<lez4/namespaces.png, id=2490, 816.04875pt x 724.7075pt>
 File: lez4/namespaces.png Graphic file (type png)
 <use lez4/namespaces.png>
 Package pdftex.def Info: lez4/namespaces.png  used on input line 1635.
@@ -1916,7 +1916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2445--2447
 
 (./_minted-main/7762219ED66CF9758AB4B9EBE8EE0AD55093E84BEA004B2911D4DA186861F6D
 B.pygtex)
-<lez5/fit.png, id=2506, 642.4pt x 481.8pt>
+<lez5/fit.png, id=2606, 642.4pt x 481.8pt>
 File: lez5/fit.png Graphic file (type png)
 <use lez5/fit.png>
 Package pdftex.def Info: lez5/fit.png  used on input line 2459.
@@ -1961,18 +1961,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2761--2762
 
  []
 
-<lez6/doc_scipy.png, id=2541, 1545.775pt x 937.5025pt>
+<lez6/doc_scipy.png, id=2642, 1545.775pt x 937.5025pt>
 File: lez6/doc_scipy.png Graphic file (type png)
 <use lez6/doc_scipy.png>
 Package pdftex.def Info: lez6/doc_scipy.png  used on input line 2768.
 (pdftex.def)             Requested size: 426.79135pt x 258.83679pt.
-<lez6/codice_doc.png, id=2542, 1076.02pt x 980.66376pt>
+<lez6/codice_doc.png, id=2643, 1076.02pt x 980.66376pt>
 File: lez6/codice_doc.png Graphic file (type png)
 <use lez6/codice_doc.png>
 Package pdftex.def Info: lez6/codice_doc.png  used on input line 2776.
 (pdftex.def)             Requested size: 426.79135pt x 388.96654pt.
 [71 <./lez6/doc_scipy.png>]
-<lez6/sphinx.png, id=2550, 1105.12875pt x 840.13875pt>
+<lez6/sphinx.png, id=2651, 1105.12875pt x 840.13875pt>
 File: lez6/sphinx.png Graphic file (type png)
 <use lez6/sphinx.png>
 Package pdftex.def Info: lez6/sphinx.png  used on input line 2815.
@@ -2014,12 +2014,12 @@ B.pygtex) [74]
 
 (./_minted-main/887BD8D84CFC004B04E0C9CDA720EF835093E84BEA004B2911D4DA186861F6D
 B.pygtex) [76]
-<lez6/hitmiss.jpg, id=2579, 416.52386pt x 323.27226pt>
+<lez6/hitmiss.jpg, id=2680, 416.52386pt x 323.27226pt>
 File: lez6/hitmiss.jpg Graphic file (type jpg)
 <use lez6/hitmiss.jpg>
 Package pdftex.def Info: lez6/hitmiss.jpg  used on input line 2963.
 (pdftex.def)             Requested size: 213.39568pt x 165.62137pt.
-<lez6/spline.pdf, id=2580, 462.52798pt x 346.89601pt>
+<lez6/spline.pdf, id=2681, 462.52798pt x 346.89601pt>
 File: lez6/spline.pdf Graphic file (type pdf)
 <use lez6/spline.pdf>
 Package pdftex.def Info: lez6/spline.pdf  used on input line 3000.
@@ -2065,7 +2065,7 @@ B.pygtex)
 
 (./_minted-main/2EAF8E1FBF30901BFBF28DA373D26F3B5093E84BEA004B2911D4DA186861F6D
 B.pygtex) [81]
-<lez7/error_tree.png, id=2645, 1435.3625pt x 1071.00125pt>
+<lez7/error_tree.png, id=2745, 1435.3625pt x 1071.00125pt>
 File: lez7/error_tree.png Graphic file (type png)
 <use lez7/error_tree.png>
 Package pdftex.def Info: lez7/error_tree.png  used on input line 3218.
@@ -2260,7 +2260,7 @@ Overfull \hbox (0.56235pt too wide) in paragraph at lines 10--10
 ew: from
  []
 
-<figure_parallel/VN_arch.png, id=2728, 604.2575pt x 421.575pt>
+<figure_parallel/VN_arch.png, id=2828, 604.2575pt x 421.575pt>
 File: figure_parallel/VN_arch.png Graphic file (type png)
 <use figure_parallel/VN_arch.png>
 Package pdftex.def Info: figure_parallel/VN_arch.png  used on input line 29.
@@ -2275,14 +2275,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<figure_parallel/bottleneck.png, id=2729, 1274.7625pt x 832.10875pt>
+<figure_parallel/bottleneck.png, id=2829, 1274.7625pt x 832.10875pt>
 File: figure_parallel/bottleneck.png Graphic file (type png)
 <use figure_parallel/bottleneck.png>
 Package pdftex.def Info: figure_parallel/bottleneck.png  used on input line 43.
 
 (pdftex.def)             Requested size: 256.07741pt x 167.15521pt.
 [100 <./figure_parallel/VN_arch.png>]
-<figure_parallel/server.png, id=2741, 907.39pt x 973.6375pt>
+<figure_parallel/server.png, id=2841, 907.39pt x 973.6375pt>
 File: figure_parallel/server.png Graphic file (type png)
 <use figure_parallel/server.png>
 Package pdftex.def Info: figure_parallel/server.png  used on input line 75.
@@ -2302,7 +2302,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-<figure_parallel/cache.png, id=2753, 926.46124pt x 691.58376pt>
+<figure_parallel/cache.png, id=2853, 926.46124pt x 691.58376pt>
 File: figure_parallel/cache.png Graphic file (type png)
 <use figure_parallel/cache.png>
 Package pdftex.def Info: figure_parallel/cache.png  used on input line 95.
@@ -2312,13 +2312,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-<figure_parallel/7perf.png, id=2754, 967.615pt x 434.62375pt>
+<figure_parallel/7perf.png, id=2854, 967.615pt x 434.62375pt>
 File: figure_parallel/7perf.png Graphic file (type png)
 <use figure_parallel/7perf.png>
 Package pdftex.def Info: figure_parallel/7perf.png  used on input line 106.
 (pdftex.def)             Requested size: 256.07741pt x 115.0222pt.
 [102 <./figure_parallel/cache.png> <./figure_parallel/7perf.png>]
-<figure_parallel/vector_sum.png, id=2763, 1545.775pt x 584.1825pt>
+<figure_parallel/vector_sum.png, id=2864, 1545.775pt x 584.1825pt>
 File: figure_parallel/vector_sum.png Graphic file (type png)
 <use figure_parallel/vector_sum.png>
 Package pdftex.def Info: figure_parallel/vector_sum.png  used on input line 128
@@ -2329,31 +2329,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-<figure_parallel/superscalar.png, id=2764, 784.9325pt x 781.92125pt>
+<figure_parallel/superscalar.png, id=2865, 784.9325pt x 781.92125pt>
 File: figure_parallel/superscalar.png Graphic file (type png)
 <use figure_parallel/superscalar.png>
 Package pdftex.def Info: figure_parallel/superscalar.png  used on input line 13
 7.
 (pdftex.def)             Requested size: 170.71393pt x 170.05457pt.
-<figure_parallel/pipeline.png, id=2765, 982.67125pt x 209.78375pt>
+<figure_parallel/pipeline.png, id=2866, 982.67125pt x 209.78375pt>
 File: figure_parallel/pipeline.png Graphic file (type png)
 <use figure_parallel/pipeline.png>
 Package pdftex.def Info: figure_parallel/pipeline.png  used on input line 177.
 (pdftex.def)             Requested size: 298.75264pt x 63.77747pt.
 [103 <./figure_parallel/vector_sum.png> <./figure_parallel/superscalar.png>]
-<figure_parallel/pipeline1.png, id=2775, 879.285pt x 157.58875pt>
+<figure_parallel/pipeline1.png, id=2876, 879.285pt x 157.58875pt>
 File: figure_parallel/pipeline1.png Graphic file (type png)
 <use figure_parallel/pipeline1.png>
 Package pdftex.def Info: figure_parallel/pipeline1.png  used on input line 186.
 
 (pdftex.def)             Requested size: 213.39568pt x 38.24527pt.
-<figure_parallel/pipeline2.png, id=2776, 975.645pt x 283.0575pt>
+<figure_parallel/pipeline2.png, id=2877, 975.645pt x 283.0575pt>
 File: figure_parallel/pipeline2.png Graphic file (type png)
 <use figure_parallel/pipeline2.png>
 Package pdftex.def Info: figure_parallel/pipeline2.png  used on input line 187.
 
 (pdftex.def)             Requested size: 213.39568pt x 61.91003pt.
-<figure_parallel/fet.png, id=2777, 698.61pt x 309.155pt>
+<figure_parallel/fet.png, id=2878, 698.61pt x 309.155pt>
 File: figure_parallel/fet.png Graphic file (type png)
 <use figure_parallel/fet.png>
 Package pdftex.def Info: figure_parallel/fet.png  used on input line 217.
@@ -2363,72 +2363,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--225
 
  []
 
-<figure_parallel/dennard.png, id=2778, 633.36626pt x 787.94376pt>
+<figure_parallel/dennard.png, id=2879, 633.36626pt x 787.94376pt>
 File: figure_parallel/dennard.png Graphic file (type png)
 <use figure_parallel/dennard.png>
 Package pdftex.def Info: figure_parallel/dennard.png  used on input line 232.
 (pdftex.def)             Requested size: 170.71393pt x 212.37494pt.
 [104 <./figure_parallel/pipeline.png> <./figure_parallel/pipeline1.png> <./figu
 re_parallel/pipeline2.png> <./figure_parallel/fet.png>]
-<figure_parallel/moore.png, id=2790, 1443.3925pt x 943.525pt>
+<figure_parallel/moore.png, id=2891, 1443.3925pt x 943.525pt>
 File: figure_parallel/moore.png Graphic file (type png)
 <use figure_parallel/moore.png>
 Package pdftex.def Info: figure_parallel/moore.png  used on input line 251.
 (pdftex.def)             Requested size: 192.0548pt x 125.54195pt.
-<figure_parallel/moore2.png, id=2791, 971.63pt x 523.9575pt>
+<figure_parallel/moore2.png, id=2892, 971.63pt x 523.9575pt>
 File: figure_parallel/moore2.png Graphic file (type png)
 <use figure_parallel/moore2.png>
 Package pdftex.def Info: figure_parallel/moore2.png  used on input line 255.
 (pdftex.def)             Requested size: 192.0548pt x 103.5664pt.
-<figure_parallel/sisd2.png, id=2792, 1188.44pt x 220.825pt>
+<figure_parallel/sisd2.png, id=2893, 1188.44pt x 220.825pt>
 File: figure_parallel/sisd2.png Graphic file (type png)
 <use figure_parallel/sisd2.png>
 Package pdftex.def Info: figure_parallel/sisd2.png  used on input line 283.
 (pdftex.def)             Requested size: 268.87555pt x 49.95978pt.
-<figure_parallel/SISD.png, id=2793, 501.875pt x 501.875pt>
+<figure_parallel/SISD.png, id=2894, 501.875pt x 501.875pt>
 File: figure_parallel/SISD.png Graphic file (type png)
 <use figure_parallel/SISD.png>
 Package pdftex.def Info: figure_parallel/SISD.png  used on input line 287.
 (pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
  [105 <./figure_parallel/dennard.png> <./figure_parallel/moore.png> <./figure_p
 arallel/moore2.png>]
-<figure_parallel/simd.png, id=2803, 1153.30875pt x 372.39125pt>
+<figure_parallel/simd.png, id=2904, 1153.30875pt x 372.39125pt>
 File: figure_parallel/simd.png Graphic file (type png)
 <use figure_parallel/simd.png>
 Package pdftex.def Info: figure_parallel/simd.png  used on input line 305.
 (pdftex.def)             Requested size: 268.87555pt x 86.81871pt.
-<figure_parallel/simd2.png, id=2804, 501.875pt x 501.875pt>
+<figure_parallel/simd2.png, id=2905, 501.875pt x 501.875pt>
 File: figure_parallel/simd2.png Graphic file (type png)
 <use figure_parallel/simd2.png>
 Package pdftex.def Info: figure_parallel/simd2.png  used on input line 309.
 (pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
-<figure_parallel/mimd.png, id=2805, 1212.53pt x 386.44376pt>
+<figure_parallel/mimd.png, id=2906, 1212.53pt x 386.44376pt>
 File: figure_parallel/mimd.png Graphic file (type png)
 <use figure_parallel/mimd.png>
 Package pdftex.def Info: figure_parallel/mimd.png  used on input line 325.
 (pdftex.def)             Requested size: 268.87555pt x 85.6901pt.
-<figure_parallel/mimd2.png, id=2806, 501.875pt x 501.875pt>
+<figure_parallel/mimd2.png, id=2907, 501.875pt x 501.875pt>
 File: figure_parallel/mimd2.png Graphic file (type png)
 <use figure_parallel/mimd2.png>
 Package pdftex.def Info: figure_parallel/mimd2.png  used on input line 329.
 (pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
-<figure_parallel/misd.png, id=2807, 1224.575pt x 441.65pt>
+<figure_parallel/misd.png, id=2908, 1224.575pt x 441.65pt>
 File: figure_parallel/misd.png Graphic file (type png)
 <use figure_parallel/misd.png>
 Package pdftex.def Info: figure_parallel/misd.png  used on input line 342.
 (pdftex.def)             Requested size: 268.87555pt x 96.96786pt.
-<figure_parallel/misd2.png, id=2808, 501.875pt x 501.875pt>
+<figure_parallel/misd2.png, id=2909, 501.875pt x 501.875pt>
 File: figure_parallel/misd2.png Graphic file (type png)
 <use figure_parallel/misd2.png>
 Package pdftex.def Info: figure_parallel/misd2.png  used on input line 346.
 (pdftex.def)             Requested size: 115.23404pt x 115.2297pt.
-<figure_parallel/decomposition1.png, id=2809, 389.455pt x 216.81pt>
+<figure_parallel/decomposition1.png, id=2910, 389.455pt x 216.81pt>
 File: figure_parallel/decomposition1.png Graphic file (type png)
 <use figure_parallel/decomposition1.png>
 Package pdftex.def Info: figure_parallel/decomposition1.png  used on input line
  354.
 (pdftex.def)             Requested size: 149.37958pt x 83.15947pt.
-<figure_parallel/decomposition2.png, id=2810, 589.20125pt x 354.32375pt>
+<figure_parallel/decomposition2.png, id=2911, 589.20125pt x 354.32375pt>
 File: figure_parallel/decomposition2.png Graphic file (type png)
 <use figure_parallel/decomposition2.png>
 Package pdftex.def Info: figure_parallel/decomposition2.png  used on input line
@@ -2447,7 +2447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-<figure_parallel/ant_sequential.png, id=2824, 1057.9525pt x 239.89626pt>
+<figure_parallel/ant_sequential.png, id=2925, 1057.9525pt x 239.89626pt>
 File: figure_parallel/ant_sequential.png Graphic file (type png)
 <use figure_parallel/ant_sequential.png>
 Package pdftex.def Info: figure_parallel/ant_sequential.png  used on input line
@@ -2469,7 +2469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--433
 
  []
 
-<figure_parallel/ant_concurrent.png, id=2835, 1012.78375pt x 310.15875pt>
+<figure_parallel/ant_concurrent.png, id=2936, 1012.78375pt x 310.15875pt>
 File: figure_parallel/ant_concurrent.png Graphic file (type png)
 <use figure_parallel/ant_concurrent.png>
 Package pdftex.def Info: figure_parallel/ant_concurrent.png  used on input line
@@ -2477,13 +2477,13 @@ Package pdftex.def Info: figure_parallel/ant_concurrent.png  used on input line
 (pdftex.def)             Requested size: 298.75264pt x 91.48657pt.
 [108 <./figure_parallel/ant_sequential.png> <./figure_parallel/ant_concurrent.p
 ng>]
-<figure_parallel/multiprogramming.png, id=2844, 653.44125pt x 736.7525pt>
+<figure_parallel/multiprogramming.png, id=2945, 653.44125pt x 736.7525pt>
 File: figure_parallel/multiprogramming.png Graphic file (type png)
 <use figure_parallel/multiprogramming.png>
 Package pdftex.def Info: figure_parallel/multiprogramming.png  used on input li
 ne 444.
 (pdftex.def)             Requested size: 162.18279pt x 182.84988pt.
-<figure_parallel/multiprocessing.png, id=2845, 661.47125pt x 765.86125pt>
+<figure_parallel/multiprocessing.png, id=2946, 661.47125pt x 765.86125pt>
 File: figure_parallel/multiprocessing.png Graphic file (type png)
 <use figure_parallel/multiprocessing.png>
 Package pdftex.def Info: figure_parallel/multiprocessing.png  used on input lin
@@ -2504,13 +2504,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--502
 
  []
 
-<figure_parallel/multitasking.png, id=2846, 704.6325pt x 767.86874pt>
+<figure_parallel/multitasking.png, id=2947, 704.6325pt x 767.86874pt>
 File: figure_parallel/multitasking.png Graphic file (type png)
 <use figure_parallel/multitasking.png>
 Package pdftex.def Info: figure_parallel/multitasking.png  used on input line 5
 08.
 (pdftex.def)             Requested size: 149.37631pt x 162.78036pt.
-<figure_parallel/distributed_system.png, id=2847, 905.3825pt x 592.2125pt>
+<figure_parallel/distributed_system.png, id=2948, 905.3825pt x 592.2125pt>
 File: figure_parallel/distributed_system.png Graphic file (type png)
 <use figure_parallel/distributed_system.png>
 Package pdftex.def Info: figure_parallel/distributed_system.png  used on input 
@@ -2519,13 +2519,13 @@ line 513.
 [109 <./figure_parallel/multiprogramming.png> <./figure_parallel/multiprocessin
 g.png> <./figure_parallel/multitasking.png> <./figure_parallel/distributed_syst
 em.png>]
-<figure_parallel/ant_parallelism.png, id=2859, 1379.1525pt x 419.5675pt>
+<figure_parallel/ant_parallelism.png, id=2960, 1379.1525pt x 419.5675pt>
 File: figure_parallel/ant_parallelism.png Graphic file (type png)
 <use figure_parallel/ant_parallelism.png>
 Package pdftex.def Info: figure_parallel/ant_parallelism.png  used on input lin
 e 533.
 (pdftex.def)             Requested size: 298.75264pt x 90.88387pt.
-<figure_parallel/parallelization.png, id=2860, 507.8975pt x 327.2225pt>
+<figure_parallel/parallelization.png, id=2961, 507.8975pt x 327.2225pt>
 File: figure_parallel/parallelization.png Graphic file (type png)
 <use figure_parallel/parallelization.png>
 Package pdftex.def Info: figure_parallel/parallelization.png  used on input lin
@@ -2541,7 +2541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--556
 
  []
 
-<figure_parallel/speedup.png, id=2861, 955.57pt x 841.1425pt>
+<figure_parallel/speedup.png, id=2962, 955.57pt x 841.1425pt>
 File: figure_parallel/speedup.png Graphic file (type png)
 <use figure_parallel/speedup.png>
 Package pdftex.def Info: figure_parallel/speedup.png  used on input line 565.
@@ -2572,7 +2572,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 578--579
 
  <./figure_parallel/ant_parallelism.png> <./figure_parallel/parallelization.png
 > <./figure_parallel/speedup.png>]
-<figure_parallel/amdahl.png, id=2874, 853.1875pt x 579.16376pt>
+<figure_parallel/amdahl.png, id=2974, 853.1875pt x 579.16376pt>
 File: figure_parallel/amdahl.png Graphic file (type png)
 <use figure_parallel/amdahl.png>
 Package pdftex.def Info: figure_parallel/amdahl.png  used on input line 599.
@@ -2592,13 +2592,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
-<figure_parallel/gustafson1.png, id=2875, 803.0pt x 563.10374pt>
+<figure_parallel/gustafson1.png, id=2975, 803.0pt x 563.10374pt>
 File: figure_parallel/gustafson1.png Graphic file (type png)
 <use figure_parallel/gustafson1.png>
 Package pdftex.def Info: figure_parallel/gustafson1.png  used on input line 662
 .
 (pdftex.def)             Requested size: 192.0548pt x 134.67508pt.
-<figure_parallel/gustafson2.png, id=2876, 403.5075pt x 271.0125pt>
+<figure_parallel/gustafson2.png, id=2976, 403.5075pt x 271.0125pt>
 File: figure_parallel/gustafson2.png Graphic file (type png)
 <use figure_parallel/gustafson2.png>
 Package pdftex.def Info: figure_parallel/gustafson2.png  used on input line 666
@@ -2630,7 +2630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
-<figure_parallel/Thread_and_processes.png, id=2890, 658.46pt x 484.81125pt>
+<figure_parallel/Thread_and_processes.png, id=2990, 658.46pt x 484.81125pt>
 File: figure_parallel/Thread_and_processes.png Graphic file (type png)
 <use figure_parallel/Thread_and_processes.png>
 Package pdftex.def Info: figure_parallel/Thread_and_processes.png  used on inpu
@@ -2691,7 +2691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 770--772
 
  []
 
-<figure_parallel/deadlock.png, id=2901, 866.23625pt x 589.20125pt>
+<figure_parallel/deadlock.png, id=3001, 866.23625pt x 589.20125pt>
 File: figure_parallel/deadlock.png Graphic file (type png)
 <use figure_parallel/deadlock.png>
 Package pdftex.def Info: figure_parallel/deadlock.png  used on input line 783.
@@ -2706,7 +2706,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 810--811
  []
 
 [116]
-<figure_parallel/father_sons.png, id=2913, 700.6175pt x 384.43625pt>
+<figure_parallel/father_sons.png, id=3014, 700.6175pt x 384.43625pt>
 File: figure_parallel/father_sons.png Graphic file (type png)
 <use figure_parallel/father_sons.png>
 Package pdftex.def Info: figure_parallel/father_sons.png  used on input line 81
@@ -2748,13 +2748,13 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 1.pygtex)
 (./_minted-main/CAB0C38E422CDE07AEA34E404C8AB063BFF5EAD29B6CFDB688440FBCE7686AC
 A.pygtex [118])
-<figure_parallel/communication_global.png, id=2924, 783.92876pt x 456.70625pt>
+<figure_parallel/communication_global.png, id=3025, 783.92876pt x 456.70625pt>
 File: figure_parallel/communication_global.png Graphic file (type png)
 <use figure_parallel/communication_global.png>
 Package pdftex.def Info: figure_parallel/communication_global.png  used on inpu
 t line 892.
 (pdftex.def)             Requested size: 192.0548pt x 111.88354pt.
-<figure_parallel/shared_memory.png, id=2925, 937.5025pt x 636.3775pt>
+<figure_parallel/shared_memory.png, id=3026, 937.5025pt x 636.3775pt>
 File: figure_parallel/shared_memory.png Graphic file (type png)
 <use figure_parallel/shared_memory.png>
 Package pdftex.def Info: figure_parallel/shared_memory.png  used on input line 
@@ -2766,14 +2766,14 @@ D.pygtex [119 <./figure_parallel/communication_global.png> <./figure_parallel/s
 hared_memory.png>])
 (./_minted-main/CA7271047ADB42468119A0376BF9BF1D39253D4BB60EED3073D9054A0312EB1
 9.pygtex)
-<figure_parallel/server_process.png, id=2934, 547.04375pt x 218.8175pt>
+<figure_parallel/server_process.png, id=3035, 547.04375pt x 218.8175pt>
 File: figure_parallel/server_process.png Graphic file (type png)
 <use figure_parallel/server_process.png>
 Package pdftex.def Info: figure_parallel/server_process.png  used on input line
  943.
 (pdftex.def)             Requested size: 234.73654pt x 93.89603pt.
  [120]
-<figure_parallel/queue.png, id=2939, 634.37pt x 373.395pt>
+<figure_parallel/queue.png, id=3040, 634.37pt x 373.395pt>
 File: figure_parallel/queue.png Graphic file (type png)
 <use figure_parallel/queue.png>
 Package pdftex.def Info: figure_parallel/queue.png  used on input line 953.
@@ -2781,7 +2781,7 @@ Package pdftex.def Info: figure_parallel/queue.png  used on input line 953.
 
 (./_minted-main/D3FBAF31EB68639837B2E8B01E0F35C1A224438B391EDE3A10AC88EAFAA2370
 5.pygtex)
-<figure_parallel/pipe.png, id=2940, 700.6175pt x 377.41pt>
+<figure_parallel/pipe.png, id=3041, 700.6175pt x 377.41pt>
 File: figure_parallel/pipe.png Graphic file (type png)
 <use figure_parallel/pipe.png>
 Package pdftex.def Info: figure_parallel/pipe.png  used on input line 968.
@@ -2801,7 +2801,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 973--974
 4.pygtex) [122 <./figure_parallel/pipe.png>]
 (./_minted-main/E16B38FB3BDAF8319B5A81A7D7E231B72B17EAAB2054A38213ED811D9B3D959
 6.pygtex)
-<figure_parallel/thread.png, id=2956, 909.3975pt x 1193.45876pt>
+<figure_parallel/thread.png, id=3057, 909.3975pt x 1193.45876pt>
 File: figure_parallel/thread.png Graphic file (type png)
 <use figure_parallel/thread.png>
 Package pdftex.def Info: figure_parallel/thread.png  used on input line 1011.
@@ -2817,7 +2817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1031--1032
 
  []
 
-<figure_parallel/comparison_thread_processes.png, id=2971, 1151.30125pt x 244.9
+<figure_parallel/comparison_thread_processes.png, id=3072, 1151.30125pt x 244.9
 15pt>
 File: figure_parallel/comparison_thread_processes.png Graphic file (type png)
 <use figure_parallel/comparison_thread_processes.png>
@@ -2833,7 +2833,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [128])
-<figure_parallel/comparison_time.png, id=2988, 768.8725pt x 576.1525pt>
+<figure_parallel/comparison_time.png, id=3088, 768.8725pt x 576.1525pt>
 File: figure_parallel/comparison_time.png Graphic file (type png)
 <use figure_parallel/comparison_time.png>
 Package pdftex.def Info: figure_parallel/comparison_time.png  used on input lin
@@ -2854,7 +2854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1055--1058
 
 (./_minted-main/9E9803BBFEF9E2D5A9BDE6CB3DADD3DC4FBEEAFC55D0059826E664B9BBCF372
 1.pygtex)
-<figure_parallel/process_vs_thread.png, id=2995, 818.05624pt x 340.27126pt>
+<figure_parallel/process_vs_thread.png, id=3095, 818.05624pt x 340.27126pt>
 File: figure_parallel/process_vs_thread.png Graphic file (type png)
 <use figure_parallel/process_vs_thread.png>
 Package pdftex.def Info: figure_parallel/process_vs_thread.png  used on input l
@@ -2869,13 +2869,13 @@ File: figure_parallel/moore.png Graphic file (type png)
 <use figure_parallel/moore.png>
 Package pdftex.def Info: figure_parallel/moore.png  used on input line 1166.
 (pdftex.def)             Requested size: 213.39568pt x 139.49266pt.
-<figure_parallel/parallel_programming.png, id=3000, 685.56125pt x 373.395pt>
+<figure_parallel/parallel_programming.png, id=3100, 685.56125pt x 373.395pt>
 File: figure_parallel/parallel_programming.png Graphic file (type png)
 <use figure_parallel/parallel_programming.png>
 Package pdftex.def Info: figure_parallel/parallel_programming.png  used on inpu
 t line 1178.
 (pdftex.def)             Requested size: 213.39568pt x 116.22415pt.
-<figure_parallel/limits_parallel_programming.png, id=3001, 602.25pt x 470.75874
+<figure_parallel/limits_parallel_programming.png, id=3101, 602.25pt x 470.75874
 pt>
 File: figure_parallel/limits_parallel_programming.png Graphic file (type png)
 <use figure_parallel/limits_parallel_programming.png>
@@ -2884,7 +2884,7 @@ on input line 1192.
 (pdftex.def)             Requested size: 213.39568pt x 166.80804pt.
 [131 <./figure_parallel/process_vs_thread.png> <./figure_parallel/parallel_prog
 ramming.png>]
-<figure_parallel/gpu_pipeline.png, id=3011, 1930.21124pt x 1109.14375pt>
+<figure_parallel/gpu_pipeline.png, id=3111, 1930.21124pt x 1109.14375pt>
 File: figure_parallel/gpu_pipeline.png Graphic file (type png)
 <use figure_parallel/gpu_pipeline.png>
 Package pdftex.def Info: figure_parallel/gpu_pipeline.png  used on input line 1
@@ -2906,12 +2906,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1253--1254
 
  []
 
-<figure_parallel/cores.png, id=3020, 1378.14874pt x 699.61375pt>
+<figure_parallel/cores.png, id=3120, 1378.14874pt x 699.61375pt>
 File: figure_parallel/cores.png Graphic file (type png)
 <use figure_parallel/cores.png>
 Package pdftex.def Info: figure_parallel/cores.png  used on input line 1259.
 (pdftex.def)             Requested size: 213.39568pt x 108.32158pt.
-<figure_parallel/cores2.png, id=3021, 1141.26375pt x 480.79625pt>
+<figure_parallel/cores2.png, id=3121, 1141.26375pt x 480.79625pt>
 File: figure_parallel/cores2.png Graphic file (type png)
 <use figure_parallel/cores2.png>
 Package pdftex.def Info: figure_parallel/cores2.png  used on input line 1265.
@@ -2921,18 +2921,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1276--1283
 
  []
 
-<figure_parallel/metrics.png, id=3031, 803.0pt x 738.76pt>
+<figure_parallel/metrics.png, id=3131, 803.0pt x 738.76pt>
 File: figure_parallel/metrics.png Graphic file (type png)
 <use figure_parallel/metrics.png>
 Package pdftex.def Info: figure_parallel/metrics.png  used on input line 1294.
 (pdftex.def)             Requested size: 192.0548pt x 176.68602pt.
-<figure_parallel/metrics2.png, id=3032, 892.33376pt x 569.12625pt>
+<figure_parallel/metrics2.png, id=3132, 892.33376pt x 569.12625pt>
 File: figure_parallel/metrics2.png Graphic file (type png)
 <use figure_parallel/metrics2.png>
 Package pdftex.def Info: figure_parallel/metrics2.png  used on input line 1298.
 
 (pdftex.def)             Requested size: 192.0548pt x 122.49002pt.
-<figure_parallel/computing_power_comparison.png, id=3033, 1369.115pt x 631.3587
+<figure_parallel/computing_power_comparison.png, id=3133, 1369.115pt x 631.3587
 5pt>
 File: figure_parallel/computing_power_comparison.png Graphic file (type png)
 <use figure_parallel/computing_power_comparison.png>
@@ -2944,25 +2944,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 1318--1324
 
  []
 
-<figure_parallel/CPU.png, id=3034, 839.135pt x 607.26875pt>
+<figure_parallel/CPU.png, id=3134, 839.135pt x 607.26875pt>
 File: figure_parallel/CPU.png Graphic file (type png)
 <use figure_parallel/CPU.png>
 Package pdftex.def Info: figure_parallel/CPU.png  used on input line 1327.
 (pdftex.def)             Requested size: 162.18279pt x 117.36522pt.
 [134 <./figure_parallel/metrics.png> <./figure_parallel/metrics2.png> <./figure
 _parallel/computing_power_comparison.png>]
-<figure_parallel/GPU.png, id=3044, 613.29124pt x 619.31375pt>
+<figure_parallel/GPU.png, id=3145, 613.29124pt x 619.31375pt>
 File: figure_parallel/GPU.png Graphic file (type png)
 <use figure_parallel/GPU.png>
 Package pdftex.def Info: figure_parallel/GPU.png  used on input line 1343.
 (pdftex.def)             Requested size: 153.64514pt x 155.14935pt.
-<figure_parallel/cpu_vs_gpu.png, id=3045, 970.62625pt x 427.5975pt>
+<figure_parallel/cpu_vs_gpu.png, id=3146, 970.62625pt x 427.5975pt>
 File: figure_parallel/cpu_vs_gpu.png Graphic file (type png)
 <use figure_parallel/cpu_vs_gpu.png>
 Package pdftex.def Info: figure_parallel/cpu_vs_gpu.png  used on input line 135
 2.
 (pdftex.def)             Requested size: 426.79135pt x 188.0195pt.
-<figure_parallel/cpu_vs_gpu_table.png, id=3046, 1999.47pt x 1131.22626pt>
+<figure_parallel/cpu_vs_gpu_table.png, id=3147, 1999.47pt x 1131.22626pt>
 File: figure_parallel/cpu_vs_gpu_table.png Graphic file (type png)
 <use figure_parallel/cpu_vs_gpu_table.png>
 Package pdftex.def Info: figure_parallel/cpu_vs_gpu_table.png  used on input li
@@ -2970,12 +2970,12 @@ ne 1359.
 (pdftex.def)             Requested size: 341.43437pt x 193.16898pt.
  [135 <./figure_parallel/CPU.png> <./figure_parallel/GPU.png> <./figure_paralle
 l/cpu_vs_gpu.png>]
-<figure_parallel/simt.png, id=3057, 616.3025pt x 572.1375pt>
+<figure_parallel/simt.png, id=3158, 616.3025pt x 572.1375pt>
 File: figure_parallel/simt.png Graphic file (type png)
 <use figure_parallel/simt.png>
 Package pdftex.def Info: figure_parallel/simt.png  used on input line 1368.
 (pdftex.def)             Requested size: 183.51715pt x 170.35924pt.
-<figure_parallel/core_vs_smx.png, id=3058, 1927.2pt x 785.93625pt>
+<figure_parallel/core_vs_smx.png, id=3159, 1927.2pt x 785.93625pt>
 File: figure_parallel/core_vs_smx.png Graphic file (type png)
 <use figure_parallel/core_vs_smx.png>
 Package pdftex.def Info: figure_parallel/core_vs_smx.png  used on input line 13
@@ -2986,14 +2986,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1397--1399
 
  []
 
-<figure_parallel/GPU_CPU.png, id=3059, 510.90875pt x 1071.00125pt>
+<figure_parallel/GPU_CPU.png, id=3160, 510.90875pt x 1071.00125pt>
 File: figure_parallel/GPU_CPU.png Graphic file (type png)
 <use figure_parallel/GPU_CPU.png>
 Package pdftex.def Info: figure_parallel/GPU_CPU.png  used on input line 1406.
 (pdftex.def)             Requested size: 128.0387pt x 268.40334pt.
 [136 <./figure_parallel/cpu_vs_gpu_table.png> <./figure_parallel/simt.png> <./f
 igure_parallel/core_vs_smx.png>] [137 <./figure_parallel/GPU_CPU.png>]
-<figure_parallel/cuda.png, id=3076, 625.33624pt x 935.495pt>
+<figure_parallel/cuda.png, id=3177, 625.33624pt x 935.495pt>
 File: figure_parallel/cuda.png Graphic file (type png)
 <use figure_parallel/cuda.png>
 Package pdftex.def Info: figure_parallel/cuda.png  used on input line 1462.
@@ -3003,7 +3003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1477--1478
 
  []
 
-<figure_parallel/gbt.png, id=3077, 448.67625pt x 281.05pt>
+<figure_parallel/gbt.png, id=3178, 448.67625pt x 281.05pt>
 File: figure_parallel/gbt.png Graphic file (type png)
 <use figure_parallel/gbt.png>
 Package pdftex.def Info: figure_parallel/gbt.png  used on input line 1490.
@@ -3011,13 +3011,13 @@ Package pdftex.def Info: figure_parallel/gbt.png  used on input line 1490.
 [138
 
  <./figure_parallel/cuda.png>]
-<figure_parallel/gpu_structure.png, id=3087, 1037.8775pt x 611.28375pt>
+<figure_parallel/gpu_structure.png, id=3188, 1037.8775pt x 611.28375pt>
 File: figure_parallel/gpu_structure.png Graphic file (type png)
 <use figure_parallel/gpu_structure.png>
 Package pdftex.def Info: figure_parallel/gpu_structure.png  used on input line 
 1500.
 (pdftex.def)             Requested size: 298.75264pt x 175.9619pt.
-<figure_parallel/multiprocessor.png, id=3088, 978.65625pt x 709.65125pt>
+<figure_parallel/multiprocessor.png, id=3189, 978.65625pt x 709.65125pt>
 File: figure_parallel/multiprocessor.png Graphic file (type png)
 <use figure_parallel/multiprocessor.png>
 Package pdftex.def Info: figure_parallel/multiprocessor.png  used on input line
@@ -3030,12 +3030,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1515--1517
 
 [139 <./figure_parallel/gbt.png> <./figure_parallel/gpu_structure.png> <./figur
 e_parallel/multiprocessor.png>]
-<figure_parallel/memory.png, id=3100, 689.57625pt x 395.4775pt>
+<figure_parallel/memory.png, id=3201, 689.57625pt x 395.4775pt>
 File: figure_parallel/memory.png Graphic file (type png)
 <use figure_parallel/memory.png>
 Package pdftex.def Info: figure_parallel/memory.png  used on input line 1533.
 (pdftex.def)             Requested size: 298.75264pt x 171.33736pt.
-<figure_parallel/asyncronicity.png, id=3101, 726.715pt x 309.155pt>
+<figure_parallel/asyncronicity.png, id=3202, 726.715pt x 309.155pt>
 File: figure_parallel/asyncronicity.png Graphic file (type png)
 <use figure_parallel/asyncronicity.png>
 Package pdftex.def Info: figure_parallel/asyncronicity.png  used on input line 
@@ -3094,7 +3094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
 []\T1/cmr/m/n/10 Programming lan-guage (OpenCL
  []
 
-<figure_parallel/cuda_c_cpp.png, id=3117, 304.13625pt x 363.3575pt>
+<figure_parallel/cuda_c_cpp.png, id=3217, 304.13625pt x 363.3575pt>
 File: figure_parallel/cuda_c_cpp.png Graphic file (type png)
 <use figure_parallel/cuda_c_cpp.png>
 Package pdftex.def Info: figure_parallel/cuda_c_cpp.png  used on input line 168
@@ -3110,7 +3110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1718--1721
  []
 
 [142 <./figure_parallel/cuda_c_cpp.png>]
-<figure_parallel/pycuda.png, id=3124, 855.195pt x 425.59pt>
+<figure_parallel/pycuda.png, id=3224, 855.195pt x 425.59pt>
 File: figure_parallel/pycuda.png Graphic file (type png)
 <use figure_parallel/pycuda.png>
 Package pdftex.def Info: figure_parallel/pycuda.png  used on input line 1731.
@@ -3120,13 +3120,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1739--1742
 
  []
 
-<figure_parallel/threads_blocks.png, id=3125, 1100.11pt x 754.82pt>
+<figure_parallel/threads_blocks.png, id=3225, 1100.11pt x 754.82pt>
 File: figure_parallel/threads_blocks.png Graphic file (type png)
 <use figure_parallel/threads_blocks.png>
 Package pdftex.def Info: figure_parallel/threads_blocks.png  used on input line
  1749.
 (pdftex.def)             Requested size: 256.07741pt x 175.70116pt.
-<figure_parallel/pixel.png, id=3126, 914.41624pt x 404.51125pt>
+<figure_parallel/pixel.png, id=3226, 914.41624pt x 404.51125pt>
 File: figure_parallel/pixel.png Graphic file (type png)
 <use figure_parallel/pixel.png>
 Package pdftex.def Info: figure_parallel/pixel.png  used on input line 1760.
@@ -3142,7 +3142,7 @@ Package pdftex.def Info: figure_parallel/pixel.png  used on input line 1760.
 
 (./_minted-main/C4588E20E2B58CA31AA7238890260783042D2615758B6C3F03C186B02CFC62B
 2.pygtex)
-<figure_parallel/rgb.png, id=3135, 406.51875pt x 278.03876pt>
+<figure_parallel/rgb.png, id=3235, 406.51875pt x 278.03876pt>
 File: figure_parallel/rgb.png Graphic file (type png)
 <use figure_parallel/rgb.png>
 Package pdftex.def Info: figure_parallel/rgb.png  used on input line 1803.
@@ -3152,7 +3152,7 @@ Package pdftex.def Info: figure_parallel/rgb.png  used on input line 1803.
 
 (./_minted-main/518849C9EE0D04E3AE87944DF306F4E5042D2615758B6C3F03C186B02CFC62B
 2.pygtex [144 <./figure_parallel/pixel.png> <./figure_parallel/rgb.png>])
-<figure_parallel/blur.png, id=3144, 1178.4025pt x 543.02875pt>
+<figure_parallel/blur.png, id=3244, 1178.4025pt x 543.02875pt>
 File: figure_parallel/blur.png Graphic file (type png)
 <use figure_parallel/blur.png>
 Package pdftex.def Info: figure_parallel/blur.png  used on input line 1841.
@@ -3162,7 +3162,7 @@ Package pdftex.def Info: figure_parallel/blur.png  used on input line 1841.
 
 (./_minted-main/3B6DDEF0552A40FB7E15D272838A5B21042D2615758B6C3F03C186B02CFC62B
 2.pygtex) [145 <./figure_parallel/blur.png>] [146]
-<figure_parallel/gtx650.png, id=3156, 1392.20125pt x 630.355pt>
+<figure_parallel/gtx650.png, id=3256, 1392.20125pt x 630.355pt>
 File: figure_parallel/gtx650.png Graphic file (type png)
 <use figure_parallel/gtx650.png>
 Package pdftex.def Info: figure_parallel/gtx650.png  used on input line 1912.
@@ -3191,7 +3191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1938--1939
 
  []
 
-<figure_parallel/parallel_bad.png, id=3171, 621.32124pt x 727.71875pt>
+<figure_parallel/parallel_bad.png, id=3272, 621.32124pt x 727.71875pt>
 File: figure_parallel/parallel_bad.png Graphic file (type png)
 <use figure_parallel/parallel_bad.png>
 Package pdftex.def Info: figure_parallel/parallel_bad.png  used on input line 1
@@ -3207,7 +3207,7 @@ Package pdftex.def Info: figure_parallel/parallel_bad.png  used on input line 1
 
 (./_minted-main/1F68D447E7EEA53FC30B36DF5D5B3529042D2615758B6C3F03C186B02CFC62B
 2.pygtex [150 <./figure_parallel/parallel_bad.png>])
-<figure_parallel/vector_sum_final.png, id=3179, 777.90625pt x 351.3125pt>
+<figure_parallel/vector_sum_final.png, id=3280, 777.90625pt x 351.3125pt>
 File: figure_parallel/vector_sum_final.png Graphic file (type png)
 <use figure_parallel/vector_sum_final.png>
 Package pdftex.def Info: figure_parallel/vector_sum_final.png  used on input li
@@ -3218,20 +3218,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 2000--2004
 
  []
 
-<figure_parallel/matrix_mult.png, id=3180, 790.955pt x 464.73625pt>
+<figure_parallel/matrix_mult.png, id=3281, 790.955pt x 464.73625pt>
 File: figure_parallel/matrix_mult.png Graphic file (type png)
 <use figure_parallel/matrix_mult.png>
 Package pdftex.def Info: figure_parallel/matrix_mult.png  used on input line 20
 07.
 (pdftex.def)             Requested size: 256.07741pt x 150.46309pt.
-<figure_parallel/mm.png, id=3181, 879.285pt x 771.88374pt>
+<figure_parallel/mm.png, id=3282, 879.285pt x 771.88374pt>
 File: figure_parallel/mm.png Graphic file (type png)
 <use figure_parallel/mm.png>
 Package pdftex.def Info: figure_parallel/mm.png  used on input line 2013.
 (pdftex.def)             Requested size: 298.75264pt x 262.26033pt.
 [151 <./figure_parallel/vector_sum_final.png> <./figure_parallel/matrix_mult.pn
 g>]
-<figure_parallel/limitations_to_computing_power.png, id=3191, 688.5725pt x 667.
+<figure_parallel/limitations_to_computing_power.png, id=3292, 688.5725pt x 667.
 49374pt>
 File: figure_parallel/limitations_to_computing_power.png Graphic file (type png
 )
@@ -3246,30 +3246,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 2044--2045
 
 [152 <./figure_parallel/mm.png> <./figure_parallel/limitations_to_computing_pow
 er.png>]
-<figure_parallel/shared_memory_1.png, id=3200, 794.97pt x 745.78625pt>
+<figure_parallel/shared_memory_1.png, id=3301, 794.97pt x 745.78625pt>
 File: figure_parallel/shared_memory_1.png Graphic file (type png)
 <use figure_parallel/shared_memory_1.png>
 Package pdftex.def Info: figure_parallel/shared_memory_1.png  used on input lin
 e 2060.
 (pdftex.def)             Requested size: 234.73654pt x 220.20987pt.
-<figure_parallel/sm_mm.png, id=3201, 596.2275pt x 682.55pt>
+<figure_parallel/sm_mm.png, id=3302, 596.2275pt x 682.55pt>
 File: figure_parallel/sm_mm.png Graphic file (type png)
 <use figure_parallel/sm_mm.png>
 Package pdftex.def Info: figure_parallel/sm_mm.png  used on input line 2077.
 (pdftex.def)             Requested size: 213.39568pt x 244.29097pt.
  [153 <./figure_parallel/shared_memory_1.png>]
-<figure_parallel/phase0.png, id=3208, 781.92125pt x 396.48125pt>
+<figure_parallel/phase0.png, id=3309, 781.92125pt x 396.48125pt>
 File: figure_parallel/phase0.png Graphic file (type png)
 <use figure_parallel/phase0.png>
 Package pdftex.def Info: figure_parallel/phase0.png  used on input line 2085.
 (pdftex.def)             Requested size: 277.41176pt x 140.6641pt.
-<figure_parallel/phase0_use.png, id=3209, 1740.5025pt x 451.6875pt>
+<figure_parallel/phase0_use.png, id=3310, 1740.5025pt x 451.6875pt>
 File: figure_parallel/phase0_use.png Graphic file (type png)
 <use figure_parallel/phase0_use.png>
 Package pdftex.def Info: figure_parallel/phase0_use.png  used on input line 209
 3.
 (pdftex.def)             Requested size: 426.79135pt x 110.75745pt.
-<figure_parallel/execution_phases.png, id=3210, 1023.825pt x 640.3925pt>
+<figure_parallel/execution_phases.png, id=3311, 1023.825pt x 640.3925pt>
 File: figure_parallel/execution_phases.png Graphic file (type png)
 <use figure_parallel/execution_phases.png>
 Package pdftex.def Info: figure_parallel/execution_phases.png  used on input li
@@ -3281,7 +3281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2106--2113
 
  []
 
-<figure_parallel/mm_code.png, id=3221, 312.16624pt x 701.62125pt>
+<figure_parallel/mm_code.png, id=3322, 312.16624pt x 701.62125pt>
 File: figure_parallel/mm_code.png Graphic file (type png)
 <use figure_parallel/mm_code.png>
 Package pdftex.def Info: figure_parallel/mm_code.png  used on input line 2121.
@@ -3296,7 +3296,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [157])
-<figure_parallel/memory_coalescing2.png, id=3239, 910.40125pt x 104.39pt>
+<figure_parallel/memory_coalescing2.png, id=3340, 910.40125pt x 104.39pt>
 File: figure_parallel/memory_coalescing2.png Graphic file (type png)
 <use figure_parallel/memory_coalescing2.png>
 Package pdftex.def Info: figure_parallel/memory_coalescing2.png  used on input 
@@ -3308,19 +3308,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 2137--2139
  []
 
 [158 <./figure_parallel/memory_coalescing2.png>]
-<figure_parallel/memory_coalescing.png, id=3246, 910.40125pt x 252.945pt>
+<figure_parallel/memory_coalescing.png, id=3347, 910.40125pt x 252.945pt>
 File: figure_parallel/memory_coalescing.png Graphic file (type png)
 <use figure_parallel/memory_coalescing.png>
 Package pdftex.def Info: figure_parallel/memory_coalescing.png  used on input l
 ine 2147.
 (pdftex.def)             Requested size: 213.39568pt x 59.28769pt.
-<figure_parallel/memory_coalescing1.png, id=3247, 909.3975pt x 280.04625pt>
+<figure_parallel/memory_coalescing1.png, id=3348, 909.3975pt x 280.04625pt>
 File: figure_parallel/memory_coalescing1.png Graphic file (type png)
 <use figure_parallel/memory_coalescing1.png>
 Package pdftex.def Info: figure_parallel/memory_coalescing1.png  used on input 
 line 2152.
 (pdftex.def)             Requested size: 213.39568pt x 65.71259pt.
-<figure_parallel/memory_access_mm.png, id=3248, 1770.615pt x 725.71124pt>
+<figure_parallel/memory_access_mm.png, id=3349, 1770.615pt x 725.71124pt>
 File: figure_parallel/memory_access_mm.png Graphic file (type png)
 <use figure_parallel/memory_access_mm.png>
 Package pdftex.def Info: figure_parallel/memory_access_mm.png  used on input li
@@ -3385,7 +3385,7 @@ org / how-[]to-[]use-[]jupyter-[]notebook-[]an-[]ultimate-[]guide/$[]
  []
 
 [160]
-<handson_gpu_2022.pdf, id=3273, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3373, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf>
 Package pdftex.def Info: handson_gpu_2022.pdf  used on input line 2247.
@@ -3394,7 +3394,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf>
 Package pdftex.def Info: handson_gpu_2022.pdf  used on input line 2247.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<handson_gpu_2022.pdf, id=3276, page=1, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3376, page=1, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 1>
 Package pdftex.def Info: handson_gpu_2022.pdf , page1 used on input line 2247.
@@ -3423,7 +3423,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page1 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [162 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3329, page=2, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3430, page=2, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 2>
 Package pdftex.def Info: handson_gpu_2022.pdf , page2 used on input line 2247.
@@ -3437,7 +3437,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page2 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [163 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3335, page=3, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3436, page=3, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 3>
 Package pdftex.def Info: handson_gpu_2022.pdf , page3 used on input line 2247.
@@ -3451,7 +3451,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page3 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [164 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3340, page=4, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3441, page=4, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 4>
 Package pdftex.def Info: handson_gpu_2022.pdf , page4 used on input line 2247.
@@ -3465,7 +3465,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page4 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [165 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3345, page=5, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3446, page=5, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 5>
 Package pdftex.def Info: handson_gpu_2022.pdf , page5 used on input line 2247.
@@ -3479,7 +3479,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page5 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [166 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3350, page=6, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3451, page=6, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 6>
 Package pdftex.def Info: handson_gpu_2022.pdf , page6 used on input line 2247.
@@ -3493,7 +3493,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page6 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [167 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3372, page=7, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3473, page=7, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 7>
 Package pdftex.def Info: handson_gpu_2022.pdf , page7 used on input line 2247.
@@ -3507,7 +3507,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page7 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [168 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3377, page=8, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3478, page=8, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 8>
 Package pdftex.def Info: handson_gpu_2022.pdf , page8 used on input line 2247.
@@ -3521,7 +3521,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page8 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [169 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3383, page=9, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3484, page=9, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 9>
 Package pdftex.def Info: handson_gpu_2022.pdf , page9 used on input line 2247.
@@ -3535,7 +3535,7 @@ File: handson_gpu_2022.pdf Graphic file (type pdf)
 Package pdftex.def Info: handson_gpu_2022.pdf , page9 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [170 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3388, page=10, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3489, page=10, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 10>
 Package pdftex.def Info: handson_gpu_2022.pdf , page10 used on input line 2247.
@@ -3552,7 +3552,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page10 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [171 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3393, page=11, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3494, page=11, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 11>
 Package pdftex.def Info: handson_gpu_2022.pdf , page11 used on input line 2247.
@@ -3570,7 +3570,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page11 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [172 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3405, page=12, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3506, page=12, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 12>
 Package pdftex.def Info: handson_gpu_2022.pdf , page12 used on input line 2247.
@@ -3587,7 +3587,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page12 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [173 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3411, page=13, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3511, page=13, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 13>
 Package pdftex.def Info: handson_gpu_2022.pdf , page13 used on input line 2247.
@@ -3604,7 +3604,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page13 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [174 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3420, page=14, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3520, page=14, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 14>
 Package pdftex.def Info: handson_gpu_2022.pdf , page14 used on input line 2247.
@@ -3621,7 +3621,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page14 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [175 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3426, page=15, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3526, page=15, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 15>
 Package pdftex.def Info: handson_gpu_2022.pdf , page15 used on input line 2247.
@@ -3638,7 +3638,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page15 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [176 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3431, page=16, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3531, page=16, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 16>
 Package pdftex.def Info: handson_gpu_2022.pdf , page16 used on input line 2247.
@@ -3656,7 +3656,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page16 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [177 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3436, page=17, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3536, page=17, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 17>
 Package pdftex.def Info: handson_gpu_2022.pdf , page17 used on input line 2247.
@@ -3673,7 +3673,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page17 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [178 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3443, page=18, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3543, page=18, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 18>
 Package pdftex.def Info: handson_gpu_2022.pdf , page18 used on input line 2247.
@@ -3690,7 +3690,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page18 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [179 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3448, page=19, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3548, page=19, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 19>
 Package pdftex.def Info: handson_gpu_2022.pdf , page19 used on input line 2247.
@@ -3707,7 +3707,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page19 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [180 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3455, page=20, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3555, page=20, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 20>
 Package pdftex.def Info: handson_gpu_2022.pdf , page20 used on input line 2247.
@@ -3724,7 +3724,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page20 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [181 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3461, page=21, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3561, page=21, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 21>
 Package pdftex.def Info: handson_gpu_2022.pdf , page21 used on input line 2247.
@@ -3742,7 +3742,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page21 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [182 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3468, page=22, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3568, page=22, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 22>
 Package pdftex.def Info: handson_gpu_2022.pdf , page22 used on input line 2247.
@@ -3759,7 +3759,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page22 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [183 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3473, page=23, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3573, page=23, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 23>
 Package pdftex.def Info: handson_gpu_2022.pdf , page23 used on input line 2247.
@@ -3776,7 +3776,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page23 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [184 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3480, page=24, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3580, page=24, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 24>
 Package pdftex.def Info: handson_gpu_2022.pdf , page24 used on input line 2247.
@@ -3793,7 +3793,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page24 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [185 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3487, page=25, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3587, page=25, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 25>
 Package pdftex.def Info: handson_gpu_2022.pdf , page25 used on input line 2247.
@@ -3810,7 +3810,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page25 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [186 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3494, page=26, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3595, page=26, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 26>
 Package pdftex.def Info: handson_gpu_2022.pdf , page26 used on input line 2247.
@@ -3828,7 +3828,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page26 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [187 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3502, page=27, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3603, page=27, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 27>
 Package pdftex.def Info: handson_gpu_2022.pdf , page27 used on input line 2247.
@@ -3845,7 +3845,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page27 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [188 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3509, page=28, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3610, page=28, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 28>
 Package pdftex.def Info: handson_gpu_2022.pdf , page28 used on input line 2247.
@@ -3862,7 +3862,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page28 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [189 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3514, page=29, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3615, page=29, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 29>
 Package pdftex.def Info: handson_gpu_2022.pdf , page29 used on input line 2247.
@@ -3879,7 +3879,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page29 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [190 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3519, page=30, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3620, page=30, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 30>
 Package pdftex.def Info: handson_gpu_2022.pdf , page30 used on input line 2247.
@@ -3896,7 +3896,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page30 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [191 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3526, page=31, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3627, page=31, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 31>
 Package pdftex.def Info: handson_gpu_2022.pdf , page31 used on input line 2247.
@@ -3914,7 +3914,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page31 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [192 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3531, page=32, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3632, page=32, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 32>
 Package pdftex.def Info: handson_gpu_2022.pdf , page32 used on input line 2247.
@@ -3931,7 +3931,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page32 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [193 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3539, page=33, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3640, page=33, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 33>
 Package pdftex.def Info: handson_gpu_2022.pdf , page33 used on input line 2247.
@@ -3948,7 +3948,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page33 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [194 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3546, page=34, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3647, page=34, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 34>
 Package pdftex.def Info: handson_gpu_2022.pdf , page34 used on input line 2247.
@@ -3965,7 +3965,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page34 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [195 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3551, page=35, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3652, page=35, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 35>
 Package pdftex.def Info: handson_gpu_2022.pdf , page35 used on input line 2247.
@@ -3982,7 +3982,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page35 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [196 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3556, page=36, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3657, page=36, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 36>
 Package pdftex.def Info: handson_gpu_2022.pdf , page36 used on input line 2247.
@@ -4000,7 +4000,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page36 used on input line 2247.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [197 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3563, page=37, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3664, page=37, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 37>
 Package pdftex.def Info: handson_gpu_2022.pdf , page37 used on input line 2247.
@@ -4017,7 +4017,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page37 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [198 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3570, page=38, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3671, page=38, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 38>
 Package pdftex.def Info: handson_gpu_2022.pdf , page38 used on input line 2247.
@@ -4034,7 +4034,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page38 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [199 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3578, page=39, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3679, page=39, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 39>
 Package pdftex.def Info: handson_gpu_2022.pdf , page39 used on input line 2247.
@@ -4051,7 +4051,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page39 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [200 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3585, page=40, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3686, page=40, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 40>
 Package pdftex.def Info: handson_gpu_2022.pdf , page40 used on input line 2247.
@@ -4068,7 +4068,7 @@ Package pdftex.def Info: handson_gpu_2022.pdf , page40 used on input line 2247.
 
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [201 <./handson_gpu_2022.pdf>]
-<handson_gpu_2022.pdf, id=3590, page=41, 614.295pt x 794.97pt>
+<handson_gpu_2022.pdf, id=3691, page=41, 614.295pt x 794.97pt>
 File: handson_gpu_2022.pdf Graphic file (type pdf)
 <use handson_gpu_2022.pdf, page 41>
 Package pdftex.def Info: handson_gpu_2022.pdf , page41 used on input line 2247.
@@ -4105,7 +4105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
 
 ]
-<figure_ml/function_approx.png, id=3615, 1443.3925pt x 387.4475pt>
+<figure_ml/function_approx.png, id=3715, 1443.3925pt x 387.4475pt>
 File: figure_ml/function_approx.png Graphic file (type png)
 <use figure_ml/function_approx.png>
 Package pdftex.def Info: figure_ml/function_approx.png  used on input line 76.
@@ -4119,29 +4119,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 115.
 
-<figure_ml/D_bce.png, id=3622, 1003.75pt x 133.49875pt>
+<figure_ml/D_bce.png, id=3722, 1003.75pt x 133.49875pt>
 File: figure_ml/D_bce.png Graphic file (type png)
 <use figure_ml/D_bce.png>
 Package pdftex.def Info: figure_ml/D_bce.png  used on input line 121.
 (pdftex.def)             Requested size: 213.39568pt x 28.38185pt.
-<figure_ml/L_bce.png, id=3623, 825.0825pt x 156.585pt>
+<figure_ml/L_bce.png, id=3723, 825.0825pt x 156.585pt>
 File: figure_ml/L_bce.png Graphic file (type png)
 <use figure_ml/L_bce.png>
 Package pdftex.def Info: figure_ml/L_bce.png  used on input line 130.
 (pdftex.def)             Requested size: 277.41176pt x 52.64803pt.
 [205 <./figure_ml/D_bce.png> <./figure_ml/L_bce.png>]
-<figure_ml/supervised_learning.png, id=3633, 940.51375pt x 153.57375pt>
+<figure_ml/supervised_learning.png, id=3733, 940.51375pt x 153.57375pt>
 File: figure_ml/supervised_learning.png Graphic file (type png)
 <use figure_ml/supervised_learning.png>
 Package pdftex.def Info: figure_ml/supervised_learning.png  used on input line 
 173.
 (pdftex.def)             Requested size: 426.79135pt x 69.68869pt.
-<figure_ml/multi_class.png, id=3634, 1166.3575pt x 499.8675pt>
+<figure_ml/multi_class.png, id=3734, 1166.3575pt x 499.8675pt>
 File: figure_ml/multi_class.png Graphic file (type png)
 <use figure_ml/multi_class.png>
 Package pdftex.def Info: figure_ml/multi_class.png  used on input line 179.
 (pdftex.def)             Requested size: 170.71393pt x 73.16158pt.
-<figure_ml/unsupervised.png, id=3635, 871.255pt x 518.93875pt>
+<figure_ml/unsupervised.png, id=3735, 871.255pt x 518.93875pt>
 File: figure_ml/unsupervised.png Graphic file (type png)
 <use figure_ml/unsupervised.png>
 Package pdftex.def Info: figure_ml/unsupervised.png  used on input line 186.
@@ -4151,23 +4151,23 @@ Overfull \hbox (0.69951pt too wide) in paragraph at lines 193--194
 []\T1/cmr/m/n/10 Classification of ^^Pcom-mon^^Q pat-terns (clus-
  []
 
-<figure_ml/s_vs_u.png, id=3644, 340.27126pt x 81.30376pt>
+<figure_ml/s_vs_u.png, id=3744, 340.27126pt x 81.30376pt>
 File: figure_ml/s_vs_u.png Graphic file (type png)
 <use figure_ml/s_vs_u.png>
 Package pdftex.def Info: figure_ml/s_vs_u.png  used on input line 210.
 (pdftex.def)             Requested size: 170.71393pt x 40.78947pt.
-<figure_ml/s_vs_u2.png, id=3645, 1660.2025pt x 366.36874pt>
+<figure_ml/s_vs_u2.png, id=3745, 1660.2025pt x 366.36874pt>
 File: figure_ml/s_vs_u2.png Graphic file (type png)
 <use figure_ml/s_vs_u2.png>
 Package pdftex.def Info: figure_ml/s_vs_u2.png  used on input line 220.
 (pdftex.def)             Requested size: 341.43437pt x 75.34645pt.
-<figure_ml/reinforcement_learning.png, id=3646, 1503.6175pt x 469.755pt>
+<figure_ml/reinforcement_learning.png, id=3746, 1503.6175pt x 469.755pt>
 File: figure_ml/reinforcement_learning.png Graphic file (type png)
 <use figure_ml/reinforcement_learning.png>
 Package pdftex.def Info: figure_ml/reinforcement_learning.png  used on input li
 ne 226.
 (pdftex.def)             Requested size: 213.39568pt x 66.6684pt.
-<figure_ml/capacity.png, id=3647, 411.5375pt x 401.5pt>
+<figure_ml/capacity.png, id=3747, 411.5375pt x 401.5pt>
 File: figure_ml/capacity.png Graphic file (type png)
 <use figure_ml/capacity.png>
 Package pdftex.def Info: figure_ml/capacity.png  used on input line 242.
@@ -4189,12 +4189,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
  []
 
-<figure_ml/u_a_o.png, id=3660, 1042.89626pt x 482.80376pt>
+<figure_ml/u_a_o.png, id=3761, 1042.89626pt x 482.80376pt>
 File: figure_ml/u_a_o.png Graphic file (type png)
 <use figure_ml/u_a_o.png>
 Package pdftex.def Info: figure_ml/u_a_o.png  used on input line 260.
 (pdftex.def)             Requested size: 256.07741pt x 118.54948pt.
-<figure_ml/u_a_o2.png, id=3661, 1051.93pt x 362.35374pt>
+<figure_ml/u_a_o2.png, id=3762, 1051.93pt x 362.35374pt>
 File: figure_ml/u_a_o2.png Graphic file (type png)
 <use figure_ml/u_a_o2.png>
 Package pdftex.def Info: figure_ml/u_a_o2.png  used on input line 268.
@@ -4205,24 +4205,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-<figure_ml/generalization.png, id=3672, 1242.6425pt x 605.26125pt>
+<figure_ml/generalization.png, id=3773, 1242.6425pt x 605.26125pt>
 File: figure_ml/generalization.png Graphic file (type png)
 <use figure_ml/generalization.png>
 Package pdftex.def Info: figure_ml/generalization.png  used on input line 280.
 (pdftex.def)             Requested size: 213.39568pt x 103.93666pt.
-<figure_ml/generalization2.png, id=3673, 1044.90375pt x 665.48625pt>
+<figure_ml/generalization2.png, id=3774, 1044.90375pt x 665.48625pt>
 File: figure_ml/generalization2.png Graphic file (type png)
 <use figure_ml/generalization2.png>
 Package pdftex.def Info: figure_ml/generalization2.png  used on input line 284.
 
 (pdftex.def)             Requested size: 213.39568pt x 135.90768pt.
-<figure_ml/generalization3.png, id=3674, 1435.3625pt x 320.19624pt>
+<figure_ml/generalization3.png, id=3775, 1435.3625pt x 320.19624pt>
 File: figure_ml/generalization3.png Graphic file (type png)
 <use figure_ml/generalization3.png>
 Package pdftex.def Info: figure_ml/generalization3.png  used on input line 300.
 
 (pdftex.def)             Requested size: 192.0548pt x 42.83864pt.
-<figure_ml/regularization.png, id=3675, 705.63625pt x 536.0025pt>
+<figure_ml/regularization.png, id=3776, 705.63625pt x 536.0025pt>
 File: figure_ml/regularization.png Graphic file (type png)
 <use figure_ml/regularization.png>
 Package pdftex.def Info: figure_ml/regularization.png  used on input line 308.
@@ -4264,18 +4264,18 @@ Underfull \hbox (badness 3219) in paragraph at lines 318--319
 
 [209 <./figure_ml/generalization.png> <./figure_ml/generalization2.png> <./figu
 re_ml/generalization3.png> <./figure_ml/regularization.png>]
-<figure_ml/hyperparams_optimization.png, id=3688, 1143.27126pt x 146.5475pt>
+<figure_ml/hyperparams_optimization.png, id=3789, 1143.27126pt x 146.5475pt>
 File: figure_ml/hyperparams_optimization.png Graphic file (type png)
 <use figure_ml/hyperparams_optimization.png>
 Package pdftex.def Info: figure_ml/hyperparams_optimization.png  used on input 
 line 354.
 (pdftex.def)             Requested size: 298.75264pt x 38.29375pt.
-<figure_ml/k-folding.png, id=3689, 2055.68pt x 1013.7875pt>
+<figure_ml/k-folding.png, id=3790, 2055.68pt x 1013.7875pt>
 File: figure_ml/k-folding.png Graphic file (type png)
 <use figure_ml/k-folding.png>
 Package pdftex.def Info: figure_ml/k-folding.png  used on input line 368.
 (pdftex.def)             Requested size: 298.75264pt x 147.328pt.
-<figure_ml/apss.png, id=3690, 1454.43375pt x 727.71875pt>
+<figure_ml/apss.png, id=3791, 1454.43375pt x 727.71875pt>
 File: figure_ml/apss.png Graphic file (type png)
 <use figure_ml/apss.png>
 Package pdftex.def Info: figure_ml/apss.png  used on input line 382.
@@ -4305,12 +4305,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-<figure_ml/pca.png, id=3700, 966.61125pt x 741.77126pt>
+<figure_ml/pca.png, id=3801, 966.61125pt x 741.77126pt>
 File: figure_ml/pca.png Graphic file (type png)
 <use figure_ml/pca.png>
 Package pdftex.def Info: figure_ml/pca.png  used on input line 409.
 (pdftex.def)             Requested size: 192.0548pt x 147.37823pt.
-<figure_ml/pca_covariance.png, id=3701, 448.67625pt x 96.36pt>
+<figure_ml/pca_covariance.png, id=3802, 448.67625pt x 96.36pt>
 File: figure_ml/pca_covariance.png Graphic file (type png)
 <use figure_ml/pca_covariance.png>
 Package pdftex.def Info: figure_ml/pca_covariance.png  used on input line 423.
@@ -4327,22 +4327,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--429
 
 [211 <./figure_ml/apss.png> <./figure_ml/pca.png> <./figure_ml/pca_covariance.p
 ng>]
-<figure_ml/nn.png, id=3715, 720.6925pt x 557.08125pt>
+<figure_ml/nn.png, id=3816, 720.6925pt x 557.08125pt>
 File: figure_ml/nn.png Graphic file (type png)
 <use figure_ml/nn.png>
 Package pdftex.def Info: figure_ml/nn.png  used on input line 445.
 (pdftex.def)             Requested size: 213.39568pt x 164.94957pt.
-<figure_ml/nn2.png, id=3716, 642.4pt x 481.8pt>
+<figure_ml/nn2.png, id=3817, 642.4pt x 481.8pt>
 File: figure_ml/nn2.png Graphic file (type png)
 <use figure_ml/nn2.png>
 Package pdftex.def Info: figure_ml/nn2.png  used on input line 449.
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
-<figure_ml/decision_trees.png, id=3719, 882.29625pt x 397.485pt>
+<figure_ml/decision_trees.png, id=3820, 882.29625pt x 397.485pt>
 File: figure_ml/decision_trees.png Graphic file (type png)
 <use figure_ml/decision_trees.png>
 Package pdftex.def Info: figure_ml/decision_trees.png  used on input line 471.
 (pdftex.def)             Requested size: 213.39568pt x 96.13829pt.
-<figure_ml/decision_trees2.png, id=3720, 290.08376pt x 174.6525pt>
+<figure_ml/decision_trees2.png, id=3821, 290.08376pt x 174.6525pt>
 File: figure_ml/decision_trees2.png Graphic file (type png)
 <use figure_ml/decision_trees2.png>
 Package pdftex.def Info: figure_ml/decision_trees2.png  used on input line 475.
@@ -4350,33 +4350,33 @@ Package pdftex.def Info: figure_ml/decision_trees2.png  used on input line 475.
 (pdftex.def)             Requested size: 213.39568pt x 128.4813pt.
  [212 <./figure_ml/nn.png> <./figure_ml/nn2.png> <./figure_ml/decision_trees.pn
 g> <./figure_ml/decision_trees2.png>]
-<figure_ml/trees.png, id=3733, 913.4125pt x 461.725pt>
+<figure_ml/trees.png, id=3834, 913.4125pt x 461.725pt>
 File: figure_ml/trees.png Graphic file (type png)
 <use figure_ml/trees.png>
 Package pdftex.def Info: figure_ml/trees.png  used on input line 496.
 (pdftex.def)             Requested size: 213.39568pt x 107.86426pt.
-<figure_ml/bagging.png, id=3734, 1013.7875pt x 572.1375pt>
+<figure_ml/bagging.png, id=3835, 1013.7875pt x 572.1375pt>
 File: figure_ml/bagging.png Graphic file (type png)
 <use figure_ml/bagging.png>
 Package pdftex.def Info: figure_ml/bagging.png  used on input line 502.
 (pdftex.def)             Requested size: 213.39568pt x 120.42305pt.
-<figure_ml/g_b.png, id=3735, 355.3275pt x 204.765pt>
+<figure_ml/g_b.png, id=3836, 355.3275pt x 204.765pt>
 File: figure_ml/g_b.png Graphic file (type png)
 <use figure_ml/g_b.png>
 Package pdftex.def Info: figure_ml/g_b.png  used on input line 513.
 (pdftex.def)             Requested size: 213.39568pt x 122.97554pt.
-<figure_ml/g_b2.png, id=3736, 797.98125pt x 336.25626pt>
+<figure_ml/g_b2.png, id=3837, 797.98125pt x 336.25626pt>
 File: figure_ml/g_b2.png Graphic file (type png)
 <use figure_ml/g_b2.png>
 Package pdftex.def Info: figure_ml/g_b2.png  used on input line 517.
 (pdftex.def)             Requested size: 213.39568pt x 89.91815pt.
-<figure_ml/limitations_trees.png, id=3737, 735.74875pt x 560.0925pt>
+<figure_ml/limitations_trees.png, id=3838, 735.74875pt x 560.0925pt>
 File: figure_ml/limitations_trees.png Graphic file (type png)
 <use figure_ml/limitations_trees.png>
 Package pdftex.def Info: figure_ml/limitations_trees.png  used on input line 53
 3.
 (pdftex.def)             Requested size: 153.64148pt x 116.95628pt.
-<figure_ml/limitations_trees2.png, id=3738, 642.4pt x 481.8pt>
+<figure_ml/limitations_trees2.png, id=3839, 642.4pt x 481.8pt>
 File: figure_ml/limitations_trees2.png Graphic file (type png)
 <use figure_ml/limitations_trees2.png>
 Package pdftex.def Info: figure_ml/limitations_trees2.png  used on input line 5
@@ -4388,7 +4388,7 @@ Overfull \hbox (35.59586pt too wide) in paragraph at lines 546--548
 / classification / plot _ classifier _ comparison .
  []
 
-<figure_ml/scikit.png, id=3740, 2509.375pt x 836.12375pt>
+<figure_ml/scikit.png, id=3841, 2509.375pt x 836.12375pt>
 File: figure_ml/scikit.png Graphic file (type png)
 <use figure_ml/scikit.png>
 Package pdftex.def Info: figure_ml/scikit.png  used on input line 551.
@@ -4404,7 +4404,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
-<Copy_of_Scikit-Learn.pdf, id=3757, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3857, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf  used on input line 582.
@@ -4413,7 +4413,7 @@ File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf  used on input line 582.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Copy_of_Scikit-Learn.pdf, id=3760, page=1, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3860, page=1, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 1>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page1 used on input line 58
@@ -4441,7 +4441,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page1 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [215 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3827, page=2, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3928, page=2, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 2>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page2 used on input line 58
@@ -4458,7 +4458,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page2 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [216 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3839, page=3, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3940, page=3, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 3>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page3 used on input line 58
@@ -4476,7 +4476,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page3 used on input line 58
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [217 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3845, page=4, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3946, page=4, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 4>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page4 used on input line 58
@@ -4493,7 +4493,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page4 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [218 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3850, page=5, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3951, page=5, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 5>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page5 used on input line 58
@@ -4510,7 +4510,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page5 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [219 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3855, page=6, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3956, page=6, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 6>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page6 used on input line 58
@@ -4527,7 +4527,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page6 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [220 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3860, page=7, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3961, page=7, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 7>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page7 used on input line 58
@@ -4544,7 +4544,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page7 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [221 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3867, page=8, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3968, page=8, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 8>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page8 used on input line 58
@@ -4561,7 +4561,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page8 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [222 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3872, page=9, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3973, page=9, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 9>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page9 used on input line 58
@@ -4578,7 +4578,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page9 used on input line 58
 2.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [223 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3888, page=10, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3989, page=10, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 10>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page10 used on input line 5
@@ -4595,7 +4595,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page10 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [224 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3895, page=11, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=3996, page=11, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 11>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page11 used on input line 5
@@ -4612,7 +4612,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page11 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [225 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3900, page=12, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4001, page=12, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 12>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page12 used on input line 5
@@ -4630,7 +4630,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page12 used on input line 5
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [226 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3905, page=13, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4006, page=13, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 13>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page13 used on input line 5
@@ -4647,7 +4647,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page13 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [227 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3912, page=14, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4013, page=14, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 14>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page14 used on input line 5
@@ -4664,7 +4664,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page14 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [228 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3917, page=15, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4018, page=15, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 15>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page15 used on input line 5
@@ -4681,7 +4681,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page15 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [229 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3923, page=16, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4024, page=16, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 16>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page16 used on input line 5
@@ -4698,7 +4698,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page16 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [230 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3935, page=17, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4035, page=17, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 17>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page17 used on input line 5
@@ -4715,7 +4715,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page17 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [231 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3942, page=18, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4042, page=18, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 18>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page18 used on input line 5
@@ -4732,7 +4732,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page18 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [232 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3949, page=19, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4049, page=19, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 19>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page19 used on input line 5
@@ -4749,7 +4749,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page19 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [233 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3954, page=20, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4054, page=20, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 20>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page20 used on input line 5
@@ -4766,7 +4766,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page20 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [234 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3961, page=21, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4061, page=21, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 21>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page21 used on input line 5
@@ -4784,7 +4784,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page21 used on input line 5
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 [235 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3967, page=22, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4067, page=22, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 22>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page22 used on input line 5
@@ -4801,7 +4801,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page22 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [236 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3974, page=23, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4074, page=23, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 23>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page23 used on input line 5
@@ -4818,7 +4818,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page23 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [237 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3981, page=24, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4081, page=24, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 24>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page24 used on input line 5
@@ -4835,7 +4835,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page24 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [238 <./Copy_of_Scikit-Learn.pdf>]
-<Copy_of_Scikit-Learn.pdf, id=3988, page=25, 614.295pt x 794.97pt>
+<Copy_of_Scikit-Learn.pdf, id=4088, page=25, 614.295pt x 794.97pt>
 File: Copy_of_Scikit-Learn.pdf Graphic file (type pdf)
 <use Copy_of_Scikit-Learn.pdf, page 25>
 Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page25 used on input line 5
@@ -4852,7 +4852,7 @@ Package pdftex.def Info: Copy_of_Scikit-Learn.pdf , page25 used on input line 5
 82.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [239 <./Copy_of_Scikit-Learn.pdf>]
-<reshape.pdf, id=3993, 1027.84pt x 770.88pt>
+<reshape.pdf, id=4093, 1027.84pt x 770.88pt>
 File: reshape.pdf Graphic file (type pdf)
 <use reshape.pdf>
 Package pdftex.def Info: reshape.pdf  used on input line 584.
@@ -4861,7 +4861,7 @@ File: reshape.pdf Graphic file (type pdf)
 <use reshape.pdf>
 Package pdftex.def Info: reshape.pdf  used on input line 584.
 (pdftex.def)             Requested size: 1027.8375pt x 770.87813pt.
-<reshape.pdf, id=3996, page=1, 1027.84pt x 770.88pt>
+<reshape.pdf, id=4096, page=1, 1027.84pt x 770.88pt>
 File: reshape.pdf Graphic file (type pdf)
 <use reshape.pdf, page 1>
 Package pdftex.def Info: reshape.pdf , page1 used on input line 584.
@@ -4887,12 +4887,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [241 <./figure_ml/limitations_trees.png> <./figure_ml/limitations_trees2.png> 
 <./figure_ml/scikit.png>]
-<figure_ml/model.png, id=4033, 1102.1175pt x 273.02pt>
+<figure_ml/model.png, id=4134, 1102.1175pt x 273.02pt>
 File: figure_ml/model.png Graphic file (type png)
 <use figure_ml/model.png>
 Package pdftex.def Info: figure_ml/model.png  used on input line 636.
 (pdftex.def)             Requested size: 384.1096pt x 95.15433pt.
-<figure_ml/history.png, id=4034, 644.4075pt x 893.3375pt>
+<figure_ml/history.png, id=4135, 644.4075pt x 893.3375pt>
 File: figure_ml/history.png Graphic file (type png)
 <use figure_ml/history.png>
 Package pdftex.def Info: figure_ml/history.png  used on input line 643.
@@ -4942,18 +4942,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-<figure_ml/complexity_growth.png, id=4043, 1260.71pt x 361.35pt>
+<figure_ml/complexity_growth.png, id=4144, 1260.71pt x 361.35pt>
 File: figure_ml/complexity_growth.png Graphic file (type png)
 <use figure_ml/complexity_growth.png>
 Package pdftex.def Info: figure_ml/complexity_growth.png  used on input line 68
 7.
 (pdftex.def)             Requested size: 426.79135pt x 122.32805pt.
-<figure_ml/speech.png, id=4044, 491.8375pt x 160.6pt>
+<figure_ml/speech.png, id=4145, 491.8375pt x 160.6pt>
 File: figure_ml/speech.png Graphic file (type png)
 <use figure_ml/speech.png>
 Package pdftex.def Info: figure_ml/speech.png  used on input line 697.
 (pdftex.def)             Requested size: 213.39568pt x 69.67908pt.
-<figure_ml/img_class.png, id=4045, 2509.375pt x 1513.655pt>
+<figure_ml/img_class.png, id=4146, 2509.375pt x 1513.655pt>
 File: figure_ml/img_class.png Graphic file (type png)
 <use figure_ml/img_class.png>
 Package pdftex.def Info: figure_ml/img_class.png  used on input line 701.
@@ -4973,12 +4973,12 @@ $\T1/cmtt/m/n/10 https : / / openai . com / blog / openai-[]api/$[]
 
 [243 <./figure_ml/complexity_growth.png> <./figure_ml/speech.png> <./figure_ml/
 img_class.png>]
-<figure_ml/neuron.png, id=4058, 965.6075pt x 521.95pt>
+<figure_ml/neuron.png, id=4159, 965.6075pt x 521.95pt>
 File: figure_ml/neuron.png Graphic file (type png)
 <use figure_ml/neuron.png>
 Package pdftex.def Info: figure_ml/neuron.png  used on input line 725.
 (pdftex.def)             Requested size: 298.75264pt x 161.48425pt.
-<figure_ml/mlp.png, id=4059, 1132.23pt x 871.255pt>
+<figure_ml/mlp.png, id=4160, 1132.23pt x 871.255pt>
 File: figure_ml/mlp.png Graphic file (type png)
 <use figure_ml/mlp.png>
 Package pdftex.def Info: figure_ml/mlp.png  used on input line 733.
@@ -5008,12 +5008,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
-<figure_ml/example1d.png, id=4068, 1035.87pt x 607.26875pt>
+<figure_ml/example1d.png, id=4169, 1035.87pt x 607.26875pt>
 File: figure_ml/example1d.png Graphic file (type png)
 <use figure_ml/example1d.png>
 Package pdftex.def Info: figure_ml/example1d.png  used on input line 777.
 (pdftex.def)             Requested size: 384.1096pt x 225.17702pt.
-<figure_ml/example1d2.png, id=4069, 847.165pt x 386.44376pt>
+<figure_ml/example1d2.png, id=4170, 847.165pt x 386.44376pt>
 File: figure_ml/example1d2.png Graphic file (type png)
 <use figure_ml/example1d2.png>
 Package pdftex.def Info: figure_ml/example1d2.png  used on input line 786.
@@ -5026,17 +5026,17 @@ c6$[]|
  []
 
 [245 <./figure_ml/example1d.png>]
-<figure_ml/training_mlp.png, id=4078, 1243.64626pt x 433.62pt>
+<figure_ml/training_mlp.png, id=4179, 1243.64626pt x 433.62pt>
 File: figure_ml/training_mlp.png Graphic file (type png)
 <use figure_ml/training_mlp.png>
 Package pdftex.def Info: figure_ml/training_mlp.png  used on input line 797.
 (pdftex.def)             Requested size: 384.1096pt x 133.92458pt.
-<figure_ml/training_nn.png, id=4079, 402.50375pt x 408.52625pt>
+<figure_ml/training_nn.png, id=4180, 402.50375pt x 408.52625pt>
 File: figure_ml/training_nn.png Graphic file (type png)
 <use figure_ml/training_nn.png>
 Package pdftex.def Info: figure_ml/training_nn.png  used on input line 805.
 (pdftex.def)             Requested size: 170.71393pt x 173.26915pt.
-<figure_ml/find_minimum.png, id=4080, 499.8675pt x 496.85625pt>
+<figure_ml/find_minimum.png, id=4181, 499.8675pt x 496.85625pt>
 File: figure_ml/find_minimum.png Graphic file (type png)
 <use figure_ml/find_minimum.png>
 Package pdftex.def Info: figure_ml/find_minimum.png  used on input line 829.
@@ -5047,17 +5047,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 832--837
 
  []
 
-<figure_ml/sgd.png, id=4098, 319.1925pt x 158.5925pt>
+<figure_ml/sgd.png, id=4198, 319.1925pt x 158.5925pt>
 File: figure_ml/sgd.png Graphic file (type png)
 <use figure_ml/sgd.png>
 Package pdftex.def Info: figure_ml/sgd.png  used on input line 860.
 (pdftex.def)             Requested size: 213.39568pt x 106.0265pt.
-<figure_ml/sgd2.png, id=4099, 514.92375pt x 513.92pt>
+<figure_ml/sgd2.png, id=4199, 514.92375pt x 513.92pt>
 File: figure_ml/sgd2.png Graphic file (type png)
 <use figure_ml/sgd2.png>
 Package pdftex.def Info: figure_ml/sgd2.png  used on input line 864.
 (pdftex.def)             Requested size: 170.71393pt x 170.3783pt.
-<figure_ml/learning_rate.png, id=4100, 460.72125pt x 415.5525pt>
+<figure_ml/learning_rate.png, id=4200, 460.72125pt x 415.5525pt>
 File: figure_ml/learning_rate.png Graphic file (type png)
 <use figure_ml/learning_rate.png>
 Package pdftex.def Info: figure_ml/learning_rate.png  used on input line 874.
@@ -5077,20 +5077,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
-<figure_ml/real_lr.png, id=4101, 1198.4775pt x 711.65875pt>
+<figure_ml/real_lr.png, id=4201, 1198.4775pt x 711.65875pt>
 File: figure_ml/real_lr.png Graphic file (type png)
 <use figure_ml/real_lr.png>
 Package pdftex.def Info: figure_ml/real_lr.png  used on input line 887.
 (pdftex.def)             Requested size: 341.43437pt x 202.73798pt.
 [247 <./figure_ml/find_minimum.png> <./figure_ml/sgd.png> <./figure_ml/sgd2.png
 > <./figure_ml/learning_rate.png>] [248 <./figure_ml/real_lr.png>]
-<figure_ml/training_overfitting.png, id=4120, 337.26pt x 280.04625pt>
+<figure_ml/training_overfitting.png, id=4220, 337.26pt x 280.04625pt>
 File: figure_ml/training_overfitting.png Graphic file (type png)
 <use figure_ml/training_overfitting.png>
 Package pdftex.def Info: figure_ml/training_overfitting.png  used on input line
  895.
 (pdftex.def)             Requested size: 149.37958pt x 124.04117pt.
-<figure_ml/backpropagation.png, id=4121, 1295.84125pt x 596.2275pt>
+<figure_ml/backpropagation.png, id=4221, 1295.84125pt x 596.2275pt>
 File: figure_ml/backpropagation.png Graphic file (type png)
 <use figure_ml/backpropagation.png>
 Package pdftex.def Info: figure_ml/backpropagation.png  used on input line 936.
@@ -5099,7 +5099,7 @@ Package pdftex.def Info: figure_ml/backpropagation.png  used on input line 936.
  [249
 
  <./figure_ml/training_overfitting.png>]
-<figure_ml/activation_functions.png, id=4128, 1308.89pt x 750.805pt>
+<figure_ml/activation_functions.png, id=4228, 1308.89pt x 750.805pt>
 File: figure_ml/activation_functions.png Graphic file (type png)
 <use figure_ml/activation_functions.png>
 Package pdftex.def Info: figure_ml/activation_functions.png  used on input line
@@ -5112,29 +5112,29 @@ Package pdftex.def Info: figure_ml/activation_functions.png  used on input line
 (pdftex.def)             Requested size: 426.79135pt x 244.81067pt.
  [250 <./figure_ml/backpropagation.png> <./figure_ml/activation_functions.png>]
  [251]
-<figure_ml/mcc_NN.png, id=4142, 2007.5pt x 3011.25pt>
+<figure_ml/mcc_NN.png, id=4243, 2007.5pt x 3011.25pt>
 File: figure_ml/mcc_NN.png Graphic file (type png)
 <use figure_ml/mcc_NN.png>
 Package pdftex.def Info: figure_ml/mcc_NN.png  used on input line 979.
 (pdftex.def)             Requested size: 362.77525pt x 544.16118pt.
  [252 <./figure_ml/mcc_NN.png (PNG copy)>]
-<figure_ml/dropout.png, id=4148, 498.86375pt x 674.52pt>
+<figure_ml/dropout.png, id=4249, 498.86375pt x 674.52pt>
 File: figure_ml/dropout.png Graphic file (type png)
 <use figure_ml/dropout.png>
 Package pdftex.def Info: figure_ml/dropout.png  used on input line 1001.
 (pdftex.def)             Requested size: 213.39568pt x 288.53526pt.
-<figure_ml/batch_norm.png, id=4149, 1234.6125pt x 304.13625pt>
+<figure_ml/batch_norm.png, id=4250, 1234.6125pt x 304.13625pt>
 File: figure_ml/batch_norm.png Graphic file (type png)
 <use figure_ml/batch_norm.png>
 Package pdftex.def Info: figure_ml/batch_norm.png  used on input line 1017.
 (pdftex.def)             Requested size: 341.43437pt x 84.10875pt.
  [253 <./figure_ml/dropout.png> <./figure_ml/batch_norm.png>]
-<figure_ml/seq_ex.png, id=4159, 949.5475pt x 478.78876pt>
+<figure_ml/seq_ex.png, id=4260, 949.5475pt x 478.78876pt>
 File: figure_ml/seq_ex.png Graphic file (type png)
 <use figure_ml/seq_ex.png>
 Package pdftex.def Info: figure_ml/seq_ex.png  used on input line 1063.
 (pdftex.def)             Requested size: 341.43437pt x 172.15926pt.
-<figure_ml/keras_model.png, id=4160, 1232.605pt x 552.0625pt>
+<figure_ml/keras_model.png, id=4261, 1232.605pt x 552.0625pt>
 File: figure_ml/keras_model.png Graphic file (type png)
 <use figure_ml/keras_model.png>
 Package pdftex.def Info: figure_ml/keras_model.png  used on input line 1070.
@@ -5143,9 +5143,9 @@ Package pdftex.def Info: figure_ml/keras_model.png  used on input line 1070.
 \openout6 = `main.pyg'.
 
 
-(./_minted-main/C0373555318AF776E5D497C58F9135324FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/C2C9577CA0A2A93266A46AE8E0E5A1EE4FBEEAFC55D0059826E664B9BBCF372
 1.pygtex)
-<figure_ml/modernized_mlp.png, id=4167, 1222.5675pt x 659.46375pt>
+<figure_ml/modernized_mlp.png, id=4268, 1222.5675pt x 659.46375pt>
 File: figure_ml/modernized_mlp.png Graphic file (type png)
 <use figure_ml/modernized_mlp.png>
 Package pdftex.def Info: figure_ml/modernized_mlp.png  used on input line 1090.
@@ -5154,29 +5154,29 @@ Package pdftex.def Info: figure_ml/modernized_mlp.png  used on input line 1090.
 \openout6 = `main.pyg'.
 
 
-(./_minted-main/EED56C517EEB308B0BD699892B2D85164FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/DCADC344902BE500A813F37D099355924FBEEAFC55D0059826E664B9BBCF372
 1.pygtex [255 <./figure_ml/keras_model.png> <./figure_ml/modernized_mlp.png>])
 \openout6 = `main.pyg'.
 
 
-(./_minted-main/DE18AE2A55FFC99466C679AE9D418EEF4FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/EFCEB7D8DB995A7CC998380DC3916F3F4FBEEAFC55D0059826E664B9BBCF372
 1.pygtex)
 \openout6 = `main.pyg'.
 
 
-(./_minted-main/16BCE8949B02438221B8F84EA91CC7AA4FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/1C316F6EFCD31617435826C1FD0290AD4FBEEAFC55D0059826E664B9BBCF372
 1.pygtex) [256]
 \openout6 = `main.pyg'.
 
 
-(./_minted-main/1A927C9DF3CBA267B4F975994A9D54824FBEEAFC55D0059826E664B9BBCF372
+(./_minted-main/BF22B86A3879D7EA12EF26618AD418584FBEEAFC55D0059826E664B9BBCF372
 1.pygtex)
-<figure_ml/ass1.png, id=4180, 373.395pt x 248.93pt>
+<figure_ml/ass1.png, id=4281, 373.395pt x 248.93pt>
 File: figure_ml/ass1.png Graphic file (type png)
 <use figure_ml/ass1.png>
 Package pdftex.def Info: figure_ml/ass1.png  used on input line 1194.
 (pdftex.def)             Requested size: 170.71393pt x 113.81029pt.
-<figure_ml/ass2.png, id=4183, 376.40625pt x 248.93pt>
+<figure_ml/ass2.png, id=4284, 376.40625pt x 248.93pt>
 File: figure_ml/ass2.png Graphic file (type png)
 <use figure_ml/ass2.png>
 Package pdftex.def Info: figure_ml/ass2.png  used on input line 1211.
@@ -5186,34 +5186,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 1241--1242
 
  []
 
-<figure_ml/classif.png, id=4198, 225.84375pt x 225.84375pt>
+<figure_ml/classif.png, id=4299, 225.84375pt x 225.84375pt>
 File: figure_ml/classif.png Graphic file (type png)
 <use figure_ml/classif.png>
 Package pdftex.def Info: figure_ml/classif.png  used on input line 1245.
 (pdftex.def)             Requested size: 106.69783pt x 106.69794pt.
-<figure_ml/classif1.png, id=4199, 169.63374pt x 12.045pt>
+<figure_ml/classif1.png, id=4300, 169.63374pt x 12.045pt>
 File: figure_ml/classif1.png Graphic file (type png)
 <use figure_ml/classif1.png>
 Package pdftex.def Info: figure_ml/classif1.png  used on input line 1261.
 (pdftex.def)             Requested size: 115.23404pt x 8.1822pt.
-<figure_ml/classif2.png, id=4200, 230.8625pt x 11.04124pt>
+<figure_ml/classif2.png, id=4301, 230.8625pt x 11.04124pt>
 File: figure_ml/classif2.png Graphic file (type png)
 <use figure_ml/classif2.png>
 Package pdftex.def Info: figure_ml/classif2.png  used on input line 1265.
 (pdftex.def)             Requested size: 115.23404pt x 5.51115pt.
-<figure_ml/classif3.png, id=4201, 216.81pt x 14.0525pt>
+<figure_ml/classif3.png, id=4302, 216.81pt x 14.0525pt>
 File: figure_ml/classif3.png Graphic file (type png)
 <use figure_ml/classif3.png>
 Package pdftex.def Info: figure_ml/classif3.png  used on input line 1269.
 (pdftex.def)             Requested size: 115.23404pt x 7.46901pt.
-<figure_ml/windows.png, id=4202, 365.365pt x 527.9725pt>
+<figure_ml/windows.png, id=4303, 365.365pt x 527.9725pt>
 File: figure_ml/windows.png Graphic file (type png)
 <use figure_ml/windows.png>
 Package pdftex.def Info: figure_ml/windows.png  used on input line 1286.
 (pdftex.def)             Requested size: 128.0387pt x 185.0187pt.
 [259 <./figure_ml/classif.png> <./figure_ml/classif1.png> <./figure_ml/classif2
 .png> <./figure_ml/classif3.png> <./figure_ml/windows.png>]
-<figure_ml/cnn.png, id=4217, 755.82375pt x 176.66pt>
+<figure_ml/cnn.png, id=4317, 755.82375pt x 176.66pt>
 File: figure_ml/cnn.png Graphic file (type png)
 <use figure_ml/cnn.png>
 Package pdftex.def Info: figure_ml/cnn.png  used on input line 1327.
@@ -5228,18 +5228,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
 
  []
 
-<figure_ml/convolution.png, id=4218, 1143.27126pt x 293.095pt>
+<figure_ml/convolution.png, id=4318, 1143.27126pt x 293.095pt>
 File: figure_ml/convolution.png Graphic file (type png)
 <use figure_ml/convolution.png>
 Package pdftex.def Info: figure_ml/convolution.png  used on input line 1356.
 (pdftex.def)             Requested size: 341.43437pt x 87.53114pt.
 [260 <./figure_ml/cnn.png>]
-<figure_ml/pooling.png, id=4225, 642.4pt x 560.0925pt>
+<figure_ml/pooling.png, id=4325, 642.4pt x 560.0925pt>
 File: figure_ml/pooling.png Graphic file (type png)
 <use figure_ml/pooling.png>
 Package pdftex.def Info: figure_ml/pooling.png  used on input line 1368.
 (pdftex.def)             Requested size: 170.71393pt x 148.84258pt.
-<figure_ml/cnn_arch.png, id=4226, 1606.0pt x 859.21pt>
+<figure_ml/cnn_arch.png, id=4326, 1606.0pt x 859.21pt>
 File: figure_ml/cnn_arch.png Graphic file (type png)
 <use figure_ml/cnn_arch.png>
 Package pdftex.def Info: figure_ml/cnn_arch.png  used on input line 1382.
@@ -5267,12 +5267,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
 
 [261 <./figure_ml/convolution.png> <./figure_ml/pooling.png> <./figure_ml/cnn_a
 rch.png>]
-<figure_ml/more_conv.png, id=4237, 322.20375pt x 568.1225pt>
+<figure_ml/more_conv.png, id=4337, 322.20375pt x 568.1225pt>
 File: figure_ml/more_conv.png Graphic file (type png)
 <use figure_ml/more_conv.png>
 Package pdftex.def Info: figure_ml/more_conv.png  used on input line 1400.
 (pdftex.def)             Requested size: 128.0387pt x 225.77126pt.
-<figure_ml/stop_bb.png, id=4238, 602.25pt x 451.6875pt>
+<figure_ml/stop_bb.png, id=4338, 602.25pt x 451.6875pt>
 File: figure_ml/stop_bb.png Graphic file (type png)
 <use figure_ml/stop_bb.png>
 Package pdftex.def Info: figure_ml/stop_bb.png  used on input line 1410.
@@ -5292,12 +5292,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1419--1420
 
  []
 
-<figure_ml/bb.png, id=4240, 1721.43124pt x 470.75874pt>
+<figure_ml/bb.png, id=4340, 1721.43124pt x 470.75874pt>
 File: figure_ml/bb.png Graphic file (type png)
 <use figure_ml/bb.png>
 Package pdftex.def Info: figure_ml/bb.png  used on input line 1427.
 (pdftex.def)             Requested size: 384.1096pt x 105.0398pt.
-<figure_ml/tl.png, id=4241, 1102.1175pt x 544.0325pt>
+<figure_ml/tl.png, id=4341, 1102.1175pt x 544.0325pt>
 File: figure_ml/tl.png Graphic file (type png)
 <use figure_ml/tl.png>
 Package pdftex.def Info: figure_ml/tl.png  used on input line 1435.
@@ -5308,45 +5308,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 1479--1481
 
  []
 
-<figure_ml/t_invariance.png, id=4253, 439.6425pt x 115.43124pt>
+<figure_ml/t_invariance.png, id=4353, 439.6425pt x 115.43124pt>
 File: figure_ml/t_invariance.png Graphic file (type png)
 <use figure_ml/t_invariance.png>
 Package pdftex.def Info: figure_ml/t_invariance.png  used on input line 1483.
 (pdftex.def)             Requested size: 149.37958pt x 39.21968pt.
-<figure_ml/lstm.png, id=4254, 1102.1175pt x 575.14874pt>
+<figure_ml/lstm.png, id=4354, 1102.1175pt x 575.14874pt>
 File: figure_ml/lstm.png Graphic file (type png)
 <use figure_ml/lstm.png>
 Package pdftex.def Info: figure_ml/lstm.png  used on input line 1511.
 (pdftex.def)             Requested size: 140.84192pt x 73.49942pt.
-<figure_ml/gru.png, id=4255, 1031.855pt x 452.69125pt>
+<figure_ml/gru.png, id=4355, 1031.855pt x 452.69125pt>
 File: figure_ml/gru.png Graphic file (type png)
 <use figure_ml/gru.png>
 Package pdftex.def Info: figure_ml/gru.png  used on input line 1515.
 (pdftex.def)             Requested size: 140.84192pt x 61.78761pt.
-<figure_ml/gates.png, id=4256, 689.57625pt x 821.0675pt>
+<figure_ml/gates.png, id=4356, 689.57625pt x 821.0675pt>
 File: figure_ml/gates.png Graphic file (type png)
 <use figure_ml/gates.png>
 Package pdftex.def Info: figure_ml/gates.png  used on input line 1519.
 (pdftex.def)             Requested size: 140.84192pt x 167.6935pt.
-<figure_ml/t_series.png, id=4257, 1234.6125pt x 666.49pt>
+<figure_ml/t_series.png, id=4357, 1234.6125pt x 666.49pt>
 File: figure_ml/t_series.png Graphic file (type png)
 <use figure_ml/t_series.png>
 Package pdftex.def Info: figure_ml/t_series.png  used on input line 1529.
 (pdftex.def)             Requested size: 426.79135pt x 230.39694pt.
 [263 <./figure_ml/tl.png> <./figure_ml/t_invariance.png>]
-<figure_ml/keras_layers.png, id=4266, 542.025pt x 309.155pt>
+<figure_ml/keras_layers.png, id=4366, 542.025pt x 309.155pt>
 File: figure_ml/keras_layers.png Graphic file (type png)
 <use figure_ml/keras_layers.png>
 Package pdftex.def Info: figure_ml/keras_layers.png  used on input line 1538.
 (pdftex.def)             Requested size: 149.37958pt x 85.1995pt.
  [264 <./figure_ml/lstm.png> <./figure_ml/gru.png> <./figure_ml/gates.png> <./f
 igure_ml/t_series.png> <./figure_ml/keras_layers.png>]
-<figure_ml/more_lstm.png, id=4279, 1514.65875pt x 829.0975pt>
+<figure_ml/more_lstm.png, id=4380, 1514.65875pt x 829.0975pt>
 File: figure_ml/more_lstm.png Graphic file (type png)
 <use figure_ml/more_lstm.png>
 Package pdftex.def Info: figure_ml/more_lstm.png  used on input line 1570.
 (pdftex.def)             Requested size: 426.79135pt x 233.61324pt.
-<figure_ml/using_lstm.png, id=4280, 1527.7075pt x 804.00375pt>
+<figure_ml/using_lstm.png, id=4381, 1527.7075pt x 804.00375pt>
 File: figure_ml/using_lstm.png Graphic file (type png)
 <use figure_ml/using_lstm.png>
 Package pdftex.def Info: figure_ml/using_lstm.png  used on input line 1578.
@@ -5371,23 +5371,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1621--1622
 
  []
 
-<figure_ml/dim_reduction.png, id=4300, 1858.945pt x 447.6725pt>
+<figure_ml/dim_reduction.png, id=4401, 1858.945pt x 447.6725pt>
 File: figure_ml/dim_reduction.png Graphic file (type png)
 <use figure_ml/dim_reduction.png>
 Package pdftex.def Info: figure_ml/dim_reduction.png  used on input line 1630.
 (pdftex.def)             Requested size: 426.79135pt x 102.77806pt.
-<figure_ml/autoencoder.png, id=4301, 1474.50874pt x 581.17125pt>
+<figure_ml/autoencoder.png, id=4402, 1474.50874pt x 581.17125pt>
 File: figure_ml/autoencoder.png Graphic file (type png)
 <use figure_ml/autoencoder.png>
 Package pdftex.def Info: figure_ml/autoencoder.png  used on input line 1642.
 (pdftex.def)             Requested size: 277.41176pt x 109.33292pt.
-<figure_ml/bottleneck.png, id=4302, 1579.9025pt x 899.36pt>
+<figure_ml/bottleneck.png, id=4403, 1579.9025pt x 899.36pt>
 File: figure_ml/bottleneck.png Graphic file (type png)
 <use figure_ml/bottleneck.png>
 Package pdftex.def Info: figure_ml/bottleneck.png  used on input line 1656.
 (pdftex.def)             Requested size: 277.41176pt x 157.91183pt.
 [267 <./figure_ml/dim_reduction.png> <./figure_ml/autoencoder.png>]
-<figure_ml/generative_models.png, id=4311, 454.69875pt x 905.3825pt>
+<figure_ml/generative_models.png, id=4412, 454.69875pt x 905.3825pt>
 File: figure_ml/generative_models.png Graphic file (type png)
 <use figure_ml/generative_models.png>
 Package pdftex.def Info: figure_ml/generative_models.png  used on input line 16
@@ -5413,7 +5413,7 @@ Underfull \hbox (badness 4013) in paragraph at lines 1704--1705
 Package wrapfig Warning: Collision between wrapping environments on input line 
 1713.
 
-<figure_ml/gan.png, id=4321, 1217.54875pt x 530.98375pt>
+<figure_ml/gan.png, id=4422, 1217.54875pt x 530.98375pt>
 File: figure_ml/gan.png Graphic file (type png)
 <use figure_ml/gan.png>
 Package pdftex.def Info: figure_ml/gan.png  used on input line 1714.
@@ -5430,28 +5430,28 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
 21.
 
-<figure_ml/dogs.png, id=4322, 492.84125pt x 492.84125pt>
+<figure_ml/dogs.png, id=4423, 492.84125pt x 492.84125pt>
 File: figure_ml/dogs.png Graphic file (type png)
 <use figure_ml/dogs.png>
 Package pdftex.def Info: figure_ml/dogs.png  used on input line 1743.
 (pdftex.def)             Requested size: 140.84192pt x 140.84473pt.
-<figure_ml/faces.png, id=4323, 933.4875pt x 937.5025pt>
+<figure_ml/faces.png, id=4424, 933.4875pt x 937.5025pt>
 File: figure_ml/faces.png Graphic file (type png)
 <use figure_ml/faces.png>
 Package pdftex.def Info: figure_ml/faces.png  used on input line 1750.
 (pdftex.def)             Requested size: 140.84192pt x 141.4347pt.
-<figure_ml/pacman.png, id=4326, 321.2pt x 321.2pt>
+<figure_ml/pacman.png, id=4427, 321.2pt x 321.2pt>
 File: figure_ml/pacman.png Graphic file (type png)
 <use figure_ml/pacman.png>
 Package pdftex.def Info: figure_ml/pacman.png  used on input line 1757.
 (pdftex.def)             Requested size: 140.84192pt x 140.84322pt.
 [269 <./figure_ml/gan.png> <./figure_ml/dogs.png>]
-<figure_ml/ass5_1.png, id=4335, 381.425pt x 248.93pt>
+<figure_ml/ass5_1.png, id=4436, 381.425pt x 248.93pt>
 File: figure_ml/ass5_1.png Graphic file (type png)
 <use figure_ml/ass5_1.png>
 Package pdftex.def Info: figure_ml/ass5_1.png  used on input line 1769.
 (pdftex.def)             Requested size: 170.71393pt x 111.41351pt.
-<figure_ml/ass5_2.png, id=4336, 387.4475pt x 248.93pt>
+<figure_ml/ass5_2.png, id=4437, 387.4475pt x 248.93pt>
 File: figure_ml/ass5_2.png Graphic file (type png)
 <use figure_ml/ass5_2.png>
 Package pdftex.def Info: figure_ml/ass5_2.png  used on input line 1770.
@@ -5468,7 +5468,7 @@ Underfull \hbox (badness 1043) in paragraph at lines 1780--1781
 
 [270 <./figure_ml/faces.png> <./figure_ml/pacman.png> <./figure_ml/ass5_1.png> 
 <./figure_ml/ass5_2.png>]
-<figure_ml/ass6.png, id=4350, 870.25125pt x 633.36626pt>
+<figure_ml/ass6.png, id=4451, 870.25125pt x 633.36626pt>
 File: figure_ml/ass6.png Graphic file (type png)
 <use figure_ml/ass6.png>
 Package pdftex.def Info: figure_ml/ass6.png  used on input line 1807.
@@ -5483,19 +5483,191 @@ Underfull \hbox (badness 10000) in paragraph at lines 1819--1820
 
  []
 
-) [271 <./figure_ml/ass6.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1827--1828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1831
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1832--1833
+
+ []
+
+[271 <./figure_ml/ass6.png>]
+<figure_ml/graph_nets.png, id=4461, 916.42375pt x 875.27pt>
+File: figure_ml/graph_nets.png Graphic file (type png)
+<use figure_ml/graph_nets.png>
+Package pdftex.def Info: figure_ml/graph_nets.png  used on input line 1845.
+(pdftex.def)             Requested size: 213.39568pt x 203.80534pt.
+<figure_ml/datasets_ex1.png, id=4462, 816.04875pt x 470.75874pt>
+File: figure_ml/datasets_ex1.png Graphic file (type png)
+<use figure_ml/datasets_ex1.png>
+Package pdftex.def Info: figure_ml/datasets_ex1.png  used on input line 1870.
+(pdftex.def)             Requested size: 192.0548pt x 110.79353pt.
+<figure_ml/datasets_ex2.png, id=4463, 799.98875pt x 943.525pt>
+File: figure_ml/datasets_ex2.png Graphic file (type png)
+<use figure_ml/datasets_ex2.png>
+Package pdftex.def Info: figure_ml/datasets_ex2.png  used on input line 1874.
+(pdftex.def)             Requested size: 192.0548pt x 226.50821pt.
+<figure_ml/graph_phys.png, id=4464, 1693.32625pt x 481.8pt>
+File: figure_ml/graph_phys.png Graphic file (type png)
+<use figure_ml/graph_phys.png>
+Package pdftex.def Info: figure_ml/graph_phys.png  used on input line 1891.
+(pdftex.def)             Requested size: 288.0822pt x 81.96371pt.
+<figure_ml/feynman.png, id=4465, 2509.375pt x 2286.5425pt>
+File: figure_ml/feynman.png Graphic file (type png)
+<use figure_ml/feynman.png>
+Package pdftex.def Info: figure_ml/feynman.png  used on input line 1895.
+(pdftex.def)             Requested size: 96.02739pt x 87.46869pt.
+ [272 <./figure_ml/graph_nets.png> <./figure_ml/datasets_ex1.png> <./figure_ml/
+datasets_ex2.png>]
+<figure_ml/sparse.png, id=4475, 584.1825pt x 870.25125pt>
+File: figure_ml/sparse.png Graphic file (type png)
+<use figure_ml/sparse.png>
+Package pdftex.def Info: figure_ml/sparse.png  used on input line 1919.
+(pdftex.def)             Requested size: 153.64148pt x 228.87595pt.
+<figure_ml/neighbors.png, id=4476, 1630.09pt x 919.435pt>
+File: figure_ml/neighbors.png Graphic file (type png)
+<use figure_ml/neighbors.png>
+Package pdftex.def Info: figure_ml/neighbors.png  used on input line 1923.
+(pdftex.def)             Requested size: 230.4681pt x 129.98267pt.
+<figure_ml/conv_img.png, id=4477, 668.4975pt x 630.355pt>
+File: figure_ml/conv_img.png Graphic file (type png)
+<use figure_ml/conv_img.png>
+Package pdftex.def Info: figure_ml/conv_img.png  used on input line 1931.
+(pdftex.def)             Requested size: 170.71393pt x 160.97404pt.
+ [273 <./figure_ml/graph_phys.png> <./figure_ml/feynman.png> <./figure_ml/spars
+e.png> <./figure_ml/neighbors.png> <./figure_ml/conv_img.png>]
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+1967.
+
+<figure_ml/adj_matrix.png, id=4490, 447.6725pt x 303.1325pt>
+File: figure_ml/adj_matrix.png Graphic file (type png)
+<use figure_ml/adj_matrix.png>
+Package pdftex.def Info: figure_ml/adj_matrix.png  used on input line 1968.
+(pdftex.def)             Requested size: 170.71393pt x 115.59857pt.
+<figure_ml/adj3.png, id=4491, 436.63126pt x 111.41624pt>
+File: figure_ml/adj3.png Graphic file (type png)
+<use figure_ml/adj3.png>
+Package pdftex.def Info: figure_ml/adj3.png  used on input line 1969.
+(pdftex.def)             Requested size: 170.71393pt x 43.56096pt.
+File: figure_ml/adj3.png Graphic file (type png)
+<use figure_ml/adj3.png>
+Package pdftex.def Info: figure_ml/adj3.png  used on input line 1970.
+(pdftex.def)             Requested size: 170.71393pt x 43.56096pt.
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+73.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+76.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+78.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+79.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+81.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+82.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+83.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+84.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+85.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+87.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+88.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+89.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2001--2002
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2019--2020
+
+ []
+
+[274 <./figure_ml/adj_matrix.png> <./figure_ml/adj3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2021--2023
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2024--2025
+
+ []
+
+
+Overfull \hbox (1.33438pt too wide) in paragraph at lines 2051--2052
+[]\T1/cmr/m/n/10 Permutation in-vari-ant op-er-a-tions are typ-i-cally Max, Sum
+,
+ []
+
+[275]
+Overfull \hbox (2.69882pt too wide) in paragraph at lines 2072--2074
+[]\T1/cmtt/m/n/10 torch_geometric.data \T1/cmr/m/n/10 is the class for han-dlin
+g graph
+ []
+
+<figure_ml/tools.png, id=4503, 760.8425pt x 875.27pt>
+File: figure_ml/tools.png Graphic file (type png)
+<use figure_ml/tools.png>
+Package pdftex.def Info: figure_ml/tools.png  used on input line 2092.
+(pdftex.def)             Requested size: 426.79135pt x 490.98926pt.
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/5DF6A696A3CEE9998EBBA8CFCA8DFEC54FBEEAFC55D0059826E664B9BBCF372
+1.pygtex)
+\openout6 = `main.pyg'.
+
+
+(./_minted-main/735435ECE09A51C3D0B516290479ACDC4FBEEAFC55D0059826E664B9BBCF372
+1.pygtex [276] [277 <./figure_ml/tools.png>])) [278]
 \openout2 = `medphys.aux'.
 
- (./medphys.tex [272
+ (./medphys.tex
+Chapter 4.
+) [279
 
 
 
 ]
-Chapter 4.
-) [273]
 \openout2 = `git.aux'.
 
- (./git.tex [274
+ (./git.tex [280
 
 
 
@@ -5540,7 +5712,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 B.pygtex)
 \openout6 = `main.pyg'.
 
- [275]
+ [281]
 (./_minted-main/D27C2CCC166FD5550124E367C81990AD5093E84BEA004B2911D4DA186861F6D
 B.pygtex)
 \openout6 = `main.pyg'.
@@ -5591,7 +5763,7 @@ B.pygtex)
 
 (./_minted-main/85CBBAD027AB6744449638F5757E52E35093E84BEA004B2911D4DA186861F6D
 B.pygtex)
-<images/screenshot_github_tutorial_repo.png, id=4378, 1531.7225pt x 176.66pt>
+<images/screenshot_github_tutorial_repo.png, id=4534, 1531.7225pt x 176.66pt>
 File: images/screenshot_github_tutorial_repo.png Graphic file (type png)
 <use images/screenshot_github_tutorial_repo.png>
 Package pdftex.def Info: images/screenshot_github_tutorial_repo.png  used on in
@@ -5601,7 +5773,7 @@ put line 252.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[276]
+[282]
 \openout6 = `main.pyg'.
 
 
@@ -5627,16 +5799,16 @@ B.pygtex)
 
 (./_minted-main/7E0A27DAAC38FB6F207B9B472F29A6835093E84BEA004B2911D4DA186861F6D
 B.pygtex)
-<images/git_workflow.jpeg, id=4383, 883.3pt x 627.34375pt>
+<images/git_workflow.jpeg, id=4539, 883.3pt x 627.34375pt>
 File: images/git_workflow.jpeg Graphic file (type jpg)
 <use images/git_workflow.jpeg>
 Package pdftex.def Info: images/git_workflow.jpeg  used on input line 340.
 (pdftex.def)             Requested size: 256.07741pt x 181.86758pt.
-) [277 <./images/screenshot_github_tutorial_repo.png> <./images/git_workflow.jp
+) [283 <./images/screenshot_github_tutorial_repo.png> <./images/git_workflow.jp
 eg>]
 \openout2 = `sphinx.aux'.
 
- (./sphinx.tex [278
+ (./sphinx.tex [284
 
 
 
@@ -5647,12 +5819,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-<images/sphinx_workflow.png, id=4398, 390.45876pt x 865.2325pt>
+<images/sphinx_workflow.png, id=4554, 390.45876pt x 865.2325pt>
 File: images/sphinx_workflow.png Graphic file (type png)
 <use images/sphinx_workflow.png>
 Package pdftex.def Info: images/sphinx_workflow.png  used on input line 17.
 (pdftex.def)             Requested size: 226.19888pt x 501.2411pt.
-[279]
+[285]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 21.
@@ -5664,7 +5836,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 B.pygtex)
 \openout6 = `main.pyg'.
 
- [280 <./images/sphinx_workflow.png>]
+ [286 <./images/sphinx_workflow.png>]
 (./_minted-main/B6C535ABF88D54EE0929968E435BDCC65093E84BEA004B2911D4DA186861F6D
 B.pygtex)
 \openout6 = `main.pyg'.
@@ -5694,7 +5866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
 
 (./_minted-main/4D38FAF2F7505861DF8B4CCDAE039A981F0DFB4B686975796DBB222E041DAA6
-D.pygtex [281])
+D.pygtex [287])
 \openout6 = `main.pyg'.
 
 
@@ -5709,12 +5881,12 @@ B.pygtex)
 
 
 (./_minted-main/3C4C57EE0612662FC7DF741A4D8FCA2A5093E84BEA004B2911D4DA186861F6D
-B.pygtex) [282]
+B.pygtex) [288]
 \openout6 = `main.pyg'.
 
 
 (./_minted-main/91F33584D8618A86B18D91E7C3B093645093E84BEA004B2911D4DA186861F6D
-B.pygtex)) [283]
+B.pygtex)) [289]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./main.aux (./Scientific_python.aux)
@@ -5723,7 +5895,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C98891DAF70277554FF2A46528C3D306;31606.
+(rerunfilecheck)             Checksum: CEBA6C0135CE988050C2576F175CFBF6;33091.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -5733,10 +5905,10 @@ runsystem(rm main.pyg)...executed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 36332 strings out of 483107
- 819794 string characters out of 5964630
- 1072643 words of memory out of 5000000
- 48803 multiletter control sequences out of 15000+600000
+ 36480 strings out of 483107
+ 823263 string characters out of 5964630
+ 1073931 words of memory out of 5000000
+ 48901 multiletter control sequences out of 15000+600000
  568340 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  76i,18n,103p,985b,1082s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5780,10 +5952,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (283 pages, 36543896 bytes).
+Output written on main.pdf (289 pages, 42292209 bytes).
 PDF statistics:
- 5758 PDF objects out of 6186 (max. 8388607)
- 3772 compressed objects within 38 object streams
- 939 named destinations out of 1000 (max. 500000)
- 4845 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5922 PDF objects out of 6186 (max. 8388607)
+ 3905 compressed objects within 40 object streams
+ 972 named destinations out of 1000 (max. 500000)
+ 5060 words of extra memory for PDF output out of 10000 (max. 10000000)
 

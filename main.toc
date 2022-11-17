@@ -397,15 +397,35 @@
 \contentsline {subsection}{GAN progress}{269}{section*.568}%
 \contentsline {section}{\textit {Assignment 5}}{270}{section*.572}%
 \contentsline {section}{\textit {Assignment 6}}{271}{section*.574}%
-\contentsline {chapter}{\numberline {4}Fisica Medica}{273}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{275}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{275}{section*.576}%
-\contentsline {subsection}{Copiare la Repository in Locale}{275}{section*.577}%
-\contentsline {subsection}{Comandi principali in locale}{275}{section*.578}%
-\contentsline {subsection}{Creare una Repository in locale}{276}{section*.579}%
-\contentsline {subsection}{Git Workflow}{277}{section*.581}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{279}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{280}{section*.584}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{281}{section*.585}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{282}{section*.586}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{282}{section*.587}%
+\contentsline {section}{\textit {Giovedì 17 novembre - Lezione 16}}{272}{section*.576}%
+\contentsline {section}{Graph Neural Networks}{272}{section*.577}%
+\contentsline {subsection}{Why graph networks?}{272}{section*.578}%
+\contentsline {subsection}{Example of datasets}{272}{section*.580}%
+\contentsline {subsection}{Graph structures in physics}{272}{section*.582}%
+\contentsline {subsection}{Sparse datasets}{273}{section*.584}%
+\contentsline {subsection}{Locality and invariance}{273}{section*.586}%
+\contentsline {subsection}{Adjacency matrix}{274}{section*.588}%
+\contentsline {subsection}{Data on a graph}{274}{section*.590}%
+\contentsline {subsection}{Tasks}{274}{section*.591}%
+\contentsline {subsection}{Learn new representation on nodes}{275}{section*.592}%
+\contentsline {subsection}{Update of edges, nodes, global state}{275}{section*.593}%
+\contentsline {subsection}{Propagate information}{275}{section*.594}%
+\contentsline {subsection}{Message passing}{275}{section*.595}%
+\contentsline {subsection}{How/what do we train?}{275}{section*.596}%
+\contentsline {subsection}{Example: b-tag at LHC}{276}{section*.597}%
+\contentsline {section}{Tools}{276}{section*.598}%
+\contentsline {subsection}{How do we build a network in pytorch?}{276}{section*.600}%
+\contentsline {subsection}{How do we train a network in pytorch?}{278}{section*.601}%
+\contentsline {section}{Exercise: our first GNN with pytorch}{278}{section*.602}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{279}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{281}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{281}{section*.603}%
+\contentsline {subsection}{Copiare la Repository in Locale}{281}{section*.604}%
+\contentsline {subsection}{Comandi principali in locale}{281}{section*.605}%
+\contentsline {subsection}{Creare una Repository in locale}{282}{section*.606}%
+\contentsline {subsection}{Git Workflow}{283}{section*.608}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{285}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{286}{section*.611}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{287}{section*.612}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{288}{section*.613}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{288}{section*.614}%

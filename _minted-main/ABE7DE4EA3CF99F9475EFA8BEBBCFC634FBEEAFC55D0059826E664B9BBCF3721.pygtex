@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{criterion} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{nn}\PYG{o}{.}\PYG{n}{BCELoss}\PYG{p}{()}
+\PYG{n}{optimizer} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{optim}\PYG{o}{.}\PYG{n}{SGD}\PYG{p}{(}\PYG{n}{model}\PYG{o}{.}\PYG{n}{parameters}\PYG{p}{(),} \PYG{n}{lr} \PYG{o}{=} \PYG{l+m+mf}{0.01}\PYG{p}{)}
+\PYG{n}{model}\PYG{o}{.}\PYG{n}{train}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}set the model in a trainable state}
+\PYG{n}{epoch} \PYG{o}{=} \PYG{l+m+mi}{20}
+\PYG{k}{for} \PYG{n}{epoch} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{epoch}\PYG{p}{):}
+	\PYG{c+c1}{\PYGZsh{}reset the gradient (otherwise it is accumulated)}
+	\PYG{n}{optimizer}\PYG{o}{.}\PYG{n}{zero\PYGZus{}grad}\PYG{p}{()}
+	
+	\PYG{c+c1}{\PYGZsh{} Forward pass, i.e. compute the prediction}
+	\PYG{n}{y\PYGZus{}pred} \PYG{o}{=} \PYG{n}{model}\PYG{p}{(}\PYG{n}{x\PYGZus{}train}\PYG{p}{)}
+	
+	\PYG{c+c1}{\PYGZsh{} Compute Loss (squeeze() removes the size 1 dimensions)}
+	\PYG{n}{loss} \PYG{o}{=} \PYG{n}{criterion}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred}\PYG{o}{.}\PYG{n}{squeeze}\PYG{p}{(),} \PYG{n}{y\PYGZus{}train}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Epoch }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{: train loss: }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{epoch}\PYG{p}{,}\PYG{n}{loss}\PYG{o}{.}\PYG{n}{item}\PYG{p}{()))}
+	
+	\PYG{c+c1}{\PYGZsh{} Backward pass}
+	\PYG{n}{loss}\PYG{o}{.}\PYG{n}{backward}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}compute the gradient}
+	\PYG{n}{optimizer}\PYG{o}{.}\PYG{n}{step}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}update the weights}
+\end{Verbatim}

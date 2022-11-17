@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kn}{from} \PYG{n+nn}{keras.layers} \PYG{k+kn}{import} \PYG{n}{Input}\PYG{p}{,} \PYG{n}{Dense}
+	\PYG{k+kn}{from} \PYG{n+nn}{keras.models} \PYG{k+kn}{import} \PYG{n}{Model}
+	\PYG{c+c1}{\PYGZsh{} This returns a tensor}
+	\PYG{n}{inputs} \PYG{o}{=} \PYG{n}{Input}\PYG{p}{(}\PYG{n}{shape}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{784}\PYG{p}{,))}
+	\PYG{c+c1}{\PYGZsh{} a layer instance is callable on a tensor, and returns a tensor}
+	\PYG{n}{x} \PYG{o}{=} \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}relu\PYGZsq{}}\PYG{p}{)(}\PYG{n}{inputs}\PYG{p}{)}
+	\PYG{n}{x} \PYG{o}{=} \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}relu\PYGZsq{}}\PYG{p}{)(}\PYG{n}{x}\PYG{p}{)}
+	\PYG{n}{predictions} \PYG{o}{=} \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}softmax\PYGZsq{}}\PYG{p}{)(}\PYG{n}{x}\PYG{p}{)}
+	\PYG{c+c1}{\PYGZsh{} This creates a model that includes}
+	\PYG{c+c1}{\PYGZsh{} the Input layer and three Dense layers}
+	\PYG{n}{model} \PYG{o}{=} \PYG{n}{Model}\PYG{p}{(}\PYG{n}{inputs}\PYG{o}{=}\PYG{n}{inputs}\PYG{p}{,} \PYG{n}{outputs}\PYG{o}{=}\PYG{n}{predictions}\PYG{p}{)}
+	\PYG{n}{model}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{n}{optimizer}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}rmsprop\PYGZsq{}}\PYG{p}{,}
+	\PYG{n}{loss}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}categorical\PYGZus{}crossentropy\PYGZsq{}}\PYG{p}{,}
+	\PYG{n}{metrics}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}accuracy\PYGZsq{}}\PYG{p}{])}
+	\PYG{n}{model}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{labels}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} starts training}
+\end{Verbatim}

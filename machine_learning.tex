@@ -7,30 +7,30 @@
 
 \begin{enumerate}
 	\item Introduction to machine learning
-		\begin{enumerate}
-			\item Basic concepts: loss, overfit, underfit
-			\item Examples of linear regression, boosted decision trees
-			\item Exercise with colab, numpy, scikit
-		\end{enumerate}
+	\begin{enumerate}
+		\item Basic concepts: loss, overfit, underfit
+		\item Examples of linear regression, boosted decision trees
+		\item Exercise with colab, numpy, scikit
+	\end{enumerate}
 	\item Deep Neural Networks
-			\begin{enumerate}
-			\item Basic FeedForward networks and backpropagation
-			\item Importance of depth, gradient descent, optimizers
-			\item Introduction to tools and first exercises
-			\end{enumerate}
+	\begin{enumerate}
+		\item Basic FeedForward networks and backpropagation
+		\item Importance of depth, gradient descent, optimizers
+		\item Introduction to tools and first exercises
+	\end{enumerate}
 	\item Convolutional and Recurrent networks
-		\begin{enumerate}
-			\item Reduction of complexity with invariance: RNN and CNN
-			\item CNN exercise
-		\end{enumerate}
+	\begin{enumerate}
+		\item Reduction of complexity with invariance: RNN and CNN
+		\item CNN exercise
+	\end{enumerate}
 	\item Autoencoders and Generative Adversarial Networks
-		\begin{enumerate}
-			\item GAN exercises
-		\end{enumerate}
+	\begin{enumerate}
+		\item GAN exercises
+	\end{enumerate}
 	\item Graph Neural Networks
-		\begin{enumerate}
-			\item PointCloud exercise
-		\end{enumerate}
+	\begin{enumerate}
+		\item PointCloud exercise
+	\end{enumerate}
 \end{enumerate}
 
 \subsection{Machine Learning Basics}
@@ -115,7 +115,7 @@ of parameters can be several orders of magnitude larger ($10^3$ to $10^6$).
 \subsubsection{Objective function: binary cross entropy}
 In classification problems the function to approximate is typically $R^n \rightarrow [0,1]$, Where, for example, 0 means background and 1 means signal.\\
 The binary cross entropy is defined as follows ($\hat{y}_i$ is the output of the classifier)
- 
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figure_ml/D_bce.png}
@@ -124,7 +124,7 @@ The binary cross entropy is defined as follows ($\hat{y}_i$ is the output of the
 The above function has large value when an example with y=1 is classified as 
 a  $\hat{y}_i \sim 0$ and no loss when $\hat{y}_i \sim 1$. Viceversa if y=0 …\\
 Minimizing the binary cross-entropy we maximize the likelihood in a process with 0/1 outcome (where the output of the function is interpreted as a probability).
- 
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.65\textwidth]{figure_ml/L_bce.png}
@@ -148,16 +148,16 @@ We want to teach something we (the supervisors) already know (at least on the tr
 	\item Labels telling if a given example signal or background, typically $y \in{0,1}$ (e.g. 0=background, 1=signal)
 	\item Labels classifying the content of an image (multiple labels are possible)
 	\item One-hot encoding used when multiple categories are possible:
-		\begin{itemize}
-			\item y=[0 1 0 0] means an element of the “2nd class”, y=[0 0 0 1] means an element of the “4th class”
-			\item Much better than $y\in {0,1,2,3}$ if class “2” has no reason to be closer to “3” than to “0”
-			\item Allows interpretation of the output (e.g. [0.1 0.3 0.06 0.001 ] as the probability to belong to each of the classes
-			\item Allow for multi labeling (i.e. one sample can be belong to more than one category)
-		\end{itemize}
+	\begin{itemize}
+		\item y=[0 1 0 0] means an element of the “2nd class”, y=[0 0 0 1] means an element of the “4th class”
+		\item Much better than $y\in {0,1,2,3}$ if class “2” has no reason to be closer to “3” than to “0”
+		\item Allows interpretation of the output (e.g. [0.1 0.3 0.06 0.001 ] as the probability to belong to each of the classes
+		\item Allow for multi labeling (i.e. one sample can be belong to more than one category)
+	\end{itemize}
 	\item In regression problems the “truth” is the “correct values” of some quantity
-		\begin{itemize}
-			\item e.g. generated energy of a particle in a detector simulation
-		\end{itemize}
+	\begin{itemize}
+		\item e.g. generated energy of a particle in a detector simulation
+	\end{itemize}
 \end{itemize}
 
 Sample can be labelled in various ways:
@@ -283,7 +283,7 @@ We can compare the accuracy between the “training” sample and the “general
 		\centering
 		\includegraphics[width=1\linewidth]{figure_ml/generalization2.png}
 	\end{subfigure}
-
+	
 \end{figure}
 
 
@@ -399,7 +399,7 @@ Let’s suppose we have m examples in the form of pairs $(\textbf{x},y)_j$\\
 The \textbf{objective function} can be the mean squared error, MSE=$|y_j - w_i x_{ij} |^2/m$\\
 
 \textbf{Training}: find the parameters $w_i$ that minimize the MSE on the given dataset. Linear regression have an analytical solution (i.e. a minimum for the MSE) that can be computed by requiring the gradient of the MSE to be zero (if you want to see the math \url{https://en.wikipedia.org/wiki/Linear_regression#Least-squares_estimation_and_related_techni
-ques}.
+	ques}.
 
 We could increase the \textbf{capacity} of the model using polynomials instead of linear functions.The number of parameters would increase as we now would have the second order
 coefficients too
@@ -589,7 +589,7 @@ NB: the example uses scikit learn library, that we will NOT use in the next lect
 
 \begin{tcolorbox}[width=\textwidth,colback={white},title={Recap lezione 1 },colbacktitle=cyan,coltitle=black]
 	\begin{itemize}
-	\item ML techniques have common elements:
+		\item ML techniques have common elements:
 		\begin{itemize}
 			\item The function “f” to approximate
 			\item The model used to approximate “f” (e.g. polynomials functions or a decision tree or a NN)
@@ -599,7 +599,7 @@ NB: the example uses scikit learn library, that we will NOT use in the next lect
 			\item The variance-bias tradeoff (aka training vs generalization)
 			\item The regularization techniques
 		\end{itemize}
-	\item Example of ML algorithms
+		\item Example of ML algorithms
 		\begin{itemize}
 			\item Linear regression
 			\item PCA
@@ -721,8 +721,8 @@ The elementary processing unit, a neuron, can be seen as a node in a directed gr
 Nodes are typically also connected (with weight b) to an input “bias node” that has a fixed output value of 1. Different activation functions can be used, common ones are: sigmoid, atan, relu (rectified linear unit).
 
 \begin{figure}[ht]
-		\centering
-		\includegraphics[width=0.7\linewidth]{figure_ml/neuron.png}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figure_ml/neuron.png}
 \end{figure}
 \FloatBarrier
 
@@ -736,22 +736,22 @@ Nodes are typically also connected (with weight b) to an input “bias node” t
 \begin{itemize}
 	\item The most common NN in the ‘90 was the Multi Layer	Perceptron (MLP)
 	\item Graph structure organized in “layers”
-		\begin{itemize}
-			\item Input layer (nodes filled with input value)
-			\item Hidden layer
-			\item Output layer (node(s) where output is read out)
-		\end{itemize}
+	\begin{itemize}
+		\item Input layer (nodes filled with input value)
+		\item Hidden layer
+		\item Output layer (node(s) where output is read out)
+	\end{itemize}
 	\item Nodes are connected only from one layer to the next and all possible connections are present (known as \textbf{“dense” or “fully connected”} layer)
-		\begin{itemize}
-			\item No intra-layer connections
-			\item No direct connections from input to output
-		\end{itemize}
+	\begin{itemize}
+		\item No intra-layer connections
+		\item No direct connections from input to output
+	\end{itemize}
 	\item Size of input and output layers are fixed by the problem
 	\item \textbf{Hyperparameters} are
-		\begin{itemize}
-			\item The size of the hidden layers
-			\item The type of activation function
-		\end{itemize}
+	\begin{itemize}
+		\item The size of the hidden layers
+		\item The type of activation function
+	\end{itemize}
 	\item The \textbf{parameters} to learn are the weights of the connections
 \end{itemize}
 
@@ -1074,15 +1074,15 @@ Common alternative to keras
 \subsection{A (modernized) MLP in keras}
 
 \begin{minted}{python}
-from keras.models import Model
-from keras.layers import Input, Dense
-x = Input(shape=(32,))
-hid = Dense(32, activation=”relu”)(x)
-out = Dense(1, activation=”sigmoid”)(hid)
-model = Model(inputs=x, outputs=out)
-model.summary()
-from keras.utils import plot_model
-plot_model(model, to_file='model.png')
+	from keras.models import Model
+	from keras.layers import Input, Dense
+	x = Input(shape=(32,))
+	hid = Dense(32, activation=”relu”)(x)
+	out = Dense(1, activation=”sigmoid”)(hid)
+	model = Model(inputs=x, outputs=out)
+	model.summary()
+	from keras.utils import plot_model
+	plot_model(model, to_file='model.png')
 \end{minted}
 
 \begin{figure}[ht]
@@ -1094,12 +1094,12 @@ plot_model(model, to_file='model.png')
 \section{From the 1995 to 2010}
 
 \begin{minted}{python}
-from keras.models import Model
-from keras.layers import Input, Dense
-x = Input(shape=(32,))
-hid = Dense(32, activation=”sigmoid”)(x)
-out = Dense(1, activation=”sigmoid”)(hid)
-model = Model(inputs=x, outputs=out)
+	from keras.models import Model
+	from keras.layers import Input, Dense
+	x = Input(shape=(32,))
+	hid = Dense(32, activation=”sigmoid”)(x)
+	out = Dense(1, activation=”sigmoid”)(hid)
+	model = Model(inputs=x, outputs=out)
 \end{minted}
 
 \begin{center}
@@ -1107,34 +1107,34 @@ model = Model(inputs=x, outputs=out)
 \end{center}
 
 \begin{minted}{python}
-from keras.models import Model
-from keras.layers import Input, Dense
-x = Input(shape=(32,))
-b = Dense(32,activation=”relu”)(a)
-c = Dense(32,activation=”relu”)(b)
-d = Dense(32,activation=”relu”)(c)
-e = Dense(32,,activation=”sigmoid”)(d)
-model = Model(inputs=x, outputs=e)
+	from keras.models import Model
+	from keras.layers import Input, Dense
+	x = Input(shape=(32,))
+	b = Dense(32,activation=”relu”)(a)
+	c = Dense(32,activation=”relu”)(b)
+	d = Dense(32,activation=”relu”)(c)
+	e = Dense(32,,activation=”sigmoid”)(d)
+	model = Model(inputs=x, outputs=e)
 \end{minted}
 
 \section{Training a model with Keras}
 
 \begin{minted}{python}
-from keras.layers import Input, Dense
-from keras.models import Model
-# This returns a tensor
-inputs = Input(shape=(784,))
-# a layer instance is callable on a tensor, and returns a tensor
-x = Dense(64, activation='relu')(inputs)
-x = Dense(64, activation='relu')(x)
-predictions = Dense(10, activation='softmax')(x)
-# This creates a model that includes
-# the Input layer and three Dense layers
-model = Model(inputs=inputs, outputs=predictions)
-model.compile(optimizer='rmsprop',
-		loss='categorical_crossentropy',
-		metrics=['accuracy'])
-model.fit(data, labels) # starts training
+	from keras.layers import Input, Dense
+	from keras.models import Model
+	# This returns a tensor
+	inputs = Input(shape=(784,))
+	# a layer instance is callable on a tensor, and returns a tensor
+	x = Dense(64, activation='relu')(inputs)
+	x = Dense(64, activation='relu')(x)
+	predictions = Dense(10, activation='softmax')(x)
+	# This creates a model that includes
+	# the Input layer and three Dense layers
+	model = Model(inputs=inputs, outputs=predictions)
+	model.compile(optimizer='rmsprop',
+	loss='categorical_crossentropy',
+	metrics=['accuracy'])
+	model.fit(data, labels) # starts training
 \end{minted}
 
 
@@ -1144,25 +1144,25 @@ model.fit(data, labels) # starts training
 
 \begin{itemize}
 	\item Basic layers
-\begin{itemize}
-	\item Inputs
-	\item Dense
-	\item Activation
-	\item Dropout
-\end{itemize}
+	\begin{itemize}
+		\item Inputs
+		\item Dense
+		\item Activation
+		\item Dropout
+	\end{itemize}
 	\item Convolutional layers (for next week)
-\begin{itemize}
-	\item Conv1D/2D/3D
-	\item ConvTranspose or “Deconvolution”
-	\item UpSampling and ZeroPadding
-	\item MaxPooling, AveragePooling
-	\item Flatten
-\end{itemize}
+	\begin{itemize}
+		\item Conv1D/2D/3D
+		\item ConvTranspose or “Deconvolution”
+		\item UpSampling and ZeroPadding
+		\item MaxPooling, AveragePooling
+		\item Flatten
+	\end{itemize}
 	\item More stuff
-\begin{itemize}
-	\item Recursive layers
-	\item ...check the keras docs...
-\end{itemize}
+	\begin{itemize}
+		\item Recursive layers
+		\item ...check the keras docs...
+	\end{itemize}
 \end{itemize}
 
 \subsection{Callbacks}
@@ -1178,14 +1178,14 @@ During training some “callbacks” can be passed to the fit function.
 \end{itemize}
 
 \begin{minted}{python}
-from keras.callbacks import EarlyStopping, ReduceLROnPlateau
-# train
-history = model.fit(X_train, y_train, epochs=n_epochs, batch_size=batch_size, verbose = 2,
-		validation_data=(X_test, y_test),
-		callbacks = [
-		EarlyStopping(monitor='val_loss', patience=10, verbose=1),
-		ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=2, verbose=1)
-		])
+	from keras.callbacks import EarlyStopping, ReduceLROnPlateau
+	# train
+	history = model.fit(X_train, y_train, epochs=n_epochs, batch_size=batch_size, verbose = 2,
+	validation_data=(X_test, y_test),
+	callbacks = [
+	EarlyStopping(monitor='val_loss', patience=10, verbose=1),
+	ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=2, verbose=1)
+	])
 \end{minted}
 
 \section{\textit{Assignment 1}}
@@ -1254,22 +1254,22 @@ Images are data structure with 2 or 3 indices: X,Y or X,Y,channel (=R,G,B)
 We can use FF networks to classify images
 \begin{itemize}
 	\item Reshape the input tensor with the “Flatten” keras layer
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}{.3\textwidth}
+	\begin{figure}[ht]
 		\centering
-		\includegraphics[width=0.9\linewidth]{figure_ml/classif1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.3\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{figure_ml/classif2.png}
-	\end{subfigure}%
-	\begin{subfigure}{.3\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{figure_ml/classif3.png}
-	\end{subfigure}
-\end{figure}
-
+		\begin{subfigure}{.3\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{figure_ml/classif1.png}
+		\end{subfigure}%
+		\begin{subfigure}{.3\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{figure_ml/classif2.png}
+		\end{subfigure}%
+		\begin{subfigure}{.3\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{figure_ml/classif3.png}
+		\end{subfigure}
+	\end{figure}
+	
 	
 	\item Use multiple dense layers with a final one for one-hot encoding output
 \end{itemize}
@@ -1364,9 +1364,9 @@ Stride: di quanto sposto il kernel ad ogni iterazione? Posso spostarmi di 1 (ho 
 
 \subsection{Pooling (subsampling)}
 
- \begin{wrapfigure}{r}{0.4\textwidth}
- 	\includegraphics[width=0.4\textwidth]{figure_ml/pooling.png}
- \end{wrapfigure}
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/pooling.png}
+\end{wrapfigure}
 
 Pooling layers are simply finding maxima or computing average in patches of some convolution layer output.\\
 Pooling is used to reduce the space dimensionality after a convolutional layer.
@@ -1406,7 +1406,7 @@ What if I have multiple objects, with no local correlation, but with multiple fe
 
 \subsection{Bounding Box}
 
- \begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
 	\includegraphics[width=0.35\textwidth]{figure_ml/stop_bb.png}
 \end{wrapfigure}
 
@@ -1479,7 +1479,7 @@ Sequences often also have implied ordering
 Some problems are “time invariant” (recognize words in a sentence (written or spoken))\\
 Order matters and some causality is implied in the sequence. Length of the inputs or the output may not be fixed.\\
 
- \begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
 	\includegraphics[width=0.35\textwidth]{figure_ml/t_invariance.png}
 \end{wrapfigure}
 
@@ -1704,7 +1704,7 @@ How can we do it in Keras?\\
 				\item Latent space representing “mean and variance” of the learned	features (tutorial \href{https://towardsdatascience.com/variational-autoencoders-as-generative-models-with-keras-e0c79415a7eb}{link})
 			\end{itemize}
 		\end{itemize}
-	\item With Generative Adversarial Networks
+		\item With Generative Adversarial Networks
 	\end{itemize}
 \end{itemize}
 
@@ -1833,3 +1833,347 @@ Un nuovo pardigma generativo è chiamato \textbf{Normalising Flow}\\
 
 
 \textbf{Almeno un paio domande per ogni modulo}
+
+\newpage
+
+\section{\textit{Giovedì 17 novembre - Lezione 16}}
+\section{Graph Neural Networks}
+
+\subsection{Why graph networks?}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{figure_ml/graph_nets.png}
+\end{wrapfigure} 
+
+Classical ML algorithms works on multi-index
+tensors (euclidean/cartesian space). Data in many case is not easily fitting tensor structure. Approximations introduced to re-cast data in that shape
+\begin{itemize}
+	\item binning (information loss)
+	\item removal of relations
+	\item creation of sparse (lot of zeros) data structures
+\end{itemize}
+
+We know how to exploit invariance and
+locality in text and images, how about other
+data topologies?\\
+Alcuni dati hanno necessariamente delle relazioni tra loro, e non è ovvio come scrivere queste relazioni in uno struttura tensoriale.
+
+\subsection{Example of datasets}
+
+Plenty of datasets can be represented with graphs.\\
+Especially important when there are links between objects
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/datasets_ex1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/datasets_ex2}
+	\end{subfigure}%
+\end{figure}
+\subsection{Graph structures in physics}
+
+\begin{itemize}
+	\item Parton shower / Feynman diagrams
+	\item Tracking detectors / hits - tracks
+	\item fMRI links of activity in different areas
+	\item The “galactic web”
+\end{itemize}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.75\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/graph_phys}
+	\end{subfigure}%
+	\begin{subfigure}{.25\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/feynman}
+	\end{subfigure}%
+\end{figure}
+
+\subsection{Sparse datasets}
+
+
+Graphs are useful also when your data is a list of values
+that would result in a sparse format if you try to bin it and
+put it on a grid.\\
+Example: particles from a jet at LHC:
+\begin{itemize}
+	\item Charged particle very precisely measured
+	\item Different measurements from tracking vs calo detectors
+\end{itemize}
+
+Even if no link exists, as long as some “distance” can be
+defined a graph structure can be created looking at
+nearest neighbors. That allows computation that is “local” in that distance
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/sparse}
+	\end{subfigure}%
+	\begin{subfigure}{.6\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/neighbors}
+	\end{subfigure}%
+\end{figure}
+
+
+\subsection{Locality and invariance}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/conv_img}
+\end{wrapfigure} 
+
+AI learns better when the problems
+invariance are taken into account in the
+architecture.
+\begin{itemize}
+	\item Less parameters to learn, less examples needed
+	\item CNNs have x,y translation invariance
+	\item LSTM/GRU have time shift invariance
+	\item GNN => invariance of the calculation on each
+	node
+\end{itemize}
+
+Hierarchical extraction of features from local
+to global also reduce the number of parameters.
+\begin{itemize}
+	\item CNN focus on a patch
+	\item GNN focus on a node and its connected neighbors
+\end{itemize}
+
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={Some language dictionary },colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+		\item \textbf{Vertices} $\rightarrow$ the nodes of the graph
+		\item \textbf{Edges} $\rightarrow$ the connections between the vertices
+		\item \textbf{Degree} $\rightarrow$ the number of edges of a given vertex (i.e. the number of vertices connected to it)
+		\item \textbf{Directed vs undirected} $\rightarrow$ edges having a specific direction or being bi-directional
+		\item \textbf{Bipartite} $\rightarrow$ vertices are divided in two subsets and edges connect only
+		vertices from one subset to the other
+		\item \textbf{Connected component} $\rightarrow$ a subset of the graph that are linked to each other by a path (i.e. a set of edges)
+	\end{itemize}
+\end{tcolorbox}
+
+
+\subsection{Adjacency matrix}
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\includegraphics[width=0.4\textwidth]{figure_ml/adj_matrix}
+	\includegraphics[width=0.4\textwidth]{figure_ml/adj3}
+	\includegraphics[width=0.4\textwidth]{figure_ml/adj3}
+\end{wrapfigure} 
+
+\quad
+\begin{itemize}
+	
+	\item Edges can be represented as an adjacency matrix
+	\begin{itemize}
+		\item $A_{ij}$ = 1 if connected
+		\item $A_{ij}$ = 0 if not connected
+	\end{itemize}
+	\item Symmetrical for Undirected graphs
+	\item $A_{ij} \neq A_{ji}$ for directed graphs
+	\item $A_{ij}$ can be weights
+	\item Quite often the matrix is full of zeros (i.e. sparse)
+	\item Alternative representation in \textbf{COO}(rdinate) format:
+	\begin{itemize}
+		\item List of triplets (i,j,value) or doublets (i,j) if value only = 1
+		\item Much cheaper for sparse matrices
+		\item Used by tensorflow\_geometric
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Data on a graph}
+\begin{itemize}
+	\item Vertices
+	\item Edges
+	\item Global
+\end{itemize}
+
+Position of node can be treated as a special attribute.\\
+
+A GNN typically produces additional data for nodes, edges and global (I.e. the output of a GNN layer is still a graph
+structure)
+
+\subsection{Tasks}
+
+\begin{itemize}
+	\item Node tasks such as
+	classification or regression
+	\item Prediction of new links (i.e.
+	edges)
+	\item Clustering of nodes 
+	\item Tasks on the full graph (e.g classification/regression)
+\end{itemize}
+
+\subsection{Learn new representation on nodes}
+
+In a CNN each Conv+Pooling layer extracts “new features”, from lower level to higher level.\\
+
+Similarly working on a graph we want to create “new features” on the nodes,
+edges, or the full graph with multiple iterations\\
+
+Updates can be done in sequence edge -> node -> global and iterated\\
+
+Two steps are needed:
+\begin{itemize}
+	\item Create a new representation for each part of the graph 
+	\item Have a permutation invariant function to go from edges to vertices, from edges to global and
+	from vertices to global
+\end{itemize}
+
+
+Il pooling è necessario perché il numero di connessioni che ha ogni nodo è variabile. Lo step di poolng non solo riduce l'informazione da tanti a uno, ma deve anche essere invariante per traslazione.
+
+\subsection{Update of edges, nodes, global state}
+
+\subsection{Propagate information}
+
+With multiple iterations the information flows across the graph
+
+\subsection{Message passing}
+The flow of information can be seen as some “messages” passed across the graph.\\
+In many case the graph network architecture is simplified and does not require all
+functions to depend on all possible inputs.\\
+A simple “message passing” can be achieved in a factorized approach:
+\begin{itemize}
+	\item A “message” is built on the on edges taking as input the states of the two nodes and the edge features, then,
+	on each node, it is accumulated with a permutation invariant function accessing all messages from all edges
+	connected to that node
+	\item Permutation invariant operations are typically Max, Sum, Mean (=> equivalent to CNN Pooling layers!) [stiamo parlando di operazioni su vettori di feature (ad es massimo elemento per elemento del vettore.)]
+\end{itemize}
+
+
+\subsection{How/what do we train?}
+
+Accumulating functions are typically not tainable (Sum, Mean, Max etc…)\\
+Update functions \textit{can} be DNNs.
+
+
+\subsection{Example: b-tag at LHC}
+
+\section{Tools}
+
+A simple tool for creating GraphNetworks is pytorch “geometric”.
+\begin{itemize}
+	\item Many simplified architecture already implemented
+	\item Handles the “loops” over nodes, edges etc..
+	\item Handles data in “graph” representation
+\end{itemize}
+
+\texttt{torch\_geometric.data} is the class for handling
+graph data
+
+\begin{itemize}
+	\item Allow to specify nodes features (x) and a separate tensor for “position features” (pos)
+	\item Graph connections are using the COO format, i.e. the list of index i to index j connections (edge\_index)
+	\item Edge features (edge\_attr) can also be given
+\end{itemize}
+
+Torch geometric handles “batches” of graphs
+by creating a “super graph” that has multiple
+connected components
+\begin{itemize}
+	\item i.e. the adjacency matrix is block diagonal
+	\item An additional “batch” tensor will be passed around in
+	all functions in order to correctly factorize the various components of the graph
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/tools.png}
+\end{figure}
+
+\subsection{How do we build a network in pytorch?}
+
+Similar to Keras Model API
+\begin{itemize}
+	\item You need to compose different layers
+	\item Activation functions are not in the layer but should be applied on top
+	\item A model is typically a class that in the constructor creates the objects that are needed and in the “forward” function plugs them together
+\end{itemize}
+
+
+The key function to implement is hence “forward”.
+
+\begin{minted}{python}
+	class Feedforward(torch.nn.Module):
+	def __init__(self, input_size, hidden_size):
+	super(Feedforward, self).__init__()
+	self.input_size = input_size
+	self.hidden_size = hidden_size
+	self.fc1 = torch.nn.Linear(self.input_size, self.hidden_size)
+	self.relu = torch.nn.ReLU()
+	self.fc2 = torch.nn.Linear(self.hidden_size, 1)
+	self.sigmoid = torch.nn.Sigmoid()
+	def forward(self, x):
+	hidden = self.fc1(x)
+	relu = self.relu(hidden)
+	output = self.fc2(relu)
+	output = self.sigmoid(output)
+	return output
+\end{minted}
+
+\subsection{How do we train a network in pytorch?}
+Each step of the training is handled “by hand”
+
+\begin{minted}{python}
+	criterion = torch.nn.BCELoss()
+	optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
+	model.train() #set the model in a trainable state
+	epoch = 20
+	for epoch in range(epoch):
+	#reset the gradient (otherwise it is accumulated)
+	optimizer.zero_grad()
+	
+	# Forward pass, i.e. compute the prediction
+	y_pred = model(x_train)
+	
+	# Compute Loss (squeeze() removes the size 1 dimensions)
+	loss = criterion(y_pred.squeeze(), y_train)
+	print('Epoch {}: train loss: {}'.format(epoch,loss.item()))
+	
+	# Backward pass
+	loss.backward() #compute the gradient
+	optimizer.step() #update the weights
+\end{minted}
+
+\section{Exercise: our first GNN with pytorch}
+
+We try to classify (again) rectangle vs
+circle, but this time assuming we have a point cloud rather than an image.
+
+\begin{itemize}
+	\item I.e. we give N measurements of x,y
+	coordinates of random sampling points of
+	our rectangle vs circle
+	\item We can try both generating points only on
+	the boundary or filling the full figure
+\end{itemize}
+
+A point cloud has no “edges”, but we
+can build some using KNN
+\begin{itemize}
+	\item For each node we found the K (e.g. 10)
+	nearest neighbors and connect them
+\end{itemize}
+
+We use a particular architecture called
+“EdgeConv”
+\begin{itemize}
+	\item Our edge message is a trainable MLP
+	taking as input both the node features (just
+	positions in our case) and the difference
+	vector between the two nodes
+\end{itemize}
+
+
+\href{https://colab.research.google.com/drive/1dPSV1ADBf2oxRyUJeEKeR0VC9ngP02lm#scrollTo=3ke3AYJhuSEY}{Solution}
