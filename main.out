@@ -406,26 +406,28 @@
 \BOOKMARK [2][-]{section*.586}{Locality and invariance}{section*.577}% 406
 \BOOKMARK [2][-]{section*.588}{Adjacency matrix}{section*.577}% 407
 \BOOKMARK [2][-]{section*.590}{Data on a graph}{section*.577}% 408
-\BOOKMARK [2][-]{section*.591}{Tasks}{section*.577}% 409
-\BOOKMARK [2][-]{section*.592}{Learn new representation on nodes}{section*.577}% 410
-\BOOKMARK [2][-]{section*.593}{Update of edges, nodes, global state}{section*.577}% 411
-\BOOKMARK [2][-]{section*.594}{Propagate information}{section*.577}% 412
-\BOOKMARK [2][-]{section*.595}{Message passing}{section*.577}% 413
-\BOOKMARK [2][-]{section*.596}{How/what do we train?}{section*.577}% 414
-\BOOKMARK [2][-]{section*.597}{Example: b-tag at LHC}{section*.577}% 415
-\BOOKMARK [1][-]{section*.598}{Tools}{chapter.3}% 416
-\BOOKMARK [2][-]{section*.600}{How do we build a network in pytorch?}{section*.598}% 417
-\BOOKMARK [2][-]{section*.601}{How do we train a network in pytorch?}{section*.598}% 418
-\BOOKMARK [1][-]{section*.602}{Exercise: our first GNN with pytorch}{chapter.3}% 419
-\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 420
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 421
-\BOOKMARK [1][-]{section*.603}{Creare una Repository partendo da GitHub}{appendix.A}% 422
-\BOOKMARK [2][-]{section*.604}{Copiare la Repository in Locale}{section*.603}% 423
-\BOOKMARK [2][-]{section*.605}{Comandi principali in locale}{section*.603}% 424
-\BOOKMARK [2][-]{section*.606}{Creare una Repository in locale}{section*.603}% 425
-\BOOKMARK [2][-]{section*.608}{Git Workflow}{section*.603}% 426
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 427
-\BOOKMARK [1][-]{section*.611}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 428
-\BOOKMARK [2][-]{section*.612}{Step 2: Configure the conf.py}{section*.611}% 429
-\BOOKMARK [2][-]{section*.613}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.611}% 430
-\BOOKMARK [2][-]{section*.614}{Step 4: Including module.rst and generating html}{section*.611}% 431
+\BOOKMARK [2][-]{section*.592}{Tasks}{section*.577}% 409
+\BOOKMARK [2][-]{section*.594}{Learn new representation on nodes}{section*.577}% 410
+\BOOKMARK [2][-]{section*.596}{Update of edges, nodes, global state}{section*.577}% 411
+\BOOKMARK [2][-]{section*.598}{Propagate information}{section*.577}% 412
+\BOOKMARK [2][-]{section*.600}{Message passing}{section*.577}% 413
+\BOOKMARK [2][-]{section*.602}{How/what do we train?}{section*.577}% 414
+\BOOKMARK [2][-]{section*.604}{Example: b-tag at LHC}{section*.577}% 415
+\BOOKMARK [3][-]{section*.606}{Example: b-tag at LHC with intermediate targets}{section*.604}% 416
+\BOOKMARK [3][-]{section*.608}{Example: b-tag at LHC with intermediate targets}{section*.604}% 417
+\BOOKMARK [1][-]{section*.610}{Tools}{chapter.3}% 418
+\BOOKMARK [2][-]{section*.612}{How do we build a network in pytorch?}{section*.610}% 419
+\BOOKMARK [2][-]{section*.613}{How do we train a network in pytorch?}{section*.610}% 420
+\BOOKMARK [1][-]{section*.614}{Exercise: our first GNN with pytorch}{chapter.3}% 421
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 422
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 423
+\BOOKMARK [1][-]{section*.616}{Creare una Repository partendo da GitHub}{appendix.A}% 424
+\BOOKMARK [2][-]{section*.617}{Copiare la Repository in Locale}{section*.616}% 425
+\BOOKMARK [2][-]{section*.618}{Comandi principali in locale}{section*.616}% 426
+\BOOKMARK [2][-]{section*.619}{Creare una Repository in locale}{section*.616}% 427
+\BOOKMARK [2][-]{section*.621}{Git Workflow}{section*.616}% 428
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 429
+\BOOKMARK [1][-]{section*.624}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 430
+\BOOKMARK [2][-]{section*.625}{Step 2: Configure the conf.py}{section*.624}% 431
+\BOOKMARK [2][-]{section*.626}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.624}% 432
+\BOOKMARK [2][-]{section*.627}{Step 4: Including module.rst and generating html}{section*.624}% 433

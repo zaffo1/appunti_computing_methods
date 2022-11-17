@@ -406,26 +406,28 @@
 \contentsline {subsection}{Locality and invariance}{273}{section*.586}%
 \contentsline {subsection}{Adjacency matrix}{274}{section*.588}%
 \contentsline {subsection}{Data on a graph}{274}{section*.590}%
-\contentsline {subsection}{Tasks}{274}{section*.591}%
-\contentsline {subsection}{Learn new representation on nodes}{275}{section*.592}%
-\contentsline {subsection}{Update of edges, nodes, global state}{275}{section*.593}%
-\contentsline {subsection}{Propagate information}{275}{section*.594}%
-\contentsline {subsection}{Message passing}{275}{section*.595}%
-\contentsline {subsection}{How/what do we train?}{275}{section*.596}%
-\contentsline {subsection}{Example: b-tag at LHC}{276}{section*.597}%
-\contentsline {section}{Tools}{276}{section*.598}%
-\contentsline {subsection}{How do we build a network in pytorch?}{276}{section*.600}%
-\contentsline {subsection}{How do we train a network in pytorch?}{278}{section*.601}%
-\contentsline {section}{Exercise: our first GNN with pytorch}{278}{section*.602}%
-\contentsline {chapter}{\numberline {4}Fisica Medica}{279}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{281}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{281}{section*.603}%
-\contentsline {subsection}{Copiare la Repository in Locale}{281}{section*.604}%
-\contentsline {subsection}{Comandi principali in locale}{281}{section*.605}%
-\contentsline {subsection}{Creare una Repository in locale}{282}{section*.606}%
-\contentsline {subsection}{Git Workflow}{283}{section*.608}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{285}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{286}{section*.611}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{287}{section*.612}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{288}{section*.613}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{288}{section*.614}%
+\contentsline {subsection}{Tasks}{275}{section*.592}%
+\contentsline {subsection}{Learn new representation on nodes}{275}{section*.594}%
+\contentsline {subsection}{Update of edges, nodes, global state}{276}{section*.596}%
+\contentsline {subsection}{Propagate information}{276}{section*.598}%
+\contentsline {subsection}{Message passing}{276}{section*.600}%
+\contentsline {subsection}{How/what do we train?}{277}{section*.602}%
+\contentsline {subsection}{Example: b-tag at LHC}{277}{section*.604}%
+\contentsline {subsubsection}{Example: b-tag at LHC with intermediate targets}{277}{section*.606}%
+\contentsline {subsubsection}{Example: b-tag at LHC with intermediate targets}{278}{section*.608}%
+\contentsline {section}{Tools}{278}{section*.610}%
+\contentsline {subsection}{How do we build a network in pytorch?}{280}{section*.612}%
+\contentsline {subsection}{How do we train a network in pytorch?}{280}{section*.613}%
+\contentsline {section}{Exercise: our first GNN with pytorch}{280}{section*.614}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{283}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{285}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{285}{section*.616}%
+\contentsline {subsection}{Copiare la Repository in Locale}{285}{section*.617}%
+\contentsline {subsection}{Comandi principali in locale}{285}{section*.618}%
+\contentsline {subsection}{Creare una Repository in locale}{286}{section*.619}%
+\contentsline {subsection}{Git Workflow}{287}{section*.621}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{289}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{290}{section*.624}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{291}{section*.625}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{292}{section*.626}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{292}{section*.627}%

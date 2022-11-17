@@ -1964,15 +1964,8 @@ to global also reduce the number of parameters.
 
 
 \subsection{Adjacency matrix}
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\includegraphics[width=0.4\textwidth]{figure_ml/adj_matrix}
-	\includegraphics[width=0.4\textwidth]{figure_ml/adj3}
-	\includegraphics[width=0.4\textwidth]{figure_ml/adj3}
-\end{wrapfigure} 
 
-\quad
 \begin{itemize}
-	
 	\item Edges can be represented as an adjacency matrix
 	\begin{itemize}
 		\item $A_{ij}$ = 1 if connected
@@ -1990,6 +1983,22 @@ to global also reduce the number of parameters.
 	\end{itemize}
 \end{itemize}
 
+	\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/adj_matrix}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/adj2}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure_ml/adj3}
+	\end{subfigure}
+\end{figure}
+\FloatBarrier
 
 \subsection{Data on a graph}
 \begin{itemize}
@@ -2003,6 +2012,18 @@ Position of node can be treated as a special attribute.\\
 A GNN typically produces additional data for nodes, edges and global (I.e. the output of a GNN layer is still a graph
 structure)
 
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figure_ml/datagraph1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figure_ml/datagraph2}
+	\end{subfigure}%
+\end{figure}
+\FloatBarrier
 \subsection{Tasks}
 
 \begin{itemize}
@@ -2014,6 +2035,11 @@ structure)
 	\item Tasks on the full graph (e.g classification/regression)
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figure_ml/tasks}
+\end{figure}
+\FloatBarrier
 \subsection{Learn new representation on nodes}
 
 In a CNN each Conv+Pooling layer extracts “new features”, from lower level to higher level.\\
@@ -2030,14 +2056,29 @@ Two steps are needed:
 	from vertices to global
 \end{itemize}
 
-
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/repr.png}
+\end{figure}
+\FloatBarrier
 Il pooling è necessario perché il numero di connessioni che ha ogni nodo è variabile. Lo step di poolng non solo riduce l'informazione da tanti a uno, ma deve anche essere invariante per traslazione.
 
 \subsection{Update of edges, nodes, global state}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/ang}
+\end{figure}
+\FloatBarrier
 \subsection{Propagate information}
 
 With multiple iterations the information flows across the graph
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/propagate}
+\end{figure}
+\FloatBarrier
 
 \subsection{Message passing}
 The flow of information can be seen as some “messages” passed across the graph.\\
@@ -2051,14 +2092,57 @@ A simple “message passing” can be achieved in a factorized approach:
 	\item Permutation invariant operations are typically Max, Sum, Mean (=> equivalent to CNN Pooling layers!) [stiamo parlando di operazioni su vettori di feature (ad es massimo elemento per elemento del vettore.)]
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/mess_pass}
+\end{figure}
+\FloatBarrier
+
 
 \subsection{How/what do we train?}
 
 Accumulating functions are typically not tainable (Sum, Mean, Max etc…)\\
 Update functions \textit{can} be DNNs.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_ml/hw_train}
+\end{figure}
+\FloatBarrier
 
 \subsection{Example: b-tag at LHC}
+Nice \href{https://indico.cern.ch/event/1086716/contributions/5052326/attachments/2543061/4379499/flavor_tagging_HLLHC_nilotpal.pdf}{talk at Higgs 2022} conference by N. Kakati 
+
+\begin{itemize}
+	\item Jets are seen as a set of constituents
+	\item No sorting, no casting into images
+	\item Locality in eta,phi
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_ml/btag}
+\end{figure}
+\FloatBarrier
+
+
+\subsubsection{Example: b-tag at LHC with intermediate targets}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/example_btag}
+\end{figure}
+\FloatBarrier
+
+
+\subsubsection{Example: b-tag at LHC with intermediate targets}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_ml/btag_results}
+\end{figure}
+\FloatBarrier
+
 
 \section{Tools}
 
@@ -2175,5 +2259,19 @@ We use a particular architecture called
 	vector between the two nodes
 \end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figure_ml/ex_pytorch1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{figure_ml/ex_pytorch2}
+	\end{subfigure}%
+\end{figure}
+\FloatBarrier
 
 \href{https://colab.research.google.com/drive/1dPSV1ADBf2oxRyUJeEKeR0VC9ngP02lm#scrollTo=3ke3AYJhuSEY}{Solution}
+
+
