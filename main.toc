@@ -420,14 +420,26 @@
 \contentsline {subsection}{How do we train a network in pytorch?}{280}{section*.613}%
 \contentsline {section}{Exercise: our first GNN with pytorch}{280}{section*.614}%
 \contentsline {chapter}{\numberline {4}Fisica Medica}{283}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{285}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{285}{section*.616}%
-\contentsline {subsection}{Copiare la Repository in Locale}{285}{section*.617}%
-\contentsline {subsection}{Comandi principali in locale}{285}{section*.618}%
-\contentsline {subsection}{Creare una Repository in locale}{286}{section*.619}%
-\contentsline {subsection}{Git Workflow}{287}{section*.621}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{289}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{290}{section*.624}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{291}{section*.625}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{292}{section*.626}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{292}{section*.627}%
+\contentsline {subsection}{Le principali modalità di imaging diagnostico}{283}{section*.617}%
+\contentsline {subsection}{Il ruolo dei computer nell'imaging medico}{284}{section*.618}%
+\contentsline {subsection}{Biomedical image processing and analysis}{284}{section*.620}%
+\contentsline {subsection}{Data dimensionality: 3D images}{285}{section*.621}%
+\contentsline {subsection}{Volume display planes}{285}{section*.622}%
+\contentsline {subsection}{Data dimensionality: 3D and more…}{285}{section*.623}%
+\contentsline {subsection}{Structural MRI $T_1$ -weighted images}{285}{section*.625}%
+\contentsline {subsection}{Functional MRI (fMRI)}{285}{section*.626}%
+\contentsline {subsection}{Data dimensionality: 2D/3D/4D/..nD images}{285}{section*.627}%
+\contentsline {subsection}{Errors introduced by the analog to digital conversion}{286}{section*.629}%
+\contentsline {subsection}{Image representation with gray and color scales}{286}{section*.631}%
+\contentsline {subsection}{Image windowing}{287}{section*.633}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{289}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{289}{section*.635}%
+\contentsline {subsection}{Copiare la Repository in Locale}{289}{section*.636}%
+\contentsline {subsection}{Comandi principali in locale}{289}{section*.637}%
+\contentsline {subsection}{Creare una Repository in locale}{290}{section*.638}%
+\contentsline {subsection}{Git Workflow}{291}{section*.640}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{293}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{294}{section*.643}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{295}{section*.644}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{296}{section*.645}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{296}{section*.646}%
