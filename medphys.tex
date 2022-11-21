@@ -231,11 +231,164 @@ Medical image file formats belong to two categories:
 \end{itemize}
 
 \section{DICOM file format}
+In response to the increased use of digital images in radiology the American College of Radiology (ACR) and the National Electrical Manufacturers Association (NEMA) formed a joint committee in 1983 to create a standard format for storing and transmitting medical images.\\
+The committee published the original ACR-NEMA standard in 1985.\\
+This standard has subsequently been revised and in 1993 it was renamed DICOM.
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{Di}gital Imaging and \textbf{CO}mmunication in \textbf{M}edicine (\textbf{DICOM}): },colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+		\item It is both a file format and communication protocol
+		\item It is the standard format used in digital imaging medical devices
+		\item The header and the image are contained in the same file
+		\item The header contains many information on the imaging device, the acquisition parameters, the patient and the physician\\
+		
+		\item DICOM supports most imaging modalities
+	\end{itemize}
+\end{tcolorbox}
+
+DICOM is most commonly used for storing and transmitting medical images enabling the integration of medical imaging devices such as scanners,servers, workstations, printers, network hardware, and picture archiving and communication systems (PACS) from multiple manufacturers.\\
+
+Pixel data cannot be separated from the description of the image formation procedure: \textbf{Images should be self-descriptive}\\
+
+The DICOM format (“anachronistically”) stores volume as a sequence of 2D slices (a 3D DICOM format exists, but it is not widespread). It is not that bad to have images stored slice by slice, as some acquisition parameters may change slice-wise during the acquisition.\\
+
+The DICOM format only stores integer numbers as pixel values, thus a slope and an intercept to linearly transform data in the allowed range are specified.
+
+\newpage
 \subsection{DICOM metadata}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{figure_med/dicom_meta}
+\end{wrapfigure} 
+
+
+A DICOM data element, or attribute, is composed of the
+following most important parts:
+\begin{itemize}
+
+\item a tag that identifies the attribute, usually in the format
+(XXXX,XXXX) with hexadecimal numbers, and may be divided
+further into DICOM Group Number and DICOM Element Number;
+\item a DICOM Value Representation (VR) that describes the data type
+and format of the attribute value (e.g. PN: Person Name; DT: Date
+Time; SS: Signed Short).
+
+\end{itemize}
+
+Check \url{https://www.dicomlibrary.com/dicom/dicom-tags/}\\
+Most fields are optional.\\
+There are also vendors’ private keys.\\
+Some examples:
+
+\begin{itemize}
+	\item Session Name and Study Number
+	\begin{itemize}
+		\item (0008, 0090) ID Referring Physician
+		\item (0010,0010) Patient's Name
+	\end{itemize}
+	\item Image “Shape”
+	\begin{itemize}
+		\item (0028, 0010) IMG Rows
+		\item (0028, 0011) IMG Columns
+		\item (0028, 0030) IMG Pixel Spacing
+		\item (0018, 0050) ACQ Slice Thickness
+	\end{itemize}
+	\item How and where the image data is stored
+	\begin{itemize}
+		\item (0028, 0100) IMG Bits Allocated
+		\item (0028, 0101) IMG Bits Stored
+		\item (0028, 0102) IMG High Bit
+	\end{itemize}
+\end{itemize}
+
+
 
 \section{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}
 
+Another file format commonly used to store brain imaging data obtained using Magnetic Resonance Imaging methods is the Neuroimaging Informatics Technology Initiative (NIfTI).
+
+The NIfTI stored volumes can be:
+\begin{itemize}
+	\item in dual file format: file.hdr, file.img
+	\item in a single file: file.nii
+\end{itemize}
+
+NIfTI is the default file format of most software packages for neuroimaging post-processing: FSL, SPM, itk-SNAP, 3D Slicer, ITK \& VTK, nipy, etc.
+
+The NIfTI format allows a double way to store the orientation of the image volume in the
+space:
+
+\begin{enumerate}
+	\item rotation + translation to be used to map voxel coordinates to the scanner reference frame
+	\item 12-parameter or more general transformation adopted to realign the volume to a standard template coordinate system.
+\end{enumerate}
+
 \section{Images viewers}
 
+MANGO \url{http://ric.uthscsa.edu/mango/index.html}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_med/mango}
+\end{figure}
+\FloatBarrier
+
+\subsection{Other medical image viewers}
+- ImageJ ( \url{https://imagej.nih.gov/ij/}\\
+- OsiriX (only for Mac, iPhone, iPad) \url{https://www.osirix-viewer.com}\\
+- 3DSlicer \url{https://www.slicer.org}\\
+- itk-SNAP  \url{http://www.itksnap.org/pmwiki/pmwiki.php}
+
+\section{The pydicom library}
+
+Pydicom is a pure Python package for working with DICOM files such as medical images, reports, and radiotherapy objects.\\
+Pydicom makes it easy to read these complex files into natural pythonic structures for easy manipulation.\\
+
+Requirements: numpy library is recommended, (it is only required if manipulating pixel data)\\
+matplotlib is necessary to visualize data
+
+
 \section{The General Data Protection Regulation (GDPR)}
+
+The EU General Data Protection Regulation (GDPR) was approved by the EU Parliament on 14 April 2016
+
+It is designed to:
+\begin{itemize}
+	\item Harmonize data privacy laws across Europe
+	\item Protect and empower all EU citizens data privacy
+	\item Reshape the way organizations across the region approach data privacy
+\end{itemize}
+
+GDPR and Data Science
+\begin{itemize}
+	\item De-identifying medical imaging is a fundamental prerequisite for data storing, processing and sharing within research projects in order to be compliant with GDPR:
+	\begin{itemize}
+		\item Anonymization: using the Hash function (non-reversible)
+		\item Pseudo-anonymization: data is tokenized, a separate lookup file (with the original entry and
+		the token) is generated and stored in a restricted database.
+	\end{itemize}
+\end{itemize}
+
+\section{References and sources}
+Books
+\begin{itemize}
+	\item The Essential Physics of Medical Imaging, Jerrold T. Bushberg
+	\item Digital Image Processing for Medical Applications, Geoff Dougherty
+	\item Handbook of Medical Image Processing and Analysis, Isaac N. Bankman
+	\item Image Processing and Acquisition using Python, Ravishankar Chityala \& Sridevi Pudipeddi
+\end{itemize}
+
+Sources
+\begin{itemize}
+	\item \url{https://www.dicomstandard.org}
+	\item \url{https://gdpr.eu/}
+	\item\url{https://pydicom.github.io/pydicom/}
+\end{itemize}
+
+You will find the repository of course materials on \url{https://github.com/retico/cmepda_medphys}
+and the image data samples to use on \url{https://pandora.infn.it/public/cmepda}
+and on \url{https://drive.google.com/open?id=1YqK7ZkM-P2IrqfD7Pj-SCmjz-GWd_1-Y}
+
+\section{Hands-On}
+
+\url{https://github.com/retico/cmepda_medphys/tree/master/L1_code}
