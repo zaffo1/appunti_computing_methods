@@ -1,9 +1,12 @@
 \chapter{Fisica Medica}
 
+\section{Imaging medico: alcuni metodi diagnostici}
+
 \begin{itemize}
 	\item \textbf{CT (TAC in italiano)} tomografia assiale computerizzata
 	\item \textbf{Risonanza Magnetica, MRI, fMRI}: array tridimensionali, volendo anche nel tempo, quindi 4-dimensionali.
-	\item 
+	\item \textbf{Nuclear (PET, SPECT)}
+	\item \textbf{Ultrasuoni} (ecografie)
 \end{itemize}
 
 La conoscenza dei meccanismi fisici che generano il dato su cui lavoriamo è importante.\\
@@ -12,43 +15,66 @@ Le immagini mediche non sono semplici fotografie, ma sono immagini che contengon
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figure_med/White-Matter-Fibers.jpg}
+	\caption{\url{http://www.humanconnectomeproject.org/}}
 \end{figure}
 \FloatBarrier
 
-Le immagini mediche riflettono diverse proprietà fisiche del corpo umano. Esse sono formate dall'interazione tra radiazione/ultrasuoni con i tessuti/organi.\\
+Le immagini mediche riflettono diverse proprietà fisiche del corpo umano. Esse sono ottenute dall'interazione tra radiazione/ultrasuoni con i tessuti/organi.\\
 
+Tipicamente le immagini mediche non si limitano a 2D, ma solitamente abbiamo almeno 3 dimensioni.\\
 
-\subsection{Le principali modalità di imaging diagnostico}
+Le immagini mediche permettono di studiare:
+\begin{itemize}
+	\item la struttura dei tessuti/organi
+	\item la funzione dei tessuti/organi
+\end{itemize}
+
+\section{Le principali modalità di imaging diagnostico}
 Quando si parla di radiografia tipicamente ci si riferisce a immagini 2D.\\
 Tomografia invece si rifersice a immagini 3D.\\
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_med/diagnostic}
+\end{figure}
+\FloatBarrier
 
 Lo sforzo moderno è quello di creare dispositivi multimodali, che investigano il corpo umano da diversi punti di vista. Acquisire informazioni complementari attraverso le diverse modalità contemporaneamente. Unendo le informazioni possiamo ottenere una diagnosi più accurata.\\
 Ogni tecnica ha una specifica risoluzione spaziale, combinando le varie tecniche possiamo migliorarla.\\
 
 \textbf{Medicina di precisione}: creare un trattamento specifico per ogni paziente. A contrapporsi ad un metodo basato su protocolli, come si fa attualmente nel nostro sistema sanitario.\\
 Mettendo insieme tutte le informazioni sul paziente si può arrivare a delle diagnosi e a dei trattamente altamente personalizzati.\\
-Sfida: come inegrare i dati che vengono da sorgenti diverse in maniera efficiente.\\
+Sfida: come integrare i dati che vengono da sorgenti diverse in maniera efficiente.\\
 
-\subsection{Il ruolo dei computer nell'imaging medico}
+\section{Il ruolo dei computer nell'imaging medico}
 Da sempre i computer hanno un ruolo fondamentale nell'imaging medico.\\
-I dati \textit{raw} devono essere interpretati ed elaborati attraverso algoritmi di ricostruzione per poterli poi fornire al medico. Si usano algoritmi di denoising basati sull'intelligenza artificiale.\\
+I dati \textit{raw} devono essere interpretati ed elaborati attraverso algoritmi di ricostruzione per poterli poi fornire al medico. Tra le altre cose, si usano anche algoritmi di denoising basati sull'intelligenza artificiale.\\
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figure_med/computers}
+\end{figure}
+\FloatBarrier
 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1\linewidth]{figure_med/computers_med_img}
+	\includegraphics[width=1\linewidth]{figure_med/computer_role}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.85\linewidth]{figure_med/computers_med_img}
 	\caption{Algorithms for
-		information processing
-		enter at many levels in
-		the image formation
-		pipeline}
+		information processing enter at many levels in the image formation	pipeline. We will focus in this
+		course on the high-level Analysis procedures, and
+		we will not cover the countless other possibilities}
 \end{figure}
 \FloatBarrier
 In questo corso: a partire dall'immagine medica acquisita (già con valore diagnostico per un medico), possiamo lavorarci sopra per acquisire informazione. Ad esempio mettendo su degli algoritmi di classificazione.\\
 
-\subsection{Biomedical image processing and analysis}
+\section{Biomedical image processing and analysis}
 
 Il nostro obiettivo è identificare delle anomalie nelle immagini. Identificare lo stato di avanzamento di una certa lesione, per studiarne il tasso di crescita.\\
 Vorremmo costruire uno strumento che sia il più robusto possibile ad una serie di variabilità a cui è esposta la lettura del medico, e che sia \textbf{riproducibile}, in modo da affiancare il medico nel processo decisionale.\\
@@ -60,29 +86,65 @@ The main objectives are:
 	\item To assess treatment efficacy
 \end{itemize}
 
+The aim is to assist clinicians in their tasks,
+not to replace them: \textit{Computer Aided Detection/ Diagnosis (CAD) systems/ Decision Support Systems (DSS)}
 
-\subsection{Data dimensionality: 3D images}
+Historical development of CAD systems:
+\begin{enumerate}
+	\item ’90 - Old-fashion systems (Rule-based decision systems)
+	\item 2000-today - Hand-crafted feature and Machine Learning classification
+	\item since 2016 - Deep Learning-based data/image classification
+\end{enumerate}
+
+
+\section{Data dimensionality: 3D images}
 
 Dal sinogramma lavoro con degli algoritmi di ricorstruzione, da cui poi posso ricavare delle immagini (a fette) che rappresentano l'anatomia del paziente..
 
 (micronodulo polmonare)\\
 
-\subsection{Volume display planes}
-Una TAC del torace è un volume tridimensionale.\\
-
-Medical images are usually displayed by anatomical planes.
-
-\subsection{Data dimensionality: 3D and more…}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1\linewidth]{figure_med/data_dim}
+	\includegraphics[width=0.7\linewidth]{figure_med/datadim3d}
 \end{figure}
 \FloatBarrier
 
-\subsection{Structural MRI $T_1$ -weighted images}
+\section{Volume display planes}
+Una TAC del torace è un volume tridimensionale.\\
 
-\subsection{Functional MRI (fMRI)}
+%Medical images are usually displayed by anatomical planes.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_med/vdp}
+\end{figure}
+\FloatBarrier
+
+\section{Data dimensionality: 3D and more…}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_med/data_dim}
+\end{figure}
+\FloatBarrier
+
+\section{Structural MRI $T_1$ -weighted images}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_med/t1}
+\end{figure}
+\FloatBarrier
+
+\section{Functional MRI (fMRI)}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figure_med/fmri}
+\end{figure}
+\FloatBarrier
 
 \begin{itemize}
 	\item BOLD Response: blood-oxygen-level-dependent (BOLD) contrast
@@ -101,7 +163,7 @@ Medical images are usually displayed by anatomical planes.
 	\item Resting state rs-fMRI: study of temporal correlations between spatially remote neurophysiological events
 \end{itemize}
 
-\subsection{Data dimensionality: 2D/3D/4D/..nD images}
+\section{Data dimensionality: 2D/3D/4D/..nD images}
 
 \begin{figure}[ht]
 	\centering
@@ -113,26 +175,26 @@ Medical images are usually displayed by anatomical planes.
 
 L'immagine medica non è solo l'array n-dimensionale di dati. Ma deve contenere consistentemente tutte le informazioni neccassarie ad interpretare tali dati.
 
-\subsection{Errors introduced by the analog to digital conversion}
+\section{Errors introduced by the analog to digital conversion}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figure_med/adc}
+	\includegraphics[width=0.8\linewidth]{figure_med/adc}
 	
 \end{figure}
 \FloatBarrier
 
 
-\subsection{Image representation with gray and color scales}
-
+\section{Image representation with gray and color scales}
+zz
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figure_med/gray}
+	\includegraphics[width=0.8\linewidth]{figure_med/gray}
 \end{figure}
 \FloatBarrier
 
-\subsection{Image windowing}
+\section{Image windowing}
 
 \begin{figure}[ht]
 	\centering
@@ -140,12 +202,40 @@ L'immagine medica non è solo l'array n-dimensionale di dati. Ma deve contenere 
 \end{figure}
 \FloatBarrier
 
-\subsection{Look-up tables (LUTs)}
+\section{Look-up tables (LUTs)}
 
-\subsection{Medical image file formats}
+Look-up tables (LUTs) are used for pseudo coloring.
+\begin{itemize}
+	\item \textbf{24-bit color:} computer graphic boards typically offer 256$^3$ ($\sim$ 16 10$^6$ ) colors.
+	\item \textbf{32-bit color:} supports 16 10$^6$ colors plus an alpha channel to create gradients,
+	shadows, and transparencies $\rightarrow$ supports 4 10$^9$ color combinations.
+	\item Pseudo coloring allows presentation of data without reducing the information as it
+	would result from windowing
+\end{itemize}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figure_med/luts}
+\end{figure}
+\FloatBarrier
 
+\section{Medical image file formats}
 
-\subsection{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}
+The file format describes how the image data are organized in the file and how pixel data should be interpreted by a software for correct reading and visualization.\\
+Numerical values of the pixels depend on image modality, acquisition (a medical image which is separated from the context information is meaningless)
+
+Medical image file formats belong to two categories:
+\begin{itemize}
+	\item Those intended to standardize images generated by different diagnostic modalities, e.g. the DICOM standard
+	\item Those aiming to facilitate the post-processing analysis (e.g. NIfTI for neuroimaging)
+\end{itemize}
+
+\section{DICOM file format}
+
+\subsection{DICOM metadata}
+
+\section{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}
+
+\section{Images viewers}
 
 \section{The General Data Protection Regulation (GDPR)}
