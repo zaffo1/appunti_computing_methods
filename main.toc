@@ -1,0 +1,462 @@
+\contentsline {chapter}{\numberline {1}Modulo Base - Scientifc Python}{13}{chapter.1}%
+\contentsline {section}{\textit {Lun 20 sett - Lezione 1}}{14}{section*.2}%
+\contentsline {section}{Lecture basic 1: Development workflow}{14}{section*.3}%
+\contentsline {subsection}{L'importanza della riproducibilità}{14}{section*.4}%
+\contentsline {subsection}{Version control}{14}{section*.5}%
+\contentsline {subsection}{Terminologia}{14}{section*.6}%
+\contentsline {subsection}{Tipologie di Version Control System}{14}{section*.7}%
+\contentsline {subsection}{Local version control systems (e.g. RCS)}{15}{section*.8}%
+\contentsline {subsection}{Centralized Version Control Systems (e.g. CVS, Subversion)}{15}{section*.10}%
+\contentsline {subsection}{Distributed version control system (e.g. git, mercurial)}{16}{section*.12}%
+\contentsline {subsection}{Versioning single files vs. the entire repository}{16}{section*.14}%
+\contentsline {subsection}{Centralized vs. distributed VCS}{16}{section*.15}%
+\contentsline {subsection}{Funzioni di Hash}{17}{section*.17}%
+\contentsline {subsection}{Altra Terminologia}{17}{section*.19}%
+\contentsline {section}{\textit {Gio 22 sett - Lezione 2}}{19}{section*.21}%
+\contentsline {section}{Lecture basic 2: Python Basics (1/2)}{19}{section*.22}%
+\contentsline {subsection}{PEP: Python Enhancement Proposal}{19}{section*.23}%
+\contentsline {subsection}{Coding Conventions}{19}{section*.24}%
+\contentsline {subsection}{Variables and basic types}{19}{section*.25}%
+\contentsline {subsection}{String Formatting}{20}{section*.26}%
+\contentsline {subsection}{Le Funzioni}{20}{section*.27}%
+\contentsline {subsection}{Funzioni Variadiche}{21}{section*.28}%
+\contentsline {subsection}{Arbitrary argument lists}{21}{section*.29}%
+\contentsline {subsection}{Un esempio: la funzione di fit}{22}{section*.30}%
+\contentsline {subsection}{Keyword arguments}{22}{section*.31}%
+\contentsline {subsection}{Basic control flow}{22}{section*.32}%
+\contentsline {subsection}{Advanced Iteration}{23}{section*.33}%
+\contentsline {subsection}{Nota: I numeri in virgola mobile sono esatti}{23}{section*.34}%
+\contentsline {subsection}{Rappresentazione in virgola mobile}{24}{section*.35}%
+\contentsline {subsection}{References}{24}{section*.36}%
+\contentsline {section}{Lecture basic 3: Python Basics (2/2)}{24}{section*.37}%
+\contentsline {subsection}{La Python Standard Lybrary}{24}{section*.38}%
+\contentsline {subsection}{Il sistema di Import}{24}{section*.39}%
+\contentsline {subsection}{La Standard Library: \texttt {time}, \texttt {datetime} and \texttt {calendar}}{25}{section*.40}%
+\contentsline {subsection}{La Standard Library: \texttt {math}}{25}{section*.41}%
+\contentsline {subsection}{La Standard Library: \texttt {random}}{26}{section*.42}%
+\contentsline {subsection}{La Standard Library: \texttt {os}, \texttt {os.path}, \texttt {glob} and \texttt {shutil}}{26}{section*.43}%
+\contentsline {subsection}{La Standard Library: \texttt {argparse}}{26}{section*.44}%
+\contentsline {subsection}{La Standard Library: \texttt {logging}}{26}{section*.45}%
+\contentsline {subsection}{Typical layout of a Python package}{27}{section*.46}%
+\contentsline {subsection}{References}{27}{section*.47}%
+\contentsline {section}{\textit {Gio 29 sett - Lezione 3}}{28}{section*.48}%
+\contentsline {section}{Lecture basic 4: Algorithms and data structures}{28}{section*.49}%
+\contentsline {subsection}{Esempio: ricerca sequenziale vs ricerca binaria}{28}{section*.50}%
+\contentsline {subsection}{Complessità di un algoritmo}{28}{section*.51}%
+\contentsline {subsection}{Andamento asintotico e notazioni O-grandi}{29}{section*.52}%
+\contentsline {subsection}{Come misuro il comportamento asintotico?}{30}{section*.54}%
+\contentsline {subsection}{Strutture dati: le liste}{30}{section*.55}%
+\contentsline {subsection}{Hash table}{31}{section*.57}%
+\contentsline {subsection}{Strutture dati: I dizionari}{32}{section*.59}%
+\contentsline {subsection}{Sorting}{32}{section*.61}%
+\contentsline {subsection}{References}{34}{section*.63}%
+\contentsline {section}{Lecture basic 7: Numpy e Scipy}{34}{section*.64}%
+\contentsline {subsection}{Array di numpy}{34}{section*.65}%
+\contentsline {subsection}{numpy arrays vs. Python lists}{35}{section*.66}%
+\contentsline {subsection}{Broadcasting}{35}{section*.67}%
+\contentsline {section}{\textit {Lun 3 ott - Lezione 4}}{37}{section*.68}%
+\contentsline {section}{Lecture basic: 5 - OOP\FN@sf@gobble@opt {In informatica, la programmazione orientata agli oggetti (in inglese object-oriented programming, in acronimo OOP) è un paradigma di programmazione che permette di definire oggetti software in grado di interagire gli uni con gli altri attraverso lo scambio di messaggi. Particolarmente adatta nei contesti in cui si possono definire delle relazioni di interdipendenza tra i concetti da modellare (contenimento, uso, specializzazione), un ambito che più di altri riesce a sfruttare i vantaggi della programmazione ad oggetti è quello delle interfacce grafiche.} introduction (1/2)}{37}{section*.69}%
+\contentsline {subsection}{Classi e Oggetti}{37}{section*.70}%
+\contentsline {subsection}{Esempio: creiamo la classe \texttt {televisione} }{38}{section*.71}%
+\contentsline {subsection}{Python Classes}{39}{section*.72}%
+\contentsline {subsection}{Metodi}{40}{section*.73}%
+\contentsline {subsection}{Attributi}{40}{section*.74}%
+\contentsline {subsection}{Costruttore}{41}{section*.75}%
+\contentsline {subsection}{Namespaces}{42}{section*.76}%
+\contentsline {subsection}{Instance attributes vs class attributes}{42}{section*.77}%
+\contentsline {subsection}{Class attributes (and their strange behaviour)}{42}{section*.78}%
+\contentsline {subsection}{Encapsulation - hidden state and interfaces}{44}{section*.79}%
+\contentsline {subsection}{Enforcing behaviour}{44}{section*.80}%
+\contentsline {subsection}{Pythonic encapsulation}{45}{section*.81}%
+\contentsline {subsection}{"Private" attributes in Python}{45}{section*.82}%
+\contentsline {subsection}{Pythonic encapsulation with properties}{45}{section*.83}%
+\contentsline {subsection}{Old-style encapsulation: never do that!}{47}{section*.84}%
+\contentsline {subsection}{Properties to emulate attributes}{47}{section*.85}%
+\contentsline {subsection}{Setter properties}{48}{section*.86}%
+\contentsline {subsection}{Make attributes read-only using properties}{49}{section*.87}%
+\contentsline {subsection}{Interfaccia vs Implementazione}{50}{section*.88}%
+\contentsline {subsection}{Ereditarietà}{51}{section*.89}%
+\contentsline {subsection}{Inheritance: a basic example}{51}{section*.90}%
+\contentsline {subsection}{Overload}{52}{section*.91}%
+\contentsline {subsection}{Ereditarietà multipla}{52}{section*.92}%
+\contentsline {subsection}{Composizione}{53}{section*.93}%
+\contentsline {subsection}{Composition vs Inheritance}{54}{section*.94}%
+\contentsline {subsection}{Pitfalls of Inheritance}{54}{section*.95}%
+\contentsline {section}{\textit {Gio 6 ott - Lezione 5}}{55}{section*.96}%
+\contentsline {section}{Lecture basic: 5 - OOP Introduction (2/2)}{55}{section*.97}%
+\contentsline {subsection}{Special Methods}{56}{section*.98}%
+\contentsline {subsection}{\emph {\_\_str\_\_} and \emph {\_\_repr\_\_}}{56}{section*.99}%
+\contentsline {subsection}{Mathematical operations}{57}{section*.100}%
+\contentsline {subsection}{In-place operations}{57}{section*.101}%
+\contentsline {subsection}{Comparisons}{58}{section*.102}%
+\contentsline {subsection}{In-place operations}{58}{section*.103}%
+\contentsline {subsection}{An hashable Vector2d}{59}{section*.104}%
+\contentsline {subsection}{Array N-dimensionali}{60}{section*.105}%
+\contentsline {subsection}{An Iterable Vector}{62}{section*.106}%
+\contentsline {subsection}{Duck Typing\FN@sf@gobble@opt {"If it looks like a duck and quacks like a duck, it must be a duck."}}{63}{section*.107}%
+\contentsline {subsection}{Polymorphism}{63}{section*.108}%
+\contentsline {subsection}{The power of iterables}{63}{section*.109}%
+\contentsline {subsection}{A vector that behaves like a duck}{64}{section*.110}%
+\contentsline {subsection}{Function are classes}{65}{section*.111}%
+\contentsline {subsection}{A simple callable for a straight line}{65}{section*.112}%
+\contentsline {subsection}{Create a call counter}{66}{section*.113}%
+\contentsline {subsection}{Fit hacking}{66}{section*.114}%
+\contentsline {section}{\textit {Lun 10 ott - Lezione 6}}{68}{section*.116}%
+\contentsline {section}{Lecture Advanced 1: Testing and documentation}{68}{section*.117}%
+\contentsline {subsection}{How do I make sure my program is correct?}{68}{section*.118}%
+\contentsline {subsection}{Unit testing na\"ive example}{68}{section*.119}%
+\contentsline {subsection}{Unit testing in a nutshell}{69}{section*.120}%
+\contentsline {subsection}{Back to our na\"ive example}{69}{section*.121}%
+\contentsline {subsection}{Unit tests the Python way: The unittest module}{70}{section*.122}%
+\contentsline {subsection}{Wait a moment\ldots How is this different?}{70}{section*.123}%
+\contentsline {subsection}{Static code analysis}{71}{section*.124}%
+\contentsline {subsection}{Static analysis: an example}{71}{section*.125}%
+\contentsline {subsection}{Static code analysis}{72}{section*.126}%
+\contentsline {subsection}{Digression: optional static typing in Python}{72}{section*.127}%
+\contentsline {subsection}{Continuous integration}{73}{section*.128}%
+\contentsline {subsection}{Documentation}{73}{section*.129}%
+\contentsline {subsection}{Sphinx: the documentation tool for Python}{74}{section*.132}%
+\contentsline {subsection}{Sphynx basics}{74}{section*.133}%
+\contentsline {subsection}{Ok, I have the documentation compiled, now what do I do with it?}{75}{section*.135}%
+\contentsline {section}{Torniamo a numpy}{76}{section*.136}%
+\contentsline {subsection}{Mathematical functions in Numpy}{76}{section*.137}%
+\contentsline {subsection}{Array and Masks}{76}{section*.138}%
+\contentsline {subsection}{Digression: pseudo-random number generators}{77}{section*.139}%
+\contentsline {subsection}{Vettorizzazione}{77}{section*.140}%
+\contentsline {subsection}{How does vectorizaion work?}{78}{section*.141}%
+\contentsline {section}{Secondo Assegnamento}{79}{section*.142}%
+\contentsline {subsection}{How do I throw PRN with arbitrary pdf?}{79}{section*.143}%
+\contentsline {subsection}{An interesting object: splines}{79}{section*.144}%
+\contentsline {subsection}{Splines: construction and properties}{80}{section*.145}%
+\contentsline {section}{\textit {Gio 13 ott - Lezione 7}}{81}{section*.146}%
+\contentsline {section}{Advanced Python Features}{81}{section*.147}%
+\contentsline {subsection}{Errors and Exceptions}{81}{section*.148}%
+\contentsline {subsection}{Error flags (no)}{81}{section*.149}%
+\contentsline {subsection}{Problems of error flags}{81}{section*.150}%
+\contentsline {subsection}{A different way}{82}{section*.151}%
+\contentsline {subsection}{Eccezioni}{82}{section*.152}%
+\contentsline {subsection}{Try block}{83}{section*.153}%
+\contentsline {subsection}{\texttt {else}, \texttt {finally}}{83}{section*.154}%
+\contentsline {subsection}{Using \texttt {else} and \texttt {finally}}{83}{section*.155}%
+\contentsline {subsection}{The beauty of exceptions}{84}{section*.156}%
+\contentsline {subsection}{The family tree of Python exceptions}{84}{section*.157}%
+\contentsline {subsection}{Catching specific exceptions}{85}{section*.159}%
+\contentsline {subsection}{Exception caveats}{85}{section*.160}%
+\contentsline {subsection}{There is no check - only try}{86}{section*.161}%
+\contentsline {subsection}{Catching specific exceptions}{86}{section*.162}%
+\contentsline {subsection}{Raising exceptions}{86}{section*.163}%
+\contentsline {subsection}{Custom exceptions}{87}{section*.164}%
+\contentsline {subsection}{Where to catch exceptions?}{88}{section*.165}%
+\contentsline {subsection}{When to catch}{88}{section*.166}%
+\contentsline {subsection}{Catch too early}{88}{section*.167}%
+\contentsline {subsection}{Catch when needed}{89}{section*.168}%
+\contentsline {section}{\textit {Lun 17 ott - Lezione 8}}{90}{section*.169}%
+\contentsline {section}{Iterators}{90}{section*.170}%
+\contentsline {subsection}{Iterators and iterables}{90}{section*.171}%
+\contentsline {subsection}{A 'for' loop unpacked}{90}{section*.172}%
+\contentsline {subsection}{A simple iterator}{91}{section*.173}%
+\contentsline {subsection}{A crazy iterator}{91}{section*.174}%
+\contentsline {subsection}{Python tools for iterables}{92}{section*.175}%
+\contentsline {section}{Generatori}{92}{section*.176}%
+\contentsline {subsection}{Generators first look}{93}{section*.177}%
+\contentsline {subsection}{Generator functions}{93}{section*.178}%
+\contentsline {subsection}{Infinite sequence generators}{94}{section*.179}%
+\contentsline {subsection}{Python generator functions}{95}{section*.180}%
+\contentsline {subsection}{Itertools showcase}{95}{section*.181}%
+\contentsline {section}{Lambda functions}{96}{section*.182}%
+\contentsline {subsection}{Recap example: file iterator}{96}{section*.183}%
+\contentsline {subsection}{File iterator redone}{97}{section*.184}%
+\contentsline {subsection}{File iterator, final version}{98}{section*.185}%
+\contentsline {section}{Decorators}{98}{section*.186}%
+\contentsline {subsection}{The @classmethod decorator}{98}{section*.187}%
+\contentsline {chapter}{\numberline {2}Parallel Computing}{101}{chapter.2}%
+\contentsline {section}{\textit {Gio 20 ott - Lezione 9}}{102}{section*.188}%
+\contentsline {section}{Computer architecture from a performance point of view: from serial to parallel}{102}{section*.189}%
+\contentsline {subsection}{Architettura di Von Neumann}{102}{section*.190}%
+\contentsline {subsection}{Von Neumann Bottleneck}{102}{section*.192}%
+\contentsline {subsection}{Simple Server architecture}{103}{section*.194}%
+\contentsline {subsection}{Memoria}{104}{section*.196}%
+\contentsline {subsection}{Seven dimensions of performance}{104}{section*.198}%
+\contentsline {subsection}{Processori Vettoriali}{104}{section*.200}%
+\contentsline {subsection}{Superscalari}{105}{section*.202}%
+\contentsline {subsection}{Pipelining}{105}{section*.204}%
+\contentsline {subsection}{Dennard Scaling}{106}{section*.207}%
+\contentsline {subsection}{Moore scaling}{107}{section*.210}%
+\contentsline {subsection}{Hardware parallelism}{107}{section*.212}%
+\contentsline {subsection}{Flynn’s taxonomy}{107}{section*.213}%
+\contentsline {subsection}{SISD: Single Instruction Single Data}{107}{section*.214}%
+\contentsline {subsection}{SIMD: Single Instruction Multiple Data}{108}{section*.216}%
+\contentsline {subsection}{MIMD: Multiple Instruction Multiple Data}{108}{section*.218}%
+\contentsline {subsection}{MISD: Multiple Instruction Single Data}{108}{section*.220}%
+\contentsline {subsection}{Logic partitioning and decomposition}{108}{section*.222}%
+\contentsline {subsection}{Multiprocessor Execution Model}{109}{section*.224}%
+\contentsline {subsection}{Sequential processing}{109}{section*.225}%
+\contentsline {subsection}{Concurrent Processing}{110}{section*.227}%
+\contentsline {subsection}{Types of concurrent processing:}{111}{section*.230}%
+\contentsline {subsection}{Multiprogramming}{111}{section*.231}%
+\contentsline {subsection}{Multiprocessing}{111}{section*.232}%
+\contentsline {subsection}{Multitasking}{111}{section*.233}%
+\contentsline {subsection}{Distributed systems}{111}{section*.234}%
+\contentsline {subsection}{Parallelism vs Concurrency}{112}{section*.236}%
+\contentsline {subsection}{Parallelization}{112}{section*.238}%
+\contentsline {subsection}{Speedup and Efficiency}{112}{section*.240}%
+\contentsline {subsection}{Cost and Scalability}{113}{section*.242}%
+\contentsline {subsection}{Amdhal’s law (1967)}{113}{section*.243}%
+\contentsline {subsection}{Overhead of parallelization}{113}{section*.245}%
+\contentsline {subsection}{Limits of Amdhal’s law}{113}{section*.246}%
+\contentsline {subsection}{Gustafson’s law (1988)}{113}{section*.247}%
+\contentsline {section}{Multithreading and multiprocessing in Python}{115}{section*.249}%
+\contentsline {subsection}{Threads and processes}{115}{section*.250}%
+\contentsline {subsection}{The Global Interpreter Lock (GIL)}{115}{section*.252}%
+\contentsline {subsection}{Processi e Thread}{115}{section*.253}%
+\contentsline {subsection}{When to use threads vs processes?}{117}{section*.254}%
+\contentsline {subsection}{Things to be afraid of! (not only in python...)}{117}{section*.255}%
+\contentsline {section}{\textit {Lun 24 ott - Lezione 10}}{118}{section*.257}%
+\contentsline {subsection}{The multiprocessing module}{118}{section*.258}%
+\contentsline {subsubsection}{HelloWorld}{118}{section*.259}%
+\contentsline {subsubsection}{FatherAndSons}{118}{section*.260}%
+\contentsline {subsubsection}{Use the Queue to get the result from multiple processes}{119}{section*.262}%
+\contentsline {subsubsection}{How to distribute work to workers (aka cpu cores)}{119}{section*.263}%
+\contentsline {subsubsection}{Another example with \texttt {pool.map} and \texttt {pool.map\_async}}{120}{section*.264}%
+\contentsline {subsection}{Communication between processes}{120}{section*.265}%
+\contentsline {subsubsection}{Comm. between processes: shared memory}{121}{section*.267}%
+\contentsline {subsubsection}{Comm. between processes: server process}{122}{section*.269}%
+\contentsline {subsubsection}{Comm. between processes: queue}{123}{section*.271}%
+\contentsline {subsubsection}{Comm. between process: pipe}{124}{section*.273}%
+\contentsline {subsection}{Synchronization between processes}{124}{section*.275}%
+\contentsline {subsection}{Threading}{125}{section*.276}%
+\contentsline {subsection}{Threading module}{126}{section*.278}%
+\contentsline {subsection}{Threads synchronization}{126}{section*.279}%
+\contentsline {subsection}{Comparison between Threads and Processes}{128}{section*.280}%
+\contentsline {subsection}{Why should I use threads?}{131}{section*.283}%
+\contentsline {subsection}{Process vs Threads}{132}{section*.284}%
+\contentsline {section}{\textit {Gio 27 ottobre - Lezione 11}}{133}{section*.286}%
+\contentsline {section}{Introduction to GPU computing (1)}{133}{section*.287}%
+\contentsline {subsubsection}{Moore's Law}{133}{section*.288}%
+\contentsline {subsection}{Parallel programming}{133}{section*.290}%
+\contentsline {subsection}{Limits of parallel programming}{133}{section*.292}%
+\contentsline {subsection}{What are GPUs?}{134}{section*.294}%
+\contentsline {subsection}{Standard GPU pipeline}{134}{section*.295}%
+\contentsline {subsection}{Standard GPU requirements}{134}{section*.297}%
+\contentsline {subsection}{What are the GPUs?}{135}{section*.298}%
+\contentsline {subsection}{Why the GPUs?}{135}{section*.299}%
+\contentsline {subsection}{A lot of cores...}{135}{section*.300}%
+\contentsline {subsection}{Metrics}{136}{section*.303}%
+\contentsline {subsection}{Computing power comparison}{136}{section*.305}%
+\contentsline {subsection}{CPU}{136}{section*.307}%
+\contentsline {subsection}{GPU}{137}{section*.309}%
+\contentsline {subsection}{CPU vs GPU}{137}{section*.311}%
+\contentsline {subsection}{SIMT}{138}{section*.314}%
+\contentsline {subsection}{CPU core vs GPU SMX}{138}{section*.316}%
+\contentsline {subsection}{GPU+CPU}{139}{section*.318}%
+\contentsline {section}{Introduction to GPU computing (2)}{140}{section*.320}%
+\contentsline {subsection}{CUDA model}{140}{section*.321}%
+\contentsline {subsection}{Grid, blocks and threads}{140}{section*.323}%
+\contentsline {subsection}{GPU structure}{141}{section*.325}%
+\contentsline {subsection}{Multiprocessor}{141}{section*.327}%
+\contentsline {subsection}{Memory}{141}{section*.329}%
+\contentsline {subsection}{Asynchronicity}{142}{section*.331}%
+\contentsline {subsection}{How to program GPU?}{142}{section*.333}%
+\contentsline {subsection}{Libraries: cuBLAS}{143}{section*.334}%
+\contentsline {subsection}{Libraries: Thrust}{143}{section*.335}%
+\contentsline {subsection}{Directives: OpenMP, OpenACC}{143}{section*.336}%
+\contentsline {subsection}{Hello world}{143}{section*.337}%
+\contentsline {subsection}{Direct Programming: CUDA vs OpenCL}{144}{section*.338}%
+\contentsline {subsection}{CUDA C/C++}{144}{section*.339}%
+\contentsline {subsection}{Example}{144}{section*.341}%
+\contentsline {subsection}{PyCUDA}{145}{section*.342}%
+\contentsline {section}{CUDA threads and blocks}{145}{section*.344}%
+\contentsline {subsection}{GPU for images}{145}{section*.346}%
+\contentsline {subsection}{RGB to Grayscale conversion}{146}{section*.348}%
+\contentsline {section}{Blurring an image}{147}{section*.350}%
+\contentsline {section}{Hands-on CUDA/C}{149}{section*.352}%
+\contentsline {subsection}{Characteristics of GPU we are using: GeForce GTX650}{149}{section*.353}%
+\contentsline {subsection}{Hello World}{149}{section*.355}%
+\contentsline {subsection}{Vector Sum (Serial)}{149}{section*.356}%
+\contentsline {subsection}{Vector Sum (parallel)}{150}{section*.357}%
+\contentsline {subsection}{Vector Sum (parallel): 2° attempt}{152}{section*.359}%
+\contentsline {subsection}{Vector Sum (parallel): final attempt}{152}{section*.360}%
+\contentsline {subsection}{Matrix Multiplication}{153}{section*.362}%
+\contentsline {subsection}{Limitations to computing power}{154}{section*.365}%
+\contentsline {subsubsection}{Shared Memory}{155}{section*.367}%
+\contentsline {subsection}{Shared memory for Matrix Multiplication}{155}{section*.369}%
+\contentsline {subsection}{Shared memory: phase 0 use block (0,0)}{156}{section*.372}%
+\contentsline {subsection}{Execution phases}{156}{section*.374}%
+\contentsline {subsection}{Syncronization}{157}{section*.376}%
+\contentsline {subsection}{MatrixMultiplication code}{157}{section*.377}%
+\contentsline {subsection}{Memory coalescing}{160}{section*.379}%
+\contentsline {subsection}{Memory access in Matrix Multiplication}{161}{section*.383}%
+\contentsline {section}{\textit {Gio 27 ottobre - Lezione 11}}{162}{section*.385}%
+\contentsline {section}{Introduction to GPU computing (3)}{162}{section*.386}%
+\contentsline {subsection}{PyCuda Module \& Numba}{162}{section*.387}%
+\contentsline {subsection}{Colab}{162}{section*.389}%
+\contentsline {subsection}{Jupyter}{162}{section*.390}%
+\contentsline {section}{Hands on GPU:}{163}{section*.391}%
+\contentsline {chapter}{\numberline {3}Machine Learning}{205}{chapter.3}%
+\contentsline {section}{\textit {Gio 3 novembre - Lezione 12}}{205}{section*.392}%
+\contentsline {section}{Introduction to Machine Learning}{205}{section*.393}%
+\contentsline {subsection}{Topics}{205}{section*.394}%
+\contentsline {subsection}{Machine Learning Basics}{205}{section*.395}%
+\contentsline {subsection}{Types of typical ML problems}{206}{section*.396}%
+\contentsline {subsection}{Function approximation}{207}{section*.397}%
+\contentsline {subsection}{Model and Hyper-parameters}{207}{section*.399}%
+\contentsline {subsection}{Parameters}{207}{section*.400}%
+\contentsline {section}{Objective function}{207}{section*.401}%
+\contentsline {subsection}{Function approximation}{208}{section*.402}%
+\contentsline {subsubsection}{Objective function: binary cross entropy}{208}{section*.403}%
+\contentsline {subsection}{Learning / Training}{208}{section*.406}%
+\contentsline {subsubsection}{Supervised learning}{209}{section*.407}%
+\contentsline {subsubsection}{Unsupervised learning}{209}{section*.410}%
+\contentsline {subsubsection}{Supervised vs unsupervised}{210}{section*.412}%
+\contentsline {subsubsection}{Reinforcement learning (not covered in this lectures)}{210}{section*.415}%
+\contentsline {subsection}{Capacity and representational power}{211}{section*.417}%
+\contentsline {subsection}{Generalization}{212}{section*.421}%
+\contentsline {subsection}{Regularization}{212}{section*.424}%
+\contentsline {subsection}{Hyperparameters (model) optimization}{213}{section*.426}%
+\contentsline {subsection}{K-folding cross validation}{213}{section*.428}%
+\contentsline {subsection}{Inference}{214}{section*.430}%
+\contentsline {subsection}{Accuracy, Precision, Sensitivity, Specificity}{214}{section*.431}%
+\contentsline {section}{Examples of ML techniques}{215}{section*.433}%
+\contentsline {subsection}{Linear regression (Supervised)}{215}{section*.434}%
+\contentsline {subsection}{Principal Component Analysis (aka PCA) (Unsupervised)}{215}{section*.435}%
+\contentsline {subsubsection}{Nearest neighbors}{216}{section*.438}%
+\contentsline {subsection}{Decision trees}{216}{section*.440}%
+\contentsline {subsection}{Ensembles of trees}{217}{section*.442}%
+\contentsline {subsection}{Limitations of decision trees}{218}{section*.446}%
+\contentsline {subsection}{Decision Trees tools}{218}{section*.448}%
+\contentsline {subsection}{Many more ML techniques!}{219}{section*.450}%
+\contentsline {subsection}{What do we need to create our first ML program}{219}{section*.452}%
+\contentsline {subsection}{Hands-on}{219}{section*.453}%
+\contentsline {section}{\textit {Lun 7 novembre - lezione 13}}{246}{section*.454}%
+\contentsline {section}{Introduction to Artificial Neural Networks}{246}{section*.455}%
+\contentsline {section}{Artificial Neural Networks}{246}{section*.456}%
+\contentsline {subsection}{(Artificial) neural networks: the “Model”}{246}{section*.457}%
+\contentsline {subsection}{Brief history, highs and lows}{247}{section*.459}%
+\contentsline {subsection}{Complexity growth}{247}{section*.461}%
+\contentsline {subsection}{Performance on classic problems}{248}{section*.463}%
+\contentsline {subsection}{My favorite performance examples}{248}{section*.465}%
+\contentsline {subsection}{OpenAI GPT3}{248}{section*.466}%
+\contentsline {section}{Neural Nets Basic elements}{248}{section*.467}%
+\contentsline {subsection}{A neural network node: the artificial neuron}{248}{section*.468}%
+\contentsline {subsection}{The MLP model}{249}{section*.470}%
+\contentsline {subsection}{Universal approximation theorem}{249}{section*.472}%
+\contentsline {subsection}{Example (1-D input)}{250}{section*.473}%
+\contentsline {subsection}{Training of an MLP}{250}{section*.476}%
+\contentsline {subsection}{Training a NN}{251}{section*.478}%
+\contentsline {subsection}{How to find a minimum?}{251}{section*.480}%
+\contentsline {subsection}{Not as simple as you would imagine}{251}{section*.482}%
+\contentsline {subsection}{Learning rate, epochs and batches}{252}{section*.484}%
+\contentsline {subsection}{Training and overfitting}{253}{section*.487}%
+\contentsline {subsection}{Neural Networks, computers and mathematics}{253}{section*.489}%
+\contentsline {subsection}{Back-propagation}{253}{section*.490}%
+\contentsline {section}{Deep Networks}{254}{section*.492}%
+\contentsline {subsection}{Deep Feed Forward networks}{254}{section*.493}%
+\contentsline {subsection}{Why going deeper?}{254}{section*.495}%
+\contentsline {subsection}{Activation functions}{255}{section*.496}%
+\contentsline {subsection}{Deep architectures}{256}{section*.498}%
+\contentsline {subsection}{Dropout and regularization methods}{257}{section*.500}%
+\contentsline {subsection}{(Batch) normalization}{257}{section*.502}%
+\contentsline {section}{DNN Tools}{258}{section*.504}%
+\contentsline {subsection}{Keras}{258}{section*.505}%
+\contentsline {subsection}{Other common tools}{258}{section*.506}%
+\contentsline {subsection}{Keras Sequential example}{258}{section*.507}%
+\contentsline {subsection}{Keras “Model” Functional API}{258}{section*.509}%
+\contentsline {subsection}{A (modernized) MLP in keras}{259}{section*.511}%
+\contentsline {section}{From the 1995 to 2010}{259}{section*.513}%
+\contentsline {section}{Training a model with Keras}{260}{section*.514}%
+\contentsline {section}{Keras Layers}{260}{section*.515}%
+\contentsline {subsection}{Keras basic layers}{260}{section*.516}%
+\contentsline {subsection}{Callbacks}{261}{section*.517}%
+\contentsline {section}{\textit {Assignment 1}}{261}{section*.518}%
+\contentsline {section}{\textit {Assignment 2}}{261}{section*.520}%
+\contentsline {section}{\textit {Giovedì 10 novembre - Lezione 14}}{263}{section*.522}%
+\contentsline {section}{Convolutional and recurrent networks}{263}{section*.523}%
+\contentsline {subsection}{Classification of images}{263}{section*.524}%
+\contentsline {subsection}{Exploit invariance and locality}{263}{section*.527}%
+\contentsline {subsection}{Can we exploit problem invariance?}{264}{section*.529}%
+\contentsline {subsection}{Limitations}{264}{section*.531}%
+\contentsline {subsection}{Understanding the dimensions of the convolution}{264}{section*.532}%
+\contentsline {subsection}{Pooling (subsampling)}{265}{section*.534}%
+\contentsline {subsection}{Typical CNN architecture}{265}{section*.536}%
+\contentsline {subsection}{More on convolution}{265}{section*.538}%
+\contentsline {subsection}{Bounding Box}{266}{section*.540}%
+\contentsline {subsection}{Transfer learning}{266}{section*.543}%
+\contentsline {subsection}{Variable length, sequences and causality}{267}{section*.545}%
+\contentsline {subsection}{Exploiting time invariance}{267}{section*.546}%
+\contentsline {subsection}{LSTM and GRU}{267}{section*.548}%
+\contentsline {subsection}{Different ways of processing time series}{268}{section*.550}%
+\contentsline {subsection}{Keras basic layers}{268}{section*.552}%
+\contentsline {subsection}{More on LSTM}{269}{section*.554}%
+\contentsline {subsection}{Using LSTM}{269}{section*.556}%
+\contentsline {section}{\textit {Assignment 3}}{269}{section*.558}%
+\contentsline {section}{\textit {Assignment 4}}{270}{section*.559}%
+\contentsline {section}{\textit {Lunedì 14 novembre - lezione 15}}{271}{section*.560}%
+\contentsline {section}{Autoencoders and Generative Networks}{271}{section*.561}%
+\contentsline {subsection}{Dimensionality reduction task}{271}{section*.562}%
+\contentsline {section}{Autoencoder example}{271}{section*.565}%
+\contentsline {subsection}{Generative models}{272}{section*.567}%
+\contentsline {subsection}{Generative Adversarial Networks}{273}{section*.569}%
+\contentsline {subsection}{GAN progress}{273}{section*.571}%
+\contentsline {section}{\textit {Assignment 5}}{274}{section*.575}%
+\contentsline {section}{\textit {Assignment 6}}{275}{section*.577}%
+\contentsline {section}{\textit {Giovedì 17 novembre - Lezione 16}}{276}{section*.579}%
+\contentsline {section}{Graph Neural Networks}{276}{section*.580}%
+\contentsline {subsection}{Why graph networks?}{276}{section*.581}%
+\contentsline {subsection}{Example of datasets}{276}{section*.583}%
+\contentsline {subsection}{Graph structures in physics}{276}{section*.585}%
+\contentsline {subsection}{Sparse datasets}{277}{section*.587}%
+\contentsline {subsection}{Locality and invariance}{277}{section*.589}%
+\contentsline {subsection}{Adjacency matrix}{278}{section*.591}%
+\contentsline {subsection}{Data on a graph}{278}{section*.593}%
+\contentsline {subsection}{Tasks}{279}{section*.595}%
+\contentsline {subsection}{Learn new representation on nodes}{279}{section*.597}%
+\contentsline {subsection}{Update of edges, nodes, global state}{280}{section*.599}%
+\contentsline {subsection}{Propagate information}{280}{section*.601}%
+\contentsline {subsection}{Message passing}{280}{section*.603}%
+\contentsline {subsection}{How/what do we train?}{281}{section*.605}%
+\contentsline {subsection}{Example: b-tag at LHC}{281}{section*.607}%
+\contentsline {subsubsection}{Example: b-tag at LHC with intermediate targets}{281}{section*.609}%
+\contentsline {subsubsection}{Example: b-tag at LHC with intermediate targets}{282}{section*.611}%
+\contentsline {section}{Tools}{282}{section*.613}%
+\contentsline {subsection}{How do we build a network in pytorch?}{284}{section*.615}%
+\contentsline {subsection}{How do we train a network in pytorch?}{284}{section*.616}%
+\contentsline {section}{Exercise: our first GNN with pytorch}{284}{section*.617}%
+\contentsline {chapter}{\numberline {4}Fisica Medica}{287}{chapter.4}%
+\contentsline {section}{\textit {Lun 21 novembre - Medphys lezione 1}}{287}{section*.619}%
+\contentsline {section}{Imaging medico: alcuni metodi diagnostici}{287}{section*.620}%
+\contentsline {section}{Le principali modalità di imaging diagnostico}{288}{section*.622}%
+\contentsline {section}{Il ruolo dei computer nell'imaging medico}{288}{section*.624}%
+\contentsline {section}{Biomedical image processing and analysis}{289}{section*.628}%
+\contentsline {section}{Data dimensionality: 3D images}{290}{section*.629}%
+\contentsline {section}{Volume display planes}{290}{section*.631}%
+\contentsline {section}{Data dimensionality: 3D and more…}{291}{section*.633}%
+\contentsline {section}{Structural MRI $T_1$ -weighted images}{291}{section*.635}%
+\contentsline {section}{Functional MRI (fMRI)}{291}{section*.637}%
+\contentsline {section}{Data dimensionality: 2D/3D/4D/..nD images}{292}{section*.639}%
+\contentsline {section}{Errors introduced by the analog to digital conversion}{293}{section*.641}%
+\contentsline {section}{Image representation with gray and color scales}{293}{section*.643}%
+\contentsline {section}{Image windowing}{294}{section*.645}%
+\contentsline {section}{Look-up tables (LUTs)}{294}{section*.647}%
+\contentsline {section}{Medical image file formats}{295}{section*.649}%
+\contentsline {section}{DICOM file format}{295}{section*.650}%
+\contentsline {subsection}{DICOM metadata}{296}{section*.651}%
+\contentsline {section}{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}{296}{section*.653}%
+\contentsline {section}{Images viewers}{296}{section*.654}%
+\contentsline {subsection}{Other medical image viewers}{297}{section*.656}%
+\contentsline {section}{The pydicom library}{297}{section*.657}%
+\contentsline {section}{The General Data Protection Regulation (GDPR)}{297}{section*.658}%
+\contentsline {section}{References and sources}{298}{section*.659}%
+\contentsline {section}{Hands-On}{298}{section*.660}%
+\contentsline {section}{\textit {Mer 24 novembre - Medphys lezione 2}}{299}{section*.661}%
+\contentsline {section}{\textit {Mer lun 28 novembre - Medphys lezione 3}}{300}{section*.662}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{301}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{301}{section*.663}%
+\contentsline {subsection}{Copiare la Repository in Locale}{301}{section*.664}%
+\contentsline {subsection}{Comandi principali in locale}{301}{section*.665}%
+\contentsline {subsection}{Creare una Repository in locale}{302}{section*.666}%
+\contentsline {subsection}{Git Workflow}{303}{section*.668}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{305}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{306}{section*.671}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{307}{section*.672}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{308}{section*.673}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{308}{section*.674}%

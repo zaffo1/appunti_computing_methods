@@ -62,12 +62,26 @@ In experimental and applied physics examples are everywhere...
 	\item ...many more...
 \end{itemize}
 
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={Classification vs Regression },colbacktitle=cyan,coltitle=black]
+	\begin{itemize}
+			\item \textbf{Regression} algorithms predict a continuous value based on the input variables. The main goal of regression problems is to estimate a mapping function based on the input and output variables.
+			\item \textbf{Classification} is a predictive model that approximates a mapping function from input variables to identify discrete output variables, which can be labels or categories. The mapping function of classification algorithms is responsible for predicting the label or category of the given input variables. A classification algorithm can have both discrete and real-valued variables, but it requires that the examples be classified into one of two or more classes.
+
+The most significant difference between regression vs classification is that while regression helps predict a continuous quantity, classification predicts discrete class labels. \\
+
+Let’s consider a dataset that contains student information of a particular university. A regression algorithm can be used in this case to predict the height of any student based on their weight, gender, diet, or subject major. We use regression in this case because height is a continuous quantity. There is an infinite number of possible values for a person’s height.\\
+
+On the contrary, classification can be used to analyse whether an email is a spam or not spam. The algorithm checks the keywords in an email and the sender’s address is to find out the probability of the email being spam. Similarly, while a regression model can be used to predict temperature for the next day, we can use a classification algorithm to determine whether it will be cold or hot according to the given temperature values. 
+	\end{itemize} 
+\end{tcolorbox}
+
 \subsection{Function approximation}
 
 The goal of a ML algorithm is to approximate an unknown function (often related to some Probability Density Function of the data) given some example data.\\
 The function is often $ f(\textbf{x}): R^n \rightarrow R^m$ (in many simple problems $m=1$)
 \begin{itemize}
-	\item In\textbf{classification} we try to approximate the probability for each example, given the inputs represented as a vector \textbf{x}, to belong to a given category (y) (e.g. the probability to be a LHC Higgs signal event vs a Standard Model background one)
+	\item In \textbf{classification} we try to approximate the probability for each example, given the inputs represented as a vector \textbf{x}, to belong to a given category (y) (e.g. the probability to be a LHC Higgs signal event vs a Standard Model background one)
 	\item In \textbf{regression} we approximate the function that given the inputs (x) returns the value of the variable to predict (y) (e.g. given the data read from some particle detectors, estimate the particle energy).
 \end{itemize}
 
@@ -91,7 +105,7 @@ We will see example of techniques with different models and complexity: (Linear 
 \subsection{Parameters}
 
 A specific model typically have parameters (e.g. the coefficients of the polynomials or the characters of the 10 lines of C++).
-Parameters are what we learn from data in the “training phase”.
+\textbf{Parameters are what we learn from data in the “training phase”}.
 Different models or similar model with different hyper-parameters settings have different n.d.o.f. in the parameters phase space.
 \begin{equation*}
 	y(x) = ax + bx^2 + cx^3 + d \qquad \qquad	\text{(a, b, c, d are the parameters)}
@@ -100,17 +114,31 @@ Different models or similar model with different hyper-parameters settings have 
 I parametri sono la cosa che voglio imparare nella fase di training. Mentre gli iperparametri li fisso prima di allenare il modello facendogli vedere i dati, i parametri sono invece proprio quelli che imparo.
 
 \section{Objective function}
-DObbiamo stabilire una metrica per dire quanto è buona la nostra approssimazione, dati gli esempi su ci ci stamo allenando.\\
+Dobbiamo stabilire una metrica per dire quanto è buona la nostra approssimazione, dati gli esempi su cui ci stamo allenando.\\
 
-A goal for what is “a good approximation” have to be defined This is called objective function (or loss function or error function …) Is a function that returns higher(or lower) value depending how good or bad the approximation is. Loss functions have to be minimized.\\
-Examples of loss functions:
+A goal for what is “a good approximation” have to be defined. This is called objective function (or loss function or error function …)- It is a function that returns higher (or lower) value depending how good or bad the approximation is. \textbf{Loss functions have to be minimized}.\\
+Examples of loss functions are:
 \begin{itemize}
 	\item Classification problems: binary cross entropy
 	\item Regression problems: Mean Square Error (i.e. the chi2 with sigma=1, I hope you are not surprised by this choice!)
 \end{itemize}
 
 The process is not very different from a typical phys-lab1 chi2 fit… but the number
-of parameters can be several orders of magnitude larger ($10^3$ to $10^6$).
+of parameters can be several orders of magnitude larger ($10^3$ to $10^6$).\\
+
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{19:} What is a loss function? Which properties should it have in order to be used in a gradient descent technique? Which loss functions are more appropriate for classification vs regression problems?},colbacktitle=red,coltitle=black]
+	
+Anche nota come objective function o error function. E’ una funzione che mappa un evento, o valori di una o più variabili, su un numero reale, che intuitivamente rappresenta un "costo" associato all'evento. Rappresenta una metrica che quantifica la bontà dell’approssimazione realizzata dal nostro modello.\\
+
+Le tecniche di gradient descent servono a minimizzare la cost function. In particolare, dato che si basano sul calcolo di derivate prime, è necessario che la loss function usata sia differenziabile.\\
+
+Classification problems $\rightarrow$ binary cross entropy\\
+Regression problems  $\rightarrow$ Mean Squared Error Loss (MSE)\\
+
+\end{tcolorbox}
+
+\subsection{Function approximation}
 
 \subsubsection{Objective function: binary cross entropy}
 In classification problems the function to approximate is typically $R^n \rightarrow [0,1]$, Where, for example, 0 means background and 1 means signal.\\
@@ -200,7 +228,30 @@ similar tasks as the supervised ones, e.g.
 
 In practice learn the Probability Density Function of the data, independently of any “label” variable, i.e. P(\textbf{x})
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{23.} Can you make some examples of unsupervised algorithms ?
+	},colbacktitle=red,coltitle=black]
+	
+	Unsupervised learning is a machine learning technique in which developers don’t need to supervise the model. Instead, this type of learning allows the model to work independently without any supervision to discover hidden patterns and information that was previously undetected. It mainly deals with the unlabeled data, while supervised learning, as we remember, deals with labeled data.
+	Unsupervised learning tasks and the algorithms used to solve them:
+	
+	\begin{itemize}
+		\item \textbf{Dimensionality Reduction}— the task of reducing the number of input features in a dataset
+		\begin{itemize}
+			\item Principal Component Analysis;
+			\item Autoencoders
+		\end{itemize}
+		\item \textbf{Anomaly Detection}— the task of detecting instances that are very different from the norm, and
+		
+		\item \textbf{Clustering} — the task of grouping similar instances into clusters.
+		
+		\item \textbf{Prediction of missing inputs
+		}
+	\end{itemize}
+	 
+\end{tcolorbox}
+
 \subsubsection{Supervised vs unsupervised}
+
 
 Supervised and unsupervised are not as different as one would imagine, in fact.\\
 Unsupervised P(\textbf{x}) can be seen as n supervised problems, one for each feature of the input vector
@@ -221,6 +272,15 @@ Supervised P(y | \textbf{x}) can also be computed, if we treat y as an “\textb
 \end{figure}
 \FloatBarrier
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{24.} How can a supervised algorithm be seen as an unsupervised one and vice versa?
+		
+	},colbacktitle=red,coltitle=black]
+	
+ Vedi sopra...
+	
+\end{tcolorbox}
+
+
 \subsubsection{Reinforcement learning (not covered in this lectures)}
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\includegraphics[width=0.5\textwidth]{figure_ml/reinforcement_learning.png}
@@ -232,14 +292,13 @@ Learn to make best decision in a given situation
 \begin{itemize}
 	\item The right move in chess or go match
 	\item Drive a car in the traffic
-	\item Etc.
 \end{itemize}
 
 
 \subsection{Capacity and representational power}
 
-\begin{wrapfigure}{r}{0.3\textwidth}
-	\includegraphics[width=0.3\textwidth]{figure_ml/capacity.png}
+\begin{wrapfigure}{r}{0.25\textwidth}
+	\includegraphics[width=0.25\textwidth]{figure_ml/capacity.png}
 \end{wrapfigure} 
 
 Different models (i.e. ML techniques/hyper-parametersvalues) allow to represent different type of functions.
@@ -257,7 +316,7 @@ handle: accuracy in representation vs generalization of the results.\\
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figure_ml/u_a_o.png}
+	\includegraphics[width=0.5\textwidth]{figure_ml/u_a_o.png}
 \end{figure}
 \FloatBarrier
 
@@ -265,7 +324,7 @@ Typical method is to check on independent sample for the same process (Or just s
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\textwidth]{figure_ml/u_a_o2.png}
+	\includegraphics[width=0.5\textwidth]{figure_ml/u_a_o2.png}
 \end{figure}
 \FloatBarrier
 
@@ -302,6 +361,29 @@ Bias/variance trade-off
 \FloatBarrier
 
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{20.} How can you see that ML training is overfitting?  What is the bias vs variance tradeoff?
+		
+		
+	},colbacktitle=red,coltitle=black]
+L’overfitting corrisponde ad una mancanza di generalizzazione. Un modello affetto da overfitting predice bene i training data, ma predice male i dati di almeno uno tra test e validation set.\\
+
+Overfitting è sinonimo di high variance: variance is an error of the model due
+to its sensitivity to small fluctuations in the training set. It means that if your training data
+was sampled differently, the learning would result in a significantly different model. Which
+is why the model that overfits performs poorly on the test data: test and training data are
+sampled from the dataset independently of one another.\\
+
+Underfitting invece è sinonimo di high bias: a model has a low bias if it predicts well
+the labels of the training data. If the model makes many mistakes on the training data, we
+say that the model has a high bias or that the model underfits. So, underfitting is the
+inability of the model to predict well the labels of the data it was trained on.\\
+
+Dunque il variance-bias tradeoff si riferisce a trovare un compromesso tra underfitting e overfitting. Tipicamente questo viene fatto grazie alla regolarizzazione, che comporta un leggero aumento del bias, ma allo stesso tempo riduce significativamente la varianza.
+
+	
+\end{tcolorbox}
+
+
 \subsection{Regularization}
 
 \begin{wrapfigure}{r}{0.45\textwidth}
@@ -323,7 +405,7 @@ the examples in training dataset can be increased with augmentation techniques:
 
 
 
-\subsection{Hyperparameters(model) optimization}
+\subsection{Hyperparameters (model) optimization}
 
 It is normal to have to test a few, if not several, configurations in the model hyper-parameter space:
 \begin{itemize}
@@ -355,6 +437,16 @@ Original dataset is typically split in uneven parts to be used as \textit{traini
 \end{figure}
 \FloatBarrier
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{21.} What is hyper-parameter optimization and why would it require additional splitting of the available dataset?
+		
+		
+	},colbacktitle=red,coltitle=black]
+La minimizzazione sul training set serve per trovare i parametri ottimali di un dato modello.
+A questo punto si usa il validation set per valutare le performance del modello. Si possono cambiare gli iperparametri cercando di fare una minimizzazione sul validation set e trovare gli iperparametri ottimali. A questo punto entra in gioco il test set, che serve per fare un performance assessment del nostro algoritmo che sia unbiased.
+	
+	
+\end{tcolorbox}
+
 \subsection{K-folding cross validation}
 
 If the sample is statistically limited, splitting in 3 chunks means loosing
@@ -369,6 +461,37 @@ validation if a hyper parameter scan is performed)
 	\caption{Nella figura i dati sono divisi solo in 2 (test e training), ma si possono dividere in 3 come abbiamo visto prima}
 \end{figure}
 \FloatBarrier
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{25.} What are k-folding and cross-validation?
+		
+		
+		
+	},colbacktitle=red,coltitle=black]
+
+	Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.\\
+	The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation.\\
+	The general procedure is as follows:
+	\begin{enumerate}
+		 
+	
+	\item Shuffle the dataset randomly.
+	\item Split the dataset into k groups
+	\item For each unique group:
+	\begin{enumerate}
+		 
+	\item Take the group as a hold out or test data set
+	\item Take the remaining groups as a training data set
+	\item Fit a model on the training set and evaluate it on the test set
+	\item Retain the evaluation score and discard the model
+	\end{enumerate}
+	\item Summarize the skill of the model using the sample of model evaluation scores
+	\end{enumerate}
+	
+	Importantly, each observation in the data sample is assigned to an individual group and stays in that group for the duration of the procedure. This means that each sample is given the opportunity to be used in the hold out set 1 time and used to train the model k-1 times
+	
+	
+	
+\end{tcolorbox}
 
 \subsection{Inference}
 
@@ -520,6 +643,24 @@ Combine multiple trees (\#trees is an hyperpar)
 \end{figure}
 
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{26.} What is the difference between bagging and boosting for decision trees?
+		
+		
+		
+		
+	},colbacktitle=red,coltitle=black]
+	
+Sono entrambi metodi utilizzati per combinare più decision tree.
+\textit{Ensemble methods}, which combine several decision trees to produce better predictive performance than utilizing a single decision tree. The main principle behind the ensemble model is that a group of weak learners come together to form a strong learner.\\
+
+\textbf{Bagging} (Bootstrap Aggregation) is used when our goal is to reduce the variance of a decision tree. Here idea is to create several subsets of data from training sample chosen randomly with replacement. Now, each collection of subset data is used to train their decision trees. As a result, we end up with an ensemble of different models. Average of all the predictions from different trees are used which is more robust than a single decision tree.\\
+
+\textbf{Boosting} is another ensemble technique to create a collection of predictors. In this technique, learners are learned sequentially with early learners fitting simple models to the data and then analyzing data for errors. In other words, we fit consecutive trees (random sample) and at every step, the goal is to solve for net error from the prior tree.
+
+
+	
+	
+\end{tcolorbox}
 
 \subsection{Limitations of decision trees}
 Cuts are axis aligned!\\
@@ -537,9 +678,23 @@ Classification of \textbf{x1 > x2} is a hard problem for a decision tree
 		\includegraphics[width=0.9\linewidth]{figure_ml/limitations_trees2.png}
 	\end{subfigure}
 \end{figure}
+\FloatBarrier
 
 
+\subsection{Decision Trees tools}
+Very powerful tools (e.g. the “workhorse” for classification/regression at the LHC).\\
 
+Various tools exists for using decision trees in python\\
+\begin{itemize}
+	\item In python environment: XGBoost, sklearn.tree
+	\item In ROOT libraries the “TMVA” package supports boosted decision trees (BDT)
+\end{itemize}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure_ml/decision_trees_tools}
+\end{figure}
+\FloatBarrier
 
 \subsection{Many more ML techniques!}
 
@@ -548,7 +703,7 @@ Scikit-learn library offers many ML techniques implementation in python.\\
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{figure_ml/scikit.png}
+	\includegraphics[width=1\textwidth]{figure_ml/scikit.png}
 \end{figure}
 \FloatBarrier
 

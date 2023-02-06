@@ -302,19 +302,161 @@
 \BOOKMARK [2][-]{section*.399}{Model and Hyper-parameters}{section*.393}% 302
 \BOOKMARK [2][-]{section*.400}{Parameters}{section*.393}% 303
 \BOOKMARK [1][-]{section*.401}{Objective function}{chapter.3}% 304
-\BOOKMARK [2][-]{section*.402}{Objective function: binary cross entropy}{section*.401}% 305
-\BOOKMARK [2][-]{section*.405}{Learning / Training}{section*.401}% 306
-\BOOKMARK [3][-]{section*.406}{Supervised learning}{section*.405}% 307
-\BOOKMARK [3][-]{section*.409}{Unsupervised learning}{section*.405}% 308
-\BOOKMARK [3][-]{section*.411}{Supervised vs unsupervised}{section*.405}% 309
-\BOOKMARK [3][-]{section*.414}{Reinforcement learning \(not covered in this lectures\)}{section*.405}% 310
-\BOOKMARK [2][-]{section*.416}{Capacity and representational power}{section*.401}% 311
-\BOOKMARK [2][-]{section*.420}{Generalization}{section*.401}% 312
-\BOOKMARK [2][-]{section*.423}{Regularization}{section*.401}% 313
-\BOOKMARK [2][-]{section*.425}{Hyperparameters\(model\) optimization}{section*.401}% 314
-\BOOKMARK [2][-]{section*.427}{K-folding cross validation}{section*.401}% 315
-\BOOKMARK [2][-]{section*.429}{Inference}{section*.401}% 316
-\BOOKMARK [2][-]{section*.430}{Accuracy, Precision, Sensitivity, Specificity}{section*.401}% 317
-\BOOKMARK [1][-]{section*.432}{Examples of ML techniques}{chapter.3}% 318
-\BOOKMARK [2][-]{section*.433}{Linear regression \(Supervised\)}{section*.432}% 319
-\BOOKMARK
+\BOOKMARK [2][-]{section*.402}{Function approximation}{section*.401}% 305
+\BOOKMARK [3][-]{section*.403}{Objective function: binary cross entropy}{section*.402}% 306
+\BOOKMARK [2][-]{section*.406}{Learning / Training}{section*.401}% 307
+\BOOKMARK [3][-]{section*.407}{Supervised learning}{section*.406}% 308
+\BOOKMARK [3][-]{section*.410}{Unsupervised learning}{section*.406}% 309
+\BOOKMARK [3][-]{section*.412}{Supervised vs unsupervised}{section*.406}% 310
+\BOOKMARK [3][-]{section*.415}{Reinforcement learning \(not covered in this lectures\)}{section*.406}% 311
+\BOOKMARK [2][-]{section*.417}{Capacity and representational power}{section*.401}% 312
+\BOOKMARK [2][-]{section*.421}{Generalization}{section*.401}% 313
+\BOOKMARK [2][-]{section*.424}{Regularization}{section*.401}% 314
+\BOOKMARK [2][-]{section*.426}{Hyperparameters \(model\) optimization}{section*.401}% 315
+\BOOKMARK [2][-]{section*.428}{K-folding cross validation}{section*.401}% 316
+\BOOKMARK [2][-]{section*.430}{Inference}{section*.401}% 317
+\BOOKMARK [2][-]{section*.431}{Accuracy, Precision, Sensitivity, Specificity}{section*.401}% 318
+\BOOKMARK [1][-]{section*.433}{Examples of ML techniques}{chapter.3}% 319
+\BOOKMARK [2][-]{section*.434}{Linear regression \(Supervised\)}{section*.433}% 320
+\BOOKMARK [2][-]{section*.435}{Principal Component Analysis \(aka PCA\) \(Unsupervised\)}{section*.433}% 321
+\BOOKMARK [3][-]{section*.438}{Nearest neighbors}{section*.435}% 322
+\BOOKMARK [2][-]{section*.440}{Decision trees}{section*.433}% 323
+\BOOKMARK [2][-]{section*.442}{Ensembles of trees}{section*.433}% 324
+\BOOKMARK [2][-]{section*.446}{Limitations of decision trees}{section*.433}% 325
+\BOOKMARK [2][-]{section*.448}{Decision Trees tools}{section*.433}% 326
+\BOOKMARK [2][-]{section*.450}{Many more ML techniques!}{section*.433}% 327
+\BOOKMARK [2][-]{section*.452}{What do we need to create our first ML program}{section*.433}% 328
+\BOOKMARK [2][-]{section*.453}{Hands-on}{section*.433}% 329
+\BOOKMARK [1][-]{section*.454}{Lun 7 novembre - lezione 13}{chapter.3}% 330
+\BOOKMARK [1][-]{section*.455}{Introduction to Artificial Neural Networks}{chapter.3}% 331
+\BOOKMARK [1][-]{section*.456}{Artificial Neural Networks}{chapter.3}% 332
+\BOOKMARK [2][-]{section*.457}{\(Artificial\) neural networks: the \215Model\216}{section*.456}% 333
+\BOOKMARK [2][-]{section*.459}{Brief history, highs and lows}{section*.456}% 334
+\BOOKMARK [2][-]{section*.461}{Complexity growth}{section*.456}% 335
+\BOOKMARK [2][-]{section*.463}{Performance on classic problems}{section*.456}% 336
+\BOOKMARK [2][-]{section*.465}{My favorite performance examples}{section*.456}% 337
+\BOOKMARK [2][-]{section*.466}{OpenAI GPT3}{section*.456}% 338
+\BOOKMARK [1][-]{section*.467}{Neural Nets Basic elements}{chapter.3}% 339
+\BOOKMARK [2][-]{section*.468}{A neural network node: the artificial neuron}{section*.467}% 340
+\BOOKMARK [2][-]{section*.470}{The MLP model}{section*.467}% 341
+\BOOKMARK [2][-]{section*.472}{Universal approximation theorem}{section*.467}% 342
+\BOOKMARK [2][-]{section*.473}{Example \(1-D input\)}{section*.467}% 343
+\BOOKMARK [2][-]{section*.476}{Training of an MLP}{section*.467}% 344
+\BOOKMARK [2][-]{section*.478}{Training a NN}{section*.467}% 345
+\BOOKMARK [2][-]{section*.480}{How to find a minimum?}{section*.467}% 346
+\BOOKMARK [2][-]{section*.482}{Not as simple as you would imagine}{section*.467}% 347
+\BOOKMARK [2][-]{section*.484}{Learning rate, epochs and batches}{section*.467}% 348
+\BOOKMARK [2][-]{section*.487}{Training and overfitting}{section*.467}% 349
+\BOOKMARK [2][-]{section*.489}{Neural Networks, computers and mathematics}{section*.467}% 350
+\BOOKMARK [2][-]{section*.490}{Back-propagation}{section*.467}% 351
+\BOOKMARK [1][-]{section*.492}{Deep Networks}{chapter.3}% 352
+\BOOKMARK [2][-]{section*.493}{Deep Feed Forward networks}{section*.492}% 353
+\BOOKMARK [2][-]{section*.495}{Why going deeper?}{section*.492}% 354
+\BOOKMARK [2][-]{section*.496}{Activation functions}{section*.492}% 355
+\BOOKMARK [2][-]{section*.498}{Deep architectures}{section*.492}% 356
+\BOOKMARK [2][-]{section*.500}{Dropout and regularization methods}{section*.492}% 357
+\BOOKMARK [2][-]{section*.502}{\(Batch\) normalization}{section*.492}% 358
+\BOOKMARK [1][-]{section*.504}{DNN Tools}{chapter.3}% 359
+\BOOKMARK [2][-]{section*.505}{Keras}{section*.504}% 360
+\BOOKMARK [2][-]{section*.506}{Other common tools}{section*.504}% 361
+\BOOKMARK [2][-]{section*.507}{Keras Sequential example}{section*.504}% 362
+\BOOKMARK [2][-]{section*.509}{Keras \215Model\216 Functional API}{section*.504}% 363
+\BOOKMARK [2][-]{section*.511}{A \(modernized\) MLP in keras}{section*.504}% 364
+\BOOKMARK [1][-]{section*.513}{From the 1995 to 2010}{chapter.3}% 365
+\BOOKMARK [1][-]{section*.514}{Training a model with Keras}{chapter.3}% 366
+\BOOKMARK [1][-]{section*.515}{Keras Layers}{chapter.3}% 367
+\BOOKMARK [2][-]{section*.516}{Keras basic layers}{section*.515}% 368
+\BOOKMARK [2][-]{section*.517}{Callbacks}{section*.515}% 369
+\BOOKMARK [1][-]{section*.518}{Assignment 1}{chapter.3}% 370
+\BOOKMARK [1][-]{section*.520}{Assignment 2}{chapter.3}% 371
+\BOOKMARK [1][-]{section*.522}{Gioved\354 10 novembre - Lezione 14}{chapter.3}% 372
+\BOOKMARK [1][-]{section*.523}{Convolutional and recurrent networks}{chapter.3}% 373
+\BOOKMARK [2][-]{section*.524}{Classification of images}{section*.523}% 374
+\BOOKMARK [2][-]{section*.527}{Exploit invariance and locality}{section*.523}% 375
+\BOOKMARK [2][-]{section*.529}{Can we exploit problem invariance?}{section*.523}% 376
+\BOOKMARK [2][-]{section*.531}{Limitations}{section*.523}% 377
+\BOOKMARK [2][-]{section*.532}{Understanding the dimensions of the convolution}{section*.523}% 378
+\BOOKMARK [2][-]{section*.534}{Pooling \(subsampling\)}{section*.523}% 379
+\BOOKMARK [2][-]{section*.536}{Typical CNN architecture}{section*.523}% 380
+\BOOKMARK [2][-]{section*.538}{More on convolution}{section*.523}% 381
+\BOOKMARK [2][-]{section*.540}{Bounding Box}{section*.523}% 382
+\BOOKMARK [2][-]{section*.543}{Transfer learning}{section*.523}% 383
+\BOOKMARK [2][-]{section*.545}{Variable length, sequences and causality}{section*.523}% 384
+\BOOKMARK [2][-]{section*.546}{Exploiting time invariance}{section*.523}% 385
+\BOOKMARK [2][-]{section*.548}{LSTM and GRU}{section*.523}% 386
+\BOOKMARK [2][-]{section*.550}{Different ways of processing time series}{section*.523}% 387
+\BOOKMARK [2][-]{section*.552}{Keras basic layers}{section*.523}% 388
+\BOOKMARK [2][-]{section*.554}{More on LSTM}{section*.523}% 389
+\BOOKMARK [2][-]{section*.556}{Using LSTM}{section*.523}% 390
+\BOOKMARK [1][-]{section*.558}{Assignment 3}{chapter.3}% 391
+\BOOKMARK [1][-]{section*.559}{Assignment 4}{chapter.3}% 392
+\BOOKMARK [1][-]{section*.560}{Luned\354 14 novembre - lezione 15}{chapter.3}% 393
+\BOOKMARK [1][-]{section*.561}{Autoencoders and Generative Networks}{chapter.3}% 394
+\BOOKMARK [2][-]{section*.562}{Dimensionality reduction task}{section*.561}% 395
+\BOOKMARK [1][-]{section*.565}{Autoencoder example}{chapter.3}% 396
+\BOOKMARK [2][-]{section*.567}{Generative models}{section*.565}% 397
+\BOOKMARK [2][-]{section*.569}{Generative Adversarial Networks}{section*.565}% 398
+\BOOKMARK [2][-]{section*.571}{GAN progress}{section*.565}% 399
+\BOOKMARK [1][-]{section*.575}{Assignment 5}{chapter.3}% 400
+\BOOKMARK [1][-]{section*.577}{Assignment 6}{chapter.3}% 401
+\BOOKMARK [1][-]{section*.579}{Gioved\354 17 novembre - Lezione 16}{chapter.3}% 402
+\BOOKMARK [1][-]{section*.580}{Graph Neural Networks}{chapter.3}% 403
+\BOOKMARK [2][-]{section*.581}{Why graph networks?}{section*.580}% 404
+\BOOKMARK [2][-]{section*.583}{Example of datasets}{section*.580}% 405
+\BOOKMARK [2][-]{section*.585}{Graph structures in physics}{section*.580}% 406
+\BOOKMARK [2][-]{section*.587}{Sparse datasets}{section*.580}% 407
+\BOOKMARK [2][-]{section*.589}{Locality and invariance}{section*.580}% 408
+\BOOKMARK [2][-]{section*.591}{Adjacency matrix}{section*.580}% 409
+\BOOKMARK [2][-]{section*.593}{Data on a graph}{section*.580}% 410
+\BOOKMARK [2][-]{section*.595}{Tasks}{section*.580}% 411
+\BOOKMARK [2][-]{section*.597}{Learn new representation on nodes}{section*.580}% 412
+\BOOKMARK [2][-]{section*.599}{Update of edges, nodes, global state}{section*.580}% 413
+\BOOKMARK [2][-]{section*.601}{Propagate information}{section*.580}% 414
+\BOOKMARK [2][-]{section*.603}{Message passing}{section*.580}% 415
+\BOOKMARK [2][-]{section*.605}{How/what do we train?}{section*.580}% 416
+\BOOKMARK [2][-]{section*.607}{Example: b-tag at LHC}{section*.580}% 417
+\BOOKMARK [3][-]{section*.609}{Example: b-tag at LHC with intermediate targets}{section*.607}% 418
+\BOOKMARK [3][-]{section*.611}{Example: b-tag at LHC with intermediate targets}{section*.607}% 419
+\BOOKMARK [1][-]{section*.613}{Tools}{chapter.3}% 420
+\BOOKMARK [2][-]{section*.615}{How do we build a network in pytorch?}{section*.613}% 421
+\BOOKMARK [2][-]{section*.616}{How do we train a network in pytorch?}{section*.613}% 422
+\BOOKMARK [1][-]{section*.617}{Exercise: our first GNN with pytorch}{chapter.3}% 423
+\BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 424
+\BOOKMARK [1][-]{section*.619}{Lun 21 novembre - Medphys lezione 1}{chapter.4}% 425
+\BOOKMARK [1][-]{section*.620}{Imaging medico: alcuni metodi diagnostici}{chapter.4}% 426
+\BOOKMARK [1][-]{section*.622}{Le principali modalit\340 di imaging diagnostico}{chapter.4}% 427
+\BOOKMARK [1][-]{section*.624}{Il ruolo dei computer nell'imaging medico}{chapter.4}% 428
+\BOOKMARK [1][-]{section*.628}{Biomedical image processing and analysis}{chapter.4}% 429
+\BOOKMARK [1][-]{section*.629}{Data dimensionality: 3D images}{chapter.4}% 430
+\BOOKMARK [1][-]{section*.631}{Volume display planes}{chapter.4}% 431
+\BOOKMARK [1][-]{section*.633}{Data dimensionality: 3D and more\203}{chapter.4}% 432
+\BOOKMARK [1][-]{section*.635}{Structural MRI T1 -weighted images}{chapter.4}% 433
+\BOOKMARK [1][-]{section*.637}{Functional MRI \(fMRI\)}{chapter.4}% 434
+\BOOKMARK [1][-]{section*.639}{Data dimensionality: 2D/3D/4D/..nD images}{chapter.4}% 435
+\BOOKMARK [1][-]{section*.641}{Errors introduced by the analog to digital conversion}{chapter.4}% 436
+\BOOKMARK [1][-]{section*.643}{Image representation with gray and color scales}{chapter.4}% 437
+\BOOKMARK [1][-]{section*.645}{Image windowing}{chapter.4}% 438
+\BOOKMARK [1][-]{section*.647}{Look-up tables \(LUTs\)}{chapter.4}% 439
+\BOOKMARK [1][-]{section*.649}{Medical image file formats}{chapter.4}% 440
+\BOOKMARK [1][-]{section*.650}{DICOM file format}{chapter.4}% 441
+\BOOKMARK [2][-]{section*.651}{DICOM metadata}{section*.650}% 442
+\BOOKMARK [1][-]{section*.653}{The Neuroimaging Informatics Technology Initiative \(NIfTI\) file format}{chapter.4}% 443
+\BOOKMARK [1][-]{section*.654}{Images viewers}{chapter.4}% 444
+\BOOKMARK [2][-]{section*.656}{Other medical image viewers}{section*.654}% 445
+\BOOKMARK [1][-]{section*.657}{The pydicom library}{chapter.4}% 446
+\BOOKMARK [1][-]{section*.658}{The General Data Protection Regulation \(GDPR\)}{chapter.4}% 447
+\BOOKMARK [1][-]{section*.659}{References and sources}{chapter.4}% 448
+\BOOKMARK [1][-]{section*.660}{Hands-On}{chapter.4}% 449
+\BOOKMARK [1][-]{section*.661}{Mer 24 novembre - Medphys lezione 2}{chapter.4}% 450
+\BOOKMARK [1][-]{section*.662}{Mer lun 28 novembre - Medphys lezione 3}{chapter.4}% 451
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 452
+\BOOKMARK [1][-]{section*.663}{Creare una Repository partendo da GitHub}{appendix.A}% 453
+\BOOKMARK [2][-]{section*.664}{Copiare la Repository in Locale}{section*.663}% 454
+\BOOKMARK [2][-]{section*.665}{Comandi principali in locale}{section*.663}% 455
+\BOOKMARK [2][-]{section*.666}{Creare una Repository in locale}{section*.663}% 456
+\BOOKMARK [2][-]{section*.668}{Git Workflow}{section*.663}% 457
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 458
+\BOOKMARK [1][-]{section*.671}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 459
+\BOOKMARK [2][-]{section*.672}{Step 2: Configure the conf.py}{section*.671}% 460
+\BOOKMARK [2][-]{section*.673}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.671}% 461
+\BOOKMARK [2][-]{section*.674}{Step 4: Including module.rst and generating html}{section*.671}% 462
