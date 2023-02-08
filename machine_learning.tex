@@ -690,11 +690,14 @@ Various tools exists for using decision trees in python\\
 	\item In ROOT libraries the “TMVA” package supports boosted decision trees (BDT)
 \end{itemize}
 
-\begin{figure}[ht]
+\newpage
+
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure_ml/decision_trees_tools}
+	\includegraphics[width=0.85\textwidth]{figure_ml/decision_trees_tools}
 \end{figure}
 \FloatBarrier
+
 
 \subsection{Many more ML techniques!}
 
@@ -860,11 +863,9 @@ Image classification and speech recognition are the typical problems where ML (a
 
 \subsection{My favorite performance examples}
 
-\begin{itemize}
-	\item 
-\end{itemize}
 
 \url{https://www.technologyreview.com/2020/11/03/1011616/ai-godfather-geoffrey-hinton-deep-learning-will-do-everything/}
+
 
 \subsection{OpenAI GPT3}
 
@@ -925,6 +926,12 @@ Nodes are typically also connected (with weight b) to an input “bias node” t
 	\end{itemize}
 \end{itemize}
 
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{17.} What is the universal approximation theorem and why “depth” is relevant despite the theorem? },colbacktitle=red,coltitle=black]
+Il teorema di approssimazione universale dimostra che una rete neurale con un singolo strato nascosto con un numero sufficiente (e finito) di neuroni può approssimare qualsiasi funzione continua.\\
+
+Il teorema di approssimazione universale è un teorema di esistenza, afferma che una rete con un singolo strato nascosto può approssimare qualsiasi funzione continua, ma non da alcuna indicazione su come ottenerla, come istruirla e se un singolo strato sia la scelta più efficiente. 
+\end{tcolorbox}
+
 \subsection{Example (1-D input)}
 
 \begin{figure}[ht]
@@ -962,7 +969,7 @@ Remember: we do not know the function we want to approximate, we only have some 
 
 The goal of training is to minimize the objective
 function (possibly both on the training and validation
-sample). I.e. we want to minimize the loss as a function of the model parameters (i.e. the weights).\\
+sample). I.e. \textit{we want to minimize the loss as a function of the model parameters (i.e. the weights)}.\\
 For a MLP the basic idea is the following
 
 
@@ -1037,13 +1044,44 @@ A typical training foresee iteration on multiple epochs.\\
 
 The size of the update step can be controlled with a multiplicative factor called “learning rate”. Learning rate can be adapted over time.
 
+
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure_ml/real_lr.png}
+	\includegraphics[width=0.6\linewidth]{figure_ml/real_lr.png}
 \end{figure}
 \FloatBarrier
 
-\clearpage
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{22.} What are the definitions of learning rate, epochs and batches in the context of DNN training? },colbacktitle=red,coltitle=black]
+
+Stochastic gradient descent is an optimization algorithm that estimates the error gradient for the current state of the model using examples from the training dataset, then updates the weights of the model using the back-propagation of errors algorithm, referred to as simply backpropagation.\\
+
+The amount that the weights are updated during training is referred to as the step size or the “\textbf{learning rate}.”\\
+
+Specifically, the learning rate is a configurable hyperparameter used in the training of neural networks that has a small positive value, often in the range between 0.0 and 1.0.\\
+
+The learning rate controls how quickly the model is adapted to the problem. Smaller learning rates require more training epochs given the smaller changes made to the weights each update, whereas larger learning rates result in rapid changes and require fewer training epochs.\\
+
+A learning rate that is too large can cause the model to converge too quickly to a suboptimal solution, whereas a learning rate that is too small can cause the process to get stuck.\\
+
+\textbf{SAMPLE: }A sample is a single row of data. It contains inputs that are fed into the algorithm and an output that is used to compare to the prediction and calculate an error. A training dataset consists of many rows of data, e.g. many samples. A sample may also be called an instance, an observation, an input vector, or a feature vector.\\
+
+\textbf{BATCH: } The batch size is a hyperparameter that defines the number of samples to work through before updating the internal model parameters.\\
+Think of a batch as a for-loop iterating over one or more samples and making predictions. At the end of the batch, the predictions are compared to the expected output variables and an error is calculated. From this error, the update algorithm is used to improve the model, e.g. move down along the error gradient.\\
+A training dataset can be divided into one or more batches. When all training samples are used to create one batch, the learning algorithm is called batch gradient descent. When the batch is the size of one sample, the learning algorithm is called stochastic gradient descent. When the batch size is more than one sample and less than the size of the training dataset, the learning algorithm is called mini-batch gradient descent.\\
+
+\textbf{EPOCH:} The number of epochs is a hyperparameter that defines the number times that the learning algorithm will work through the entire training dataset.\\
+One epoch means that each sample in the training dataset has had an opportunity to update the internal model parameters. An epoch is comprised of one or more batches. For example, as above, an epoch that has one batch is called the batch gradient descent learning algorithm.\\
+You can think of a for-loop over the number of epochs where each loop proceeds over the training dataset. Within this for-loop is another nested for-loop that iterates over each batch of samples, where one batch has the specified “batch size” number of samples.\\
+
+
+\textbf{In short:}
+the \textbf{batch} size is a number of samples processed before the model is updated.\\
+The number of \textbf{epochs} is the number of complete passes through the training dataset.\\
+
+\end{tcolorbox}
+
+
 \subsection{Training and overfitting}
 
 \begin{wrapfigure}{r}{0.35\textwidth}
@@ -1099,7 +1137,7 @@ Tools exist to describe mathematically the network structure that are optimized 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1\linewidth]{figure_ml/activation_functions.png}
+	\includegraphics[width=1\linewidth]{figure_ml/dffn.png}
 \end{figure}
 \FloatBarrier
 
@@ -1125,6 +1163,16 @@ I primi layer imparano features più semplici, quelli dopo imparano features sem
 	\includegraphics[width=1\linewidth]{figure_ml/activation_functions.png}
 \end{figure}
 \FloatBarrier
+
+
+
+\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{18.} What is an activation function? Which examples do you know? Which activation functions should be used in the last layer of a Classification DNN? And for a  Regression? Can a linear activation be used in hidden layers?},colbacktitle=red,coltitle=black]
+	
+
+	
+\end{tcolorbox}
+
+
 
 \newpage
 \subsection{Deep architectures}
