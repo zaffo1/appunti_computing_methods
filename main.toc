@@ -426,37 +426,37 @@
 \contentsline {section}{Imaging medico: alcuni metodi diagnostici}{287}{section*.620}%
 \contentsline {section}{Le principali modalità di imaging diagnostico}{288}{section*.622}%
 \contentsline {section}{Il ruolo dei computer nell'imaging medico}{288}{section*.624}%
-\contentsline {section}{Biomedical image processing and analysis}{289}{section*.628}%
-\contentsline {section}{Data dimensionality: 3D images}{290}{section*.629}%
-\contentsline {section}{Volume display planes}{290}{section*.631}%
+\contentsline {section}{Biomedical image processing and analysis}{290}{section*.628}%
+\contentsline {section}{Data dimensionality: 3D images}{291}{section*.629}%
+\contentsline {section}{Volume display planes}{291}{section*.631}%
 \contentsline {section}{Data dimensionality: 3D and more…}{291}{section*.633}%
-\contentsline {section}{Structural MRI $T_1$ -weighted images}{291}{section*.635}%
-\contentsline {section}{Functional MRI (fMRI)}{291}{section*.637}%
-\contentsline {section}{Data dimensionality: 2D/3D/4D/..nD images}{292}{section*.639}%
-\contentsline {section}{Errors introduced by the analog to digital conversion}{293}{section*.641}%
-\contentsline {section}{Image representation with gray and color scales}{293}{section*.643}%
-\contentsline {section}{Image windowing}{294}{section*.645}%
-\contentsline {section}{Look-up tables (LUTs)}{294}{section*.647}%
-\contentsline {section}{Medical image file formats}{295}{section*.649}%
-\contentsline {section}{DICOM file format}{295}{section*.650}%
-\contentsline {subsection}{DICOM metadata}{296}{section*.651}%
-\contentsline {section}{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}{296}{section*.653}%
-\contentsline {section}{Images viewers}{296}{section*.654}%
-\contentsline {subsection}{Other medical image viewers}{297}{section*.656}%
-\contentsline {section}{The pydicom library}{297}{section*.657}%
-\contentsline {section}{The General Data Protection Regulation (GDPR)}{297}{section*.658}%
-\contentsline {section}{References and sources}{298}{section*.659}%
-\contentsline {section}{Hands-On}{298}{section*.660}%
-\contentsline {section}{\textit {Mer 24 novembre - Medphys lezione 2}}{299}{section*.661}%
-\contentsline {section}{\textit {Mer lun 28 novembre - Medphys lezione 3}}{300}{section*.662}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{301}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{301}{section*.663}%
-\contentsline {subsection}{Copiare la Repository in Locale}{301}{section*.664}%
-\contentsline {subsection}{Comandi principali in locale}{301}{section*.665}%
-\contentsline {subsection}{Creare una Repository in locale}{302}{section*.666}%
-\contentsline {subsection}{Git Workflow}{303}{section*.668}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{305}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{306}{section*.671}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{307}{section*.672}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{308}{section*.673}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{308}{section*.674}%
+\contentsline {section}{Structural MRI $T_1$ -weighted images}{292}{section*.635}%
+\contentsline {section}{Functional MRI (fMRI)}{293}{section*.637}%
+\contentsline {section}{Data dimensionality: 2D/3D/4D/..nD images}{294}{section*.639}%
+\contentsline {section}{Errors introduced by the analog to digital conversion}{294}{section*.641}%
+\contentsline {section}{Image representation with gray and color scales}{294}{section*.643}%
+\contentsline {section}{Image windowing}{295}{section*.645}%
+\contentsline {section}{Look-up tables (LUTs)}{295}{section*.647}%
+\contentsline {section}{Medical image file formats}{296}{section*.649}%
+\contentsline {section}{DICOM file format}{296}{section*.650}%
+\contentsline {subsection}{DICOM metadata}{297}{section*.651}%
+\contentsline {section}{The Neuroimaging Informatics Technology Initiative (NIfTI) file format}{297}{section*.653}%
+\contentsline {section}{Images viewers}{297}{section*.654}%
+\contentsline {subsection}{Other medical image viewers}{298}{section*.656}%
+\contentsline {section}{The pydicom library}{298}{section*.657}%
+\contentsline {section}{The General Data Protection Regulation (GDPR)}{298}{section*.658}%
+\contentsline {section}{References and sources}{299}{section*.659}%
+\contentsline {section}{Hands-On}{299}{section*.660}%
+\contentsline {section}{\textit {Mer 24 novembre - Medphys lezione 2}}{300}{section*.661}%
+\contentsline {section}{\textit {Mer lun 28 novembre - Medphys lezione 3}}{301}{section*.662}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{303}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{303}{section*.663}%
+\contentsline {subsection}{Copiare la Repository in Locale}{303}{section*.664}%
+\contentsline {subsection}{Comandi principali in locale}{303}{section*.665}%
+\contentsline {subsection}{Creare una Repository in locale}{304}{section*.666}%
+\contentsline {subsection}{Git Workflow}{305}{section*.668}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{307}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{308}{section*.671}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{309}{section*.672}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{310}{section*.673}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{310}{section*.674}%

@@ -5,25 +5,24 @@
 \section{Imaging medico: alcuni metodi diagnostici}
 
 \begin{itemize}
-	\item \textbf{CT (TAC in italiano)} tomografia assiale computerizzata
-	\item \textbf{Risonanza Magnetica, MRI, fMRI}: array tridimensionali, volendo anche nel tempo, quindi 4-dimensionali.
-	\item \textbf{Nuclear (PET, SPECT)}
-	\item \textbf{Ultrasuoni} (ecografie)
+	\item \textbf{CT (TAC in italiano)} tomografia assiale computerizzata. Si basa sui raggi X.
+	\item \textbf{Risonanza Magnetica, MRI, fMRI}: possiamo generare immagini strutturali che rappresentano l'anatomia del copro umano (array tridimensionali); nel caso della fMRI possiamo acquisire questi volumi nel tempo, quindi ottenendo array 4-dimensionali.  Si basano su spin magnetici.
+	\item \textbf{Nuclear (PET, SPECT)} Un tracciante radioattivo viene iniettato nel corpo umano, emette radiazione (e.g. positroni) che viene rivelata dagli strumenti.
+	\item \textbf{Ultrasuoni}. Si basano su onde acustiche (ecografie).
 \end{itemize}
 
 La conoscenza dei meccanismi fisici che generano il dato su cui lavoriamo è importante.\\
-Le immagini mediche non sono semplici fotografie, ma sono immagini che contengono importanti informazioni sullo stato di salute del corpo umano.\\
+Le immagini mediche non sono semplici fotografie, ma sono immagini che contengono importanti informazioni sullo stato di salute del corpo umano.\\ E' importante sempre tenere in mente che tipo di informazione può darci una determinata tecnica di imaging, per non tirar fuori informazioni che in un dataset non ci sono.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figure_med/White-Matter-Fibers.jpg}
-	\caption{\url{http://www.humanconnectomeproject.org/}}
+	\includegraphics[width=0.45\linewidth]{figure_med/White-Matter-Fibers.jpg}
+	\caption{Fibre assonali che costituiscono la materia bianca cerebrale \url{http://www.humanconnectomeproject.org/}}
 \end{figure}
 \FloatBarrier
 
 Le immagini mediche riflettono diverse proprietà fisiche del corpo umano. Esse sono ottenute dall'interazione tra radiazione/ultrasuoni con i tessuti/organi.\\
-
-Tipicamente le immagini mediche non si limitano a 2D, ma solitamente abbiamo almeno 3 dimensioni.\\
+Inoltre, tipicamente le immagini mediche non si limitano a 2D, ma solitamente abbiamo almeno 3 dimensioni.\\
 
 Le immagini mediche permettono di studiare:
 \begin{itemize}
@@ -37,13 +36,13 @@ Tomografia invece si rifersice a immagini 3D.\\
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure_med/diagnostic}
+	\includegraphics[width=0.9\linewidth]{figure_med/diagnostic}
 \end{figure}
 \FloatBarrier
 
 Lo sforzo moderno è quello di creare dispositivi multimodali, che investigano il corpo umano da diversi punti di vista. Acquisire informazioni complementari attraverso le diverse modalità contemporaneamente. Unendo le informazioni possiamo ottenere una diagnosi più accurata.\\
-Ogni tecnica ha una specifica risoluzione spaziale, combinando le varie tecniche possiamo migliorarla.\\
-
+Ogni tecnica ha una specifica risoluzione spaziale. TAC e Risonanza magnetica strutturale hanno una risoluzione buona (millimetrica/sub-millimetrica ), mentre le tecniche di medicina nucleare come PET e SPECT, rappresentano il metabolismo degli organi, ma con una risoluzione spaziale meno buona (ordine di qualche mm). Combinando le varie tecniche possiamo ottenere più informazioni utili.\\
+ 
 \textbf{Medicina di precisione}: creare un trattamento specifico per ogni paziente. A contrapporsi ad un metodo basato su protocolli, come si fa attualmente nel nostro sistema sanitario.\\
 Mettendo insieme tutte le informazioni sul paziente si può arrivare a delle diagnosi e a dei trattamente altamente personalizzati.\\
 Sfida: come integrare i dati che vengono da sorgenti diverse in maniera efficiente.\\
@@ -80,6 +79,7 @@ In questo corso: a partire dall'immagine medica acquisita (già con valore diagn
 
 Il nostro obiettivo è identificare delle anomalie nelle immagini. Identificare lo stato di avanzamento di una certa lesione, per studiarne il tasso di crescita.\\
 Vorremmo costruire uno strumento che sia il più robusto possibile ad una serie di variabilità a cui è esposta la lettura del medico, e che sia \textbf{riproducibile}, in modo da affiancare il medico nel processo decisionale.\\
+E' importante individuare quali sono le principali fonti di incertezza!
 
 The main objectives are:
 \begin{itemize}
@@ -101,7 +101,7 @@ Historical development of CAD systems:
 
 \section{Data dimensionality: 3D images}
 
-Dal sinogramma lavoro con degli algoritmi di ricorstruzione, da cui poi posso ricavare delle immagini (a fette) che rappresentano l'anatomia del paziente..
+Dal sinogramma (Il sinogramma in TC è la rappresentazione bidimensionale della lettura dell'intera striscia di detettori nel tempo di rotazione attorno al paziente) lavoro con degli algoritmi di ricorstruzione, da cui poi posso ricavare delle immagini (a fette) che rappresentano l'anatomia del paziente.
 
 (micronodulo polmonare)\\
 
@@ -109,6 +109,7 @@ Dal sinogramma lavoro con degli algoritmi di ricorstruzione, da cui poi posso ri
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figure_med/datadim3d}
+	\caption{Il pixel dela TAC è di circa mezzo millimetro. I micronoduli sono dell'ordine di 5 mm.Il parenchima polmonare appare nero, i punti bianchi corrispondono a vasi sanguigni. I noduli hanno densità simile a quella dei vasi. Per capire se un punto bianco è un nodulo, bisogna vedere se compare e scompare alla presentazione di una sequenza d i varie fette.}
 \end{figure}
 \FloatBarrier
 
@@ -128,28 +129,33 @@ Una TAC del torace è un volume tridimensionale.\\
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figure_med/data_dim}
+	\caption{La risonanza ci può dare sia informazioni strutturali, che informazioni funzionali sugli organi. Modalità diverse danno informazioni diverse, a seconda di cosa sto cercando dovrò utilizzare la tecnica appropriata. }
 \end{figure}
-\FloatBarrier
+\FloatBarrier 
 
 \section{Structural MRI $T_1$ -weighted images}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figure_med/t1}
+	\caption{Tipicamente si cerca di avere voxel isotropici (stesse dimensioni in x,y,z), in realta, siccome molte acquisizioni avvengono in \textit{slice} non sempre la risoluzione lungo x,y è uguale a quella lungo z.}
 \end{figure}
 \FloatBarrier
+
+\newpage
 
 \section{Functional MRI (fMRI)}
 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure_med/fmri}
+	\includegraphics[width=0.65\linewidth]{figure_med/fmri}
+	\caption{Posso studiare il singolo voxel al variare del tempo. POsso studiare quale regione si attiva in seguito a una certa azione.}
 \end{figure}
 \FloatBarrier
 
 \begin{itemize}
-	\item BOLD Response: blood-oxygen-level-dependent (BOLD) contrast
+	\item BOLD Response: blood-oxygen-level-dependent (BOLD) contrast. (Quando facciamo un'azione, i neuroni consumano ossigeno, e cambiano le proprietà magnetiche della regione in cui si trovano, e quindi cambia il segnale in risonanza magnetica.)
 	\item Typically, 1 volume per second (3x3x3mm$^3$ ) is
 	acquired for 4-5 min
 	\item Stimuli (visual, auditory, tactile, …) are
@@ -164,6 +170,8 @@ Una TAC del torace è un volume tridimensionale.\\
 \begin{itemize}
 	\item Resting state rs-fMRI: study of temporal correlations between spatially remote neurophysiological events
 \end{itemize}
+
+\newpage
 
 \section{Data dimensionality: 2D/3D/4D/..nD images}
 
