@@ -422,7 +422,7 @@
 \contentsline {subsection}{How do we train a network in pytorch?}{285}{section*.616}%
 \contentsline {section}{Exercise: our first GNN with pytorch}{285}{section*.617}%
 \contentsline {chapter}{\numberline {4}Fisica Medica}{287}{chapter.4}%
-\contentsline {section}{\textit {Lun 21 novembre - Medphys lezione 1}}{287}{section*.619}%
+\contentsline {section}{\textit {Lun 21 novembre - Medphys lezione 1 - Intro to Medical Image Processing and Analysis}}{287}{section*.619}%
 \contentsline {section}{Imaging medico: alcuni metodi diagnostici}{287}{section*.620}%
 \contentsline {section}{Le principali modalità di imaging diagnostico}{288}{section*.622}%
 \contentsline {section}{Il ruolo dei computer nell'imaging medico}{288}{section*.624}%
@@ -447,16 +447,26 @@
 \contentsline {section}{The General Data Protection Regulation (GDPR)}{298}{section*.658}%
 \contentsline {section}{References and sources}{299}{section*.659}%
 \contentsline {section}{Hands-On}{299}{section*.660}%
-\contentsline {section}{\textit {Mer 24 novembre - Medphys lezione 2}}{300}{section*.661}%
-\contentsline {section}{\textit {Mer lun 28 novembre - Medphys lezione 3}}{301}{section*.662}%
-\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{303}{appendix.A}%
-\contentsline {subsection}{Creare una Repository partendo da GitHub}{303}{section*.663}%
-\contentsline {subsection}{Copiare la Repository in Locale}{303}{section*.664}%
-\contentsline {subsection}{Comandi principali in locale}{303}{section*.665}%
-\contentsline {subsection}{Creare una Repository in locale}{304}{section*.666}%
-\contentsline {subsection}{Git Workflow}{305}{section*.668}%
-\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{307}{appendix.B}%
-\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{308}{section*.671}%
-\contentsline {subsection}{Step 2: Configure the conf.py}{309}{section*.672}%
-\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{310}{section*.673}%
-\contentsline {subsection}{Step 4: Including module.rst and generating html}{310}{section*.674}%
+\contentsline {section}{\textit {Mer 24 novembre - Medphys lezione 2 - intro to MATLAB, read and display medical images}}{300}{section*.661}%
+\contentsline {section}{Brief introduction to MATLAB}{300}{section*.662}%
+\contentsline {section}{Getting started with matlab}{300}{section*.663}%
+\contentsline {section}{Intro to Matlab for Python users}{300}{section*.664}%
+\contentsline {subsection}{Multidimensional Matlab arrays}{301}{section*.666}%
+\contentsline {subsection}{Data type correspondence between Python and Matlab}{301}{section*.668}%
+\contentsline {subsection}{Matlab m-files and user-defined functions}{302}{section*.670}%
+\contentsline {subsection}{Matlab \& git}{302}{section*.672}%
+\contentsline {subsection}{Basic image processing}{303}{section*.674}%
+\contentsline {subsection}{Hands-on materials}{303}{section*.676}%
+\contentsline {section}{\textit {lun 28 novembre - Medphys lezione 3 - Basic image processing}}{304}{section*.678}%
+\contentsline {section}{\textit {lun 28 novembre - Medphys lezione 4}}{322}{section*.679}%
+\contentsline {chapter}{\numberline {A}Comandi base di Git e Github}{323}{appendix.A}%
+\contentsline {subsection}{Creare una Repository partendo da GitHub}{323}{section*.680}%
+\contentsline {subsection}{Copiare la Repository in Locale}{323}{section*.681}%
+\contentsline {subsection}{Comandi principali in locale}{323}{section*.682}%
+\contentsline {subsection}{Creare una Repository in locale}{324}{section*.683}%
+\contentsline {subsection}{Git Workflow}{325}{section*.685}%
+\contentsline {chapter}{\numberline {B}Usare Sphinx per creare la documentazione}{327}{appendix.B}%
+\contentsline {subsection}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{328}{section*.688}%
+\contentsline {subsection}{Step 2: Configure the conf.py}{329}{section*.689}%
+\contentsline {subsection}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{330}{section*.690}%
+\contentsline {subsection}{Step 4: Including module.rst and generating html}{330}{section*.691}%

@@ -422,7 +422,7 @@
 \BOOKMARK [2][-]{section*.616}{How do we train a network in pytorch?}{section*.613}% 422
 \BOOKMARK [1][-]{section*.617}{Exercise: our first GNN with pytorch}{chapter.3}% 423
 \BOOKMARK [0][-]{chapter.4}{Fisica Medica}{}% 424
-\BOOKMARK [1][-]{section*.619}{Lun 21 novembre - Medphys lezione 1}{chapter.4}% 425
+\BOOKMARK [1][-]{section*.619}{Lun 21 novembre - Medphys lezione 1 - Intro to Medical Image Processing and Analysis}{chapter.4}% 425
 \BOOKMARK [1][-]{section*.620}{Imaging medico: alcuni metodi diagnostici}{chapter.4}% 426
 \BOOKMARK [1][-]{section*.622}{Le principali modalit\340 di imaging diagnostico}{chapter.4}% 427
 \BOOKMARK [1][-]{section*.624}{Il ruolo dei computer nell'imaging medico}{chapter.4}% 428
@@ -447,16 +447,26 @@
 \BOOKMARK [1][-]{section*.658}{The General Data Protection Regulation \(GDPR\)}{chapter.4}% 447
 \BOOKMARK [1][-]{section*.659}{References and sources}{chapter.4}% 448
 \BOOKMARK [1][-]{section*.660}{Hands-On}{chapter.4}% 449
-\BOOKMARK [1][-]{section*.661}{Mer 24 novembre - Medphys lezione 2}{chapter.4}% 450
-\BOOKMARK [1][-]{section*.662}{Mer lun 28 novembre - Medphys lezione 3}{chapter.4}% 451
-\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 452
-\BOOKMARK [1][-]{section*.663}{Creare una Repository partendo da GitHub}{appendix.A}% 453
-\BOOKMARK [2][-]{section*.664}{Copiare la Repository in Locale}{section*.663}% 454
-\BOOKMARK [2][-]{section*.665}{Comandi principali in locale}{section*.663}% 455
-\BOOKMARK [2][-]{section*.666}{Creare una Repository in locale}{section*.663}% 456
-\BOOKMARK [2][-]{section*.668}{Git Workflow}{section*.663}% 457
-\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 458
-\BOOKMARK [1][-]{section*.671}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 459
-\BOOKMARK [2][-]{section*.672}{Step 2: Configure the conf.py}{section*.671}% 460
-\BOOKMARK [2][-]{section*.673}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.671}% 461
-\BOOKMARK [2][-]{section*.674}{Step 4: Including module.rst and generating html}{section*.671}% 462
+\BOOKMARK [1][-]{section*.661}{Mer 24 novembre - Medphys lezione 2 - intro to MATLAB, read and display medical images}{chapter.4}% 450
+\BOOKMARK [1][-]{section*.662}{Brief introduction to MATLAB}{chapter.4}% 451
+\BOOKMARK [1][-]{section*.663}{Getting started with matlab}{chapter.4}% 452
+\BOOKMARK [1][-]{section*.664}{Intro to Matlab for Python users}{chapter.4}% 453
+\BOOKMARK [2][-]{section*.666}{Multidimensional Matlab arrays}{section*.664}% 454
+\BOOKMARK [2][-]{section*.668}{Data type correspondence between Python and Matlab}{section*.664}% 455
+\BOOKMARK [2][-]{section*.670}{Matlab m-files and user-defined functions}{section*.664}% 456
+\BOOKMARK [2][-]{section*.672}{Matlab \046 git}{section*.664}% 457
+\BOOKMARK [2][-]{section*.674}{Basic image processing}{section*.664}% 458
+\BOOKMARK [2][-]{section*.676}{Hands-on materials}{section*.664}% 459
+\BOOKMARK [1][-]{section*.678}{lun 28 novembre - Medphys lezione 3 - Basic image processing}{chapter.4}% 460
+\BOOKMARK [1][-]{section*.679}{lun 28 novembre - Medphys lezione 4}{chapter.4}% 461
+\BOOKMARK [0][-]{appendix.A}{Comandi base di Git e Github}{}% 462
+\BOOKMARK [1][-]{section*.680}{Creare una Repository partendo da GitHub}{appendix.A}% 463
+\BOOKMARK [2][-]{section*.681}{Copiare la Repository in Locale}{section*.680}% 464
+\BOOKMARK [2][-]{section*.682}{Comandi principali in locale}{section*.680}% 465
+\BOOKMARK [2][-]{section*.683}{Creare una Repository in locale}{section*.680}% 466
+\BOOKMARK [2][-]{section*.685}{Git Workflow}{section*.680}% 467
+\BOOKMARK [0][-]{appendix.B}{Usare Sphinx per creare la documentazione}{}% 468
+\BOOKMARK [1][-]{section*.688}{Step 1: Use sphinx-quickstart to generate Sphinx source directory with conf.py and index.rst}{appendix.B}% 469
+\BOOKMARK [2][-]{section*.689}{Step 2: Configure the conf.py}{section*.688}% 470
+\BOOKMARK [2][-]{section*.690}{Step 3: Use sphinx-apidoc to generate reStructuredText files from source code}{section*.688}% 471
+\BOOKMARK [2][-]{section*.691}{Step 4: Including module.rst and generating html}{section*.688}% 472
